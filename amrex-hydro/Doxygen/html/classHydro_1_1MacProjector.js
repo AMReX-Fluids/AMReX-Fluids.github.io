@@ -18,7 +18,7 @@ var classHydro_1_1MacProjector =
     [ "setCoarseFineBC", "classHydro_1_1MacProjector.html#aa180608476662e8842d3f531fbcaf4bd", null ],
     [ "setDivU", "classHydro_1_1MacProjector.html#aa4a6c51af0f9f7f5a7cdb90af94bb452", null ],
     [ "setDomainBC", "classHydro_1_1MacProjector.html#a4e1fa14e4ba6e059f9f9eef63853f68a", null ],
-    [ "setLevelBC", "classHydro_1_1MacProjector.html#a3d61bfbe4072f67c8ec5aa2b5a336dcf", null ],
+    [ "setLevelBC", "classHydro_1_1MacProjector.html#a14a612ac0c0042ac9e24fbdab72081df", null ],
     [ "setOptions", "classHydro_1_1MacProjector.html#a0e486b82b991320eb741d655f11e7c4e", null ],
     [ "setUMAC", "classHydro_1_1MacProjector.html#ae011104055a3d9ba560bf411c33b60df", null ],
     [ "setVerbose", "classHydro_1_1MacProjector.html#a0421fceb4701fda980091df297a21183", null ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ebgodunov_17571',['EBGodunov',['../group__EBGodunov.html',1,'']]],
-  ['ebmol_17572',['EBMOL',['../group__EBMOL.html',1,'']]]
+  ['ebgodunov_17863',['EBGodunov',['../group__EBGodunov.html',1,'']]],
+  ['ebmol_17864',['EBMOL',['../group__EBMOL.html',1,'']]]
 ];

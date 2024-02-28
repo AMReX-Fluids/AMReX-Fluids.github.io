@@ -154,8 +154,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa4a6c51af0f9f7f5a7cdb90af94bb452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1fa14e4ba6e059f9f9eef63853f68a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a4e1fa14e4ba6e059f9f9eef63853f68a">setDomainBC</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afe930d74045516fece8591f173e57007">amrex::Array</a>&lt; amrex::LinOpBCType, AMREX_SPACEDIM &gt; &amp;lobc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afe930d74045516fece8591f173e57007">amrex::Array</a>&lt; amrex::LinOpBCType, AMREX_SPACEDIM &gt; &amp;hibc)</td></tr>
 <tr class="separator:a4e1fa14e4ba6e059f9f9eef63853f68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d61bfbe4072f67c8ec5aa2b5a336dcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a3d61bfbe4072f67c8ec5aa2b5a336dcf">setLevelBC</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> amrlev, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *levelbcdata)</td></tr>
-<tr class="separator:a3d61bfbe4072f67c8ec5aa2b5a336dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a612ac0c0042ac9e24fbdab72081df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a14a612ac0c0042ac9e24fbdab72081df">setLevelBC</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> amrlev, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *levelbcdata, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *robin_a=nullptr, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *robin_b=nullptr, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *robin_f=nullptr)</td></tr>
+<tr class="separator:a14a612ac0c0042ac9e24fbdab72081df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa180608476662e8842d3f531fbcaf4bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#aa180608476662e8842d3f531fbcaf4bd">setCoarseFineBC</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__InterpFaceRegister_8cpp.html#a952c6efe16374645210c3308f3b335f6">crse</a>, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> crse_ratio)</td></tr>
 <tr class="separator:aa180608476662e8842d3f531fbcaf4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11425406f3b1ebf78d61520733cfe6fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a11425406f3b1ebf78d61520733cfe6fc">project</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> * &gt; &amp;phi_in, amrex::Real reltol, amrex::Real atol)</td></tr>
@@ -774,10 +774,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHydro_1_1MacProjector_aa24fe4bfe04b7198572e2c16a21d43aa_cgraph.png" border="0" usemap="#aclassHydro_1_1MacProjector_aa24fe4bfe04b7198572e2c16a21d43aa_cgraph" alt=""/></div>
 <map name="aclassHydro_1_1MacProjector_aa24fe4bfe04b7198572e2c16a21d43aa_cgraph" id="aclassHydro_1_1MacProjector_aa24fe4bfe04b7198572e2c16a21d43aa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,57,160,98"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a314545dbd77212eb64c3a248c754eda6" title=" " alt="" coords="257,5,379,32"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVect.html#af53e6b9cce7d60edaaf9a8bf721f0eaa" title=" " alt="" coords="209,57,427,98"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVect.html#ac4331f56298c56a0ff01a011c3702c3a" title=" " alt="" coords="208,123,428,149"/>
+<area shape="rect" title=" " alt="" coords="5,78,160,119"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a6d0e162407f49aab99ec9a1bcddf0f21" title=" " alt="" coords="253,5,383,32"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a314545dbd77212eb64c3a248c754eda6" title=" " alt="" coords="257,56,379,83"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVect.html#af53e6b9cce7d60edaaf9a8bf721f0eaa" title=" " alt="" coords="209,107,427,149"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVect.html#ac4331f56298c56a0ff01a011c3702c3a" title=" " alt="" coords="208,173,428,200"/>
 </map>
 </div>
 
@@ -937,9 +938,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classHydro_1_1MacProjector_aa4a6c51af0f9f7f5a7cdb90af94bb452_cgraph.png" border="0" usemap="#aclassHydro_1_1MacProjector_aa4a6c51af0f9f7f5a7cdb90af94bb452_cgraph" alt=""/></div>
 <map name="aclassHydro_1_1MacProjector_aa4a6c51af0f9f7f5a7cdb90af94bb452_cgraph" id="aclassHydro_1_1MacProjector_aa4a6c51af0f9f7f5a7cdb90af94bb452_cgraph">
-<area shape="rect" title="Set div(U)" alt="" coords="5,23,160,65"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html#ab70ce65ff46ae21b8cc4e0584fe26ffa" title=" " alt="" coords="208,5,376,32"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="219,56,365,83"/>
+<area shape="rect" title="Set div(U)" alt="" coords="5,74,160,115"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a6d0e162407f49aab99ec9a1bcddf0f21" title=" " alt="" coords="231,5,361,32"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html#ab70ce65ff46ae21b8cc4e0584fe26ffa" title=" " alt="" coords="212,56,380,83"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a0789b1c22e6f47037f987b73cf2b898b" title=" " alt="" coords="208,107,384,133"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="223,157,369,184"/>
 </map>
 </div>
 
@@ -973,8 +976,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a3d61bfbe4072f67c8ec5aa2b5a336dcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d61bfbe4072f67c8ec5aa2b5a336dcf">&#9670;&nbsp;</a></span>setLevelBC()</h2>
+<a id="a14a612ac0c0042ac9e24fbdab72081df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a612ac0c0042ac9e24fbdab72081df">&#9670;&nbsp;</a></span>setLevelBC()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -989,7 +992,25 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *&#160;</td>
-          <td class="paramname"><em>levelbcdata</em>&#160;</td>
+          <td class="paramname"><em>levelbcdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *&#160;</td>
+          <td class="paramname"><em>robin_a</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *&#160;</td>
+          <td class="paramname"><em>robin_b</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *&#160;</td>
+          <td class="paramname"><em>robin_f</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

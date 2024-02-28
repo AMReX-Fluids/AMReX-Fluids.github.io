@@ -38,6 +38,7 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -65,20 +66,20 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"hydro__godunov__ppm_8H.html#a28507e3b28d4397f6abfb6ad8c6cbf57",
-"namespaceamrex.html#a0f600e600176e6bc4444aaea08ca1c49ad128e6d075eb69fd93126e2e25a97256",
-"namespaceamrex.html#a36b359eb7b2ab6e40d0acd6835b4f85f",
-"namespaceamrex.html#a5b5440802e0895fcba37e6b295116585",
-"namespaceamrex.html#a84f2fd1d8faaa80410294ddfc4c4158f",
-"namespaceamrex.html#aa5343920d9b5ee1307ca697274eca84a",
-"namespaceamrex.html#acaf1644c0e71ab419cdf9495cd29a030",
-"namespaceamrex.html#aed897cd66d451d76ab4b30a7b493ffd5",
-"namespaceamrex_1_1EB2.html#ad5118c9d34449d5fcba10d141751b0d6",
-"namespaceamrex_1_1NonLocalBC.html#abb7cd050d6dd1aef7603048eeccd7ded",
-"namespaceamrex_1_1ParallelReduce.html#ae9c54202ab1977174170abe666454cb6",
-"namespaceamrex_1_1sundials.html#a7e06c30eda626fc60c51681e255936ad",
-"namespaceamrex__string__module.html#a959bc74ecd938061a024fb0d210facad"
+"",
+"hydro__compute__edgestate__and__flux_8cpp.html",
+"namespaceamrex.html#a040b31bdb9951876d8277049591cfe51",
+"namespaceamrex.html#a27531cc00ae88701b82d827296ac6496",
+"namespaceamrex.html#a4a2b25b2da10b957a967b191fec06bce",
+"namespaceamrex.html#a71808e748d2cf6ea301231f278269b70",
+"namespaceamrex.html#a948dd1dfa6da8d14fab0077d80396882",
+"namespaceamrex.html#abab0cc8dec794fd7506ddcfb6ac27b85",
+"namespaceamrex.html#ade93dfd6bf280f23f7f7baa47404e80b",
+"namespaceamrex.html#afe890be0bd82650235456eabcf50e309",
+"namespaceamrex_1_1Gpu.html#ae2cf1d72cec1f6929ea0405c70ce2f45",
+"namespaceamrex_1_1ParallelDescriptor.html#a45569b295bf42f447fac8a9610790ff0",
+"namespaceamrex_1_1algoim_1_1detail.html#a8faf5a6ffdc4ce9947820dca5b901140",
+"namespaceamrex__eb__flux__reg__nd__module.html#a03a212df04f2b5a5a753d0d3a4ba60d7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

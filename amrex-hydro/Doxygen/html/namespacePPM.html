@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('namespacePPM.html',''); initResizable(
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">PPM Namespace Reference</div>  </div>
 </div><!--header-->
@@ -142,6 +143,11 @@ Functions</h2></td></tr>
 <tr class="memitem:acc43ed98677d40c3b0cd8ea5326e7d5d"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
 <tr class="memitem:acc43ed98677d40c3b0cd8ea5326e7d5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#acc43ed98677d40c3b0cd8ea5326e7d5d">PredictStateOnFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Box.html">amrex::Box</a> const &amp;bx, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;umac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;vmac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;wmac), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;q, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> geom, amrex::Real l_dt, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *pbc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> ncomp, const Limiter &amp;limiter)</td></tr>
 <tr class="separator:acc43ed98677d40c3b0cd8ea5326e7d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4f476328680db9ab71492a158fce0749"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a4f476328680db9ab71492a158fce0749">default_limiter</a> = <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a">VanLeer</a></td></tr>
+<tr class="separator:a4f476328680db9ab71492a158fce0749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="afde008f2efff2705e2231ca88ed08ff5"></a>
@@ -1075,6 +1081,29 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="namespacePPM.html#afc01feca9b1f93c06521af5d6591c22c" title=" " alt="" coords="12,56,189,83"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a4f476328680db9ab71492a158fce0749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f476328680db9ab71492a158fce0749">&#9670;&nbsp;</a></span>default_limiter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> PPM::default_limiter = <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a">VanLeer</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
