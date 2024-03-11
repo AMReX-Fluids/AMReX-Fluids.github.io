@@ -53,6 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">References</span></p>
@@ -165,7 +166,7 @@ s_{ijk}(x,y,z) &amp;=&amp; s_{ijk} + s_{x,ijk}\cdot(x-x_i) + s_{y,ijk}\cdot(y-y_
 <li><p><strong>Step 2</strong>: Construct edge states <span class="math notranslate nohighlight">\(s_{i+1/2,j,k}\)</span>, etc. by integrating the limited
 piecewise trilinear (bilinear in 2D) profiles over the space-time region determined by the characteristic
 domain of dependence of the face.
-We enforce no inflow at an outflow face as described in the post-MAC <a class="reference internal" href="Utilities.html#no-inflow-at-outflow"><span class="std std-ref">Boundary Conditions Section</span></a>.</p></li>
+We enforce no inflow at an outflow face as described in the post-MAC <a class="reference internal" href="bcs.html#no-inflow-at-outflow"><span class="std std-ref">Boundary Conditions Section</span></a>.</p></li>
 </ul>
 </section>
 </section>

@@ -76,13 +76,14 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#bds-algorithm">BDS Algorithm</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Pre-MAC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Pre-MAC</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#post-mac">Post-MAC</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">References</span></p>
@@ -165,7 +166,7 @@ then differenced to create the advective term.
 <a class="reference internal" href="Utilities.html#fluxes"><span class="std std-ref">Computing Fluxes</span></a> and <a class="reference internal" href="Utilities.html#advective-term"><span class="std std-ref">Constructing the advective term</span></a> sections.)</p></li>
 </ol>
 <p>Domain boundary conditions affect the computation of these pre- and post-MAC states in
-the same way for all advection methods, and this is described in the <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a> section.
+the same way for all advection methods, and this is described in the <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a> section.
 Note that while these routines ensure that the resulting computed states obey the boundary
 conditions, they also still require input with filled grow cells.
 All schemes also use the same routines to construct fluxes and then the convective term.</p>
@@ -213,7 +214,7 @@ every x-face:</p>
 u_L &amp;=&amp; u_{i-1,j,k} + \frac{\Delta x}{2} {u^x}_{i-1,j,k}, \\
 u_R &amp;=&amp; u_{i,j,k}   - \frac{\Delta x}{2} {u^x}_{i,j,k}, \end{aligned}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(u^x\)</span> are the (limited) slopes in the x-direction.</p>
-<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
+<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
 Then, at each face we upwind based on <span class="math notranslate nohighlight">\(u_L\)</span> and <span class="math notranslate nohighlight">\(u_R\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}u_{i-\frac{1}{2},j,k} =
@@ -235,7 +236,7 @@ faces as above:</p>
 s_L &amp;=&amp; s^{i-1,j,k} + \frac{\Delta x}{2} {s^x}_{i-1,j,k}, \\
 s_R &amp;=&amp; s^{i,j,k}   - \frac{\Delta x}{2} {s^x}_{i,j,k},   \end{aligned}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(s^x\)</span> are the (limited) slopes in the x-direction.</p>
-<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
+<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
 Then, at each face, we upwind based on <span class="math notranslate nohighlight">\(u^{MAC}_{i-\frac{1}{2},j,k}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}s_{i-\frac{1}{2},j,k} =
@@ -261,7 +262,7 @@ u_R &amp;=&amp; u_{i,j,k}   - \delta_x \; {u^x}_{i,j,k}   - \delta_y \; {u^y}_{i
 <p>where we calculate <span class="math notranslate nohighlight">\(u^x\)</span>, <span class="math notranslate nohighlight">\(u^y\)</span> and <span class="math notranslate nohighlight">\(u^z\)</span> as described in <a class="reference internal" href="Utilities.html#ebslopes"><span class="std std-ref">EB Slopes</span></a>,
 and <span class="math notranslate nohighlight">\(\delta_x\)</span>, <span class="math notranslate nohighlight">\(\delta_y\)</span>, and <span class="math notranslate nohighlight">\(\delta_z\)</span> are the components of the distance vector from
 the cell centroid to the face centroid of the face at <span class="math notranslate nohighlight">\((i-\frac{1}{2},j,k).\)</span></p>
-<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
+<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
 Then, at each face we upwind based on <span class="math notranslate nohighlight">\(u_L\)</span> and <span class="math notranslate nohighlight">\(u_R\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}u_{i-\frac{1}{2},j,k} =
@@ -284,7 +285,7 @@ s_R &amp;=&amp; s_{i,j,k}   - \delta_x \; {s^x}_{i,j,k}   - \delta_y \; {s^y}_{i
 <p>where we calculate <span class="math notranslate nohighlight">\(s^x\)</span>, <span class="math notranslate nohighlight">\(s^y\)</span> and <span class="math notranslate nohighlight">\(s^z\)</span> as described in <a class="reference internal" href="Utilities.html#ebslopes"><span class="std std-ref">EB Slopes</span></a>,
 and <span class="math notranslate nohighlight">\(\delta_x\)</span>, <span class="math notranslate nohighlight">\(\delta_y\)</span>, and <span class="math notranslate nohighlight">\(\delta_z\)</span> are the components of the distance vector from
 the cell centroid to the face centroid of the face at <span class="math notranslate nohighlight">\((i-\frac{1}{2},j,k).\)</span></p>
-<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
+<p>Boundary conditions are applied (as decribed in <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a>).
 Then, at each face we then upwind based on <span class="math notranslate nohighlight">\(u^{MAC}_{i-\frac{1}{2},j,k}\)</span></p>
 <div class="math notranslate nohighlight">
 \[\begin{split}s_{i-\frac{1}{2},j,k} =
@@ -381,7 +382,7 @@ to the <span class="math notranslate nohighlight">\((i,j,k+\frac{1}{2})\)</span>
 <p>If the parameter <code class="docutils literal notranslate"><span class="pre">use_forces_in_trans</span></code> is true, the forcing terms (<span class="math notranslate nohighlight">\(\F\)</span> in
 Eqs. <a class="reference internal" href="#equation-eq1">(1)</a> and <a class="reference internal" href="#equation-eq2">(2)</a>) are added to <span class="math notranslate nohighlight">\(\widehat{\U}\)</span> now. Otherwise, they are included later in the the
 formation of the edge state.</p>
-<p>Next, boundary conditions are enforced on domain faces as decribed in <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a> #2.
+<p>Next, boundary conditions are enforced on domain faces as decribed in <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a> #2.
 Note that this means face-based values lying within the physical boundary but not exactly on the
 boundary face (e.g. values located on the y-faces of ghost cells abutting the x-boundary but not on the y-boundary)
 do not have boundary conditions enforced at this point.</p>
@@ -431,7 +432,7 @@ For 2D, we take <span class="math notranslate nohighlight">\(\widebreve{\U} = \w
 If <code class="docutils literal notranslate"><span class="pre">use_forces_in_trans</span></code> is false, the forcing terms were not included in the computation of the
 transverse deriviates and are instead included at this point.
 We apply boundary conditions on domain faces,
-including preventing backflow (as decribed in <a class="reference internal" href="Utilities.html#bcs"><span class="std std-ref">Boundary conditions</span></a> #2 &amp; 3).</p>
+including preventing backflow (as decribed in <a class="reference internal" href="bcs.html#bcs"><span class="std std-ref">Boundary conditions</span></a> #2 &amp; 3).</p>
 <p>The normal velocity at each face is then determined by an upwinding procedure
 based on the states predicted from the cell centers on either side.  The
 procedure is similar to that described above, i.e.
@@ -482,7 +483,7 @@ We extrapolate all quantities to faces as above:</p>
 <span id="ebgodunov"></span><h2>Godunov with Embedded Boundaries (EBGodunov)<a class="headerlink" href="#godunov-with-embedded-boundaries-ebgodunov" title="Link to this heading"></a></h2>
 <p>AMReX-Hydro contains an embedded boundary (EB) aware version of the Godunov algorithm
 discussed above, although with fewer options available.
-This EB implementation employs a piecewise linear method (PLM) <span id="id5">[]</span>, and
+This EB implementation employs a piecewise linear method (PLM), and
 always includes any forcing terms <em>after</em> the computation of the transverse terms.
 EBGodunov attempts to use fourth-order limited slopes wherever possible, as described in <a class="reference internal" href="Utilities.html#ebslopes"><span class="std std-ref">EB Slopes</span></a>.</p>
 <section id="pre-mac-api-ref-ebgodunov-extrapveltofaces">
@@ -678,7 +679,7 @@ conservation laws in multiple dimensions. Satisfying the maximum principal for
 constant coefficient linear advection, the BDS routine provides
 accurate resolution for smooth problems while avoiding undershoot and overshoot
 for non-smooth profiles. Additional details and comparisons to other
-schemes can be found in <span id="id6">[<a class="reference internal" href="references.html#id31" title="A. Nonaka, S. May, A. S. Almgren, and J. B. Bell. A three-dimensional, unsplit godunov method for scalar conservation laws. SIAM Journal on Scientific Computing, 33(4):2039-2062, 2011. URL: https://ccse.lbl.gov/Publications/nonaka/BDS_3d.pdf, arXiv:https://doi.org/10.1137/100809520, doi:10.1137/100809520.">Nonaka <em>et al.</em>, 2011</a>]</span> and references therein.</p>
+schemes can be found in <span id="id5">[<a class="reference internal" href="references.html#id31" title="A. Nonaka, S. May, A. S. Almgren, and J. B. Bell. A three-dimensional, unsplit godunov method for scalar conservation laws. SIAM Journal on Scientific Computing, 33(4):2039-2062, 2011. URL: https://ccse.lbl.gov/Publications/nonaka/BDS_3d.pdf, arXiv:https://doi.org/10.1137/100809520, doi:10.1137/100809520.">Nonaka <em>et al.</em>, 2011</a>]</span> and references therein.</p>
 <p>This implementation of BDS closely follows the Godunov approach and leverages some of the
 same code.
 The difference appears in the computation of edge states given face-centered velocities,
@@ -689,8 +690,8 @@ this time.
 If additional functionality is desired, or if questions remain after reading this guide,
 further help is available by submitting an issue through
 <a class="reference external" href="https://github.com/AMReX-Fluids/AMReX-Hydro/issues/new">Github</a></p>
-<section id="id7">
-<h3>Pre-MAC<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<section id="id6">
+<h3>Pre-MAC<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
 <p>The BDS routine follows the Godunov PLM method to extrapolate velocities to cell faces,
 see <a class="reference internal" href="#godunov-pre-mac"><span class="std std-ref">Godunov Methods: Pre-MAC</span></a>.</p>
 </section>
@@ -717,7 +718,7 @@ s_{ijk}(x,y,z) &amp;=&amp; s_{ijk} + s_{x,ijk}\cdot(x-x_i) + s_{y,ijk}\cdot(y-y_
 <li><p><strong>Step 2</strong>: Construct edge states <span class="math notranslate nohighlight">\(s_{i+1/2,j,k}\)</span>, etc. by integrating the limited
 piecewise trilinear (bilinear in 2D) profiles over the space-time region determined by the characteristic
 domain of dependence of the face.
-We enforce no inflow at an outflow face as described in the post-MAC <a class="reference internal" href="Utilities.html#no-inflow-at-outflow"><span class="std std-ref">Boundary Conditions Section</span></a>.</p></li>
+We enforce no inflow at an outflow face as described in the post-MAC <a class="reference internal" href="bcs.html#no-inflow-at-outflow"><span class="std std-ref">Boundary Conditions Section</span></a>.</p></li>
 </ul>
 </section>
 </section>

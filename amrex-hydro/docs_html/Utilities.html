@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="References" href="references.html" />
-    <link rel="prev" title="Projection Methods" href="Projections.html" /> 
+    <link rel="prev" title="Boundary conditions" href="bcs.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,11 +55,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Helper functions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#notation">Notation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#slopes">Slopes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#eb-slopes">EB Slopes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#boundary-conditions">Boundary conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#computing-fluxes">Computing Fluxes</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#intensive">Intensive</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#extensive">Extensive</a></li>
@@ -201,67 +201,6 @@ cell centroids, where the data is assumed to live, are the same as cell centers.
 This least-squares slope is then multiplied by a limiter based on the work of Barth-Jespersen
 that enforces no new maxima or minima when the state is predicted to the face centroids.</p></li>
 </ul>
-</section>
-<section id="boundary-conditions">
-<span id="bcs"></span><h2>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Link to this heading"></a></h2>
-<p>AMReX-Hydro uses underlying AMReX functionality in implementing boundary conditions
-(see AMReX’s documentation section <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/Basics.html#sec-basics-boundary" title="(in amrex v24.04-dev)"><span>Boundary Conditions</span></a>).
-Physical boundary conditions, such as
-inflow, outflow, slip/no-slip walls, etc., and are ultimately linked to
-mathematical Dirichlet or Neumann conditions.
-See <code class="docutils literal notranslate"><span class="pre">amrex/Src/Base/AMReX_BC_TYPES.H</span></code> for common physical and mathematical types.</p>
-<p>Domain boundary conditions affect the pre-MAC extrapolated velocities in three ways.</p>
-<ol class="arabic simple">
-<li><p>Potential impact to the slope computation in cells
-adjacent to the domain boundary (see <a class="reference internal" href="#slopes"><span class="std std-ref">Slopes</span></a> section).</p></li>
-<li><p>Direct enforcement of the boundary condition: If the face is on a domain boundary and the boundary
-condition type is</p>
-<ul class="simple">
-<li><p>External Dirichlet (<code class="docutils literal notranslate"><span class="pre">extdir</span></code>): we set <span class="math notranslate nohighlight">\(u_L\)</span> to the boundary value, and then
-for the normal component of the velocity only, we set <span class="math notranslate nohighlight">\(u_R = u_L\)</span>
-This is done because for turbulent inflow, there can be times when the inflow face
-actually has outflowing velocity. In this case, we want to use the normal component as
-specified by the BC, but then allow that outflowing velocity to transport values that come
-from the interior.</p></li>
-<li><p>First-order extrapolation (<code class="docutils literal notranslate"><span class="pre">foextrap</span></code>), higher order extrapolation (<code class="docutils literal notranslate"><span class="pre">hoextrap</span></code>), or
-even reflection about the boundary (<code class="docutils literal notranslate"><span class="pre">reflecteven</span></code>):</p>
-<ul>
-<li><p>on the low side of the domain, we set <span class="math notranslate nohighlight">\(u_L = u_R.\)</span></p></li>
-<li><p>on the high side, we set <span class="math notranslate nohighlight">\(u_R = u_L.\)</span></p></li>
-</ul>
-</li>
-<li><p>Odd reflection about the boundary (<code class="docutils literal notranslate"><span class="pre">reflectodd</span></code>) , we set <span class="math notranslate nohighlight">\(u_L = u_R = 0.\)</span></p></li>
-</ul>
-</li>
-<li><p>To prohibit back flow into the domain at an outflow face (<code class="docutils literal notranslate"><span class="pre">foextrap</span></code> or <code class="docutils literal notranslate"><span class="pre">hoextrap</span></code> mathematical BCs):</p>
-<ul class="simple">
-<li><p>on the low side, we set <span class="math notranslate nohighlight">\(u_L = u_R = \min (u_R, 0).\)</span></p></li>
-<li><p>on the high side, we set <span class="math notranslate nohighlight">\(u_L = u_R = \max (u_L, 0).\)</span></p></li>
-</ul>
-</li>
-</ol>
-<p>For the post-MAC edge state,</p>
-<ol class="arabic simple">
-<li><p>Same as pre-MAC</p></li>
-<li><p>Same as pre-MAC</p></li>
-<li><p>Here, we do not impose the <span class="target" id="no-inflow-at-outflow">no-inflow-at-outflow</span> condition quite as described above;
-instead we enforce that if <span class="math notranslate nohighlight">\(u^{MAC}\)</span> on an outflow face is inflowing,
-the normal velocity component must be outflowing or zero. We do this by imposing</p>
-<ul class="simple">
-<li><p>on the low side, if <span class="math notranslate nohighlight">\(u^{MAC}\ge 0\)</span> (i.e the flow is
-coming in at an outflow face) and <span class="math notranslate nohighlight">\(s\)</span> is the x-velocity, then
-<span class="math notranslate nohighlight">\(s_L = s_R = \min(s_R,0).\)</span></p></li>
-<li><p>on the high side, if <span class="math notranslate nohighlight">\(u^{MAC}&lt;= 0\)</span> on the domain face, then
-<span class="math notranslate nohighlight">\(s_L = s_R = \max(s_L,0).\)</span></p></li>
-</ul>
-</li>
-</ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Boundary conditions are imposed before the upwinding described in the <a class="reference internal" href="Schemes.html#schemes"><span class="std std-ref">Advection schemes</span></a> section.</p>
-</div>
-<p>API documentation can be found in the Doxygen Technical Reference,
-functions <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#ab90f8ce229a7ebbc521dc27d65f2db9a">SetXEdgeBCs</a>, <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#a6865c2cfd50cc95f9b69ded1e8ac78ab">SetYEdgeBCs</a>, <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#a19ddc5ac50e9a6b9a98bc17f3815a62e">SetZEdgeBCs</a> .</p>
 <div class="math notranslate nohighlight">
 \[\newcommand{\half}{\frac{1}{2}}
 \newcommand{\nph}{{n + \half}}
@@ -465,7 +404,7 @@ If the variable, <span class="math notranslate nohighlight">\(s\)</span> is to b
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Projections.html" class="btn btn-neutral float-left" title="Projection Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bcs.html" class="btn btn-neutral float-left" title="Boundary conditions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="references.html" class="btn btn-neutral float-right" title="References" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

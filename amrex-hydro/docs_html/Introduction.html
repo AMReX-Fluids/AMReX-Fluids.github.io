@@ -54,6 +54,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">References</span></p>
@@ -107,7 +108,7 @@ is as follows:</p>
 <li><p>Difference fluxes to create the convective term.</p></li>
 </ol>
 <p>AMReX-Hydro provides routines to support all of these steps.
-Here we group the AMReX-Hydro routines into a few general categories and map them to the step(s) they address:</p>
+Here we group the routines into a few general categories and map them to the step(s) they address:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="Schemes.html#schemes"><span class="std std-ref">Advection schemes</span></a>: the fundamental algorithm is either a Method-of-Lines (MOL) or Godunov approach
 (used in steps 1 and 3).</p></li>
@@ -120,7 +121,7 @@ velocity field, with pressure and velocity divergence defined on nodes
 cell-centered velocity update that approximately obeys a divergence constraint).</p></li>
 </ul>
 </li>
-<li><p><span class="xref std std-ref">Redistribution:Redistribution</span> schemes: to address the “small cell problem” associated with explicit cut
+<li><p><a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/EB.html#sec-eb-redistribution" title="(in amrex v24.04-dev)"><span class="xref std std-ref">Redistribution</span></a>: AMReX contains schemes to address the “small cell problem” associated with explicit cut
 cell algorithms (part of step 4 for problems with embedded boundaries).</p></li>
 <li><p><a class="reference internal" href="Utilities.html#utilities"><span class="std std-ref">Helper functions</span></a>: to do things like compute slopes, create fluxes from face-centered values, and
 create the convective term from fluxes (used in all but step 2).</p></li>
