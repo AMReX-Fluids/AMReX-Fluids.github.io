@@ -77,7 +77,7 @@ var NAVTREEINDEX =
 "namespaceamrex.html#aeaa559cd77a4c889c84b144f59a6e35c",
 "namespaceamrex_1_1EB2.html#a1f2e881daa9ff0a537137a2e09129db9",
 "namespaceamrex_1_1NonLocalBC.html#a22290d0dc38cd0254f5d14100fec970f",
-"namespaceamrex_1_1ParallelDescriptor.html#ae4f551d40d14c8bbfaff946737d15abf",
+"namespaceamrex_1_1ParallelDescriptor.html#ae9b60ea81eb861f883e02edaa5876d08",
 "namespaceamrex_1_1fudetail.html#ad331e3b14cc77e45fb756249c4b055ea",
 "namespaceamrex__paralleldescriptor__module.html#a0b4f88406790fe12faee067b036014bb"
 ];
