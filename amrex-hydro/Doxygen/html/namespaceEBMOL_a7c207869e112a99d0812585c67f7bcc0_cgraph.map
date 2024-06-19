@@ -1,6 +1,7 @@
 <map id="EBMOL::hydro_ebmol_yedge_state" name="EBMOL::hydro_ebmol_yedge_state">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,167,90"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a38d942498aebd0b51855a9b85ed184f5" title=" " alt="" coords="251,5,352,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="253,56,350,83"/>
-<area shape="rect" id="node4" href="$namespaceHydroBC.html#ab483be498f1f0c98923a5e6cde92841a" title="Boundary condition effects." alt="" coords="215,107,388,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,167,115"/>
+<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__EB__Slopes__2D__K_8H.html#a33294f2bff9da00f86b2681b969465a4" title=" " alt="" coords="219,5,383,32"/>
+<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a38d942498aebd0b51855a9b85ed184f5" title=" " alt="" coords="251,56,352,83"/>
+<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="253,107,350,133"/>
+<area shape="rect" id="node5" href="$namespaceHydroBC.html#ab483be498f1f0c98923a5e6cde92841a" title="Boundary condition effects." alt="" coords="215,157,388,184"/>
 </map>
