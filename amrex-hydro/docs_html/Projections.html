@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projection Methods &mdash; amrex-hydro 24.07-dev documentation</title>
+  <title>Projection Methods &mdash; amrex-hydro 24.08-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -16,7 +16,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=39e2e506"></script>
+        <script src="_static/documentation_options.js?v=2064b023"></script>
         <script src="_static/doctools.js?v=9a2dae69"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -39,7 +39,7 @@
             amrex-hydro
           </a>
               <div class="version">
-                24.07-dev
+                24.08-dev
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -121,7 +121,7 @@ time-explicitly, and the time step will be constrained by the time
 it takes for the maximum characteristic speed to traverse one grid cell.
 However, in low speed flow applications, it can be shown the acoustics
 transport very little energy in the system. As a result, the time-step
-restrictions arising from numerical treatement of the advection terms
+restrictions arising from numerical treatment of the advection terms
 can be unnecessarily limited, even if A-stable methods are used to incorporate
 the diffusion and source terms.</p>
 <p>In contrast, solving incompressible or low Mach number systems
@@ -184,10 +184,10 @@ velocity fields. The projection classes use AMReX’s linear solvers internally.
 Both classes provide member functions <code class="docutils literal notranslate"><span class="pre">getLinOp</span></code> and <code class="docutils literal notranslate"><span class="pre">getMLMG</span></code> to
 access the underlying objects and allow for modification of the linear operator
 and multigrid properties if needed.
-Details of the linear solver implementations are in the <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers_Chapter.html#chap-linearsolvers" title="(in amrex v24.07-dev)"><span>Linear Solvers</span></a>
+Details of the linear solver implementations are in the <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers_Chapter.html#chap-linearsolvers" title="(in amrex v24.08-dev)"><span>Linear Solvers</span></a>
 section of AMReX’s documentation.</p>
 <p id="projections-inputs">Both Projector classes provide the following parameters, which can be set in an
-inputs file or on the command line. For the MacProjector, these must be preceeded by
+inputs file or on the command line. For the MacProjector, these must be preceded by
 “mac_proj.”, or for the NodalProjector, “nodal_proj.”</p>
 <table class="docutils align-default">
 <tbody>
@@ -387,7 +387,7 @@ pressure gradient that makes this projection approximate rather than exact.</p>
 operator like the MAC projection; instead we demonstrate below the steps needed
 to compute the approximate projection.  This means we must</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">NodalProjector</span></code> class can be used to solve the nodal projection without explicitly
-calling the linear solver. In addtion to solving the nodal variable coefficient Poisson
+calling the linear solver. In addition to solving the nodal variable coefficient Poisson
 equation, it internally computes the right-hand-side,
 including the the divergence of the vector field, <span class="math notranslate nohighlight">\(D(U^*)\)</span>,
 and also subtracts the weighted gradient term to make the vector field result satisfy the
