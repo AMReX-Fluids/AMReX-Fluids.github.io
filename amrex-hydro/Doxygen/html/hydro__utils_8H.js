@@ -5,5 +5,6 @@ var hydro__utils_8H =
     [ "ComputeFluxes", "hydro__utils_8H.html#aa5cb5bc85975721c20ff752999c24113", null ],
     [ "ComputeFluxesOnBoxFromState", "hydro__utils_8H.html#a2807f3b139a9e44772738f185941754f", null ],
     [ "ComputeFluxesOnBoxFromState", "hydro__utils_8H.html#a841eb2f0bacd34bffc8c0ea174bb3ddf", null ],
+    [ "enforceInOutSolvability", "hydro__utils_8H.html#a3c4af1f820880e67509b84b57e988090", null ],
     [ "ExtrapVelToFaces", "hydro__utils_8H.html#ga463677066750bc92736bb20fcd1dc458", null ]
 ];

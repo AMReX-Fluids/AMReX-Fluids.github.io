@@ -112,6 +112,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga5677f456538ed66e94185b0050bc6e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Utilities.html#ga5677f456538ed66e94185b0050bc6e2d">HydroUtils::enforceInOutSolvability</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afe930d74045516fece8591f173e57007">Array</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">MultiFab</a> *, AMREX_SPACEDIM &gt;&gt; &amp;vels_vec, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">BCRec</a> *bc_type, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">Geometry</a> &gt; &amp;geom, bool include_bndry_corners)</td></tr>
+<tr class="separator:ga5677f456538ed66e94185b0050bc6e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga463677066750bc92736bb20fcd1dc458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Utilities.html#ga463677066750bc92736bb20fcd1dc458">HydroUtils::ExtrapVelToFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;vel, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;vel_forces, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;u_mac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;v_mac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;w_mac), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> &gt; const &amp;h_bcrec, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *d_bcrec, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> &amp;geom, amrex::Real dt, bool godunov_ppm, bool godunov_use_forces_in_trans, std::string const &amp;advection_type, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> limiter_type=<a class="el" href="namespacePPM.html#a4f476328680db9ab71492a158fce0749">PPM::default_limiter</a>, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1iMultiFab.html">amrex::iMultiFab</a> *BC_MF=nullptr)</td></tr>
 <tr class="memdesc:ga463677066750bc92736bb20fcd1dc458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute edge state and flux. For typical advection, but no inflow through EB.  <a href="group__Utilities.html#ga463677066750bc92736bb20fcd1dc458">More...</a><br /></td></tr>
 <tr class="separator:ga463677066750bc92736bb20fcd1dc458"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +173,57 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga5677f456538ed66e94185b0050bc6e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5677f456538ed66e94185b0050bc6e2d">&#9670;&nbsp;</a></span>enforceInOutSolvability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HydroUtils::enforceInOutSolvability </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afe930d74045516fece8591f173e57007">Array</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">MultiFab</a> *, AMREX_SPACEDIM &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>vels_vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">BCRec</a> *&#160;</td>
+          <td class="paramname"><em>bc_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">Geometry</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>geom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>include_bndry_corners</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__Utilities_ga5677f456538ed66e94185b0050bc6e2d_cgraph.png" border="0" usemap="#agroup__Utilities_ga5677f456538ed66e94185b0050bc6e2d_cgraph" alt=""/></div>
+<map name="agroup__Utilities_ga5677f456538ed66e94185b0050bc6e2d_cgraph" id="agroup__Utilities_ga5677f456538ed66e94185b0050bc6e2d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,188,112"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IndexTypeND.html#a0d06bd2cc857a9cf3098d16996a1ddd7" title=" " alt="" coords="262,5,433,47"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IndexTypeND.html#aaf1da8aada1297fd8fe20996221eec6c" title=" " alt="" coords="262,71,433,112"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVectND.html#a8b82ed00d8be373e9a5015d74cf04351" title=" " alt="" coords="236,136,459,177"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ga463677066750bc92736bb20fcd1dc458"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga463677066750bc92736bb20fcd1dc458">&#9670;&nbsp;</a></span>ExtrapVelToFaces()</h2>
 
