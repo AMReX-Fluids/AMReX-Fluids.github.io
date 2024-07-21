@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enforcing inflow-outflow solvability &mdash; amrex-hydro 24.08-dev documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2064b023"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            amrex-hydro
+          </a>
+              <div class="version">
+                24.08-dev
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">amrex-hydro</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Enforcing inflow-outflow solvability</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/InOutSolvability.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="math notranslate nohighlight">
+\[\newcommand{\half}{\frac{1}{2}}
+\newcommand{\nph}{{n + \half}}
+\newcommand{\nmh}{{n - \frac{1}{2}}}
+\newcommand{\iphj}{{i+\frac{1}{2},j,k}}
+\newcommand{\ijph}{{i,j+\frac{1}{2}},k}
+\newcommand{\imhj}{{i-\frac{1}{2},j,k}}
+\newcommand{\ijmh}{{i,j-\frac{1}{2}},k}
+\newcommand{\ijkmh}{{i,j,k-\frac{1}{2}}}
+\newcommand{\ijkph}{{i,j,k+\frac{1}{2}}}
+\newcommand{\grad}{\nabla}
+\newcommand{\del}{\nabla}
+\newcommand{\AN}{[(U \cdot \nabla)U]^{n+\frac{1}{2}}}
+\newcommand{\npk}{{n + \frac{p+\half}{R}}}
+\newcommand{\nak}{{n + \frac{p}{R}}}
+\newcommand{\nmk}{{n + \frac{p-\half}{R}}}
+\newcommand{\iph}{i+\half}
+\newcommand{\imh}{i-\half}
+\newcommand{\ipmh}{i\pm\half}
+\newcommand{\jph}{j+\half}
+\newcommand{\jmh}{j-\half}
+\newcommand{\jpmh}{j\pm\half}
+\newcommand{\kph}{k+\half}
+\newcommand{\kmh}{k-\half}
+\newcommand{\GMAC}{C \rightarrow E}
+\newcommand{\DMAC}{E \rightarrow C}
+\newcommand{\U}{\boldsymbol{U}}
+\newcommand{\F}{\boldsymbol{F}}
+\newcommand{\dt}{\Delta t}
+\newcommand{\shalf}{\sfrac{1}{2}}
+\newcommand\hathat[1]{\widehat{\widehat{#1}}}
+\newcommand\hairbow[1]{\overset{\bowtie}{#1}}
+\newcommand\widebreve[1]{\overset{\smile}{#1}}
+\newcommand{\vol}{\mathcal{V}}
+\newcommand{\area}{\mathcal{A}}\]</div>
+<section id="enforcing-inflow-outflow-solvability">
+<h1>Enforcing inflow-outflow solvability<a class="headerlink" href="#enforcing-inflow-outflow-solvability" title="Link to this heading"></a></h1>
+<p>This routine enforces solvability for inflow-outflow boundaries,
+which have both inflow and outflow cells.
+A flux correction factor, <span class="math notranslate nohighlight">\(\alpha_\text{fcf}\)</span> is introduced
+which scales the outflow velocities to match the inflow:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{\partial\Omega_\text{in}} {\bf u} \cdot {\bf \area} + \alpha_\text{fcf} \sum_{\partial\Omega_\text{out}} {\bf u} \cdot {\bf \area} = 0\]</div>
+<p>The new flux-conserving velocities to be used for the MAC/nodal projections,
+<span class="math notranslate nohighlight">\({\bf u}_\text{fc}\)</span>, are calculated from the correction factor as:</p>
+<div class="math notranslate nohighlight">
+\[\alpha_\text{fcf} = \frac{-\sum_{\partial\Omega_\text{in}} {\bf u} \cdot {\bf \area}}{\sum_{\partial\Omega_\text{out}} {\bf u} \cdot {\bf \area}},\]</div>
+<div class="math notranslate nohighlight">
+\[{\bf u}_\text{fc} = \alpha_\text{fcf} \cdot {\bf u}, \ \forall {\bf x} \in  \partial\Omega_\text{out}.\]</div>
+<p>It must be noted that this routine currently only accounts for boundaries
+with the math BC <code class="docutils literal notranslate"><span class="pre">BCType::direction_dependent</span></code>, which is to be used for
+an inflow-outflow boundary. It does not compute or correct the boundary velocities
+over other math BC types such as those representing pure inflow or pure outflow.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2018, AMReX-Hydro Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

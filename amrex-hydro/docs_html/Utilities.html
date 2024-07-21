@@ -70,6 +70,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#extensive-fluxes">Extensive fluxes</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#enforcing-inflow-outflow-solvability">Enforcing inflow-outflow solvability</a></li>
 </ul>
 </li>
 </ul>
@@ -396,7 +397,61 @@ If the variable, <span class="math notranslate nohighlight">\(s\)</span> is to b
                  s_{i-\frac{1}{2},j,k}^{{n+\frac{1}{2}}} + s_{i+\frac{1}{2},j,k}^{{n+\frac{1}{2}}}
              +   s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}} + s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}}
              +   s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} + s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} )\]</div>
+<div class="math notranslate nohighlight">
+\[\newcommand{\half}{\frac{1}{2}}
+\newcommand{\nph}{{n + \half}}
+\newcommand{\nmh}{{n - \frac{1}{2}}}
+\newcommand{\iphj}{{i+\frac{1}{2},j,k}}
+\newcommand{\ijph}{{i,j+\frac{1}{2}},k}
+\newcommand{\imhj}{{i-\frac{1}{2},j,k}}
+\newcommand{\ijmh}{{i,j-\frac{1}{2}},k}
+\newcommand{\ijkmh}{{i,j,k-\frac{1}{2}}}
+\newcommand{\ijkph}{{i,j,k+\frac{1}{2}}}
+\newcommand{\grad}{\nabla}
+\newcommand{\del}{\nabla}
+\newcommand{\AN}{[(U \cdot \nabla)U]^{n+\frac{1}{2}}}
+\newcommand{\npk}{{n + \frac{p+\half}{R}}}
+\newcommand{\nak}{{n + \frac{p}{R}}}
+\newcommand{\nmk}{{n + \frac{p-\half}{R}}}
+\newcommand{\iph}{i+\half}
+\newcommand{\imh}{i-\half}
+\newcommand{\ipmh}{i\pm\half}
+\newcommand{\jph}{j+\half}
+\newcommand{\jmh}{j-\half}
+\newcommand{\jpmh}{j\pm\half}
+\newcommand{\kph}{k+\half}
+\newcommand{\kmh}{k-\half}
+\newcommand{\GMAC}{C \rightarrow E}
+\newcommand{\DMAC}{E \rightarrow C}
+\newcommand{\U}{\boldsymbol{U}}
+\newcommand{\F}{\boldsymbol{F}}
+\newcommand{\dt}{\Delta t}
+\newcommand{\shalf}{\sfrac{1}{2}}
+\newcommand\hathat[1]{\widehat{\widehat{#1}}}
+\newcommand\hairbow[1]{\overset{\bowtie}{#1}}
+\newcommand\widebreve[1]{\overset{\smile}{#1}}
+\newcommand{\vol}{\mathcal{V}}
+\newcommand{\area}{\mathcal{A}}\]</div>
 </section>
+</section>
+<section id="enforcing-inflow-outflow-solvability">
+<h2>Enforcing inflow-outflow solvability<a class="headerlink" href="#enforcing-inflow-outflow-solvability" title="Link to this heading"></a></h2>
+<p>This routine enforces solvability for inflow-outflow boundaries,
+which have both inflow and outflow cells.
+A flux correction factor, <span class="math notranslate nohighlight">\(\alpha_\text{fcf}\)</span> is introduced
+which scales the outflow velocities to match the inflow:</p>
+<div class="math notranslate nohighlight">
+\[\sum_{\partial\Omega_\text{in}} {\bf u} \cdot {\bf \area} + \alpha_\text{fcf} \sum_{\partial\Omega_\text{out}} {\bf u} \cdot {\bf \area} = 0\]</div>
+<p>The new flux-conserving velocities to be used for the MAC/nodal projections,
+<span class="math notranslate nohighlight">\({\bf u}_\text{fc}\)</span>, are calculated from the correction factor as:</p>
+<div class="math notranslate nohighlight">
+\[\alpha_\text{fcf} = \frac{-\sum_{\partial\Omega_\text{in}} {\bf u} \cdot {\bf \area}}{\sum_{\partial\Omega_\text{out}} {\bf u} \cdot {\bf \area}},\]</div>
+<div class="math notranslate nohighlight">
+\[{\bf u}_\text{fc} = \alpha_\text{fcf} \cdot {\bf u}, \ \forall {\bf x} \in  \partial\Omega_\text{out}.\]</div>
+<p>It must be noted that this routine currently only accounts for boundaries
+with the math BC <code class="docutils literal notranslate"><span class="pre">BCType::direction_dependent</span></code>, which is to be used for
+an inflow-outflow boundary. It does not compute or correct the boundary velocities
+over other math BC types such as those representing pure inflow or pure outflow.</p>
 </section>
 </section>
 
