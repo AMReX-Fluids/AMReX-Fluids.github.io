@@ -9,12 +9,12 @@ var namespacePPM =
       [ "NoLimiter", "namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5aba5f65ef6793674226f652b7f0119e16", null ]
     ] ],
     [ "PredictStateOnFaces", "namespacePPM.html#acc43ed98677d40c3b0cd8ea5326e7d5d", null ],
-    [ "PredictStateOnXFace", "namespacePPM.html#a28507e3b28d4397f6abfb6ad8c6cbf57", null ],
-    [ "PredictStateOnYFace", "namespacePPM.html#adacb69e879ed8e48037a90602b689caa", null ],
+    [ "PredictStateOnXFace", "namespacePPM.html#a11303ff035a1a159d70415d510483430", null ],
+    [ "PredictStateOnYFace", "namespacePPM.html#a70abc2e2dd9b19e5e80e217de7c225c1", null ],
     [ "PredictVelOnFaces", "namespacePPM.html#afc01feca9b1f93c06521af5d6591c22c", null ],
-    [ "PredictVelOnXFace", "namespacePPM.html#a0a0110d8dfa18fa2fe6954d12e4a6fb4", null ],
-    [ "PredictVelOnYFace", "namespacePPM.html#a8ee27ffd8e064c6bc4c3e2c435c19839", null ],
-    [ "SetXBCs", "namespacePPM.html#ad85420c7eb91daa7c5191645dc9df8af", null ],
-    [ "SetYBCs", "namespacePPM.html#a3f213383b8b4ef5c55827c34cd162869", null ],
+    [ "PredictVelOnXFace", "namespacePPM.html#adb2496aca52fb5c10215b6b2e51dd56a", null ],
+    [ "PredictVelOnYFace", "namespacePPM.html#a2508ebdfc4ebe06e3a4a4b3b45e1e14f", null ],
+    [ "SetXBCs", "namespacePPM.html#ad5bb40375d5bfdec96a5906cf7ef365d", null ],
+    [ "SetYBCs", "namespacePPM.html#aa3ffd2df3e546aecfc2301f5b6f8f7d0", null ],
     [ "default_limiter", "namespacePPM.html#a4f476328680db9ab71492a158fce0749", null ]
 ];

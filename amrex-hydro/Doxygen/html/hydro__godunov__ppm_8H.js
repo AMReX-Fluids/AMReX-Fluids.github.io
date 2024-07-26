@@ -9,12 +9,12 @@ var hydro__godunov__ppm_8H =
       [ "NoLimiter", "hydro__godunov__ppm_8H.html#afde008f2efff2705e2231ca88ed08ff5aba5f65ef6793674226f652b7f0119e16", null ]
     ] ],
     [ "PredictStateOnFaces", "hydro__godunov__ppm_8H.html#acc43ed98677d40c3b0cd8ea5326e7d5d", null ],
-    [ "PredictStateOnXFace", "hydro__godunov__ppm_8H.html#a28507e3b28d4397f6abfb6ad8c6cbf57", null ],
-    [ "PredictStateOnYFace", "hydro__godunov__ppm_8H.html#adacb69e879ed8e48037a90602b689caa", null ],
+    [ "PredictStateOnXFace", "hydro__godunov__ppm_8H.html#a11303ff035a1a159d70415d510483430", null ],
+    [ "PredictStateOnYFace", "hydro__godunov__ppm_8H.html#a70abc2e2dd9b19e5e80e217de7c225c1", null ],
     [ "PredictVelOnFaces", "hydro__godunov__ppm_8H.html#afc01feca9b1f93c06521af5d6591c22c", null ],
-    [ "PredictVelOnXFace", "hydro__godunov__ppm_8H.html#a0a0110d8dfa18fa2fe6954d12e4a6fb4", null ],
-    [ "PredictVelOnYFace", "hydro__godunov__ppm_8H.html#a8ee27ffd8e064c6bc4c3e2c435c19839", null ],
-    [ "SetXBCs", "hydro__godunov__ppm_8H.html#ad85420c7eb91daa7c5191645dc9df8af", null ],
-    [ "SetYBCs", "hydro__godunov__ppm_8H.html#a3f213383b8b4ef5c55827c34cd162869", null ],
+    [ "PredictVelOnXFace", "hydro__godunov__ppm_8H.html#adb2496aca52fb5c10215b6b2e51dd56a", null ],
+    [ "PredictVelOnYFace", "hydro__godunov__ppm_8H.html#a2508ebdfc4ebe06e3a4a4b3b45e1e14f", null ],
+    [ "SetXBCs", "hydro__godunov__ppm_8H.html#ad5bb40375d5bfdec96a5906cf7ef365d", null ],
+    [ "SetYBCs", "hydro__godunov__ppm_8H.html#aa3ffd2df3e546aecfc2301f5b6f8f7d0", null ],
     [ "default_limiter", "hydro__godunov__ppm_8H.html#a4f476328680db9ab71492a158fce0749", null ]
 ];

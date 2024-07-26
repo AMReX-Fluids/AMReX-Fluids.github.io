@@ -93,9 +93,7 @@ $(document).ready(function(){initNavTree('structPPM_1_1vanleer.html',''); initRe
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structPPM_1_1vanleer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PPM::vanleer Struct Reference</div>  </div>
@@ -104,58 +102,20 @@ $(document).ready(function(){initNavTree('structPPM_1_1vanleer.html',''); initRe
 
 <p><code>#include &lt;<a class="el" href="hydro__godunov__ppm_8H_source.html">hydro_godunov_ppm.H</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a250c9a06130d7a2f0edd20d7724bd311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a250c9a06130d7a2f0edd20d7724bd311">vanleer</a> ()=default</td></tr>
-<tr class="separator:a250c9a06130d7a2f0edd20d7724bd311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2c404b618301333ce1b27c16a3ed63"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a7a2c404b618301333ce1b27c16a3ed63">vanLeer</a> (const amrex::Real a, const amrex::Real b, const amrex::Real c) const</td></tr>
-<tr class="separator:a7a2c404b618301333ce1b27c16a3ed63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7386a804644593d9f46d06d6063ed2c4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a7386a804644593d9f46d06d6063ed2c4">sedge1</a> (const amrex::Real sm2, const amrex::Real sm1, const amrex::Real s0, const amrex::Real sp1, const amrex::Real) const</td></tr>
-<tr class="separator:a7386a804644593d9f46d06d6063ed2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a843dcdc5a6d70eece46b83216abb2557"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a843dcdc5a6d70eece46b83216abb2557">sedge2</a> (const amrex::Real, const amrex::Real sm1, const amrex::Real s0, const amrex::Real sp1, const amrex::Real sp2) const</td></tr>
-<tr class="separator:a843dcdc5a6d70eece46b83216abb2557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a89d59a882b597ab6aafa450b5b91bdbb"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1GpuTuple.html">amrex::GpuTuple</a>&lt; amrex::Real, amrex::Real &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a89d59a882b597ab6aafa450b5b91bdbb">sm_sp</a> (const amrex::Real s0, const amrex::Real <a class="el" href="structPPM_1_1vanleer.html#a7386a804644593d9f46d06d6063ed2c4">sedge1</a>, const amrex::Real <a class="el" href="structPPM_1_1vanleer.html#a843dcdc5a6d70eece46b83216abb2557">sedge2</a>)</td></tr>
-<tr class="separator:a89d59a882b597ab6aafa450b5b91bdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:acf7eaf09e4ff9d53e91e9d917f559f2d"><td class="memItemLeft" align="right" valign="top">const amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#acf7eaf09e4ff9d53e91e9d917f559f2d">m_half</a> {amrex::Real(0.5)}</td></tr>
-<tr class="separator:acf7eaf09e4ff9d53e91e9d917f559f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21bf9fe7b3c52caeb5ce120ed0addcd1"><td class="memItemLeft" align="right" valign="top">const amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a21bf9fe7b3c52caeb5ce120ed0addcd1">m_sixth</a> {amrex::Real(1.0)/amrex::Real(6.0)}</td></tr>
-<tr class="separator:a21bf9fe7b3c52caeb5ce120ed0addcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b61be2b2ab4f4ccda5b7e9208a5ee2d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a7b61be2b2ab4f4ccda5b7e9208a5ee2d">vanLeer</a> (const amrex::Real a, const amrex::Real b, const amrex::Real c)</td></tr>
+<tr class="separator:a7b61be2b2ab4f4ccda5b7e9208a5ee2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdd1c9ff59a751cd3dc103b26bdd64d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#affdd1c9ff59a751cd3dc103b26bdd64d">sedge1</a> (const amrex::Real sm2, const amrex::Real sm1, const amrex::Real s0, const amrex::Real sp1, const amrex::Real)</td></tr>
+<tr class="separator:affdd1c9ff59a751cd3dc103b26bdd64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a428f7a0db589ef01140974429b5122"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a6a428f7a0db589ef01140974429b5122">sedge2</a> (const amrex::Real, const amrex::Real sm1, const amrex::Real s0, const amrex::Real sp1, const amrex::Real sp2)</td></tr>
+<tr class="separator:a6a428f7a0db589ef01140974429b5122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fa76480e9a228cbf70392c0928fc13"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1GpuTuple.html">amrex::GpuTuple</a>&lt; amrex::Real, amrex::Real &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1vanleer.html#a89fa76480e9a228cbf70392c0928fc13">sm_sp</a> (const amrex::Real s0, const amrex::Real <a class="el" href="structPPM_1_1vanleer.html#affdd1c9ff59a751cd3dc103b26bdd64d">sedge1</a>, const amrex::Real <a class="el" href="structPPM_1_1vanleer.html#a6a428f7a0db589ef01140974429b5122">sedge2</a>)</td></tr>
+<tr class="separator:a89fa76480e9a228cbf70392c0928fc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a250c9a06130d7a2f0edd20d7724bd311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250c9a06130d7a2f0edd20d7724bd311">&#9670;&nbsp;</a></span>vanleer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PPM::vanleer::vanleer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7386a804644593d9f46d06d6063ed2c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7386a804644593d9f46d06d6063ed2c4">&#9670;&nbsp;</a></span>sedge1()</h2>
+<a id="affdd1c9ff59a751cd3dc103b26bdd64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affdd1c9ff59a751cd3dc103b26bdd64d">&#9670;&nbsp;</a></span>sedge1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +124,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real PPM::vanleer::sedge1 </td>
+          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real PPM::vanleer::sedge1 </td>
           <td>(</td>
           <td class="paramtype">const amrex::Real&#160;</td>
           <td class="paramname"><em>sm2</em>, </td>
@@ -196,40 +156,40 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_cgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_cgraph" id="astructPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_cgraph">
+<div class="center"><img src="structPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_cgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_cgraph" id="astructPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,168,83"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a38d942498aebd0b51855a9b85ed184f5" title=" " alt="" coords="249,5,350,32"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="431,81,528,108"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a7a2c404b618301333ce1b27c16a3ed63" title=" " alt="" coords="216,107,383,133"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a7b61be2b2ab4f4ccda5b7e9208a5ee2d" title=" " alt="" coords="216,107,383,133"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_icgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_icgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_icgraph" id="astructPPM_1_1vanleer_a7386a804644593d9f46d06d6063ed2c4_icgraph">
+<div class="center"><img src="structPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_icgraph.png" border="0" usemap="#astructPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_icgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_icgraph" id="astructPPM_1_1vanleer_affdd1c9ff59a751cd3dc103b26bdd64d_icgraph">
 <area shape="rect" title=" " alt="" coords="211,5,373,32"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a89d59a882b597ab6aafa450b5b91bdbb" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a89fa76480e9a228cbf70392c0928fc13" title=" " alt="" coords="5,5,163,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a843dcdc5a6d70eece46b83216abb2557"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a843dcdc5a6d70eece46b83216abb2557">&#9670;&nbsp;</a></span>sedge2()</h2>
+<a id="a6a428f7a0db589ef01140974429b5122"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a428f7a0db589ef01140974429b5122">&#9670;&nbsp;</a></span>sedge2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +198,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real PPM::vanleer::sedge2 </td>
+          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real PPM::vanleer::sedge2 </td>
           <td>(</td>
           <td class="paramtype">const amrex::Real&#160;</td>
           <td class="paramname">, </td>
@@ -270,40 +230,40 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_cgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_cgraph" id="astructPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_cgraph">
+<div class="center"><img src="structPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_cgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_cgraph" id="astructPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,168,83"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a38d942498aebd0b51855a9b85ed184f5" title=" " alt="" coords="249,5,350,32"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="431,81,528,108"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a7a2c404b618301333ce1b27c16a3ed63" title=" " alt="" coords="216,107,383,133"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a7b61be2b2ab4f4ccda5b7e9208a5ee2d" title=" " alt="" coords="216,107,383,133"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_icgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_icgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_icgraph" id="astructPPM_1_1vanleer_a843dcdc5a6d70eece46b83216abb2557_icgraph">
+<div class="center"><img src="structPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_icgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_icgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_icgraph" id="astructPPM_1_1vanleer_a6a428f7a0db589ef01140974429b5122_icgraph">
 <area shape="rect" title=" " alt="" coords="211,5,373,32"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a89d59a882b597ab6aafa450b5b91bdbb" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a89fa76480e9a228cbf70392c0928fc13" title=" " alt="" coords="5,5,163,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a89d59a882b597ab6aafa450b5b91bdbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89d59a882b597ab6aafa450b5b91bdbb">&#9670;&nbsp;</a></span>sm_sp()</h2>
+<a id="a89fa76480e9a228cbf70392c0928fc13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89fa76480e9a228cbf70392c0928fc13">&#9670;&nbsp;</a></span>sm_sp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +272,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1GpuTuple.html">amrex::GpuTuple</a>&lt;amrex::Real,amrex::Real&gt; PPM::vanleer::sm_sp </td>
+          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1GpuTuple.html">amrex::GpuTuple</a>&lt;amrex::Real,amrex::Real&gt; PPM::vanleer::sm_sp </td>
           <td>(</td>
           <td class="paramtype">const amrex::Real&#160;</td>
           <td class="paramname"><em>s0</em>, </td>
@@ -344,22 +304,22 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a89d59a882b597ab6aafa450b5b91bdbb_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a89d59a882b597ab6aafa450b5b91bdbb_cgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a89d59a882b597ab6aafa450b5b91bdbb_cgraph" id="astructPPM_1_1vanleer_a89d59a882b597ab6aafa450b5b91bdbb_cgraph">
+<div class="center"><img src="structPPM_1_1vanleer_a89fa76480e9a228cbf70392c0928fc13_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a89fa76480e9a228cbf70392c0928fc13_cgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_a89fa76480e9a228cbf70392c0928fc13_cgraph" id="astructPPM_1_1vanleer_a89fa76480e9a228cbf70392c0928fc13_cgraph">
 <area shape="rect" title=" " alt="" coords="5,56,163,83"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a546f82ad84c1f122bb9bf89dcaa2b7a3" title=" " alt="" coords="221,5,363,32"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a7386a804644593d9f46d06d6063ed2c4" title=" " alt="" coords="211,107,373,133"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a843dcdc5a6d70eece46b83216abb2557" title=" " alt="" coords="211,56,373,83"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#affdd1c9ff59a751cd3dc103b26bdd64d" title=" " alt="" coords="211,107,373,133"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a6a428f7a0db589ef01140974429b5122" title=" " alt="" coords="211,56,373,83"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a38d942498aebd0b51855a9b85ed184f5" title=" " alt="" coords="454,56,555,83"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="636,107,733,133"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a7a2c404b618301333ce1b27c16a3ed63" title=" " alt="" coords="421,107,588,133"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a7b61be2b2ab4f4ccda5b7e9208a5ee2d" title=" " alt="" coords="421,107,588,133"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7a2c404b618301333ce1b27c16a3ed63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a2c404b618301333ce1b27c16a3ed63">&#9670;&nbsp;</a></span>vanLeer()</h2>
+<a id="a7b61be2b2ab4f4ccda5b7e9208a5ee2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b61be2b2ab4f4ccda5b7e9208a5ee2d">&#9670;&nbsp;</a></span>vanLeer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +328,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real PPM::vanleer::vanLeer </td>
+          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> static <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> amrex::Real PPM::vanleer::vanLeer </td>
           <td>(</td>
           <td class="paramtype">const amrex::Real&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -388,20 +348,20 @@ Here is the call graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_cgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_cgraph" id="astructPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_cgraph">
+<div class="center"><img src="structPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_cgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_cgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_cgraph" id="astructPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,172,32"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="220,5,317,32"/>
 </map>
@@ -409,43 +369,14 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="structPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_icgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_icgraph" alt=""/></div>
-<map name="astructPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_icgraph" id="astructPPM_1_1vanleer_a7a2c404b618301333ce1b27c16a3ed63_icgraph">
+<div class="center"><img src="structPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_icgraph.png" border="0" usemap="#astructPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_icgraph" alt=""/></div>
+<map name="astructPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_icgraph" id="astructPPM_1_1vanleer_a7b61be2b2ab4f4ccda5b7e9208a5ee2d_icgraph">
 <area shape="rect" title=" " alt="" coords="421,31,588,57"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a7386a804644593d9f46d06d6063ed2c4" title=" " alt="" coords="211,5,373,32"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a843dcdc5a6d70eece46b83216abb2557" title=" " alt="" coords="211,56,373,83"/>
-<area shape="rect" href="structPPM_1_1vanleer.html#a89d59a882b597ab6aafa450b5b91bdbb" title=" " alt="" coords="5,31,163,57"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#affdd1c9ff59a751cd3dc103b26bdd64d" title=" " alt="" coords="211,5,373,32"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a6a428f7a0db589ef01140974429b5122" title=" " alt="" coords="211,56,373,83"/>
+<area shape="rect" href="structPPM_1_1vanleer.html#a89fa76480e9a228cbf70392c0928fc13" title=" " alt="" coords="5,31,163,57"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="acf7eaf09e4ff9d53e91e9d917f559f2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf7eaf09e4ff9d53e91e9d917f559f2d">&#9670;&nbsp;</a></span>m_half</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const amrex::Real PPM::vanleer::m_half {amrex::Real(0.5)}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a21bf9fe7b3c52caeb5ce120ed0addcd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21bf9fe7b3c52caeb5ce120ed0addcd1">&#9670;&nbsp;</a></span>m_sixth</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const amrex::Real PPM::vanleer::m_sixth {amrex::Real(1.0)/amrex::Real(6.0)}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
