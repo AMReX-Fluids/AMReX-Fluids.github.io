@@ -924,7 +924,7 @@ var namespaces_dup =
         [ "m_rank_in_node", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1ParallelDescriptor.html#ac28c7a40658a100cdc586086b19a3915", null ],
         [ "m_rank_in_processor", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1ParallelDescriptor.html#a089c919e9ff83dd0697192ff37dabbce", null ],
         [ "m_Team", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1ParallelDescriptor.html#a387acd4f26462ef60c5de9d87ef15c67", null ],
-        [ "use_gpu_aware_mpi", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1ParallelDescriptor.html#a0157ac983f712e7d9bf90cb5f8fe95cb", null ]
+        [ "use_gpu_aware_mpi", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1ParallelDescriptor.html#a95e4c6ac08c44a34028ade62e7fc3b13", null ]
       ] ],
       [ "ParallelGather", null, [
         [ "Gather", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1ParallelGather.html#ac500e0120b76d32a349a73f8ebfd36b2", null ],
@@ -1049,24 +1049,24 @@ var namespaces_dup =
         [ "post_step", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1SundialsUserFun.html#a8a07d2a186a600d4436d4be0c8b1b82d", null ]
       ] ],
       [ "system", null, [
-        [ "abort_on_unused_inputs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a2314c673c7fb0a745f50244795666cd5", null ],
-        [ "call_addr2line", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ac6fc878e47dfcc1be49df0e9769f63d6", null ],
+        [ "abort_on_unused_inputs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a331ca3fb48cd543ebe283ea5b5f4f1e0", null ],
+        [ "call_addr2line", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#aa279ec868a70bbc928de8f42b40ad6b0", null ],
         [ "Debug", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#aeb34e12844e5d37ee8582e569d702c95", null ],
         [ "error_handler", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a2ba7b9cd7c50a0eccdb6d825cc026da3", null ],
         [ "exename", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#aa338ee7ebd729e662154160b02022599", null ],
-        [ "handle_sigabrt", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a3a98219f9b87a480845ee50702a3629f", null ],
-        [ "handle_sigfpe", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a76f46dd5ad75e671af01785a297624c6", null ],
-        [ "handle_sigill", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ad45524f2293e6c912869fda4bc83d3d9", null ],
-        [ "handle_sigint", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ab2bbc5f6bf5d703bf0762b24b3c6f36e", null ],
-        [ "handle_sigsegv", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a4702b3f550d0d533a0f2afffc700296e", null ],
-        [ "handle_sigterm", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a836c83c423a648668af41b8498a0f413", null ],
+        [ "handle_sigabrt", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ac647d6ac7bde6da41a4df17667903f5c", null ],
+        [ "handle_sigfpe", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#aed8fbc02ece8f969a07df7eb54699f9e", null ],
+        [ "handle_sigill", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ad37288ab4a9e0c33cb4629bdd7aa9aa7", null ],
+        [ "handle_sigint", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a8b6473a9ec7893519014c5b9f755d75b", null ],
+        [ "handle_sigsegv", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ab759a6040b265393f64a1df720a00378", null ],
+        [ "handle_sigterm", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a99f27160395aa160e6fa8f3bc2cdf8db", null ],
         [ "init_snan", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a21025fe27bc0254f3b270587556fbfa5", null ],
         [ "NDebug", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ae1d6711c50c87572893a9c863cbaa2e2", null ],
         [ "oserr", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a1ec641702551464f7feaa4f4f225f2d7", null ],
         [ "osout", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a94b8de2ec8af3b8975c7d280254f29cf", null ],
-        [ "regtest_reduction", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a3eb118488c11fb1bd1c14334bfecc123", null ],
-        [ "signal_handling", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a268fd507e003b0a5874e56fdadd7d0f3", null ],
-        [ "throw_exception", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a37169c2ce4a6f5fd871b7bcee952f21d", null ],
+        [ "regtest_reduction", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#aa98e0456115fdf35699d683e5a4c0e84", null ],
+        [ "signal_handling", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a849ecc2f5e60d79d5ae3dfacee28ca4f", null ],
+        [ "throw_exception", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#a4a24128ba872999b0e4c702205c1ccb2", null ],
         [ "verbose", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1system.html#ae936d602185921239af1aa72bdec1cbd", null ]
       ] ],
       [ "tri_geom_ops", null, [
@@ -3281,9 +3281,9 @@ var namespaces_dup =
     ] ],
     [ "EBGodunov", "namespaceEBGodunov.html", [
       [ "ComputeAdvectiveVel", "namespaceEBGodunov.html#afb19ecbdb3559abf37dc71ac1d0e3cef", null ],
-      [ "ComputeEdgeState", "namespaceEBGodunov.html#a1aecbaf0e22c11c45bf1c86c0803c359", null ],
-      [ "ExtrapVelToFaces", "namespaceEBGodunov.html#a4f256ac03c02b51303dab98c3ebc52db", null ],
-      [ "ExtrapVelToFacesOnBox", "namespaceEBGodunov.html#a396f633781c99bb6775c69f371ddf309", null ]
+      [ "ComputeEdgeState", "namespaceEBGodunov.html#a43e3e6ff8196589a694a98e2bca3c3d7", null ],
+      [ "ExtrapVelToFaces", "namespaceEBGodunov.html#a9f011229326650b60adef228f8a54f96", null ],
+      [ "ExtrapVelToFacesOnBox", "namespaceEBGodunov.html#abcdbfbbc5a098883686937dbab7ace35", null ]
     ] ],
     [ "EBGodunovBC", "namespaceEBGodunovBC.html", [
       [ "SetXBCs", "namespaceEBGodunovBC.html#a201fb4a4c48f82f653fd5fb61090bcef", null ],
@@ -3314,9 +3314,9 @@ var namespaces_dup =
     ] ],
     [ "Godunov", "namespaceGodunov.html", [
       [ "ComputeAdvectiveVel", "namespaceGodunov.html#aca24360f0501d125940f803b83204c6d", null ],
-      [ "ComputeEdgeState", "namespaceGodunov.html#ad5b0024e8c909a73780abe20f21eae32", null ],
-      [ "ExtrapVelToFaces", "namespaceGodunov.html#a46032e37c69567b5c34a1636877a16b1", null ],
-      [ "ExtrapVelToFacesOnBox", "namespaceGodunov.html#ac86fcda925ca696afb3a028662758295", null ]
+      [ "ComputeEdgeState", "namespaceGodunov.html#a311ca843a203a766dd026cd71845f1a5", null ],
+      [ "ExtrapVelToFaces", "namespaceGodunov.html#aa28d3b1616afb53afb23edd90599bf2b", null ],
+      [ "ExtrapVelToFacesOnBox", "namespaceGodunov.html#a7ede3a0e23c54a08155c0de529607a3b", null ]
     ] ],
     [ "GodunovCornerCouple", "namespaceGodunovCornerCouple.html", [
       [ "AddCornerCoupleTermXY", "namespaceGodunovCornerCouple.html#a17e90a76c6bd319162c4e472c99e614f", null ],
@@ -3336,16 +3336,16 @@ var namespaces_dup =
       [ "ComputeConvectiveTerm", "namespaceHydroUtils.html#a0742bbe8fac4178460020a4073724d51", null ],
       [ "ComputeDivergence", "namespaceHydroUtils.html#a1d3afb180dbd69d0f79f30f74b2a5112", null ],
       [ "ComputeFluxes", "namespaceHydroUtils.html#aa5cb5bc85975721c20ff752999c24113", null ],
-      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a2807f3b139a9e44772738f185941754f", null ],
-      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a841eb2f0bacd34bffc8c0ea174bb3ddf", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#ad4bf731704049526ca1c4db1688fd5db", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#ad34f382cc6239fa7995f947090049224", null ],
       [ "enforceInOutSolvability", "namespaceHydroUtils.html#a3c4af1f820880e67509b84b57e988090", null ],
       [ "enforceInOutSolvability", "group__Utilities.html#ga5677f456538ed66e94185b0050bc6e2d", null ],
-      [ "ExtrapVelToFaces", "group__Utilities.html#ga463677066750bc92736bb20fcd1dc458", null ]
+      [ "ExtrapVelToFaces", "group__Utilities.html#gab2dc90cd2e60a11e5fae0bfa3fc68e98", null ]
     ] ],
     [ "MOL", "namespaceMOL.html", [
       [ "ComputeEdgeState", "namespaceMOL.html#adee159fbd7c101d690868db1fd6c7992", null ],
-      [ "ExtrapVelToFaces", "namespaceMOL.html#acdde2acf756048b8ef0bca332e4bf748", null ],
-      [ "ExtrapVelToFacesBox", "namespaceMOL.html#acc57b4333f30b9e781ad5c8974b05aad", null ],
+      [ "ExtrapVelToFaces", "namespaceMOL.html#a0fe3320639aceebe9c4f821287f26913", null ],
+      [ "ExtrapVelToFacesBox", "namespaceMOL.html#ac44045406d48f0a8144e60b576bb04b0", null ],
       [ "hydro_mol_xedge_state", "namespaceMOL.html#a0af7e22f67c73814e7968b5bd6e02e8a", null ],
       [ "hydro_mol_xedge_state_extdir", "namespaceMOL.html#a7eb1fa9334dbb23a3fe2f8b3f8f4087e", null ],
       [ "hydro_mol_yedge_state", "namespaceMOL.html#a5df4bf00c86eb57634b4bff1d4d3d89b", null ],

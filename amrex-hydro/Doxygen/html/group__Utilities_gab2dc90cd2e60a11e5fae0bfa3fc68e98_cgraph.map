@@ -1,0 +1,9 @@
+<map id="HydroUtils::ExtrapVelToFaces" name="HydroUtils::ExtrapVelToFaces">
+<area shape="rect" id="node1" title="Compute edge state and flux. For typical advection, but no inflow through EB." alt="" coords="5,132,216,159"/>
+<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#ad26f2328bf66aa9678347a6055a25431" title=" " alt="" coords="319,5,425,32"/>
+<area shape="rect" id="node3" href="$namespaceGodunov.html#aa28d3b1616afb53afb23edd90599bf2b" title=" " alt="" coords="273,56,471,83"/>
+<area shape="rect" id="node4" href="$namespaceEBGodunov.html#a9f011229326650b60adef228f8a54f96" title=" " alt="" coords="264,107,480,133"/>
+<area shape="rect" id="node5" href="$namespaceEBMOL.html#a7add53a153ade9c5cb83e79a61ad1929" title=" " alt="" coords="278,157,466,184"/>
+<area shape="rect" id="node6" href="$namespaceMOL.html#a0fe3320639aceebe9c4f821287f26913" title="Compute upwinded FC velocities by extrapolating CC values in SPACE ONLY." alt="" coords="287,208,457,235"/>
+<area shape="rect" id="node7" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a95b1159ba3a5494abd49dc9b3d34eacf" title=" " alt="" coords="289,259,455,285"/>
+</map>

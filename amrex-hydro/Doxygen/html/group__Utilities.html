@@ -114,9 +114,9 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga5677f456538ed66e94185b0050bc6e2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Utilities.html#ga5677f456538ed66e94185b0050bc6e2d">HydroUtils::enforceInOutSolvability</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afe930d74045516fece8591f173e57007">Array</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">MultiFab</a> *, AMREX_SPACEDIM &gt;&gt; &amp;vels_vec, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">BCRec</a> *bc_type, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">Geometry</a> &gt; &amp;geom, bool include_bndry_corners)</td></tr>
 <tr class="separator:ga5677f456538ed66e94185b0050bc6e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga463677066750bc92736bb20fcd1dc458"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Utilities.html#ga463677066750bc92736bb20fcd1dc458">HydroUtils::ExtrapVelToFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;vel, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;vel_forces, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;u_mac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;v_mac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;w_mac), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> &gt; const &amp;h_bcrec, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *d_bcrec, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> &amp;geom, amrex::Real dt, bool godunov_ppm, bool godunov_use_forces_in_trans, std::string const &amp;advection_type, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> limiter_type=<a class="el" href="namespacePPM.html#a4f476328680db9ab71492a158fce0749">PPM::default_limiter</a>, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1iMultiFab.html">amrex::iMultiFab</a> *BC_MF=nullptr)</td></tr>
-<tr class="memdesc:ga463677066750bc92736bb20fcd1dc458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute edge state and flux. For typical advection, but no inflow through EB.  <a href="group__Utilities.html#ga463677066750bc92736bb20fcd1dc458">More...</a><br /></td></tr>
-<tr class="separator:ga463677066750bc92736bb20fcd1dc458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2dc90cd2e60a11e5fae0bfa3fc68e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Utilities.html#gab2dc90cd2e60a11e5fae0bfa3fc68e98">HydroUtils::ExtrapVelToFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;vel, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;vel_forces, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;u_mac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;v_mac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;w_mac), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> &gt; const &amp;h_bcrec, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *d_bcrec, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> &amp;geom, amrex::Real dt, bool godunov_ppm, bool godunov_use_forces_in_trans, std::string const &amp;advection_type, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> limiter_type=<a class="el" href="namespacePPM.html#a4f476328680db9ab71492a158fce0749">PPM::default_limiter</a>, bool allow_inflow_on_outflow=false, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1iMultiFab.html">amrex::iMultiFab</a> *BC_MF=nullptr)</td></tr>
+<tr class="memdesc:gab2dc90cd2e60a11e5fae0bfa3fc68e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute edge state and flux. For typical advection, but no inflow through EB.  <a href="group__Utilities.html#gab2dc90cd2e60a11e5fae0bfa3fc68e98">More...</a><br /></td></tr>
+<tr class="separator:gab2dc90cd2e60a11e5fae0bfa3fc68e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -224,8 +224,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="ga463677066750bc92736bb20fcd1dc458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga463677066750bc92736bb20fcd1dc458">&#9670;&nbsp;</a></span>ExtrapVelToFaces()</h2>
+<a id="gab2dc90cd2e60a11e5fae0bfa3fc68e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2dc90cd2e60a11e5fae0bfa3fc68e98">&#9670;&nbsp;</a></span>ExtrapVelToFaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,6 +299,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow_inflow_on_outflow</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1iMultiFab.html">amrex::iMultiFab</a> *&#160;</td>
           <td class="paramname"><em>BC_MF</em> = <code>nullptr</code>&#160;</td>
         </tr>
@@ -314,14 +320,14 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__Utilities_ga463677066750bc92736bb20fcd1dc458_cgraph.png" border="0" usemap="#agroup__Utilities_ga463677066750bc92736bb20fcd1dc458_cgraph" alt=""/></div>
-<map name="agroup__Utilities_ga463677066750bc92736bb20fcd1dc458_cgraph" id="agroup__Utilities_ga463677066750bc92736bb20fcd1dc458_cgraph">
+<div class="center"><img src="group__Utilities_gab2dc90cd2e60a11e5fae0bfa3fc68e98_cgraph.png" border="0" usemap="#agroup__Utilities_gab2dc90cd2e60a11e5fae0bfa3fc68e98_cgraph" alt=""/></div>
+<map name="agroup__Utilities_gab2dc90cd2e60a11e5fae0bfa3fc68e98_cgraph" id="agroup__Utilities_gab2dc90cd2e60a11e5fae0bfa3fc68e98_cgraph">
 <area shape="rect" title="Compute edge state and flux. For typical advection, but no inflow through EB." alt="" coords="5,132,216,159"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad26f2328bf66aa9678347a6055a25431" title=" " alt="" coords="319,5,425,32"/>
-<area shape="rect" href="namespaceGodunov.html#a46032e37c69567b5c34a1636877a16b1" title=" " alt="" coords="273,56,471,83"/>
-<area shape="rect" href="namespaceEBGodunov.html#a4f256ac03c02b51303dab98c3ebc52db" title=" " alt="" coords="264,107,480,133"/>
+<area shape="rect" href="namespaceGodunov.html#aa28d3b1616afb53afb23edd90599bf2b" title=" " alt="" coords="273,56,471,83"/>
+<area shape="rect" href="namespaceEBGodunov.html#a9f011229326650b60adef228f8a54f96" title=" " alt="" coords="264,107,480,133"/>
 <area shape="rect" href="namespaceEBMOL.html#a7add53a153ade9c5cb83e79a61ad1929" title=" " alt="" coords="278,157,466,184"/>
-<area shape="rect" href="namespaceMOL.html#acdde2acf756048b8ef0bca332e4bf748" title="Compute upwinded FC velocities by extrapolating CC values in SPACE ONLY." alt="" coords="287,208,457,235"/>
+<area shape="rect" href="namespaceMOL.html#a0fe3320639aceebe9c4f821287f26913" title="Compute upwinded FC velocities by extrapolating CC values in SPACE ONLY." alt="" coords="287,208,457,235"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a95b1159ba3a5494abd49dc9b3d34eacf" title=" " alt="" coords="289,259,455,285"/>
 </map>
 </div>
