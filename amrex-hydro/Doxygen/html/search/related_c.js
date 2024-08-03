@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['scale_18338',['scale',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RealVect.html#aced393e91058fd9dcf46321c5f8f1eef',1,'amrex::RealVect']]],
-  ['statedataphysbcfunct_18339',['StateDataPhysBCFunct',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1StateData.html#a51a3670e2ed07485744ef6462ebfd6ce',1,'amrex::StateData']]]
+  ['yyparse_18418',['yyparse',['https://amrex-codes.github.io/amrex/doxygen/classBLProfStats.html#a2df08e98c81c9d8bc1fd71defa327d4d',1,'BLProfStats::yyparse()'],['https://amrex-codes.github.io/amrex/doxygen/classCommProfStats.html#a2df08e98c81c9d8bc1fd71defa327d4d',1,'CommProfStats::yyparse()'],['https://amrex-codes.github.io/amrex/doxygen/classRegionsProfStats.html#a2df08e98c81c9d8bc1fd71defa327d4d',1,'RegionsProfStats::yyparse()']]]
 ];

@@ -1,6 +1,6 @@
 <map id="HydroBC::getBC" name="HydroBC::getBC">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,132,83"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Box.html#aa2ebf79e721706ee01738c9bb1cc13e7" title=" " alt="" coords="195,5,344,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1Array4.html#afffb83a576c2e90e22fa03b27057ac49" title=" " alt="" coords="180,56,359,83"/>
-<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Box.html#a04e076a4688ca383aeaccfcb0bceef60" title=" " alt="" coords="187,107,352,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,132,98"/>
+<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BoxND.html#a81683457b2969cbc698ac59a025d2a45" title=" " alt="" coords="180,5,383,47"/>
+<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1Array4.html#afffb83a576c2e90e22fa03b27057ac49" title=" " alt="" coords="192,71,371,98"/>
+<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BoxND.html#a15f722c5b9695444feacd94f34ad1fa5" title=" " alt="" coords="180,123,383,164"/>
 </map>

@@ -70,17 +70,17 @@ var NAVTREEINDEX =
 "hydro__bcs__K_8H.html#ab483be498f1f0c98923a5e6cde92841a",
 "namespaceamrex.html#a025e5b59bd3848fc86899a836d0800f2",
 "namespaceamrex.html#a249f102bab7043232da73dcc4d33612e",
-"namespaceamrex.html#a42bd26e7d0da54d65837c31f4d03576f",
-"namespaceamrex.html#a69bf266cc5fefb0b385d84f685dd0df6",
-"namespaceamrex.html#a8ec73e9321cbfd5d28374107ef24d4a5",
-"namespaceamrex.html#aad9cfa8c0b510db0ea1d728564a6a34c",
-"namespaceamrex.html#ad4b250931d7e5f375e7da2ebc1ea0ac0",
-"namespaceamrex.html#af24a436e081d58ede9cec374b62bb6b3",
-"namespaceamrex_1_1EB2_1_1UIF__detail.html#a59adebd826dfbb225f8bf5340d912854",
-"namespaceamrex_1_1NonLocalBC.html#afc89a1b931348146e70b8e54e95ffd41",
-"namespaceamrex_1_1Reduce.html#abb357d8fcc6dd0426249ee962166fdd3",
-"namespaceamrex_1_1interp__detail.html#af8b6df2fce20e85dd23c5c3349d44fae",
-"namespaceamrex__mempool__module.html#a8d123bf3aaa1f2a07999108772fd48a4"
+"namespaceamrex.html#a42587d745d04512fb463b6e351f026a4",
+"namespaceamrex.html#a6911748ceb0d88bf5b6bf7f3f0402e97",
+"namespaceamrex.html#a8d39fa37907313633609b0b404501b7d",
+"namespaceamrex.html#aac774500cedfe2adbd3e53c3e068a7b5",
+"namespaceamrex.html#ad287398c706f3a1775e0954b73e5c779",
+"namespaceamrex.html#aefee20e5a68eb0e134e5b8a25a45b4b4",
+"namespaceamrex_1_1EB2.html#aefdb7b36e49b26a7d9d6c13f381bf5ea",
+"namespaceamrex_1_1NonLocalBC.html#a9dad3936d4a2ede70ac57d5d2d3b6e2e",
+"namespaceamrex_1_1ParallelReduce.html#a7b59db01a99d74e6bb7a057942b48d04",
+"namespaceamrex_1_1fudetail.html#aaba4be4ccfca4771494f7f67c4d80bb3",
+"namespaceamrex__lo__bctypes__module.html#a2a3913e1bdf84ec1e4ae0bf2b1468b15"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
