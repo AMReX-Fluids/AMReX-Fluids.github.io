@@ -1,5 +1,5 @@
 var hydro__ebgodunov__bcs__K_8H =
 [
-    [ "SetXBCs", "hydro__ebgodunov__bcs__K_8H.html#a201fb4a4c48f82f653fd5fb61090bcef", null ],
-    [ "SetYBCs", "hydro__ebgodunov__bcs__K_8H.html#abe925055f42491bbd794bdb3678ea1d4", null ]
+    [ "SetXBCs", "hydro__ebgodunov__bcs__K_8H.html#a95fe61ec1acf2cf81ce6b99cceac75e3", null ],
+    [ "SetYBCs", "hydro__ebgodunov__bcs__K_8H.html#a0e325c26f3ab1fe5a4b6d8ccc67280a5", null ]
 ];

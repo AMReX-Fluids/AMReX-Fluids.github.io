@@ -1,8 +1,9 @@
 <map id="Godunov/hydro_godunov_ppm.H" name="Godunov/hydro_godunov_ppm.H">
-<area shape="rect" id="node1" title=" " alt="" coords="149,5,333,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="233,5,417,47"/>
 <area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MultiFab_8H.html.html" title=" " alt="" coords="5,95,151,121"/>
 <area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__BCRec_8H.html.html" title=" " alt="" coords="175,95,307,121"/>
-<area shape="rect" id="node4" href="$hydro__constants_8H.html" title=" " alt="" coords="331,95,473,121"/>
-<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__REAL_8H.html.html" title=" " alt="" coords="282,169,405,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="429,169,492,196"/>
+<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__BC__TYPES_8H.html.html" title=" " alt="" coords="331,95,486,121"/>
+<area shape="rect" id="node5" href="$hydro__constants_8H.html" title=" " alt="" coords="511,95,653,121"/>
+<area shape="rect" id="node6" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__REAL_8H.html.html" title=" " alt="" coords="462,169,585,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="609,169,672,196"/>
 </map>

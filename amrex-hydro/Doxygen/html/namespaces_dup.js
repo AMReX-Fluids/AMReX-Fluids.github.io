@@ -3305,8 +3305,8 @@ var namespaces_dup =
       [ "ExtrapVelToFacesOnBox", "namespaceEBGodunov.html#abcdbfbbc5a098883686937dbab7ace35", null ]
     ] ],
     [ "EBGodunovBC", "namespaceEBGodunovBC.html", [
-      [ "SetXBCs", "namespaceEBGodunovBC.html#a201fb4a4c48f82f653fd5fb61090bcef", null ],
-      [ "SetYBCs", "namespaceEBGodunovBC.html#abe925055f42491bbd794bdb3678ea1d4", null ]
+      [ "SetXBCs", "namespaceEBGodunovBC.html#a95fe61ec1acf2cf81ce6b99cceac75e3", null ],
+      [ "SetYBCs", "namespaceEBGodunovBC.html#a0e325c26f3ab1fe5a4b6d8ccc67280a5", null ]
     ] ],
     [ "EBGodunovCornerCouple", "namespaceEBGodunovCornerCouple.html", [
       [ "EBGodunov_corner_couple_xy", "namespaceEBGodunovCornerCouple.html#a7670251a235d8e8a0029aa4d3d2be940", null ],
@@ -3348,8 +3348,8 @@ var namespaces_dup =
     [ "Hydro", "namespaceHydro.html", "namespaceHydro" ],
     [ "HydroBC", "namespaceHydroBC.html", [
       [ "getBC", "namespaceHydroBC.html#ae4805c1bf4cec4012693733f3fa44f7b", null ],
-      [ "SetXEdgeBCs", "namespaceHydroBC.html#a45d3b23f98379c982fee1b1b72ae2d6a", null ],
-      [ "SetYEdgeBCs", "namespaceHydroBC.html#ab483be498f1f0c98923a5e6cde92841a", null ]
+      [ "SetXEdgeBCs", "namespaceHydroBC.html#a96c8149b6212b7eee7a68dd1da6c663b", null ],
+      [ "SetYEdgeBCs", "namespaceHydroBC.html#a4b03a900994953e6e007f229046f652c", null ]
     ] ],
     [ "HydroUtils", "namespaceHydroUtils.html", [
       [ "ComputeConvectiveTerm", "namespaceHydroUtils.html#a0742bbe8fac4178460020a4073724d51", null ],

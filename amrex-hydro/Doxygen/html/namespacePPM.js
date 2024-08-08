@@ -16,7 +16,7 @@ var namespacePPM =
     [ "PredictVelOnFaces", "namespacePPM.html#afc01feca9b1f93c06521af5d6591c22c", null ],
     [ "PredictVelOnXFace", "namespacePPM.html#adb2496aca52fb5c10215b6b2e51dd56a", null ],
     [ "PredictVelOnYFace", "namespacePPM.html#a2508ebdfc4ebe06e3a4a4b3b45e1e14f", null ],
-    [ "SetXBCs", "namespacePPM.html#ad5bb40375d5bfdec96a5906cf7ef365d", null ],
-    [ "SetYBCs", "namespacePPM.html#aa3ffd2df3e546aecfc2301f5b6f8f7d0", null ],
+    [ "SetXBCs", "namespacePPM.html#a90c9fcca9c5e4a4098dcccf9aaead891", null ],
+    [ "SetYBCs", "namespacePPM.html#abf337b316b14038fe9d5eace8e23b1be", null ],
     [ "default_limiter", "namespacePPM.html#a4f476328680db9ab71492a158fce0749", null ]
 ];
