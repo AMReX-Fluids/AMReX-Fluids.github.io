@@ -138,6 +138,8 @@ This is done because for turbulent inflow, there can be times when the inflow fa
 actually has outflowing velocity. In this case, we want to use the normal component as
 specified by the BC, but then allow that outflowing velocity to transport values that come
 from the interior.</p></li>
+<li><p>Direction-dependent (<code class="docutils literal notranslate"><span class="pre">direction_dependent</span></code>): if the face velocity is inflowing, this bc
+is identical to <code class="docutils literal notranslate"><span class="pre">extdir</span></code>; if the face velocity is outflowing, this is equivalent to <code class="docutils literal notranslate"><span class="pre">foextrap</span></code>.</p></li>
 <li><p>First-order extrapolation (<code class="docutils literal notranslate"><span class="pre">foextrap</span></code>), higher order extrapolation (<code class="docutils literal notranslate"><span class="pre">hoextrap</span></code>), or
 even reflection about the boundary (<code class="docutils literal notranslate"><span class="pre">reflecteven</span></code>):</p>
 <ul>
@@ -176,7 +178,7 @@ coming in at an outflow face) and <span class="math notranslate nohighlight">\(s
 <p>Boundary conditions are imposed before the upwinding described in the <a class="reference internal" href="Schemes.html#schemes"><span class="std std-ref">Advection schemes</span></a> section.</p>
 </div>
 <p>API documentation can be found in the Doxygen Technical Reference,
-functions <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#ab90f8ce229a7ebbc521dc27d65f2db9a">SetXEdgeBCs</a>, <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#a6865c2cfd50cc95f9b69ded1e8ac78ab">SetYEdgeBCs</a>, <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#a19ddc5ac50e9a6b9a98bc17f3815a62e">SetZEdgeBCs</a> .</p>
+functions <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#ab90f8ce229a7ebbc521dc27d65f2db9a">SetExtrapVelBCsLo</a> , <a href="#id1"><span class="problematic" id="id2">`SetExtrapVeldgeBCsHi`_</span></a> ,`SetEdgeBCsLo`_ , and <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroBC.html#a6865c2cfd50cc95f9b69ded1e8ac78ab">SetEdgeBCsHi</a> .</p>
 </section>
 </section>
 
