@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hypre_18423',['HYPRE',['https://amrex-codes.github.io/amrex/doxygen/group__HYPRE.html',1,'']]]
+  ['hypre_18443',['HYPRE',['https://amrex-codes.github.io/amrex/doxygen/group__HYPRE.html',1,'']]]
 ];

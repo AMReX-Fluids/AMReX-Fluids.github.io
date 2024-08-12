@@ -139,12 +139,12 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        amrex::Real qpls = q(i  ,j,k,n) - 0.5 *</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a89f81b000b34e7c57e481ba09a2f77eb">amrex_calc_xslope_extdir</a>( i  , j, k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a89f81b000b34e7c57e481ba09a2f77eb">amrex_calc_xslope_extdir</a>( i  , j, k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        amrex::Real qmns = q(i-1,j,k,n) + 0.5 *</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a89f81b000b34e7c57e481ba09a2f77eb">amrex_calc_xslope_extdir</a>( i-1, j, k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a89f81b000b34e7c57e481ba09a2f77eb">amrex_calc_xslope_extdir</a>( i-1, j, k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="namespaceHydroBC.html#a96c8149b6212b7eee7a68dd1da6c663b">HydroBC::SetXEdgeBCs</a>(i,j,k,n,q,qmns,qpls,umac(i,j,k),umac(i,j,k),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                             d_bcrec[n].lo(0),domlo,d_bcrec[n].hi(0),domhi,is_velocity);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(0,i,j,k,n,q,qmns,qpls,umac(i,j,k),d_bcrec[n].lo(0),domlo,is_velocity);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(0,i,j,k,n,q,qmns,qpls,umac(i,j,k),d_bcrec[n].hi(0),domhi,is_velocity);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> ( (i==domlo) &amp;&amp; (d_bcrec[n].lo(0) == amrex::BCType::foextrap || d_bcrec[n].lo(0) == amrex::BCType::hoextrap) )</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
@@ -188,8 +188,8 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    amrex::Real qpls = q(i  ,j,k,n) - 0.5 * <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aba62b0734dec9b69bdc82781f4e87151">amrex_calc_xslope</a>( i  , j, k, n, order, q );</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    amrex::Real qmns = q(i-1,j,k,n) + 0.5 * <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aba62b0734dec9b69bdc82781f4e87151">amrex_calc_xslope</a>( i-1, j, k, n, order, q );</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="namespaceHydroBC.html#a96c8149b6212b7eee7a68dd1da6c663b">HydroBC::SetXEdgeBCs</a>(i,j,k,n,q,qmns,qpls,umac(i,j,k),umac(i,j,k),</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                         d_bcrec[n].lo(0),domlo,d_bcrec[n].hi(0),domhi,is_velocity);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(0,i,j,k,n,q,qmns,qpls,umac(i,j,k),d_bcrec[n].lo(0),domlo,is_velocity);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(0,i,j,k,n,q,qmns,qpls,umac(i,j,k),d_bcrec[n].hi(0),domhi,is_velocity);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> ( (i==domlo) &amp;&amp; (d_bcrec[n].lo(0) == amrex::BCType::foextrap || d_bcrec[n].lo(0) == amrex::BCType::hoextrap) )</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
@@ -248,12 +248,12 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        amrex::Real qpls = q(i,j  ,k,n) - 0.5 *</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a147f251f83a5f9c022d66a1595f7cb0b">amrex_calc_yslope_extdir</a>( i, j  , k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a147f251f83a5f9c022d66a1595f7cb0b">amrex_calc_yslope_extdir</a>( i, j  , k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        amrex::Real qmns = q(i,j-1,k,n) + 0.5 *</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a147f251f83a5f9c022d66a1595f7cb0b">amrex_calc_yslope_extdir</a>( i, j-1, k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a147f251f83a5f9c022d66a1595f7cb0b">amrex_calc_yslope_extdir</a>( i, j-1, k, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="namespaceHydroBC.html#a4b03a900994953e6e007f229046f652c">HydroBC::SetYEdgeBCs</a>(i,j,k,n,q,qmns,qpls,vmac(i,j,k),vmac(i,j,k),</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                             d_bcrec[n].lo(1),domlo,d_bcrec[n].hi(1),domhi,is_velocity);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(1,i,j,k,n,q,qmns,qpls,vmac(i,j,k),d_bcrec[n].lo(1),domlo,is_velocity);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(1,i,j,k,n,q,qmns,qpls,vmac(i,j,k),d_bcrec[n].hi(1),domhi,is_velocity);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span> ( (j==domlo) &amp;&amp; (d_bcrec[n].lo(1) == amrex::BCType::foextrap || d_bcrec[n].lo(1) == amrex::BCType::hoextrap) )</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {</div>
@@ -299,8 +299,8 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    amrex::Real qpls = q(i,j  ,k,n) - 0.5 * <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a43724c1f3c9745b893de6823b5bfef51">amrex_calc_yslope</a>( i, j  , k, n, order, q );</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    amrex::Real qmns = q(i,j-1,k,n) + 0.5 * <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a43724c1f3c9745b893de6823b5bfef51">amrex_calc_yslope</a>( i, j-1, k, n, order, q );</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="namespaceHydroBC.html#a4b03a900994953e6e007f229046f652c">HydroBC::SetYEdgeBCs</a>(i,j,k,n,q,qmns,qpls,vmac(i,j,k),vmac(i,j,k),</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                         d_bcrec[n].lo(1),domlo,d_bcrec[n].hi(1),domhi,is_velocity);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(1,i,j,k,n,q,qmns,qpls,vmac(i,j,k), d_bcrec[n].lo(1),domlo,is_velocity);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(1,i,j,k,n,q,qmns,qpls,vmac(i,j,k), d_bcrec[n].hi(1),domhi,is_velocity);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span> ( (j==domlo) &amp;&amp; (d_bcrec[n].lo(1) == amrex::BCType::foextrap || d_bcrec[n].lo(1) == amrex::BCType::hoextrap) )</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
@@ -361,12 +361,12 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        amrex::Real qpls = q(i,j,k  ,n) - 0.5 *</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      amrex_calc_zslope_extdir( i, j, k  , n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            amrex_calc_zslope_extdir( i, j, k  , n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        amrex::Real qmns = q(i,j,k-1,n) + 0.5 *</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      amrex_calc_zslope_extdir( i, j, k-1, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            amrex_calc_zslope_extdir( i, j, k-1, n, order, q, extdir_or_ho_lo, extdir_or_ho_hi, domlo, domhi );</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        HydroBC::SetZEdgeBCs(i,j,k,n,q,qmns,qpls,wmac(i,j,k),wmac(i,j,k),</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                             d_bcrec[n].lo(2),domlo,d_bcrec[n].hi(2),domhi,is_velocity);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(2,i,j,k,n,q,qmns,qpls,wmac(i,j,k),d_bcrec[n].lo(2),domlo,is_velocity);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(2,i,j,k,n,q,qmns,qpls,wmac(i,j,k),d_bcrec[n].hi(2),domhi,is_velocity);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> ( (k==domlo) &amp;&amp; (d_bcrec[n].lo(2) == amrex::BCType::foextrap || d_bcrec[n].lo(2) == amrex::BCType::hoextrap) )</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        {</div>
@@ -412,8 +412,8 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    amrex::Real qpls = q(i,j,k  ,n) - 0.5 * amrex_calc_zslope( i, j, k  , n, order, q );</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    amrex::Real qmns = q(i,j,k-1,n) + 0.5 * amrex_calc_zslope( i, j, k-1, n, order, q );</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    HydroBC::SetZEdgeBCs(i,j,k,n,q,qmns,qpls,wmac(i,j,k),wmac(i,j,k),</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                         d_bcrec[n].lo(2),domlo,d_bcrec[n].hi(2),domhi,is_velocity);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <a class="code" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(2,i,j,k,n,q,qmns,qpls,wmac(i,j,k),d_bcrec[n].lo(2),domlo,is_velocity);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(2,i,j,k,n,q,qmns,qpls,wmac(i,j,k),d_bcrec[n].hi(2),domhi,is_velocity);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> ( (k==domlo) &amp;&amp; (d_bcrec[n].lo(2) == amrex::BCType::foextrap || d_bcrec[n].lo(2) == amrex::BCType::hoextrap) )</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    {</div>
@@ -445,11 +445,10 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#endif</span><span class="comment"></span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">/** @}*/</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160; </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#endif</span><span class="comment"></span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">/** @}*/</span></div>
 <div class="ttc" id="aAMReX__Extension_8H_html_a90cf7b81cd61799c87306cad156cc317"><div class="ttname"><a href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a></div><div class="ttdeci">#define AMREX_FORCE_INLINE</div></div>
 <div class="ttc" id="aAMReX__GpuQualifiers_8H_html_a4e626ebf06898d71a9e0790877f1694f"><div class="ttname"><a href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#a4e626ebf06898d71a9e0790877f1694f">AMREX_GPU_DEVICE</a></div><div class="ttdeci">#define AMREX_GPU_DEVICE</div></div>
 <div class="ttc" id="aAMReX__Slopes__K_8H.html_html"><div class="ttname"><a href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Slopes__K_8H.html">AMReX_Slopes_K.H</a></div></div>
@@ -460,8 +459,8 @@ $(document).ready(function(){initNavTree('hydro__mol__edge__state__K_8H_source.h
 <div class="ttc" id="agroup__Utilities_html_gacd4c2357fa827bdc6b058736a689df22"><div class="ttname"><a href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a></div><div class="ttdeci">#define ZVEL</div><div class="ttdef"><b>Definition:</b> hydro_constants.H:30</div></div>
 <div class="ttc" id="ahydro__bcs__K_8H_html"><div class="ttname"><a href="hydro__bcs__K_8H.html">hydro_bcs_K.H</a></div></div>
 <div class="ttc" id="ahydro__constants_8H_html"><div class="ttname"><a href="hydro__constants_8H.html">hydro_constants.H</a></div></div>
-<div class="ttc" id="anamespaceHydroBC_html_a4b03a900994953e6e007f229046f652c"><div class="ttname"><a href="namespaceHydroBC.html#a4b03a900994953e6e007f229046f652c">HydroBC::SetYEdgeBCs</a></div><div class="ttdeci">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE void SetYEdgeBCs(int i, int j, int k, int n, const amrex::Array4&lt; const amrex::Real &gt; &amp;s, amrex::Real &amp;lo, amrex::Real &amp;hi, amrex::Real velm, amrex::Real velp, int bclo, int domlo, int bchi, int domhi, bool is_velocity)</div><div class="ttdoc">Boundary condition effects.</div><div class="ttdef"><b>Definition:</b> hydro_bcs_K.H:166</div></div>
-<div class="ttc" id="anamespaceHydroBC_html_a96c8149b6212b7eee7a68dd1da6c663b"><div class="ttname"><a href="namespaceHydroBC.html#a96c8149b6212b7eee7a68dd1da6c663b">HydroBC::SetXEdgeBCs</a></div><div class="ttdeci">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE void SetXEdgeBCs(int i, int j, int k, int n, const amrex::Array4&lt; const amrex::Real &gt; &amp;s, amrex::Real &amp;lo, amrex::Real &amp;hi, amrex::Real velm, amrex::Real velp, int bclo, int domlo, int bchi, int domhi, bool is_velocity)</div><div class="ttdoc">Boundary condition effects.</div><div class="ttdef"><b>Definition:</b> hydro_bcs_K.H:77</div></div>
+<div class="ttc" id="anamespaceHydroBC_html_a3a47bbbd8cc79009d41b04c27ebbd64f"><div class="ttname"><a href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a></div><div class="ttdeci">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE void SetEdgeBCsHi(int edge_dir, int i, int j, int k, int n, const amrex::Array4&lt; const amrex::Real &gt; &amp;s, amrex::Real &amp;lo, amrex::Real &amp;hi, amrex::Real macvel, int bchi, int domhi, bool is_velocity)</div><div class="ttdoc">Boundary condition effects.</div><div class="ttdef"><b>Definition:</b> hydro_bcs_K.H:256</div></div>
+<div class="ttc" id="anamespaceHydroBC_html_a8ba2207a75496ee3c6d88f44233d645b"><div class="ttname"><a href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a></div><div class="ttdeci">AMREX_GPU_HOST_DEVICE AMREX_FORCE_INLINE void SetEdgeBCsLo(int edge_dir, int i, int j, int k, int n, const amrex::Array4&lt; const amrex::Real &gt; &amp;s, amrex::Real &amp;lo, amrex::Real &amp;hi, amrex::Real macvel, int bclo, int domlo, bool is_velocity)</div><div class="ttdoc">Boundary condition effects.</div><div class="ttdef"><b>Definition:</b> hydro_bcs_K.H:190</div></div>
 <div class="ttc" id="anamespaceMOL_html"><div class="ttname"><a href="namespaceMOL.html">MOL</a></div></div>
 <div class="ttc" id="anamespaceMOL_html_a0af7e22f67c73814e7968b5bd6e02e8a"><div class="ttname"><a href="namespaceMOL.html#a0af7e22f67c73814e7968b5bd6e02e8a">MOL::hydro_mol_xedge_state</a></div><div class="ttdeci">AMREX_GPU_DEVICE AMREX_FORCE_INLINE amrex::Real hydro_mol_xedge_state(int i, int j, int k, int n, amrex::Array4&lt; amrex::Real const &gt; const &amp;q, amrex::Array4&lt; amrex::Real const &gt; const &amp;umac, amrex::BCRec const *const d_bcrec, int domlo, int domhi, bool is_velocity) noexcept</div><div class="ttdef"><b>Definition:</b> hydro_mol_edge_state_K.H:80</div></div>
 <div class="ttc" id="anamespaceMOL_html_a4e5b6599e866b0386d608e59dabb37ce"><div class="ttname"><a href="namespaceMOL.html#a4e5b6599e866b0386d608e59dabb37ce">MOL::hydro_mol_yedge_state_extdir</a></div><div class="ttdeci">AMREX_GPU_DEVICE AMREX_FORCE_INLINE amrex::Real hydro_mol_yedge_state_extdir(int i, int j, int k, int n, amrex::Array4&lt; amrex::Real const &gt; const &amp;q, amrex::Array4&lt; amrex::Real const &gt; const &amp;vmac, amrex::BCRec const *const d_bcrec, int domlo, int domhi, bool is_velocity) noexcept</div><div class="ttdef"><b>Definition:</b> hydro_mol_edge_state_K.H:125</div></div>

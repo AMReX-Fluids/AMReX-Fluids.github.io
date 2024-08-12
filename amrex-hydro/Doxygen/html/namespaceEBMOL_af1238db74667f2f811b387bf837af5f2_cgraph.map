@@ -1,7 +1,8 @@
 <map id="EBMOL::hydro_ebmol_xedge_state_extdir" name="EBMOL::hydro_ebmol_xedge_state_extdir">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,167,115"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,99,167,141"/>
 <area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__EB__Slopes__2D__K_8H.html#a6f08c18229f9eea4b2ac13a6969d48f7" title=" " alt="" coords="215,5,424,32"/>
 <area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a38d942498aebd0b51855a9b85ed184f5" title=" " alt="" coords="269,56,370,83"/>
 <area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a475e2bc71e3ca92b6b016fcb70af95bd" title=" " alt="" coords="271,107,368,133"/>
-<area shape="rect" id="node5" href="$namespaceHydroBC.html#a96c8149b6212b7eee7a68dd1da6c663b" title="Boundary condition effects." alt="" coords="232,157,407,184"/>
+<area shape="rect" id="node5" href="$namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f" title="Boundary condition effects." alt="" coords="230,157,409,184"/>
+<area shape="rect" id="node6" href="$namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b" title="Boundary condition effects." alt="" coords="229,208,409,235"/>
 </map>
