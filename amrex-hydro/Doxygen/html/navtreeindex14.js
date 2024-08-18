@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"namespaceamrex__eb__flux__reg__nd__module.html#a248ca933a7707ac5dfe93b484be5c2cc":[2,0,4,3],
+"namespaceamrex__eb__flux__reg__nd__module.html#a533c926df2a1660325d87978063391ad":[2,0,4,2],
+"namespaceamrex__eb__flux__reg__nd__module.html#aa221a3ae37a8e49741bf7503ddfbf026":[2,0,4,4],
+"namespaceamrex__eb__flux__reg__nd__module.html#afc3d4f889be1ef91df14eae4e538f6f5":[2,0,4,0],
 "namespaceamrex__ebcellflag__module.html#a042a1d5bee97b5d90c352a09ffc13956":[2,0,5,3],
 "namespaceamrex__ebcellflag__module.html#a2610316e2634c6510e9511a17e425c39":[2,0,5,22],
 "namespaceamrex__ebcellflag__module.html#a34d542ffa101be3b08b45ad08a1aa41e":[2,0,5,21],

@@ -10,8 +10,8 @@ var classHydro_1_1MacProjector =
     [ "getFluxes", "classHydro_1_1MacProjector.html#a5af2a8c4c1da1def1a08e66393f8d741", null ],
     [ "getLinOp", "classHydro_1_1MacProjector.html#a42c8aa2abe57b3e125b879da367eafa4", null ],
     [ "getMLMG", "classHydro_1_1MacProjector.html#a6f96afe62390bf84e4f3023dfc43aa21", null ],
-    [ "initProjector", "classHydro_1_1MacProjector.html#a27e3501497edc6a65cb49fe1490ca1be", null ],
-    [ "initProjector", "classHydro_1_1MacProjector.html#aa24fe4bfe04b7198572e2c16a21d43aa", null ],
+    [ "initProjector", "classHydro_1_1MacProjector.html#aacd4ed718a2c55d2df73739131585eab", null ],
+    [ "initProjector", "classHydro_1_1MacProjector.html#afbcfab692e65f2dff7a555bce62b2f29", null ],
     [ "needInitialization", "classHydro_1_1MacProjector.html#a810a7a05b1bcc6729b3bd68022073e70", null ],
     [ "project", "classHydro_1_1MacProjector.html#a8a7f09aa7edb1a831bceefd74a729619", null ],
     [ "project", "classHydro_1_1MacProjector.html#a11425406f3b1ebf78d61520733cfe6fc", null ],
@@ -33,7 +33,10 @@ var classHydro_1_1MacProjector =
     [ "m_fluxes", "classHydro_1_1MacProjector.html#a4ec68b2f930745533de00196aee51de7", null ],
     [ "m_geom", "classHydro_1_1MacProjector.html#a5e38ecf0019b49e1953cae988b87b0f1", null ],
     [ "m_has_robin", "classHydro_1_1MacProjector.html#a1c9bd5d33afa53f6aea9988d22007ceb", null ],
+    [ "m_hibc", "classHydro_1_1MacProjector.html#aa46ae8feaa2d066dc6fb3fd1a0a1524f", null ],
     [ "m_linop", "classHydro_1_1MacProjector.html#a230ddf37a4c7f45eec3159dc8f9b932b", null ],
+    [ "m_lobc", "classHydro_1_1MacProjector.html#ab6757cc9b4d2315ee90db5718d534c7a", null ],
+    [ "m_maxiter", "classHydro_1_1MacProjector.html#a0fcc02e53442b6c2ae858e59c0f5ea2a", null ],
     [ "m_mlmg", "classHydro_1_1MacProjector.html#a1b186e20edf642dbab422aee51150e55", null ],
     [ "m_needs_domain_bcs", "classHydro_1_1MacProjector.html#a326c6639e52cc713f7b2c1fd5512006b", null ],
     [ "m_needs_init", "classHydro_1_1MacProjector.html#a735fb39b953d7b3116b4c080bdbc9597", null ],
@@ -44,5 +47,6 @@ var classHydro_1_1MacProjector =
     [ "m_rhs", "classHydro_1_1MacProjector.html#ae6c4a3f3e2e04babd66b9bf2cb22c19d", null ],
     [ "m_umac", "classHydro_1_1MacProjector.html#a202c14635c7a0c506918f2e8c0321eb5", null ],
     [ "m_umac_loc", "classHydro_1_1MacProjector.html#ad6e1524d4ec4fc9899afe7b896b8dca9", null ],
+    [ "m_use_mlhypre", "classHydro_1_1MacProjector.html#a1cfed0b2f4b04e97af45164e905542e8", null ],
     [ "m_verbose", "classHydro_1_1MacProjector.html#ad404c14e097be049171e3ab0e5dc10e6", null ]
 ];
