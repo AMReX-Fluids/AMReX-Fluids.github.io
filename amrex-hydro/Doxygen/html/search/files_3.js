@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['dfft_2eh_10967',['Dfft.H',['https://amrex-codes.github.io/amrex/doxygen/Dfft_8H.html',1,'']]],
-  ['dfftc_2ecpp_10968',['DfftC.cpp',['https://amrex-codes.github.io/amrex/doxygen/DfftC_8cpp.html',1,'']]],
-  ['distribution_2ec_10969',['distribution.c',['https://amrex-codes.github.io/amrex/doxygen/distribution_8c.html',1,'']]],
-  ['distribution_2eh_10970',['Distribution.H',['https://amrex-codes.github.io/amrex/doxygen/Distribution_8H.html',1,'']]],
-  ['distribution_5fc_2eh_10971',['distribution_c.h',['https://amrex-codes.github.io/amrex/doxygen/distribution__c_8h.html',1,'']]],
-  ['distributionc_2ecpp_10972',['DistributionC.cpp',['https://amrex-codes.github.io/amrex/doxygen/DistributionC_8cpp.html',1,'']]]
+  ['dfft_2eh_10988',['Dfft.H',['https://amrex-codes.github.io/amrex/doxygen/Dfft_8H.html',1,'']]],
+  ['dfftc_2ecpp_10989',['DfftC.cpp',['https://amrex-codes.github.io/amrex/doxygen/DfftC_8cpp.html',1,'']]],
+  ['distribution_2ec_10990',['distribution.c',['https://amrex-codes.github.io/amrex/doxygen/distribution_8c.html',1,'']]],
+  ['distribution_2eh_10991',['Distribution.H',['https://amrex-codes.github.io/amrex/doxygen/Distribution_8H.html',1,'']]],
+  ['distribution_5fc_2eh_10992',['distribution_c.h',['https://amrex-codes.github.io/amrex/doxygen/distribution__c_8h.html',1,'']]],
+  ['distributionc_2ecpp_10993',['DistributionC.cpp',['https://amrex-codes.github.io/amrex/doxygen/DistributionC_8cpp.html',1,'']]]
 ];

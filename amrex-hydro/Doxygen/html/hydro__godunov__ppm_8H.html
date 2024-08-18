@@ -154,6 +154,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1weno__js.html">PPM::weno_js</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1upwind.html">PPM::upwind</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPPM_1_1minmod.html">PPM::minmod</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -162,15 +166,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:afde008f2efff2705e2231ca88ed08ff5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5">PPM::limiters</a> { <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a">PPM::VanLeer</a>
+<tr class="memitem:afde008f2efff2705e2231ca88ed08ff5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5">PPM::limiters</a> { <br />
+&#160;&#160;<a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a">PPM::VanLeer</a>
 , <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a3825f2b15f80d49790117e959cbcc48e">PPM::WENOZ</a>
 , <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a742b9872942c5c229f854566a53c9d40">PPM::WENO_JS</a>
 , <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5aba5f65ef6793674226f652b7f0119e16">PPM::NoLimiter</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5aebdbe84585c5fefe1631a8ad885e2f44">PPM::UPWIND</a>
+, <a class="el" href="namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a03170ef6af410637411ae1ae0be59042">PPM::MINMOD</a>
+<br />
  }</td></tr>
 <tr class="separator:afde008f2efff2705e2231ca88ed08ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a21180e225f46577ee2bfaebef9d961d2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hydro__godunov__ppm_8H.html#a21180e225f46577ee2bfaebef9d961d2">minmod_fn</a> (const amrex::Real sm1, const amrex::Real s0, const amrex::Real sp1, amrex::Real &amp;dsm, amrex::Real &amp;dsp)</td></tr>
+<tr class="separator:a21180e225f46577ee2bfaebef9d961d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c74d4f9be76e672e68967b9ccd93fb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hydro__godunov__ppm_8H.html#ac5c74d4f9be76e672e68967b9ccd93fb">Godunov_minmod_bc</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, const amrex::Real sm1, const amrex::Real s0, const amrex::Real sp1, amrex::Real &amp;dsm, amrex::Real &amp;dsp, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> bclo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> bchi, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi)</td></tr>
+<tr class="separator:ac5c74d4f9be76e672e68967b9ccd93fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c9fcca9c5e4a4098dcccf9aaead891"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
 <tr class="memitem:a90c9fcca9c5e4a4098dcccf9aaead891"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a90c9fcca9c5e4a4098dcccf9aaead891">PPM::SetXBCs</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> i, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> j, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> k, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, amrex::Real &amp;sm, amrex::Real &amp;sp, amrex::Real &amp;sedge1, amrex::Real &amp;sedge2, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;s, const amrex::Real velm, const amrex::Real velp, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> bclo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> bchi, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi)</td></tr>
 <tr class="separator:a90c9fcca9c5e4a4098dcccf9aaead891"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,24 +196,169 @@ Functions</h2></td></tr>
 <tr class="memitem:a2508ebdfc4ebe06e3a4a4b3b45e1e14f"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
 <tr class="memitem:a2508ebdfc4ebe06e3a4a4b3b45e1e14f"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a2508ebdfc4ebe06e3a4a4b3b45e1e14f">PPM::PredictVelOnYFace</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> i, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> j, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> k, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, const amrex::Real dtdy, const amrex::Real v_ad, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;S, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; &amp;Im, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; &amp;Ip, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> bc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi, const Limiter &amp;)</td></tr>
 <tr class="separator:a2508ebdfc4ebe06e3a4a4b3b45e1e14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11303ff035a1a159d70415d510483430"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
-<tr class="memitem:a11303ff035a1a159d70415d510483430"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a11303ff035a1a159d70415d510483430">PPM::PredictStateOnXFace</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> i, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> j, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> k, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, const amrex::Real dt, const amrex::Real dx, amrex::Real &amp;Im, amrex::Real &amp;Ip, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;S, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;vel_edge, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> bc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi, const Limiter &amp;)</td></tr>
-<tr class="separator:a11303ff035a1a159d70415d510483430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70abc2e2dd9b19e5e80e217de7c225c1"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
-<tr class="memitem:a70abc2e2dd9b19e5e80e217de7c225c1"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a70abc2e2dd9b19e5e80e217de7c225c1">PPM::PredictStateOnYFace</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> i, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> j, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> k, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, const amrex::Real dt, const amrex::Real dx, amrex::Real &amp;Im, amrex::Real &amp;Ip, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;S, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;vel_edge, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> bc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi, const Limiter &amp;)</td></tr>
-<tr class="separator:a70abc2e2dd9b19e5e80e217de7c225c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc90fa5728d9f442f08df89ad49f019"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
+<tr class="memitem:a5dc90fa5728d9f442f08df89ad49f019"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a5dc90fa5728d9f442f08df89ad49f019">PPM::PredictStateOnXFace</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> i, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> j, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> k, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, const amrex::Real dt, const amrex::Real dx, amrex::Real &amp;Im, amrex::Real &amp;Ip, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;S, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;vel_edge, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> bc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi, const Limiter &amp;, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> limiter_type)</td></tr>
+<tr class="separator:a5dc90fa5728d9f442f08df89ad49f019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf181a69d9a9ce87cc3001b57da4cdc"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
+<tr class="memitem:aebf181a69d9a9ce87cc3001b57da4cdc"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#aebf181a69d9a9ce87cc3001b57da4cdc">PPM::PredictStateOnYFace</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> i, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> j, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> k, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> n, const amrex::Real dt, const amrex::Real dx, amrex::Real &amp;Im, amrex::Real &amp;Ip, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;S, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; const amrex::Real &gt; &amp;vel_edge, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> bc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domlo, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> domhi, const Limiter &amp;, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> limiter_type)</td></tr>
+<tr class="separator:aebf181a69d9a9ce87cc3001b57da4cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc01feca9b1f93c06521af5d6591c22c"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
 <tr class="memitem:afc01feca9b1f93c06521af5d6591c22c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#afc01feca9b1f93c06521af5d6591c22c">PPM::PredictVelOnFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a222089e49ba211b37cf7a4a8ae7eb186">amrex::Box</a> const &amp;bx, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipz), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;q, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;vel, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> geom, amrex::Real dt, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *pbc, const Limiter &amp;limiter)</td></tr>
 <tr class="separator:afc01feca9b1f93c06521af5d6591c22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc43ed98677d40c3b0cd8ea5326e7d5d"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
-<tr class="memitem:acc43ed98677d40c3b0cd8ea5326e7d5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#acc43ed98677d40c3b0cd8ea5326e7d5d">PPM::PredictStateOnFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a222089e49ba211b37cf7a4a8ae7eb186">amrex::Box</a> const &amp;bx, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;umac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;vmac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;wmac), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;q, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> geom, amrex::Real l_dt, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *pbc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> ncomp, const Limiter &amp;limiter)</td></tr>
-<tr class="separator:acc43ed98677d40c3b0cd8ea5326e7d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c4175944492fd501dd22549d63795f"><td class="memTemplParams" colspan="2">template&lt;typename Limiter &gt; </td></tr>
+<tr class="memitem:a89c4175944492fd501dd22549d63795f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a89c4175944492fd501dd22549d63795f">PPM::PredictStateOnFaces</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a222089e49ba211b37cf7a4a8ae7eb186">amrex::Box</a> const &amp;bx, AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Imz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipx, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipy, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real &gt; const &amp;Ipz), AMREX_D_DECL(<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;umac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;vmac, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;wmac), <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4</a>&lt; amrex::Real const &gt; const &amp;q, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> geom, amrex::Real l_dt, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const *pbc, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> ncomp, const Limiter &amp;limiter, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a> limiter_type)</td></tr>
+<tr class="separator:a89c4175944492fd501dd22549d63795f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a4f476328680db9ab71492a158fce0749"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePPM.html#a4f476328680db9ab71492a158fce0749">PPM::default_limiter</a> = VanLeer</td></tr>
 <tr class="separator:a4f476328680db9ab71492a158fce0749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac5c74d4f9be76e672e68967b9ccd93fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c74d4f9be76e672e68967b9ccd93fb">&#9670;&nbsp;</a></span>Godunov_minmod_bc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void Godunov_minmod_bc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Real&#160;</td>
+          <td class="paramname"><em>sm1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Real&#160;</td>
+          <td class="paramname"><em>s0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Real&#160;</td>
+          <td class="paramname"><em>sp1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real &amp;&#160;</td>
+          <td class="paramname"><em>dsm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real &amp;&#160;</td>
+          <td class="paramname"><em>dsp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td>
+          <td class="paramname"><em>bclo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td>
+          <td class="paramname"><em>bchi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td>
+          <td class="paramname"><em>domlo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad2e8127753e9be0ebf531435c6511937">int</a>&#160;</td>
+          <td class="paramname"><em>domhi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="hydro__godunov__ppm_8H_ac5c74d4f9be76e672e68967b9ccd93fb_icgraph.png" border="0" usemap="#ahydro__godunov__ppm_8H_ac5c74d4f9be76e672e68967b9ccd93fb_icgraph" alt=""/></div>
+<map name="ahydro__godunov__ppm_8H_ac5c74d4f9be76e672e68967b9ccd93fb_icgraph" id="ahydro__godunov__ppm_8H_ac5c74d4f9be76e672e68967b9ccd93fb_icgraph">
+<area shape="rect" title=" " alt="" coords="485,31,648,57"/>
+<area shape="rect" href="namespacePPM.html#a5dc90fa5728d9f442f08df89ad49f019" title=" " alt="" coords="244,5,437,32"/>
+<area shape="rect" href="namespacePPM.html#aebf181a69d9a9ce87cc3001b57da4cdc" title=" " alt="" coords="245,56,437,83"/>
+<area shape="rect" href="namespacePPM.html#a89c4175944492fd501dd22549d63795f" title=" " alt="" coords="5,31,196,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a21180e225f46577ee2bfaebef9d961d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21180e225f46577ee2bfaebef9d961d2">&#9670;&nbsp;</a></span>minmod_fn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> void minmod_fn </td>
+          <td>(</td>
+          <td class="paramtype">const amrex::Real&#160;</td>
+          <td class="paramname"><em>sm1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Real&#160;</td>
+          <td class="paramname"><em>s0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const amrex::Real&#160;</td>
+          <td class="paramname"><em>sp1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real &amp;&#160;</td>
+          <td class="paramname"><em>dsm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real &amp;&#160;</td>
+          <td class="paramname"><em>dsp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="hydro__godunov__ppm_8H_a21180e225f46577ee2bfaebef9d961d2_icgraph.png" border="0" usemap="#ahydro__godunov__ppm_8H_a21180e225f46577ee2bfaebef9d961d2_icgraph" alt=""/></div>
+<map name="ahydro__godunov__ppm_8H_a21180e225f46577ee2bfaebef9d961d2_icgraph" id="ahydro__godunov__ppm_8H_a21180e225f46577ee2bfaebef9d961d2_icgraph">
+<area shape="rect" title=" " alt="" coords="485,31,581,57"/>
+<area shape="rect" href="namespacePPM.html#a5dc90fa5728d9f442f08df89ad49f019" title=" " alt="" coords="244,5,437,32"/>
+<area shape="rect" href="namespacePPM.html#aebf181a69d9a9ce87cc3001b57da4cdc" title=" " alt="" coords="245,56,437,83"/>
+<area shape="rect" href="namespacePPM.html#a89c4175944492fd501dd22549d63795f" title=" " alt="" coords="5,31,196,57"/>
+</map>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
