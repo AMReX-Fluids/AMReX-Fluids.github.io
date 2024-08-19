@@ -1,5 +1,16 @@
 var NAVTREEINDEX10 =
 {
+"namespaceamrex_1_1EB2.html#a0a955e6e5b335c1d0bccf1d1bb3498e4":[2,0,0,7,33],
+"namespaceamrex_1_1EB2.html#a0e86c3c8bf9f242ddba11fbe8db60e66":[2,0,0,7,49],
+"namespaceamrex_1_1EB2.html#a1e6eedbf6131d4d1c9a33e7c3165e630":[2,0,0,7,30],
+"namespaceamrex_1_1EB2.html#a1f2e881daa9ff0a537137a2e09129db9":[2,0,0,7,22],
+"namespaceamrex_1_1EB2.html#a202c73f9ebfcb787c75aad17804f9490":[2,0,0,7,10],
+"namespaceamrex_1_1EB2.html#a205e1c682e35e298ad6a5499e1c308b0":[2,0,0,7,35],
+"namespaceamrex_1_1EB2.html#a2258b3042676370ae01a2968e6962765":[2,0,0,7,24],
+"namespaceamrex_1_1EB2.html#a24ca6e81d1f15a678a6cb8ecb82de63e":[2,0,0,7,37],
+"namespaceamrex_1_1EB2.html#a26665fe0c584ed57e499dbbcd2ace388":[2,0,0,7,27],
+"namespaceamrex_1_1EB2.html#a3d3e035396f1ed8ef33d6eb1392df991":[2,0,0,7,44],
+"namespaceamrex_1_1EB2.html#a44d269eae8c3bc0c9c0aff8961ed61be":[2,0,0,7,28],
 "namespaceamrex_1_1EB2.html#a4a8369d801a28d74f299bfb925e6b642":[2,0,0,7,34],
 "namespaceamrex_1_1EB2.html#a6656020788b6ba4c230935054c35e164":[2,0,0,7,32],
 "namespaceamrex_1_1EB2.html#a679c49e19ddd76e1b5193718e37bf6c1":[2,0,0,7,17],
@@ -238,16 +249,5 @@ var NAVTREEINDEX10 =
 "namespaceamrex_1_1Math.html#ada7d7d19433d7d59ac03689f8b55631d":[2,0,0,21,1],
 "namespaceamrex_1_1Math.html#adbc23685ea37023206db656ff45973f7":[2,0,0,21,2],
 "namespaceamrex_1_1Math.html#ae119edbc36d72d7e0287e015330974c5":[2,0,0,21,3],
-"namespaceamrex_1_1Math.html#aecf367b723c8148d80df1abf95f5dfb5":[2,0,0,21,8],
-"namespaceamrex_1_1Math.html#af9868b2887bd7c4758a04d4603d10a5a":[2,0,0,21,7],
-"namespaceamrex_1_1Math_1_1detail.html#a42f31885c8f93e816a142d0685715ad6":[2,0,0,21,0,0],
-"namespaceamrex_1_1Math_1_1detail.html#a6040b705f14e2498baef550a8196fe39":[2,0,0,21,0,1],
-"namespaceamrex_1_1Morton.html#a16988bc3300f11fdee381c8ef8bc80f6":[2,0,0,24,4],
-"namespaceamrex_1_1Morton.html#a9b7572e0a75bb2c5274809e9e1edffba":[2,0,0,24,3],
-"namespaceamrex_1_1Morton.html#ab09eae83b5060972f2f437bd7dba115a":[2,0,0,24,1],
-"namespaceamrex_1_1Morton.html#acbda6a326e80b22c8e947f504a89f459":[2,0,0,24,0],
-"namespaceamrex_1_1Morton.html#ae3e56c34dacdffe240410a3f6a7a9252":[2,0,0,24,2],
-"namespaceamrex_1_1NonLocalBC.html#a0050536eff7fd3244ef573e961858999":[2,0,0,27,7],
-"namespaceamrex_1_1NonLocalBC.html#a0fa70005c1319e11f11266ae94abe4bb":[2,0,0,27,19],
-"namespaceamrex_1_1NonLocalBC.html#a101b2f07560880fda8bab055214f3222":[2,0,0,27,35]
+"namespaceamrex_1_1Math.html#aecf367b723c8148d80df1abf95f5dfb5":[2,0,0,21,8]
 };
