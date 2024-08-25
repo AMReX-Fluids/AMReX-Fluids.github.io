@@ -66,21 +66,21 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"hydro__godunov__edge__state__2D_8cpp.html",
-"namespaceamrex.html#a0dc1c41fb0c471ba140aa8046670d247",
-"namespaceamrex.html#a2d28879490b47fa611ad92f7a161c7b2",
-"namespaceamrex.html#a4c085d3b27d107f62bdb36f5ecc0f326",
-"namespaceamrex.html#a71600c8a528e0f1863154e4cf0183cbc",
-"namespaceamrex.html#a92f80b3d77660ad64c4a4fc8862708b7",
-"namespaceamrex.html#ab482b500359e03b77389d42f968c46fe",
-"namespaceamrex.html#ad9039fea6c6d400df4ca8e5fef35b883a34b1051c3e736038efa50c56e966fac7",
-"namespaceamrex.html#af6ec82174b9e85180e43d20c64b52b26",
-"namespaceamrex_1_1Font.html#a1e8bd2419b493e639ae861c50e93e50e",
-"namespaceamrex_1_1ParallelContext.html#a49130bb9cdd82b02c9ac9674aa19925f",
-"namespaceamrex_1_1TwoD.html#a00aaf32e50aff60cd2e80f66b4a19d14",
-"namespaceamrex_1_1loop__detail.html#ac48e6fab4200845ae1464ab52ec831f9",
-"namespaceamrex__mempool__module.html#a616f74b36b41fe3efc1129f2b31696d6"
+"",
+"hydro__NodalProjector_8H.html",
+"namespaceamrex.html#a0075507273391e5967b9d869daed98bca4426cecc68dbdc158b088f0cebfb79a7",
+"namespaceamrex.html#a22ce5ec6a27aa7bce43ca708cec77023",
+"namespaceamrex.html#a4051597b502fed03ea3b07d5f6cbb042",
+"namespaceamrex.html#a6443f5e4341bca602bd379aed859fc2f",
+"namespaceamrex.html#a88b5f551ff31c821df1efef0a1983c7d",
+"namespaceamrex.html#aa820e267be1d0dc2b3800553d57ae2ec",
+"namespaceamrex.html#acdfc31382ab1f46867b783921a6f465e",
+"namespaceamrex.html#aebfde21396d2ff792d29469193f4853e",
+"namespaceamrex_1_1EB2.html#a0847e43de0f68d0a78bb75f9a6fefcd9",
+"namespaceamrex_1_1Math.html#aecf367b723c8148d80df1abf95f5dfb5",
+"namespaceamrex_1_1ParallelDescriptor.html#ad1c34d9de3893126169a033007bf7073",
+"namespaceamrex_1_1detail.html#acaad82f4281e3a1b6691574774731430",
+"namespaceamrex__constants__module.html#a9da77625a7b0670eb8278879579f82f4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

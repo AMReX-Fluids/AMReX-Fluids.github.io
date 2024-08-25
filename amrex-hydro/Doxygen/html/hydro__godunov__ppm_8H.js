@@ -14,7 +14,8 @@ var hydro__godunov__ppm_8H =
       [ "UPWIND", "hydro__godunov__ppm_8H.html#afde008f2efff2705e2231ca88ed08ff5aebdbe84585c5fefe1631a8ad885e2f44", null ],
       [ "MINMOD", "hydro__godunov__ppm_8H.html#afde008f2efff2705e2231ca88ed08ff5a03170ef6af410637411ae1ae0be59042", null ]
     ] ],
-    [ "Godunov_minmod_bc", "hydro__godunov__ppm_8H.html#ac5c74d4f9be76e672e68967b9ccd93fb", null ],
+    [ "Godunov_minmod_bc_hi", "hydro__godunov__ppm_8H.html#a4187d942f497bbd9883058341d5901bc", null ],
+    [ "Godunov_minmod_bc_lo", "hydro__godunov__ppm_8H.html#a0839227095b0049e12c2fe536c42dcc7", null ],
     [ "minmod_fn", "hydro__godunov__ppm_8H.html#a21180e225f46577ee2bfaebef9d961d2", null ],
     [ "PredictStateOnFaces", "hydro__godunov__ppm_8H.html#a89c4175944492fd501dd22549d63795f", null ],
     [ "PredictStateOnXFace", "hydro__godunov__ppm_8H.html#a5dc90fa5728d9f442f08df89ad49f019", null ],
