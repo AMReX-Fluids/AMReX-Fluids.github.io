@@ -66,21 +66,21 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"hydro__godunov__edge__state__2D_8cpp.html",
-"namespaceamrex.html#a0dace3a79fc48a8b02686c10363b70a9",
-"namespaceamrex.html#a2d2057b274ec423dee54149f693a6fd5",
-"namespaceamrex.html#a4bfb8a8d2ba2e2cf94a50de4541b9765",
-"namespaceamrex.html#a7137fe4c56ae26940acfef9783458ec1",
-"namespaceamrex.html#a92ee563e823bf1f37c94d26531af0a28af9b19ba65988eaa6817c8e5c7f4a01d7",
-"namespaceamrex.html#ab427f00335de584d8602aec963d5e730",
-"namespaceamrex.html#ad9039fea6c6d400df4ca8e5fef35b883a33139f0d7c11fb241cad32250195de18",
-"namespaceamrex.html#af6d31b25633d781cd8fe931951889e6c",
-"namespaceamrex_1_1FileSystem.html#afee9c962b3446b2d10724c21add85f8c",
-"namespaceamrex_1_1ParallelContext.html#a3735bb2b55dab8f232227611c6d25bb8",
-"namespaceamrex_1_1SundialsUserFun.html#ad585d7830e4fc12e89decd117f010a56",
-"namespaceamrex_1_1loop__detail.html#a9c95f90383eea891f7ae725de969de76",
-"namespaceamrex__mempool__module.html#a47590a2b614ca1a020c77a019a93253d"
+"",
+"hydro__MacProjector_8cpp.html",
+"namespaceamrex.html#a0075507273391e5967b9d869daed98bca3b65381fef1e4a480813955566ac6224",
+"namespaceamrex.html#a22c4f54ca2715e093218b8c504cd9a73",
+"namespaceamrex.html#a3feb0da0522ac48ea3b54e5010569bb6",
+"namespaceamrex.html#a640f26f4a269e0222e478b21fd6751c1",
+"namespaceamrex.html#a884f63b4c32929437cf596c59b26c311",
+"namespaceamrex.html#aa785b3b07c24c864604e8de72a0bb919",
+"namespaceamrex.html#acb7eef95a05f949c396a58c2fb79b930",
+"namespaceamrex.html#aebce007d4152715af0cf44f3ab94d1fe",
+"namespaceamrex_1_1BinPolicy.html#a78f596e766995fe79e9feefa86af852b",
+"namespaceamrex_1_1Math.html#a8f2602163bf297a5c5342e6b9425e626",
+"namespaceamrex_1_1ParallelDescriptor.html#ac7fb3467af4aabf15e61cb9c27e916d9",
+"namespaceamrex_1_1detail.html#ac058d02c07c2b74e83e50b33b90197e5",
+"namespaceamrex__constants__module.html#a7469c455ff0cedccfe42c39814622d44"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
