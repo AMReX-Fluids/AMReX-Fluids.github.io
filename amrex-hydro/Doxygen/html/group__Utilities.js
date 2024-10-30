@@ -5,6 +5,7 @@ var group__Utilities =
     [ "ZVEL", "group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22", null ],
     [ "enforceInOutSolvability", "group__Utilities.html#ga5677f456538ed66e94185b0050bc6e2d", null ],
     [ "ExtrapVelToFaces", "group__Utilities.html#gab2dc90cd2e60a11e5fae0bfa3fc68e98", null ],
+    [ "eps", "group__Utilities.html#ga961149daeaa5bc2a44d9d13d5ccf6e9d", null ],
     [ "hydro_covered_val", "group__Utilities.html#ga18be12cbdade0dffc87d75b973b79910", null ],
     [ "small_vel", "group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550", null ]
 ];
