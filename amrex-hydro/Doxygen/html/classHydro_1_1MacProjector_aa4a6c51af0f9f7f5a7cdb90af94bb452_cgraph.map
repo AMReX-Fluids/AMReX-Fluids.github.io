@@ -1,7 +1,6 @@
 <map id="Hydro::MacProjector::setDivU" name="Hydro::MacProjector::setDivU">
-<area shape="rect" id="node1" title="Set div(U)" alt="" coords="5,74,160,115"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a6d0e162407f49aab99ec9a1bcddf0f21" title=" " alt="" coords="231,5,361,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MultiFab.html#ab70ce65ff46ae21b8cc4e0584fe26ffa" title=" " alt="" coords="212,56,380,83"/>
-<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0789b1c22e6f47037f987b73cf2b898b" title=" " alt="" coords="208,107,384,133"/>
-<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="223,157,369,184"/>
+<area shape="rect" id="node1" title="Set div(U)" alt="" coords="5,49,160,90"/>
+<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a6d0e162407f49aab99ec9a1bcddf0f21" title=" " alt="" coords="241,5,322,32"/>
+<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0789b1c22e6f47037f987b73cf2b898b" title=" " alt="" coords="218,56,345,83"/>
+<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="208,107,355,133"/>
 </map>

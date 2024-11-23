@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['maketype_18688',['MakeType',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a0a36c65d0681a832330b2812f16786a6',1,'amrex']]],
-  ['maskval_18689',['MaskVal',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BndryDataT.html#ac96be78c84438c0c74a235d969972846',1,'amrex::BndryDataT']]],
-  ['minmaxrangetype_18690',['MinMaxRangeType',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1Amrvis.html#a215d738508df9f39360cdc84a844e98e',1,'amrex::Amrvis']]],
-  ['minmaxrangetypeforbuttons_18691',['MinMaxRangeTypeForButtons',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1Amrvis.html#a980486554a98baf8ebf8e560734f2bf9',1,'amrex::Amrvis']]]
+  ['limiters_18695',['limiters',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5',1,'PPM']]],
+  ['location_18696',['Location',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LinOpEnumType.html#acc2058c2f5b3c370c08f75fc71ff3bb4',1,'amrex::LinOpEnumType']]]
 ];

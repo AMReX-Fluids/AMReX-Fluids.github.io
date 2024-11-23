@@ -47,7 +47,6 @@ var classHydro_1_1MacProjector =
     [ "m_rhs", "classHydro_1_1MacProjector.html#ae6c4a3f3e2e04babd66b9bf2cb22c19d", null ],
     [ "m_umac", "classHydro_1_1MacProjector.html#a202c14635c7a0c506918f2e8c0321eb5", null ],
     [ "m_umac_loc", "classHydro_1_1MacProjector.html#ad6e1524d4ec4fc9899afe7b896b8dca9", null ],
-    [ "m_use_fft", "classHydro_1_1MacProjector.html#a800d5886a3c07d5ff18dad3d7dee2890", null ],
     [ "m_use_mlhypre", "classHydro_1_1MacProjector.html#a1cfed0b2f4b04e97af45164e905542e8", null ],
     [ "m_verbose", "classHydro_1_1MacProjector.html#ad404c14e097be049171e3ab0e5dc10e6", null ]
 ];
