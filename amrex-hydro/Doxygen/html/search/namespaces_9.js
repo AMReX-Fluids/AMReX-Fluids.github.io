@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['regionsprofstats_10501',['RegionsProfStats',['https://amrex-codes.github.io/amrex/doxygen/structRegionsProfStats_1_1DataBlock.html',1,'']]]
+  ['regionsprofstats_10647',['RegionsProfStats',['https://amrex-codes.github.io/amrex/doxygen/structRegionsProfStats_1_1DataBlock.html',1,'']]]
 ];

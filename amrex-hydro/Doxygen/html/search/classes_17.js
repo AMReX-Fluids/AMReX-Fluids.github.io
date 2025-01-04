@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['yafluxregistert_10380',['YAFluxRegisterT',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1YAFluxRegisterT.html',1,'amrex']]],
-  ['yy_5fbuffer_5fstate_10381',['yy_buffer_state',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html',1,'']]],
-  ['yy_5ftrans_5finfo_10382',['yy_trans_info',['https://amrex-codes.github.io/amrex/doxygen/structyy__trans__info.html',1,'']]],
-  ['yyalloc_10383',['yyalloc',['https://amrex-codes.github.io/amrex/doxygen/unionyyalloc.html',1,'']]]
+  ['xdim3_10522',['XDim3',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1XDim3.html',1,'amrex']]],
+  ['xyplotdatalist_10523',['XYPlotDataList',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1XYPlotDataList.html',1,'amrex']]],
+  ['xyplotdatalistlink_10524',['XYPlotDataListLink',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1XYPlotDataListLink.html',1,'amrex']]]
 ];

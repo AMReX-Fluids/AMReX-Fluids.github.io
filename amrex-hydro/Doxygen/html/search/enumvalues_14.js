@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_18814',['zero',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a242c1fdf859dbcbdecd2794373ea0d2cad02c4c4cde7ae76252540d116a40f23a',1,'amrex']]]
+  ['x_19073',['x',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a2b273526dd4d27047e455ab7a5a8dcd3a9dd4e461268c8034f5c8564e155c67a6',1,'amrex']]]
 ];

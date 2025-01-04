@@ -1,31 +1,5 @@
 var searchData=
 [
-  ['latheif_9774',['LatheIF',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1EB2_1_1LatheIF.html',1,'amrex::EB2']]],
-  ['launchsafeguard_9775',['LaunchSafeGuard',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Gpu_1_1LaunchSafeGuard.html',1,'amrex::Gpu']]],
-  ['layoutdata_9776',['LayoutData',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'amrex']]],
-  ['layoutdata_3c_20amrex_3a_3agpuarray_3c_20amrex_3a_3amlcelllinopt_3a_3abctl_2c_202_20_2aamrex_5fspacedim_20_3e_20_2a_20_3e_9777',['LayoutData&lt; amrex::GpuArray&lt; amrex::MLCellLinOpT::BCTL, 2 *AMREX_SPACEDIM &gt; * &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20amrex_3a_3apodvector_3c_20hypre_5fint_20_3e_20_3e_9778',['LayoutData&lt; amrex::PODVector&lt; HYPRE_Int &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20amrex_3a_3apodvector_3c_20int_20_3e_20_3e_9779',['LayoutData&lt; amrex::PODVector&lt; int &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20amrex_3a_3apodvector_3c_20int_20_3e_20_3e_9780',['LayoutData&lt; amrex::PODVector&lt; Int &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20amrex_3a_3avector_3c_20amrex_3a_3avector_3c_20amrex_3a_3aboundcond_20_3e_20_3e_20_3e_9781',['LayoutData&lt; amrex::Vector&lt; amrex::Vector&lt; amrex::BoundCond &gt; &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20amrex_3a_3avector_3c_20bctuple_20_3e_20_3e_9782',['LayoutData&lt; amrex::Vector&lt; BCTuple &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20amrex_3a_3avector_3c_20realtuple_20_3e_20_3e_9783',['LayoutData&lt; amrex::Vector&lt; RealTuple &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20gfab_20_3e_9784',['LayoutData&lt; GFab &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20hypre_5fint_20_3e_9785',['LayoutData&lt; HYPRE_Int &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20int_20_3e_9786',['LayoutData&lt; Int &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20int_20_3e_9787',['LayoutData&lt; int &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20petscint_20_3e_9788',['LayoutData&lt; PetscInt &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['layoutdata_3c_20realtuple_20_3e_9789',['LayoutData&lt; RealTuple &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LayoutData.html',1,'']]],
-  ['level_9790',['Level',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1EB2_1_1Level.html',1,'amrex::EB2']]],
-  ['levelbld_9791',['LevelBld',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LevelBld.html',1,'amrex']]],
-  ['linear_9792',['Linear',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1ParticleInterpolator_1_1Linear.html',1,'amrex::ParticleInterpolator']]],
-  ['linedistfcnelement2d_9793',['LineDistFcnElement2d',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LineDistFcnElement2d.html',1,'amrex']]],
-  ['linopenumtype_9794',['LinOpEnumType',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LinOpEnumType.html',1,'amrex']]],
-  ['lipairgt_9795',['LIpairGT',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DistributionMapping_1_1LIpairGT.html',1,'amrex::DistributionMapping']]],
-  ['lipairlt_9796',['LIpairLT',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DistributionMapping_1_1LIpairLT.html',1,'amrex::DistributionMapping']]],
-  ['localr2c_9797',['LocalR2C',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1FFT_1_1LocalR2C.html',1,'amrex::FFT']]],
-  ['logicaland_9798',['LogicalAnd',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LogicalAnd.html',1,'amrex']]],
-  ['logicalor_9799',['LogicalOr',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LogicalOr.html',1,'amrex']]],
-  ['lpinfo_9800',['LPInfo',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LPInfo.html',1,'amrex']]],
-  ['lusolver_9801',['LUSolver',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1LUSolver.html',1,'amrex']]]
+  ['keepvalidfilter_9907',['KeepValidFilter',['https://amrex-codes.github.io/amrex/doxygen/structKeepValidFilter.html',1,'']]],
+  ['kernelinfo_9908',['KernelInfo',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Gpu_1_1KernelInfo.html',1,'amrex::Gpu']]]
 ];

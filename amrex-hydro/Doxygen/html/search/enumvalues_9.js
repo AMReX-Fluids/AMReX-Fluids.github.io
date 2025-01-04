@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['minmod_18769',['MINMOD',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a03170ef6af410637411ae1ae0be59042',1,'PPM']]],
-  ['multivalued_18770',['multivalued',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#abd2e3d292645433cefc947725585f87aaaf8a062dbd0dba47618be245dc266806',1,'amrex']]]
+  ['levelset_19027',['levelset',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aea45874f350ec5ab95a6918255ecdba7a0aca025084bb6b6cfc5574bee664851e',1,'amrex']]]
 ];
