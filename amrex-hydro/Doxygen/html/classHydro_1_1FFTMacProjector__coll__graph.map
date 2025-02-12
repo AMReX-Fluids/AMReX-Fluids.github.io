@@ -1,7 +1,9 @@
 <map id="Hydro::FFTMacProjector" name="Hydro::FFTMacProjector">
-<area shape="rect" id="node1" title=" " alt="" coords="146,199,323,225"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Geometry.html" title=" " alt="" coords="81,102,218,129"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1CoordSys.html" title=" " alt="" coords="5,5,139,32"/>
-<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1RealBox.html" title=" " alt="" coords="163,5,290,32"/>
-<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FFT_1_1Poisson.html" title=" " alt="" coords="243,95,400,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="605,129,783,156"/>
+<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Geometry.html" title=" " alt="" coords="349,93,486,120"/>
+<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1CoordSys.html" title=" " alt="" coords="37,5,170,32"/>
+<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1GpuArray.html" title=" " alt="" coords="5,57,201,98"/>
+<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1RealBox.html" title=" " alt="" coords="40,123,167,149"/>
+<area shape="rect" id="node6" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BoxND.html" title=" " alt="" coords="14,174,193,215"/>
+<area shape="rect" id="node7" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FFT_1_1Poisson.html" title=" " alt="" coords="339,145,496,186"/>
 </map>
