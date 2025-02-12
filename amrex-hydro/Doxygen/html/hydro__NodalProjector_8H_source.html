@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('hydro__NodalProjector_8H_source.html',
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classHydro_1_1NodalProjector.html#aa081412b94f4342fd653a7cb92d0a59b">  130</a></span>&#160;    <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector&lt;amrex::Geometry&gt;</a>               <a class="code" href="classHydro_1_1NodalProjector.html#aa081412b94f4342fd653a7cb92d0a59b">m_geom</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// EB factory if any</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#ifdef AMREX_USE_EB</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#if defined(AMREX_USE_EB) &amp;&amp; !defined(HYDRO_NO_EB)</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="codeRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector&lt;amrex::EBFArrayBoxFactory const *&gt;</a>  m_ebfactory;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
