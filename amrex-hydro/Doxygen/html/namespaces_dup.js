@@ -638,10 +638,10 @@ var namespaces_dup =
         [ "LoopOnCpu_impND", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1loop__detail.html#af7f8efd7c7639823222394e405d335f2", null ],
         [ "LoopOnCpu_impND", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1loop__detail.html#af4f26da56a7147fc25072e711b19688c", null ]
       ] ],
-      [ "machine", null, [
-        [ "Finalize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1machine.html#a80498796973f6b853437e50ba873a6d1", null ],
-        [ "find_best_nbh", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1machine.html#afa7cf247ac1fb3972693835d136c00f1", null ],
-        [ "Initialize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1machine.html#a42a34e9b2688dfa4616c06781fe06d83", null ]
+      [ "Machine", null, [
+        [ "Finalize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1Machine.html#a9502e811fea27e3d1e3af407834b04b1", null ],
+        [ "Initialize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1Machine.html#a53b6e7dc08c68e065f836d819e5231ff", null ],
+        [ "name", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1Machine.html#a578c9b214c4e8dfa2f753181f21d5720", null ]
       ] ],
       [ "Math", null, [
         [ "detail", null, [
@@ -1655,6 +1655,9 @@ var namespaces_dup =
       [ "doHandShakeLocal", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a55d2a814fe7ad70c3e7af12cad0e7c87", null ],
       [ "Dot", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aad71029d21b80e949017215cf30d0f7c", null ],
       [ "Dot", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad99f216d6d06fb8bc99e3597173b7ef7", null ],
+      [ "Dot", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ab581fa08157574f4cb1f82702f5714f1", null ],
+      [ "Dot", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a4c9419f3bb631469eb846977ada50eb2", null ],
+      [ "Dot", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a3bc1446ffd74cc1d52a10b3b4f968892", null ],
       [ "dtoh_memcpy", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a8531953b8fba66482d81cad6c5dc3e73", null ],
       [ "dtoh_memcpy", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a998c5815369d23cd73eea1b09f43a966", null ],
       [ "eb_add_divergence_from_flow", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a2cb587d0d7b4a0a7e85eaea44a331f81", null ],
@@ -1795,6 +1798,8 @@ var namespaces_dup =
       [ "filterParticles", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a31d02dac6559bf01b7ffc7080e11b6b3", null ],
       [ "Finalize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a58b341e8a1b6a668812e8801b917a9de", null ],
       [ "Finalize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a8117ae9942e01445ea7fe62d2f190c64", null ],
+      [ "Finalize_FFT", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a86dd685e0ef82d7a3b6a25097fe08318", null ],
+      [ "Finalize_minimal", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a5f0a2d36e3539b0feab77cb7670d5053", null ],
       [ "FixCoarseBoxSize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#acdfc31382ab1f46867b783921a6f465e", null ],
       [ "fluxreg_fineadd", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a18058abd47bcc0f005182c829f1f4e0a", null ],
       [ "fluxreg_fineareaadd", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a75205bf4e5cf11c750d36643d869651e", null ],
@@ -1870,7 +1875,9 @@ var namespaces_dup =
       [ "GetVecOfConstPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aede68065e25b664a64f390e487cdb110", null ],
       [ "GetVecOfConstPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a757ca7d148512a0df37748eb6c3c1900", null ],
       [ "GetVecOfConstPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a51100fabe18e8030b106160d35ee8480", null ],
+      [ "GetVecOfConstPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ae373e465e7172706317ead201aa5daf1", null ],
       [ "GetVecOfPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a75a0cde85de080ac29b7c4510da71e16", null ],
+      [ "GetVecOfPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a1cd4530f1ff191f23f734bb93594bfe2", null ],
       [ "GetVecOfPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9f6600475654838eaad331bff6121d0b", null ],
       [ "GetVecOfVecOfPtrs", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ab58a5175e344b8182c92032bfdd0c0c5", null ],
       [ "gpuGetErrorString", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a79b913ab583aa109660a3d6b829d95d5", null ],
@@ -1953,6 +1960,8 @@ var namespaces_dup =
       [ "IndexTypeResize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a5bad6b5e9ac15098a7b21ff8a1484436", null ],
       [ "IndexTypeShrink", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a3acdd0c3787d77593b66802dbb949c7d", null ],
       [ "IndexTypeSplit", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#af0ab69d1b1820dafac6c9e33cbc5b586", null ],
+      [ "Init_FFT", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a3eea92efd3c682f5f23770f47af7c14b", null ],
+      [ "Init_minimal", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afadc6162983c674e4597ea37fa732645", null ],
       [ "Initialize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a023801a9417fb6bd2f74787e89124a8c", null ],
       [ "Initialize", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a187cdb4f4273fdf9bcad01ac8e3fcc4d", null ],
       [ "Initialized", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afdedd4a55eb147e0e27194b9e06f68e0", null ],
@@ -2410,6 +2419,7 @@ var namespaces_dup =
       [ "mlndlap_semi_interpadd_aa", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a70d0526f5c183c5731c0f08ba27670cc", null ],
       [ "mlndlap_semi_restriction", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a739c61caa42304fdafed256192d5b3ae", null ],
       [ "mlndlap_set_dirichlet_mask", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ada2b00e17500ae80305fdbf12852131b", null ],
+      [ "mlndlap_set_dot_mask", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a0a81ad8d15bb71f76c3d78ceed1eecae", null ],
       [ "mlndlap_set_dot_mask", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#adec70b44b6602b28be91e27a7595c9c1", null ],
       [ "mlndlap_set_nodal_mask", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a1200f8a64999cddaba15abf22ffb4e0f", null ],
       [ "mlndlap_set_stencil", "https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a77743280efb0c02d3c4301b87b272f7c", null ],
