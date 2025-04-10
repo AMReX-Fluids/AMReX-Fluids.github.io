@@ -1,7 +1,8 @@
 <map id="HydroUtils::enforceInOutSolvability" name="HydroUtils::enforceInOutSolvability">
-<area shape="rect" id="node1" title="Enforces solvablity by scaling outflow to match with inflow." alt="" coords="5,90,188,131"/>
+<area shape="rect" id="node1" title="Enforces solvablity by scaling outflow to match with inflow." alt="" coords="5,122,188,163"/>
 <area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#ad26f2328bf66aa9678347a6055a25431" title=" " alt="" coords="275,5,382,32"/>
 <area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IndexTypeND.html#a0d06bd2cc857a9cf3098d16996a1ddd7" title=" " alt="" coords="249,57,408,98"/>
 <area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IndexTypeND.html#a39243eea796a0d7d16ed6edb387c99a8" title=" " alt="" coords="249,122,408,163"/>
-<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#ab429ed6919ef0d76968fa57fe14e8e4d" title=" " alt="" coords="236,188,421,215"/>
+<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#af97d55742a96cb9e934e06c45ec22f03" title=" " alt="" coords="243,188,414,215"/>
+<area shape="rect" id="node6" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#ab429ed6919ef0d76968fa57fe14e8e4d" title=" " alt="" coords="236,239,421,265"/>
 </map>
