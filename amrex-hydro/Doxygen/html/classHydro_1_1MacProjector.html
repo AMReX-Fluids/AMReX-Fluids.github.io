@@ -175,6 +175,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a11425406f3b1ebf78d61520733cfe6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a7f09aa7edb1a831bceefd74a729619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a8a7f09aa7edb1a831bceefd74a729619">project</a> (amrex::Real reltol, amrex::Real atol)</td></tr>
 <tr class="separator:a8a7f09aa7edb1a831bceefd74a729619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2081a240a8addc2c0ab2549d0aba0c85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a2081a240a8addc2c0ab2549d0aba0c85">project_doit</a> (amrex::Real reltol, amrex::Real atol)</td></tr>
+<tr class="separator:a2081a240a8addc2c0ab2549d0aba0c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5af2a8c4c1da1def1a08e66393f8d741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a5af2a8c4c1da1def1a08e66393f8d741">getFluxes</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#afe930d74045516fece8591f173e57007">amrex::Array</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> *, AMREX_SPACEDIM &gt; &gt; &amp;a_flux, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html">amrex::Vector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> * &gt; &amp;a_sol, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MLMGT.html#a4adf824fc2842cb7a07dcc0395627629">amrex::MLMG::Location</a> a_loc) const</td></tr>
 <tr class="separator:a5af2a8c4c1da1def1a08e66393f8d741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0421fceb4701fda980091df297a21183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHydro_1_1MacProjector.html#a0421fceb4701fda980091df297a21183">setVerbose</a> (int v) noexcept</td></tr>
@@ -657,6 +659,15 @@ Here is the call graph for this function:</div>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="247,187,394,214"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classHydro_1_1MacProjector_a83161a0efc231e4581212321fdbeac8f_icgraph.png" border="0" usemap="#aclassHydro_1_1MacProjector_a83161a0efc231e4581212321fdbeac8f_icgraph" alt=""/></div>
+<map name="aclassHydro_1_1MacProjector_a83161a0efc231e4581212321fdbeac8f_icgraph" id="aclassHydro_1_1MacProjector_a83161a0efc231e4581212321fdbeac8f_icgraph">
+<area shape="rect" title=" " alt="" coords="208,5,380,47"/>
+<area shape="rect" href="classHydro_1_1MacProjector.html#a2081a240a8addc2c0ab2549d0aba0c85" title=" " alt="" coords="5,5,160,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -943,6 +954,55 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2081a240a8addc2c0ab2549d0aba0c85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2081a240a8addc2c0ab2549d0aba0c85">&#9670;&nbsp;</a></span>project_doit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Hydro::MacProjector::project_doit </td>
+          <td>(</td>
+          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramname"><em>reltol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">amrex::Real&#160;</td>
+          <td class="paramname"><em>atol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classHydro_1_1MacProjector_a2081a240a8addc2c0ab2549d0aba0c85_cgraph.png" border="0" usemap="#aclassHydro_1_1MacProjector_a2081a240a8addc2c0ab2549d0aba0c85_cgraph" alt=""/></div>
+<map name="aclassHydro_1_1MacProjector_a2081a240a8addc2c0ab2549d0aba0c85_cgraph" id="aclassHydro_1_1MacProjector_a2081a240a8addc2c0ab2549d0aba0c85_cgraph">
+<area shape="rect" title=" " alt="" coords="5,369,160,411"/>
+<area shape="rect" href="classHydro_1_1MacProjector.html#a83161a0efc231e4581212321fdbeac8f" title=" " alt="" coords="235,121,407,163"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="505,187,651,214"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ab36700aa1e60f78cbb544a7593de37af" title=" " alt="" coords="220,238,423,265"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aac572002c16db8070f5ffaf6afaf1b87" title=" " alt="" coords="208,289,435,315"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a233a16599969d91372d51e1befabcbfc" title=" " alt="" coords="234,340,409,381"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a868f5160aebe3197f4e8df1dc40e60da" title=" " alt="" coords="225,406,417,433"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a51100fabe18e8030b106160d35ee8480" title=" " alt="" coords="224,457,419,483"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9f6600475654838eaad331bff6121d0b" title=" " alt="" coords="242,507,401,534"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MLLinOpT.html#ae4208159e7121c341be4c40f148563ad" title=" " alt="" coords="218,558,425,585"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MLLinOpT.html#a1ca9d659068ffdf4e8d78d035aa9450c" title=" " alt="" coords="213,609,429,635"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a444e92d4213a53739768571a4bb72ce3" title=" " alt="" coords="495,5,661,47"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a3df9dbf65687fa616a98a6be2789eedd" title=" " alt="" coords="483,71,673,112"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#abf4383fa730748d459bd9586d9abc1ce" title=" " alt="" coords="483,137,673,163"/>
+</map>
+</div>
 
 </div>
 </div>

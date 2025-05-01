@@ -15,6 +15,7 @@ var classHydro_1_1MacProjector =
     [ "needInitialization", "classHydro_1_1MacProjector.html#a810a7a05b1bcc6729b3bd68022073e70", null ],
     [ "project", "classHydro_1_1MacProjector.html#a8a7f09aa7edb1a831bceefd74a729619", null ],
     [ "project", "classHydro_1_1MacProjector.html#a11425406f3b1ebf78d61520733cfe6fc", null ],
+    [ "project_doit", "classHydro_1_1MacProjector.html#a2081a240a8addc2c0ab2549d0aba0c85", null ],
     [ "setCoarseFineBC", "classHydro_1_1MacProjector.html#aa180608476662e8842d3f531fbcaf4bd", null ],
     [ "setDivU", "classHydro_1_1MacProjector.html#aa4a6c51af0f9f7f5a7cdb90af94bb452", null ],
     [ "setDomainBC", "classHydro_1_1MacProjector.html#a4e1fa14e4ba6e059f9f9eef63853f68a", null ],

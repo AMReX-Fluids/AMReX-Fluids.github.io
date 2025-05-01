@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['commprofstats_10606',['CommProfStats',['https://amrex-codes.github.io/amrex/doxygen/structCommProfStats_1_1BarrierEntry.html',1,'']]]
+  ['commprofstats_10614',['CommProfStats',['https://amrex-codes.github.io/amrex/doxygen/structCommProfStats_1_1BarrierEntry.html',1,'']]]
 ];
