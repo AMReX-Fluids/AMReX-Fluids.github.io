@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boundary conditions &mdash; amrex-hydro 25.05-dev documentation</title>
+  <title>Boundary conditions &mdash; amrex-hydro 25.06-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -14,7 +14,7 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=64bf3744"></script>
+      <script src="_static/documentation_options.js?v=b85e70cf"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
       <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -89,7 +89,7 @@
   <section id="boundary-conditions">
 <span id="bcs"></span><h1>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Link to this heading"></a></h1>
 <p>AMReX-Hydro uses underlying AMReX functionality in implementing boundary conditions
-(see AMReX’s documentation section <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/Basics.html#sec-basics-boundary" title="(in amrex v25.05-dev)"><span>Boundary Conditions</span></a>).
+(see AMReX’s documentation section <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/Basics.html#sec-basics-boundary" title="(in amrex v25.06-dev)"><span>Boundary Conditions</span></a>).
 Physical boundary conditions, such as
 inflow, outflow, slip/no-slip walls, etc. are ultimately linked to
 mathematical Dirichlet or Neumann conditions.
@@ -109,13 +109,13 @@ and must fully specify the BC on all faces.
 If a position-dependent BCs are passed in, they take precedent and single BC per face <code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">BCRecs</span></code> are
 ignored.</p>
 <p>The MacProjector supports mixed boundary conditions by making use of the underlying linear solver’s
-Robin BC (<a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v25.05-dev)"><span>Boundary Conditions</span></a>) option. Robin boundary conditions are formulated as
+Robin BC (<a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v25.06-dev)"><span>Boundary Conditions</span></a>) option. Robin boundary conditions are formulated as
 <span class="math notranslate nohighlight">\(a\phi + b\frac{\partial\phi}{\partial n} = f\)</span>.
 <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(f\)</span> are each a cell-centered (real) <code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">MultiFab</span></code> that carries
 the relevant values in the first ghost cell. All three must be specified on each level with a call to
-<code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">setLevelBC</span></code> (see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v25.05-dev)"><span>Boundary Conditions</span></a> for usage).</p>
+<code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">setLevelBC</span></code> (see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v25.06-dev)"><span>Boundary Conditions</span></a> for usage).</p>
 <p>The NodalProjector can support mixed boundary conditions through the use of an overset mask
-(see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v25.05-dev)"><span>Boundary Conditions</span></a>).
+(see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v25.06-dev)"><span>Boundary Conditions</span></a>).
 The overset mask specifies a Dirichlet BC with 0 (meaning no solve is needed since the solution is known) or Neumann with 1 (meaning do the solve). Note this is an integer (not bool) MultiFab, so the values must be only either 0 or 1.</p>
 </section>
 <section id="advective-bc-details">
