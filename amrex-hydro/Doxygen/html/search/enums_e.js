@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['side_18978',['Side',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Orientation.html#a877c697bbab9de21af4012197ba76410',1,'amrex::Orientation']]],
-  ['statemode_18979',['StateMode',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LinOpEnumType.html#a1afeea6c44c6989ddd2ef9f7ad67b2b8',1,'amrex::LinOpEnumType']]],
-  ['strategy_18980',['Strategy',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1DistributionMapping.html#ad8e078b643635f0027eb797c2d54d3b8',1,'amrex::DistributionMapping::Strategy()'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1ForkJoin.html#a72de18d1d16fadce31b830834ffff282',1,'amrex::ForkJoin::Strategy()']]]
+  ['side_19013',['Side',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Orientation.html#a877c697bbab9de21af4012197ba76410',1,'amrex::Orientation']]],
+  ['statemode_19014',['StateMode',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LinOpEnumType.html#a1afeea6c44c6989ddd2ef9f7ad67b2b8',1,'amrex::LinOpEnumType']]],
+  ['strategy_19015',['Strategy',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1DistributionMapping.html#ad8e078b643635f0027eb797c2d54d3b8',1,'amrex::DistributionMapping::Strategy()'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1ForkJoin.html#a72de18d1d16fadce31b830834ffff282',1,'amrex::ForkJoin::Strategy()']]]
 ];
