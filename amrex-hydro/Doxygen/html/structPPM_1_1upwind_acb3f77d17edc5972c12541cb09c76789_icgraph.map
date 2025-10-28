@@ -1,4 +1,5 @@
 <map id="PPM::upwind::sedge2" name="PPM::upwind::sedge2">
-<area shape="rect" id="node1" title=" " alt="" coords="208,5,368,32"/>
-<area shape="rect" id="node2" href="$structPPM_1_1upwind.html#a61979ff1b7f9201fe76c31a611a7038c" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,5,368,31"/>
+<area shape="rect" id="Node000002" href="$structPPM_1_1upwind.html#a4cb105bc30cf05ee535388a1663b9d17" title=" " alt="" coords="5,5,160,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,21,160,21,160,15,194,15"/>
 </map>

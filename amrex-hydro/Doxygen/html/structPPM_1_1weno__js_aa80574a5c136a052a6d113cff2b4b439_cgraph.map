@@ -1,0 +1,10 @@
+<map id="PPM::weno_js::sm_sp" name="PPM::weno_js::sm_sp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,167,80"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a1da6f37dc0e166f794600bfb19a19823" title=" " alt="" coords="227,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,52,229,31,230,36,142,57"/>
+<area shape="rect" id="Node000003" href="$structPPM_1_1weno__js.html#a4ee58e28595ca239c1b4d61746484e58" title=" " alt="" coords="215,55,381,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,65,201,65,201,70,167,70"/>
+<area shape="rect" id="Node000004" href="$structPPM_1_1weno__js.html#ae2532c871effd2368da494e08267a844" title=" " alt="" coords="429,80,596,105"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="143,77,215,89,318,94,416,94,416,99,318,100,214,94,142,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="382,75,416,79,415,84,382,80"/>
+</map>

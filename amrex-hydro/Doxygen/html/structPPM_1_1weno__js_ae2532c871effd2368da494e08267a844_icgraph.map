@@ -1,5 +1,8 @@
 <map id="PPM::weno_js::sedge2" name="PPM::weno_js::sedge2">
-<area shape="rect" id="node1" title=" " alt="" coords="429,31,596,57"/>
-<area shape="rect" id="node2" href="$structPPM_1_1weno__js.html#a4ee58e28595ca239c1b4d61746484e58" title=" " alt="" coords="215,5,381,32"/>
-<area shape="rect" id="node3" href="$structPPM_1_1weno__js.html#aa619be5ba9bcb11d5d818ca318f9c699" title=" " alt="" coords="5,31,167,57"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="429,31,596,56"/>
+<area shape="rect" id="Node000002" href="$structPPM_1_1weno__js.html#a4ee58e28595ca239c1b4d61746484e58" title=" " alt="" coords="215,5,381,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,34,381,30,382,25,416,29"/>
+<area shape="rect" id="Node000003" href="$structPPM_1_1weno__js.html#aa80574a5c136a052a6d113cff2b4b439" title=" " alt="" coords="5,31,167,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="415,46,167,46,167,41,415,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="201,32,167,36,167,31,201,27"/>
 </map>

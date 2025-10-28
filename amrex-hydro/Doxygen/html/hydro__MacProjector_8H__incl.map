@@ -1,7 +1,11 @@
 <map id="Projections/hydro_MacProjector.H" name="Projections/hydro_MacProjector.H">
-<area shape="rect" id="node1" title=" " alt="" coords="189,5,429,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,136,107"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MLMG_8H.html.html" title=" " alt="" coords="160,80,291,107"/>
-<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MLPoisson_8H.html.html" title=" " alt="" coords="315,80,474,107"/>
-<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MLABecLaplacian_8H.html.html" title=" " alt="" coords="499,80,704,107"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="189,5,429,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,136,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,33,123,77,122,72,270,28"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MLMG_8H.html" title=" " alt="" coords="160,79,291,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,33,251,72,248,67,294,29"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MLPoisson_8H.html" title=" " alt="" coords="315,79,474,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="325,29,372,68,369,72,321,33"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__MLABecLaplacian_8H.html" title=" " alt="" coords="499,79,704,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="357,28,542,73,540,78,356,33"/>
 </map>

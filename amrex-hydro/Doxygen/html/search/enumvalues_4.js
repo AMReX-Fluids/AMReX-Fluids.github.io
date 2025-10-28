@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['explicitrungekutta_19067',['ExplicitRungeKutta',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aad80b9cf2bc799f2905cc9a77e3a599ea0e3b15fe691c25fd194f13af33980845',1,'amrex']]]
+  ['weno_5fjs_0',['WENO_JS',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a742b9872942c5c229f854566a53c9d40',1,'PPM']]],
+  ['wenoz_1',['WENOZ',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a3825f2b15f80d49790117e959cbcc48e',1,'PPM']]]
 ];

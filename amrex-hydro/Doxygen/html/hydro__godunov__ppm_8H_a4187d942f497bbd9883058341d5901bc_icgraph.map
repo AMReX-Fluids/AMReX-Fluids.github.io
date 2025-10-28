@@ -1,5 +1,7 @@
 <map id="Godunov_minmod_bc_hi" name="Godunov_minmod_bc_hi">
-<area shape="rect" id="node1" title=" " alt="" coords="247,46,429,73"/>
-<area shape="rect" id="node2" href="$namespacePPM.html#a8b4f00c186c4c39a40c7fa18eab1fbcb" title=" " alt="" coords="5,5,199,47"/>
-<area shape="rect" id="node3" href="$namespacePPM.html#ab3ff970c6a0448249ab43528cdc57aef" title=" " alt="" coords="6,71,198,112"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="247,45,429,70"/>
+<area shape="rect" id="Node000002" href="$namespacePPM.html#a8b4f00c186c4c39a40c7fa18eab1fbcb" title=" " alt="" coords="5,5,199,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,46,198,41,199,36,233,40"/>
+<area shape="rect" id="Node000003" href="$namespacePPM.html#ab3ff970c6a0448249ab43528cdc57aef" title=" " alt="" coords="6,69,198,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,74,199,79,198,74,233,69"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="Hydro::NodalProjector::setCustomRHS" name="Hydro::NodalProjector::setCustomRHS">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,171,47"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="219,13,365,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,171,63"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MultiFab.html#ab70ce65ff46ae21b8cc4e0584fe26ffa" title=" " alt="" coords="219,5,387,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,31,205,27,205,32,171,36"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="229,55,376,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,50,216,55,215,60,170,55"/>
 </map>

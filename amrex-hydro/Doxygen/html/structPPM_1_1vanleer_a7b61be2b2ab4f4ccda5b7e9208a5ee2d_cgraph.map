@@ -1,4 +1,5 @@
 <map id="PPM::vanleer::vanLeer" name="PPM::vanleer::vanLeer">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,172,32"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a4963180ac09020e51a2077bf2ebdb323" title=" " alt="" coords="220,5,317,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,31"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="220,5,317,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,15,206,15,206,21,172,21"/>
 </map>

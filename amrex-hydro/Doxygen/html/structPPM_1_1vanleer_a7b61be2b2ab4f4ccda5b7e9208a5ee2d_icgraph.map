@@ -1,6 +1,10 @@
 <map id="PPM::vanleer::vanLeer" name="PPM::vanleer::vanLeer">
-<area shape="rect" id="node1" title=" " alt="" coords="421,31,588,57"/>
-<area shape="rect" id="node2" href="$structPPM_1_1vanleer.html#affdd1c9ff59a751cd3dc103b26bdd64d" title=" " alt="" coords="211,5,373,32"/>
-<area shape="rect" id="node4" href="$structPPM_1_1vanleer.html#a6a428f7a0db589ef01140974429b5122" title=" " alt="" coords="211,56,373,83"/>
-<area shape="rect" id="node3" href="$structPPM_1_1vanleer.html#a89fa76480e9a228cbf70392c0928fc13" title=" " alt="" coords="5,31,163,57"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="421,31,588,56"/>
+<area shape="rect" id="Node000002" href="$structPPM_1_1vanleer.html#affdd1c9ff59a751cd3dc103b26bdd64d" title=" " alt="" coords="211,5,373,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="407,34,373,30,374,25,408,29"/>
+<area shape="rect" id="Node000004" href="$structPPM_1_1vanleer.html#a6a428f7a0db589ef01140974429b5122" title=" " alt="" coords="211,55,373,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="408,57,374,61,373,56,407,52"/>
+<area shape="rect" id="Node000003" href="$structPPM_1_1vanleer.html#a1ab2004a5f2f38928e88c0f16d8a7bf5" title=" " alt="" coords="5,31,163,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="197,32,163,36,163,31,196,27"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="196,59,163,55,163,50,197,54"/>
 </map>

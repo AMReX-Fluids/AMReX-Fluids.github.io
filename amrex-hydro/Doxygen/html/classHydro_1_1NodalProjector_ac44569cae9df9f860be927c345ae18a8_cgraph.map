@@ -1,4 +1,5 @@
 <map id="Hydro::NodalProjector::setOptions" name="Hydro::NodalProjector::setOptions">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,171,47"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ParmParse.html#aa98ab18bc26692876f9590316af5b1fa" title=" " alt="" coords="219,13,404,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,171,45"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ParmParse.html#af14555ab6859c064cc3ca2860cdfa378" title=" " alt="" coords="219,13,404,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,23,205,23,205,28,171,28"/>
 </map>

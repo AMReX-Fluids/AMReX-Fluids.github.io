@@ -1,8 +1,11 @@
 <map id="MOL::hydro_mol_yedge_state" name="MOL::hydro_mol_yedge_state">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,180,141"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a43724c1f3c9745b893de6823b5bfef51" title=" " alt="" coords="228,5,425,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#ac96e89dbbf05063f32d1ef7860f6a4ea" title=" " alt="" coords="276,56,377,83"/>
-<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a4963180ac09020e51a2077bf2ebdb323" title=" " alt="" coords="278,107,375,133"/>
-<area shape="rect" id="node5" href="$namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f" title="Boundary condition effects." alt="" coords="237,157,416,184"/>
-<area shape="rect" id="node6" href="$namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b" title="Boundary condition effects." alt="" coords="237,208,417,235"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,73,180,113"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="267,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,70,227,39,254,32,255,37,229,45,145,75"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="269,55,367,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,80,255,72,255,77,180,86"/>
+<area shape="rect" id="Node000004" href="$namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f" title="Boundary condition effects." alt="" coords="229,104,407,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,99,215,103,215,108,180,105"/>
+<area shape="rect" id="Node000005" href="$namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b" title="Boundary condition effects." alt="" coords="228,153,408,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="149,110,229,138,258,147,256,152,227,143,147,115"/>
 </map>

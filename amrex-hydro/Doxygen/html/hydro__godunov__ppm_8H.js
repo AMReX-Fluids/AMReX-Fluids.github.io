@@ -1,11 +1,11 @@
 var hydro__godunov__ppm_8H =
 [
-    [ "nolimiter", "structPPM_1_1nolimiter.html", "structPPM_1_1nolimiter" ],
-    [ "vanleer", "structPPM_1_1vanleer.html", "structPPM_1_1vanleer" ],
-    [ "wenoz", "structPPM_1_1wenoz.html", "structPPM_1_1wenoz" ],
-    [ "weno_js", "structPPM_1_1weno__js.html", "structPPM_1_1weno__js" ],
-    [ "upwind", "structPPM_1_1upwind.html", "structPPM_1_1upwind" ],
-    [ "minmod", "structPPM_1_1minmod.html", "structPPM_1_1minmod" ],
+    [ "PPM::nolimiter", "structPPM_1_1nolimiter.html", "structPPM_1_1nolimiter" ],
+    [ "PPM::vanleer", "structPPM_1_1vanleer.html", "structPPM_1_1vanleer" ],
+    [ "PPM::wenoz", "structPPM_1_1wenoz.html", "structPPM_1_1wenoz" ],
+    [ "PPM::weno_js", "structPPM_1_1weno__js.html", "structPPM_1_1weno__js" ],
+    [ "PPM::upwind", "structPPM_1_1upwind.html", "structPPM_1_1upwind" ],
+    [ "PPM::minmod", "structPPM_1_1minmod.html", "structPPM_1_1minmod" ],
     [ "limiters", "hydro__godunov__ppm_8H.html#afde008f2efff2705e2231ca88ed08ff5", [
       [ "VanLeer", "hydro__godunov__ppm_8H.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a", null ],
       [ "WENOZ", "hydro__godunov__ppm_8H.html#afde008f2efff2705e2231ca88ed08ff5a3825f2b15f80d49790117e959cbcc48e", null ],

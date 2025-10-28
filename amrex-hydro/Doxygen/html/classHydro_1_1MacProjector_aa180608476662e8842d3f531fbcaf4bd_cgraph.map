@@ -1,4 +1,5 @@
 <map id="Hydro::MacProjector::setCoarseFineBC" name="Hydro::MacProjector::setCoarseFineBC">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,47"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#a776db3c3a85a3f2d3938446d7ce6b19c" title=" " alt="" coords="208,5,416,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,160,45"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#a776db3c3a85a3f2d3938446d7ce6b19c" title=" " alt="" coords="208,5,416,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
 </map>

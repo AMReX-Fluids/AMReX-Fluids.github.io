@@ -1,4 +1,5 @@
 <map id="PPM::vanleer::sedge1" name="PPM::vanleer::sedge1">
-<area shape="rect" id="node1" title=" " alt="" coords="211,5,373,32"/>
-<area shape="rect" id="node2" href="$structPPM_1_1vanleer.html#a89fa76480e9a228cbf70392c0928fc13" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="211,5,373,31"/>
+<area shape="rect" id="Node000002" href="$structPPM_1_1vanleer.html#a1ab2004a5f2f38928e88c0f16d8a7bf5" title=" " alt="" coords="5,5,163,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,21,163,21,163,15,197,15"/>
 </map>

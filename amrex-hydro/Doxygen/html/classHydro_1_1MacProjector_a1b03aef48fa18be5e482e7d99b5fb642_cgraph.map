@@ -1,0 +1,5 @@
+<map id="Hydro::MacProjector::updateBeta" name="Hydro::MacProjector::updateBeta">
+<area shape="rect" id="Node000001" title="Update Bcoeffs for the linear operator." alt="" coords="5,5,160,45"/>
+<area shape="rect" id="Node000002" href="$classHydro_1_1MacProjector.html#a2997bc71017376e17231cd879d492169" title="Update Bcoeff and if Robin BC also reset scalars in order to reuse the linear operator." alt="" coords="208,5,363,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+</map>

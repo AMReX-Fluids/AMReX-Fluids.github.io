@@ -1,5 +1,7 @@
 <map id="Hydro::MacProjector::setOptions" name="Hydro::MacProjector::setOptions">
-<area shape="rect" id="node1" title=" " alt="" coords="411,5,565,47"/>
-<area shape="rect" id="node2" href="$classHydro_1_1MacProjector.html#aacd4ed718a2c55d2df73739131585eab" title=" " alt="" coords="208,5,363,47"/>
-<area shape="rect" id="node3" href="$classHydro_1_1MacProjector.html#a3ca29786854f04e67ccf2595c7d48524" title=" " alt="" coords="5,5,160,47"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="411,5,565,45"/>
+<area shape="rect" id="Node000002" href="$classHydro_1_1MacProjector.html#aacd4ed718a2c55d2df73739131585eab" title=" " alt="" coords="208,5,363,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,28,363,28,363,23,397,23"/>
+<area shape="rect" id="Node000003" href="$classHydro_1_1MacProjector.html#a3ca29786854f04e67ccf2595c7d48524" title=" " alt="" coords="5,5,160,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,28,161,28,161,23,194,23"/>
 </map>

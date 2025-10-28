@@ -1,4 +1,5 @@
 <map id="create_transverse_terms_for_xface" name="create_transverse_terms_for_xface">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node2" href="$group__EBGodunov.html#gae7fb5657f6312ba192f0ad3a3652f4a8" title=" " alt="" coords="237,13,341,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,189,45"/>
+<area shape="rect" id="Node000002" href="$group__EBGodunov.html#gae7fb5657f6312ba192f0ad3a3652f4a8" title=" " alt="" coords="237,13,341,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,23,223,23,223,28,189,28"/>
 </map>

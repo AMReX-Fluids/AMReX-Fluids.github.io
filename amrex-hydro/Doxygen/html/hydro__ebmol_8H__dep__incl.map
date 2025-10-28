@@ -1,6 +1,9 @@
 <map id="EBMOL/hydro_ebmol.H" name="EBMOL/hydro_ebmol.H">
-<area shape="rect" id="node1" title=" " alt="" coords="249,5,419,32"/>
-<area shape="rect" id="node2" href="$hydro__ebmol__extrap__vel__to__faces_8cpp.html" title=" " alt="" coords="5,80,212,121"/>
-<area shape="rect" id="node3" href="$hydro__ebmol__edge__state_8cpp.html" title=" " alt="" coords="236,80,432,121"/>
-<area shape="rect" id="node4" href="$hydro__ebmol__extrap__vel__to__faces__box_8cpp.html" title=" " alt="" coords="456,80,663,121"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="243,5,414,31"/>
+<area shape="rect" id="Node000002" href="$hydro__ebmol__edge__state_8cpp.html" title=" " alt="" coords="5,79,201,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,38,158,81,157,76,282,33"/>
+<area shape="rect" id="Node000003" href="$hydro__ebmol__extrap__vel__to__faces_8cpp.html" title=" " alt="" coords="225,79,432,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="331,44,331,79,326,79,326,44"/>
+<area shape="rect" id="Node000004" href="$hydro__ebmol__extrap__vel__to__faces__box_8cpp.html" title=" " alt="" coords="456,79,663,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="376,33,505,76,503,81,374,38"/>
 </map>

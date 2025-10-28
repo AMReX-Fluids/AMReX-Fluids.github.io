@@ -1,5 +1,7 @@
 <map id="Hydro::MacProjector::getFluxes" name="Hydro::MacProjector::getFluxes">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,160,65"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#a2ae10763b783ce6190c161927125dd63" title=" " alt="" coords="213,5,419,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#a1ca9d659068ffdf4e8d78d035aa9450c" title=" " alt="" coords="208,56,424,83"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,160,63"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#a5e20ced22c2f1ce3f442620a3bfb9c5c" title=" " alt="" coords="213,5,419,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,32,199,28,200,33,160,38"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#a1ca9d659068ffdf4e8d78d035aa9450c" title=" " alt="" coords="208,55,424,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,49,194,52,194,57,160,54"/>
 </map>

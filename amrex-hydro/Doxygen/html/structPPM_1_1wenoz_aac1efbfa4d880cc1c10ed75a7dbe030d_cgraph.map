@@ -1,4 +1,5 @@
 <map id="PPM::wenoz::sedge1" name="PPM::wenoz::sedge1">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node2" href="$structPPM_1_1wenoz.html#a872d1bc9b592662b12a9a62ca02082b0" title=" " alt="" coords="208,5,363,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,160,31"/>
+<area shape="rect" id="Node000002" href="$structPPM_1_1wenoz.html#a872d1bc9b592662b12a9a62ca02082b0" title=" " alt="" coords="208,5,363,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,15,194,15,194,21,160,21"/>
 </map>

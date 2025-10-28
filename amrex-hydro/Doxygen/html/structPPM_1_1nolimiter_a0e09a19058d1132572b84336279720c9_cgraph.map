@@ -1,0 +1,9 @@
+<map id="PPM::nolimiter::sm_sp" name="PPM::nolimiter::sm_sp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,172,80"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a1da6f37dc0e166f794600bfb19a19823" title=" " alt="" coords="235,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,52,235,31,237,36,146,57"/>
+<area shape="rect" id="Node000003" href="$structPPM_1_1nolimiter.html#a3236ff6486d32336f4877f4967e85e09" title=" " alt="" coords="220,55,392,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,206,65,206,70,172,70"/>
+<area shape="rect" id="Node000004" href="$structPPM_1_1nolimiter.html#a11e73160bd508f37504c59d7d77c5caf" title=" " alt="" coords="220,104,392,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="146,77,237,98,235,104,145,83"/>
+</map>

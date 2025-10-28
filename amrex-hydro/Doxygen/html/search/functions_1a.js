@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['zero_15856',['Zero',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1SmallMatrix.html#a9b8ca245e5931136082a2525d3e92c13',1,'amrex::SmallMatrix']]],
-  ['zhi_15857',['zhi',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array3D.html#aaab3fa80feb2977147500e4be20ef1c6',1,'amrex::Array3D::zhi()'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Orientation.html#aec124aa8bccd0ed69c31cc2a493d1c8b',1,'amrex::Orientation::zhi()']]],
-  ['zlen_15858',['zlen',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array3D.html#a75a84ff0a44187bd73162a6d8c88201c',1,'amrex::Array3D']]],
-  ['zlo_15859',['zlo',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array3D.html#a91093842864e607fcb651ac61966c2a7',1,'amrex::Array3D::zlo()'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Orientation.html#aa936e10b51b21265fb3259127c657320',1,'amrex::Orientation::zlo()']]]
+  ['zero_0',['Zero',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1SmallMatrix.html#a5c425962e7338c912dad47c861187a1d',1,'amrex::SmallMatrix']]],
+  ['zhi_1',['zhi',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array3D.html#a2b4a6bcc252308d07bd5959e118fe2f7',1,'amrex::Array3D::zhi()'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Orientation.html#a0505544cbc7fe3d395c86c0967f3f6bf',1,'amrex::Orientation::zhi()']]],
+  ['zhi_5fis_5fsymmetric_2',['zhi_is_symmetric',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1CurlCurlSymmetryInfo.html#a327117478d80ab662e9ee2b3a1ceb871',1,'amrex::CurlCurlSymmetryInfo']]],
+  ['zlen_3',['zlen',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array3D.html#afe1ff40dfe2348bf8b3da36f99e3674b',1,'amrex::Array3D']]],
+  ['zlo_4',['zlo',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array3D.html#aed54a5a1eed853d656d0659203ebc3c1',1,'amrex::Array3D::zlo()'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Orientation.html#a3429e6574ddccf1ba5e3a41beb661408',1,'amrex::Orientation::zlo()']]],
+  ['zlo_5fis_5fsymmetric_5',['zlo_is_symmetric',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1CurlCurlSymmetryInfo.html#aca9e52e986c9c0ee80bf4f25c581f69b',1,'amrex::CurlCurlSymmetryInfo']]]
 ];

@@ -1,8 +1,13 @@
 <map id="PPM::PredictStateOnXFace&lt; PPM::minmod &gt;" name="PPM::PredictStateOnXFace&lt; PPM::minmod &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,99,199,141"/>
-<area shape="rect" id="node2" href="$hydro__godunov__ppm_8H.html#a4187d942f497bbd9883058341d5901bc" title=" " alt="" coords="247,5,429,32"/>
-<area shape="rect" id="node3" href="$hydro__godunov__ppm_8H.html#a0839227095b0049e12c2fe536c42dcc7" title=" " alt="" coords="247,56,429,83"/>
-<area shape="rect" id="node4" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BCRec.html#a71f31a94c5cc90a516f81113149c8dc5" title=" " alt="" coords="271,107,405,133"/>
-<area shape="rect" id="node5" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BCRec.html#a74fd235fae26308310dc648f3b26fea6" title=" " alt="" coords="271,157,405,184"/>
-<area shape="rect" id="node6" href="$hydro__godunov__ppm_8H.html#a21180e225f46577ee2bfaebef9d961d2" title=" " alt="" coords="290,208,386,235"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,97,199,137"/>
+<area shape="rect" id="Node000002" href="$hydro__godunov__ppm_8H.html#a4187d942f497bbd9883058341d5901bc" title=" " alt="" coords="247,5,429,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,94,187,66,246,40,267,32,269,37,248,44,189,71,138,99"/>
+<area shape="rect" id="Node000003" href="$hydro__godunov__ppm_8H.html#a0839227095b0049e12c2fe536c42dcc7" title=" " alt="" coords="247,55,429,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,94,263,80,264,85,199,99"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BCRec.html#a653a844fb1d7621cc28b1a17fa3eb5e3" title=" " alt="" coords="271,104,405,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="199,114,257,114,257,119,199,119"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BCRec.html#a6aa075e8e6b0c22588c8441285eef926" title=" " alt="" coords="271,153,405,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="199,134,264,148,263,153,198,139"/>
+<area shape="rect" id="Node000006" href="$hydro__godunov__ppm_8H.html#a21180e225f46577ee2bfaebef9d961d2" title=" " alt="" coords="290,203,386,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="139,134,190,161,248,188,278,198,276,203,246,192,187,166,137,139"/>
 </map>

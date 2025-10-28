@@ -1,4 +1,5 @@
 <map id="create_transverse_terms_for_xface" name="create_transverse_terms_for_xface">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#aefcca7679b76de3867191843450d69f3" title=" " alt="" coords="237,13,429,39"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,189,45"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a469ef481e1784b33e142b84856abefcb" title=" " alt="" coords="237,13,429,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,23,224,23,224,28,190,28"/>
 </map>

@@ -1,6 +1,10 @@
 <map id="PPM::vanleer::sedge1" name="PPM::vanleer::sedge1">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,168,83"/>
-<area shape="rect" id="node2" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#ac96e89dbbf05063f32d1ef7860f6a4ea" title=" " alt="" coords="249,5,350,32"/>
-<area shape="rect" id="node3" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a4963180ac09020e51a2077bf2ebdb323" title=" " alt="" coords="431,81,528,108"/>
-<area shape="rect" id="node4" href="$structPPM_1_1vanleer.html#a7b61be2b2ab4f4ccda5b7e9208a5ee2d" title=" " alt="" coords="216,107,383,133"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,168,81"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="249,5,350,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,53,235,31,236,36,142,58"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="431,81,528,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,71,417,87,416,93,168,77"/>
+<area shape="rect" id="Node000004" href="$structPPM_1_1vanleer.html#a7b61be2b2ab4f4ccda5b7e9208a5ee2d" title=" " alt="" coords="216,107,383,132"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,79,233,101,232,106,140,84"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="383,105,417,100,417,105,383,110"/>
 </map>
