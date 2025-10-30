@@ -155,12 +155,12 @@ $(document).ready(function(){initNavTree('hydro__ebmol__edge__state__K_8H_source
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ilo = domain.smallEnd(0);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ihi = domain.bigEnd(0);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jlo = domain.smallEnd(1);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jhi = domain.bigEnd(1);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ihi = domain.bigEnd(0);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jlo = domain.smallEnd(1);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jhi = domain.bigEnd(1);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#if (AMREX_SPACEDIM == 3)</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        amrex::Real yf = fcx(i,j,k,0); <span class="comment">// local (y,z) of centroid of z-face we are extrapolating to</span></div>
@@ -173,27 +173,27 @@ $(document).ready(function(){initNavTree('hydro__ebmol__edge__state__K_8H_source
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                     amrex::Real zc = ccc(i,j,k,2););</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(amrex::Real delta_x = amrex::Real(0.5) + xc;,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                     amrex::Real delta_y = yf  - yc;,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                     amrex::Real delta_z = zf  - zc;);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                     amrex::Real delta_y = yf - yc;,</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                     amrex::Real delta_z = zf - zc;);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        amrex::Real cc_qmax = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(q(i,j,k,n),q(i-1,j,k,n));</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        amrex::Real cc_qmin = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(q(i,j,k,n),q(i-1,j,k,n));</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ilo = (d_bcrec[n].lo(0) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                     (d_bcrec[n].lo(0) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>             <span class="keywordtype">bool</span> extdir_or_ho_jlo = (d_bcrec[n].lo(1) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ilo = (d_bcrec[n].lo(0) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                                             (d_bcrec[n].lo(0) == amrex::BCType::hoextrap);,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                     <span class="keywordtype">bool</span> extdir_or_ho_jlo = (d_bcrec[n].lo(1) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                                             (d_bcrec[n].lo(1) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>             <span class="keywordtype">bool</span> extdir_or_ho_klo = (d_bcrec[n].lo(2) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                     <span class="keywordtype">bool</span> extdir_or_ho_klo = (d_bcrec[n].lo(2) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                                             (d_bcrec[n].lo(2) == amrex::BCType::hoextrap););</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ihi = (d_bcrec[n].hi(0) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ihi = (d_bcrec[n].hi(0) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                             (d_bcrec[n].hi(0) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>             <span class="keywordtype">bool</span> extdir_or_ho_jhi = (d_bcrec[n].hi(1) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                     <span class="keywordtype">bool</span> extdir_or_ho_jhi = (d_bcrec[n].hi(1) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                             (d_bcrec[n].hi(1) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>             <span class="keywordtype">bool</span> extdir_or_ho_khi = (d_bcrec[n].hi(2) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                     <span class="keywordtype">bool</span> extdir_or_ho_khi = (d_bcrec[n].hi(2) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                                             (d_bcrec[n].hi(2) == amrex::BCType::hoextrap););</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_hi =</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_hi =</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#aab7ce6cca592ec53b9a1e88d243cca1d">amrex_lim_slopes_extdir_eb</a>(i, j, k, n, q, ccc, vfrac,</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz), flag,</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ilo, extdir_or_ho_jlo, extdir_or_ho_klo),</div>
@@ -424,26 +424,26 @@ $(document).ready(function(){initNavTree('hydro__ebmol__edge__state__K_8H_source
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    {</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ilo = domain.smallEnd(0);</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ihi = domain.bigEnd(0);</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jlo = domain.smallEnd(1);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jhi = domain.bigEnd(1);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ihi = domain.bigEnd(0);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jlo = domain.smallEnd(1);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jhi = domain.bigEnd(1);</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">#if (AMREX_SPACEDIM == 3)</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ilo = (d_bcrec[n].lo(0) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                                     (d_bcrec[n].lo(0) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>             <span class="keywordtype">bool</span> extdir_or_ho_jlo = (d_bcrec[n].lo(1) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ilo = (d_bcrec[n].lo(0) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                                             (d_bcrec[n].lo(0) == amrex::BCType::hoextrap);,</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                     <span class="keywordtype">bool</span> extdir_or_ho_jlo = (d_bcrec[n].lo(1) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                                             (d_bcrec[n].lo(1) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>             <span class="keywordtype">bool</span> extdir_or_ho_klo = (d_bcrec[n].lo(2) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                     <span class="keywordtype">bool</span> extdir_or_ho_klo = (d_bcrec[n].lo(2) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                                             (d_bcrec[n].lo(2) == amrex::BCType::hoextrap););</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ihi = (d_bcrec[n].hi(0) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ihi = (d_bcrec[n].hi(0) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                                             (d_bcrec[n].hi(0) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>             <span class="keywordtype">bool</span> extdir_or_ho_jhi = (d_bcrec[n].hi(1) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                     <span class="keywordtype">bool</span> extdir_or_ho_jhi = (d_bcrec[n].hi(1) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                                             (d_bcrec[n].hi(1) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>             <span class="keywordtype">bool</span> extdir_or_ho_khi = (d_bcrec[n].hi(2) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                     <span class="keywordtype">bool</span> extdir_or_ho_khi = (d_bcrec[n].hi(2) == amrex::BCType::ext_dir) ||</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                                             (d_bcrec[n].hi(2) == amrex::BCType::hoextrap););</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        amrex::Real xf = fcy(i,j,k,0); <span class="comment">// local (x,z) of centroid of z-face we are extrapolating to</span></div>
@@ -511,21 +511,21 @@ $(document).ready(function(){initNavTree('hydro__ebmol__edge__state__K_8H_source
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                                        + delta_y * slopes_eb_lo[1];</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        <a class="code hl_function" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(1, i, j, k, n, q, qmns, qpls, vmac(i,j,k), d_bcrec[n].lo(1), domain_jlo, is_velocity);</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        <a class="code hl_function" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(1, i, j, k, n, q, qmns, qpls, vmac(i,j,k), d_bcrec[n].hi(1), domain_jhi, is_velocity);</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <span class="keywordflow">if</span> ( (j==domain_jlo) &amp;&amp; (d_bcrec[n].lo(1) == amrex::BCType::foextrap || d_bcrec[n].lo(1) == amrex::BCType::hoextrap) )</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        {</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            <span class="keywordflow">if</span> ( vmac(i,j,k) &gt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#ga17d5f6d34047cd913543b43d73f2ce9a">YVEL</a> &amp;&amp; is_velocity )  qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls,amrex::Real(0.0));</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>            qmns = qpls;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        }</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        <span class="keywordflow">if</span> ( (j==domain_jhi+1) &amp;&amp; (d_bcrec[n].hi(1) == amrex::BCType::foextrap || d_bcrec[n].hi(1) == amrex::BCType::hoextrap) )</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        {</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>            <span class="keywordflow">if</span> ( vmac(i,j,k) &lt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#ga17d5f6d34047cd913543b43d73f2ce9a">YVEL</a> &amp;&amp; is_velocity ) qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(qmns,amrex::Real(0.0));</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>             qpls = qmns;</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        }</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qmns, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qmns, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <a class="code hl_function" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(1, i, j, k, n, q, qmns, qpls, vmac(i,j,k), d_bcrec[n].lo(1), domain_jlo, is_velocity);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        <a class="code hl_function" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(1, i, j, k, n, q, qmns, qpls, vmac(i,j,k), d_bcrec[n].hi(1), domain_jhi, is_velocity);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        <span class="keywordflow">if</span> ( (j==domain_jlo) &amp;&amp; (d_bcrec[n].lo(1) == amrex::BCType::foextrap || d_bcrec[n].lo(1) == amrex::BCType::hoextrap) )</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        {</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            <span class="keywordflow">if</span> ( vmac(i,j,k) &gt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#ga17d5f6d34047cd913543b43d73f2ce9a">YVEL</a> &amp;&amp; is_velocity )  qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls,amrex::Real(0.0));</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>            qmns = qpls;</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        }</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">if</span> ( (j==domain_jhi+1) &amp;&amp; (d_bcrec[n].hi(1) == amrex::BCType::foextrap || d_bcrec[n].hi(1) == amrex::BCType::hoextrap) )</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        {</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            <span class="keywordflow">if</span> ( vmac(i,j,k) &lt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#ga17d5f6d34047cd913543b43d73f2ce9a">YVEL</a> &amp;&amp; is_velocity ) qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(qmns,amrex::Real(0.0));</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>            qpls = qmns;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        }</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        <span class="keywordflow">if</span> (vmac(i,j,k) &gt; <a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        {</div>
@@ -659,252 +659,249 @@ $(document).ready(function(){initNavTree('hydro__ebmol__edge__state__K_8H_source
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>}</div>
 </div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span> </div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="preprocessor">#if (AMREX_SPACEDIM==3)</span></div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span><span class="preprocessor">#if (AMREX_SPACEDIM==3)</span></div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#a4e626ebf06898d71a9e0790877f1694f">AMREX_GPU_DEVICE</a> <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a></div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>amrex::Real hydro_ebmol_zedge_state_extdir ( <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n,</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; q,</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; wmac,</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                         <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(<a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcx,</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                              <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcy,</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                              <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcz),</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; ccc,</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; vfrac,</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::EBCellFlag const&gt;</a> <span class="keyword">const</span>&amp; flag,</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                                             <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> <span class="keyword">const</span>* <span class="keyword">const</span> d_bcrec,</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                                             <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BoxND.html">amrex::Box</a> <span class="keyword">const</span>&amp;  domain,</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                                             <span class="keywordtype">int</span> order, <span class="keyword">const</span> <span class="keywordtype">bool</span> is_velocity) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>{</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    amrex::Real qs;</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="keywordtype">int</span> domlo = domain.smallEnd(2);</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keywordtype">int</span> domhi = domain.bigEnd(2);</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keywordtype">bool</span> extlo = d_bcrec[n].lo(2) == amrex::BCType::ext_dir;</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="keywordtype">bool</span> exthi = d_bcrec[n].hi(2) == amrex::BCType::ext_dir;</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keywordflow">if</span> ( extlo &amp;&amp; k &lt;= domlo)</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    {</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        qs = q(i,j,domlo-1,n);</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    }</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( exthi &amp;&amp; k &gt;= domhi+1)</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    {</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        qs = q(i,j,domhi+1,n);</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    }</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    {</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ilo = domain.smallEnd(0);</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ihi = domain.bigEnd(0);</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jlo = domain.smallEnd(1);</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jhi = domain.bigEnd(1);</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="preprocessor">#if (AMREX_SPACEDIM == 3)</span></div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ilo = (d_bcrec[n].lo(0) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                                     (d_bcrec[n].lo(0) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>             <span class="keywordtype">bool</span> extdir_or_ho_jlo = (d_bcrec[n].lo(1) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                                             (d_bcrec[n].lo(1) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>             <span class="keywordtype">bool</span> extdir_or_ho_klo = (d_bcrec[n].lo(2) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                                             (d_bcrec[n].lo(2) == amrex::BCType::hoextrap););</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ihi = (d_bcrec[n].hi(0) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                                             (d_bcrec[n].hi(0) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>             <span class="keywordtype">bool</span> extdir_or_ho_jhi = (d_bcrec[n].hi(1) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                                             (d_bcrec[n].hi(1) == amrex::BCType::hoextrap);,</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>             <span class="keywordtype">bool</span> extdir_or_ho_khi = (d_bcrec[n].hi(2) == amrex::BCType::ext_dir) ||</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                                             (d_bcrec[n].hi(2) == amrex::BCType::hoextrap););</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#a4e626ebf06898d71a9e0790877f1694f">AMREX_GPU_DEVICE</a> <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a></div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>amrex::Real hydro_ebmol_zedge_state_extdir ( <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n,</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; q,</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; wmac,</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                         <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(<a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcx,</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                              <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcy,</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                              <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcz),</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; ccc,</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; vfrac,</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                                             <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::EBCellFlag const&gt;</a> <span class="keyword">const</span>&amp; flag,</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                                             <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> <span class="keyword">const</span>* <span class="keyword">const</span> d_bcrec,</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                                             <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BoxND.html">amrex::Box</a> <span class="keyword">const</span>&amp;  domain,</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>                                             <span class="keywordtype">int</span> order, <span class="keyword">const</span> <span class="keywordtype">bool</span> is_velocity) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>{</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    amrex::Real qs;</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keywordtype">int</span> domlo = domain.smallEnd(2);</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    <span class="keywordtype">int</span> domhi = domain.bigEnd(2);</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    <span class="keywordtype">bool</span> extlo = d_bcrec[n].lo(2) == amrex::BCType::ext_dir;</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="keywordtype">bool</span> exthi = d_bcrec[n].hi(2) == amrex::BCType::ext_dir;</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    <span class="keywordflow">if</span> ( extlo &amp;&amp; k &lt;= domlo)</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    {</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        qs = q(i,j,domlo-1,n);</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    }</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( exthi &amp;&amp; k &gt;= domhi+1)</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    {</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>        qs = q(i,j,domhi+1,n);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    }</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    {</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ilo = domain.smallEnd(0);</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_ihi = domain.bigEnd(0);</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jlo = domain.smallEnd(1);</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_jhi = domain.bigEnd(1);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="preprocessor">#if (AMREX_SPACEDIM == 3)</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ilo = (d_bcrec[n].lo(0) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>                                             (d_bcrec[n].lo(0) == amrex::BCType::hoextrap);,</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>                     <span class="keywordtype">bool</span> extdir_or_ho_jlo = (d_bcrec[n].lo(1) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                                             (d_bcrec[n].lo(1) == amrex::BCType::hoextrap);,</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                     <span class="keywordtype">bool</span> extdir_or_ho_klo = (d_bcrec[n].lo(2) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                                             (d_bcrec[n].lo(2) == amrex::BCType::hoextrap););</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#a4f563a3cac0e56caccff5ba7be3d49a4">AMREX_D_TERM</a>(<span class="keywordtype">bool</span> extdir_or_ho_ihi = (d_bcrec[n].hi(0) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>                                             (d_bcrec[n].hi(0) == amrex::BCType::hoextrap);,</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>                     <span class="keywordtype">bool</span> extdir_or_ho_jhi = (d_bcrec[n].hi(1) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>                                             (d_bcrec[n].hi(1) == amrex::BCType::hoextrap);,</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                     <span class="keywordtype">bool</span> extdir_or_ho_khi = (d_bcrec[n].hi(2) == amrex::BCType::ext_dir) ||</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                                             (d_bcrec[n].hi(2) == amrex::BCType::hoextrap););</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>        amrex::Real xf = fcz(i,j,k,0); <span class="comment">// local (x,y) of centroid of z-face we are extrapolating to</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        amrex::Real yf = fcz(i,j,k,1);</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        amrex::Real xf = fcz(i,j,k,0); <span class="comment">// local (x,y) of centroid of z-face we are extrapolating to</span></div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        amrex::Real yf = fcz(i,j,k,1);</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>        amrex::Real xc = ccc(i,j,k,0); <span class="comment">// centroid of cell (i,j,k)</span></div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        amrex::Real yc = ccc(i,j,k,1);</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        amrex::Real zc = ccc(i,j,k,2);</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span> </div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        amrex::Real delta_x = xf  - xc;</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        amrex::Real delta_y = yf  - yc;</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        amrex::Real delta_z = amrex::Real(0.5) + zc;</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        amrex::Real xc = ccc(i,j,k,0); <span class="comment">// centroid of cell (i,j,k)</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        amrex::Real yc = ccc(i,j,k,1);</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        amrex::Real zc = ccc(i,j,k,2);</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        amrex::Real delta_x = xf  - xc;</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        amrex::Real delta_y = yf  - yc;</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        amrex::Real delta_z = amrex::Real(0.5) + zc;</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        amrex::Real cc_qmax = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>        amrex::Real cc_qmin = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        amrex::Real cc_qmax = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        amrex::Real cc_qmin = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_hi =</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>            <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#aab7ce6cca592ec53b9a1e88d243cca1d">amrex_lim_slopes_extdir_eb</a>(i, j, k, n, q, ccc, vfrac,</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz), flag,</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ilo, extdir_or_ho_jlo, extdir_or_ho_klo),</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ihi, extdir_or_ho_jhi, extdir_or_ho_khi),</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ilo, domain_jlo, domain_klo),</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ihi, domain_jhi, domain_khi),</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                                       order);</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        amrex::Real qpls = q(i,j,k  ,n) + delta_x * slopes_eb_hi[0]</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                                        + delta_y * slopes_eb_hi[1]</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                                        - delta_z * slopes_eb_hi[2];</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls, cc_qmax), cc_qmin);</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        xc = ccc(i,j,k-1,0); <span class="comment">// centroid of cell (i,j,k-1)</span></div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        yc = ccc(i,j,k-1,1);</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        zc = ccc(i,j,k-1,2);</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        delta_x = xf  - xc;</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        delta_y = yf  - yc;</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        delta_z = amrex::Real(0.5) - zc;</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_lo =</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>            <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#aab7ce6cca592ec53b9a1e88d243cca1d">amrex_lim_slopes_extdir_eb</a>(i, j, k-1, n, q, ccc, vfrac,</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz), flag,</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ilo, extdir_or_ho_jlo, extdir_or_ho_klo),</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ihi, extdir_or_ho_jhi, extdir_or_ho_khi),</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ilo, domain_jlo, domain_klo),</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ihi, domain_jhi, domain_khi),</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>                                       order);</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>        amrex::Real qmns = q(i,j,k-1,n) + delta_x * slopes_eb_lo[0]</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                                        + delta_y * slopes_eb_lo[1]</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>                                        + delta_z * slopes_eb_lo[2];</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qmns, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_hi =</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>            <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#aab7ce6cca592ec53b9a1e88d243cca1d">amrex_lim_slopes_extdir_eb</a>(i, j, k, n, q, ccc, vfrac,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz), flag,</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ilo, extdir_or_ho_jlo, extdir_or_ho_klo),</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ihi, extdir_or_ho_jhi, extdir_or_ho_khi),</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ilo, domain_jlo, domain_klo),</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ihi, domain_jhi, domain_khi),</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                                       order);</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        amrex::Real qpls = q(i,j,k  ,n) + delta_x * slopes_eb_hi[0]</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>                                        + delta_y * slopes_eb_hi[1]</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                                        - delta_z * slopes_eb_hi[2];</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>        qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>        xc = ccc(i,j,k-1,0); <span class="comment">// centroid of cell (i,j,k-1)</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        yc = ccc(i,j,k-1,1);</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        zc = ccc(i,j,k-1,2);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        delta_x = xf  - xc;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        delta_y = yf  - yc;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        delta_z = amrex::Real(0.5) - zc;</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_lo =</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>            <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#aab7ce6cca592ec53b9a1e88d243cca1d">amrex_lim_slopes_extdir_eb</a>(i, j, k-1, n, q, ccc, vfrac,</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz), flag,</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ilo, extdir_or_ho_jlo, extdir_or_ho_klo),</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(extdir_or_ho_ihi, extdir_or_ho_jhi, extdir_or_ho_khi),</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ilo, domain_jlo, domain_klo),</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>                                       <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(domain_ihi, domain_jhi, domain_khi),</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>                                       order);</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        amrex::Real qmns = q(i,j,k-1,n) + delta_x * slopes_eb_lo[0]</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>                                        + delta_y * slopes_eb_lo[1]</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>                                        + delta_z * slopes_eb_lo[2];</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qmns, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        <a class="code hl_function" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].lo(2), domain_klo, is_velocity);</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        <a class="code hl_function" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].hi(2), domain_khi, is_velocity);</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <a class="code hl_function" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].lo(2), domain_klo, is_velocity);</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        <a class="code hl_function" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].hi(2), domain_khi, is_velocity);</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>        <span class="keywordflow">if</span> ( (k==domain_klo) &amp;&amp; (d_bcrec[n].lo(2) == amrex::BCType::foextrap || d_bcrec[n].lo(2) == amrex::BCType::hoextrap) )</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        {</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>            <span class="keywordflow">if</span> ( wmac(i,j,k) &gt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity )  qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls,amrex::Real(0.0));</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>            qmns = qpls;</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        }</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        <span class="keywordflow">if</span> ( (k==domain_khi+1) &amp;&amp; (d_bcrec[n].hi(2) == amrex::BCType::foextrap || d_bcrec[n].hi(2) == amrex::BCType::hoextrap) )</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        {</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>            <span class="keywordflow">if</span> ( wmac(i,j,k) &lt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity ) qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(qmns,amrex::Real(0.0));</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            qpls = qmns;</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        }</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        <span class="keywordflow">if</span> (wmac(i,j,k) &gt; <a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        {</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            qs = qmns;</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>        }</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wmac(i,j,k) &lt; -<a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        {</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>            qs = qpls;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        }</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        {</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            qs = amrex::Real(0.5)*(qmns+qpls);</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        }</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    }</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <span class="keywordflow">if</span> ( (k==domain_klo) &amp;&amp; (d_bcrec[n].lo(2) == amrex::BCType::foextrap || d_bcrec[n].lo(2) == amrex::BCType::hoextrap) )</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        {</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>            <span class="keywordflow">if</span> ( wmac(i,j,k) &gt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity )  qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls,amrex::Real(0.0));</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>            qmns = qpls;</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        }</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keywordflow">if</span> ( (k==domain_khi+1) &amp;&amp; (d_bcrec[n].hi(2) == amrex::BCType::foextrap || d_bcrec[n].hi(2) == amrex::BCType::hoextrap) )</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        {</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>            <span class="keywordflow">if</span> ( wmac(i,j,k) &lt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity ) qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(qmns,amrex::Real(0.0));</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>            qpls = qmns;</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>        }</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        <span class="keywordflow">if</span> (wmac(i,j,k) &gt; <a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        {</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            qs = qmns;</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        }</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wmac(i,j,k) &lt; -<a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>        {</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            qs = qpls;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        }</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        {</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>            qs = amrex::Real(0.5)*(qmns+qpls);</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>        }</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    }</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    <span class="keywordflow">return</span> qs;</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>}</div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    <span class="keywordflow">return</span> qs;</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>}</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span> </div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span><a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#a4e626ebf06898d71a9e0790877f1694f">AMREX_GPU_DEVICE</a> <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a></div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>amrex::Real hydro_ebmol_zedge_state ( <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n,</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; q,</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; wmac,</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>                                      <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(<a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcx,</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                                                   <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcy,</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                                                   <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcz),</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; ccc,</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; vfrac,</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::EBCellFlag const&gt;</a> <span class="keyword">const</span>&amp; flag,</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>                                      <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> <span class="keyword">const</span>* <span class="keyword">const</span> d_bcrec,</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>                                      <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BoxND.html">amrex::Box</a> <span class="keyword">const</span>&amp;  domain,</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>                                      <span class="keywordtype">int</span> order, <span class="keyword">const</span> <span class="keywordtype">bool</span> is_velocity) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>{</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#a4e626ebf06898d71a9e0790877f1694f">AMREX_GPU_DEVICE</a> <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>amrex::Real hydro_ebmol_zedge_state ( <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> k, <span class="keywordtype">int</span> n,</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; q,</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; wmac,</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>                                      <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(<a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcx,</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>                                                   <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcy,</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>                                                   <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; fcz),</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; ccc,</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::Real const&gt;</a> <span class="keyword">const</span>&amp; vfrac,</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                                      <a class="code hl_structRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4.html">amrex::Array4&lt;amrex::EBCellFlag const&gt;</a> <span class="keyword">const</span>&amp; flag,</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>                                      <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> <span class="keyword">const</span>* <span class="keyword">const</span> d_bcrec,</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                                      <a class="code hl_classRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BoxND.html">amrex::Box</a> <span class="keyword">const</span>&amp;  domain,</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                                      <span class="keywordtype">int</span> order, <span class="keyword">const</span> <span class="keywordtype">bool</span> is_velocity) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>{</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_klo = domain.smallEnd(2);</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> domain_khi = domain.bigEnd(2);</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    amrex::Real xf = fcz(i,j,k,0); <span class="comment">// local (x,y) of centroid of z-face we are extrapolating to</span></div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    amrex::Real yf = fcz(i,j,k,1);</div>
 <div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span> </div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    amrex::Real xf = fcz(i,j,k,0); <span class="comment">// local (x,y) of centroid of z-face we are extrapolating to</span></div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    amrex::Real yf = fcz(i,j,k,1);</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    amrex::Real xc = ccc(i,j,k,0); <span class="comment">// centroid of cell (i,j,k)</span></div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    amrex::Real yc = ccc(i,j,k,1);</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    amrex::Real zc = ccc(i,j,k,2);</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    amrex::Real delta_x = xf  - xc;</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    amrex::Real delta_y = yf  - yc;</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    amrex::Real delta_z = amrex::Real(0.5) + zc;</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    amrex::Real xc = ccc(i,j,k,0); <span class="comment">// centroid of cell (i,j,k)</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    amrex::Real yc = ccc(i,j,k,1);</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>    amrex::Real zc = ccc(i,j,k,2);</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    amrex::Real delta_x = xf  - xc;</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    amrex::Real delta_y = yf  - yc;</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    amrex::Real delta_z = amrex::Real(0.5) + zc;</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span> </div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    amrex::Real cc_qmax = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    amrex::Real cc_qmin = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
 <div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    amrex::Real cc_qmax = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    amrex::Real cc_qmin = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(q(i,j,k,n),q(i,j,k-1,n));</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span> </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_hi = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#a29b3da1f1384339ad8a7a8bf6fe22621">amrex_lim_slopes_eb</a>(i, j, k, n, q, ccc, vfrac,</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>                                                   <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz),</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                                                   flag, order);</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    amrex::Real qpls = q(i,j,k  ,n) + delta_x * slopes_eb_hi[0]</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                                    + delta_y * slopes_eb_hi[1]</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                                    - delta_z * slopes_eb_hi[2];</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span> </div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls, cc_qmax), cc_qmin);</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    xc = ccc(i,j,k-1,0); <span class="comment">// centroid of cell (i,j,k-1)</span></div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    yc = ccc(i,j,k-1,1);</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    zc = ccc(i,j,k-1,2);</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    delta_x = xf  - xc;</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    delta_y = yf  - yc;</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    delta_z = amrex::Real(0.5) - zc;</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_lo = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#a29b3da1f1384339ad8a7a8bf6fe22621">amrex_lim_slopes_eb</a>(i, j, k-1, n, q, ccc, vfrac,</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>                                                   <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz),</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>                                                   flag, order);</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    amrex::Real qmns = q(i,j,k-1,n) + delta_x * slopes_eb_lo[0]</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>                                    + delta_y * slopes_eb_lo[1]</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>                                    + delta_z * slopes_eb_lo[2];</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qmns, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_hi = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#a29b3da1f1384339ad8a7a8bf6fe22621">amrex_lim_slopes_eb</a>(i, j, k, n, q, ccc, vfrac,</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                                                   <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz),</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>                                                   flag, order);</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    amrex::Real qpls = q(i,j,k  ,n) + delta_x * slopes_eb_hi[0]</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                                    + delta_y * slopes_eb_hi[1]</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                                    - delta_z * slopes_eb_hi[2];</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span> </div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    xc = ccc(i,j,k-1,0); <span class="comment">// centroid of cell (i,j,k-1)</span></div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    yc = ccc(i,j,k-1,1);</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    zc = ccc(i,j,k-1,2);</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    delta_x = xf  - xc;</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    delta_y = yf  - yc;</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>    delta_z = amrex::Real(0.5) - zc;</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span> </div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="comment">// Compute slopes of component &quot;n&quot; of q</span></div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; slopes_eb_lo = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#a29b3da1f1384339ad8a7a8bf6fe22621">amrex_lim_slopes_eb</a>(i, j, k-1, n, q, ccc, vfrac,</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>                                                   <a class="code hl_defineRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__SPACE_8H.html#af5ea8082b66e48cdbea53d08cdfca9a0">AMREX_D_DECL</a>(fcx,fcy,fcz),</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>                                                   flag, order);</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    amrex::Real qmns = q(i,j,k-1,n) + delta_x * slopes_eb_lo[0]</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>                                    + delta_y * slopes_eb_lo[1]</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>                                    + delta_z * slopes_eb_lo[2];</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(<a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qmns, cc_qmax), cc_qmin);</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span> </div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    <a class="code hl_function" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].lo(2), domain_klo, is_velocity);</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <a class="code hl_function" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].hi(2), domain_khi, is_velocity);</div>
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <a class="code hl_function" href="namespaceHydroBC.html#a8ba2207a75496ee3c6d88f44233d645b">HydroBC::SetEdgeBCsLo</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].lo(2), domain_klo, is_velocity);</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <a class="code hl_function" href="namespaceHydroBC.html#a3a47bbbd8cc79009d41b04c27ebbd64f">HydroBC::SetEdgeBCsHi</a>(2, i, j, k, n, q, qmns, qpls, wmac(i,j,k), d_bcrec[n].hi(2), domain_khi, is_velocity);</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    <span class="keywordflow">if</span> ( (k==domain_klo) &amp;&amp; (d_bcrec[n].lo(2) == amrex::BCType::foextrap || d_bcrec[n].lo(2) == amrex::BCType::hoextrap) )</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    {</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>        <span class="keywordflow">if</span> ( wmac(i,j,k) &gt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity )  qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls,amrex::Real(0.0));</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>        qmns = qpls;</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keywordflow">if</span> ( (k==domain_khi+1) &amp;&amp; (d_bcrec[n].hi(2) == amrex::BCType::foextrap || d_bcrec[n].hi(2) == amrex::BCType::hoextrap) )</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    {</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        <span class="keywordflow">if</span> ( wmac(i,j,k) &lt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity ) qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(qmns,amrex::Real(0.0));</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        qpls = qmns;</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    }</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    amrex::Real qs;</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="keywordflow">if</span> (wmac(i,j,k) &gt; <a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    {</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>        qs = qmns;</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    }</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wmac(i,j,k) &lt; -<a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    {</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>        qs = qpls;</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    }</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    {</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>        qs = amrex::Real(0.5)*(qmns+qpls);</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    }</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keywordflow">if</span> ( (k==domain_klo) &amp;&amp; (d_bcrec[n].lo(2) == amrex::BCType::foextrap || d_bcrec[n].lo(2) == amrex::BCType::hoextrap) )</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    {</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        <span class="keywordflow">if</span> ( wmac(i,j,k) &gt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity )  qpls = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a66e2eab6a08dc06e8892a05efdc832c7">amrex::min</a>(qpls,amrex::Real(0.0));</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        qmns = qpls;</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    }</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    <span class="keywordflow">if</span> ( (k==domain_khi+1) &amp;&amp; (d_bcrec[n].hi(2) == amrex::BCType::foextrap || d_bcrec[n].hi(2) == amrex::BCType::hoextrap) )</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    {</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>        <span class="keywordflow">if</span> ( wmac(i,j,k) &lt;= 0. &amp;&amp; n==<a class="code hl_define" href="group__Utilities.html#gacd4c2357fa827bdc6b058736a689df22">ZVEL</a> &amp;&amp; is_velocity ) qmns = <a class="code hl_functionRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9d99cb1523b9f336dad742f6a15bdf59">amrex::max</a>(qmns,amrex::Real(0.0));</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>        qpls = qmns;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    }</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span> </div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>    amrex::Real qs;</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    <span class="keywordflow">if</span> (wmac(i,j,k) &gt; <a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    {</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>        qs = qmns;</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    }</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wmac(i,j,k) &lt; -<a class="code hl_variable" href="group__Utilities.html#ga57d5ce9bc3bca16e249c611342f3c550">small_vel</a>)</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    {</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>        qs = qpls;</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    }</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    {</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        qs = amrex::Real(0.5)*(qmns+qpls);</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    }</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="keywordflow">return</span> qs;</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>}</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span> </div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordflow">return</span> qs;</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>}</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>}</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="preprocessor">#endif</span><span class="comment"></span></div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="comment">/** @} */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>}</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span><span class="preprocessor">#endif</span><span class="comment"></span></div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="comment">/** @} */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aAMReX__BCRec_8H_html"><div class="ttname"><a href="https://amrex-codes.github.io/amrex/doxygen/AMReX__BCRec_8H.html">AMReX_BCRec.H</a></div></div>
 <div class="ttc" id="aAMReX__EB__Slopes__2D__K_8H_html_a29b3da1f1384339ad8a7a8bf6fe22621"><div class="ttname"><a href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#a29b3da1f1384339ad8a7a8bf6fe22621">amrex_lim_slopes_eb</a></div><div class="ttdeci">__device__ amrex::GpuArray&lt; amrex::Real, 3 &gt; amrex_lim_slopes_eb(int i, int j, int k, int n, amrex::Array4&lt; amrex::Real const &gt; const &amp;state, amrex::Array4&lt; amrex::Real const &gt; const &amp;ccent, amrex::Array4&lt; amrex::Real const &gt; const &amp;vfrac, amrex::Array4&lt; amrex::Real const &gt; const &amp;fcx, amrex::Array4&lt; amrex::Real const &gt; const &amp;fcy, amrex::Array4&lt; amrex::EBCellFlag const &gt; const &amp;flag, int max_order) noexcept</div></div>
 <div class="ttc" id="aAMReX__EB__Slopes__2D__K_8H_html_aab7ce6cca592ec53b9a1e88d243cca1d"><div class="ttname"><a href="https://amrex-codes.github.io/amrex/doxygen/AMReX__EB__Slopes__2D__K_8H.html#aab7ce6cca592ec53b9a1e88d243cca1d">amrex_lim_slopes_extdir_eb</a></div><div class="ttdeci">__device__ amrex::GpuArray&lt; amrex::Real, 3 &gt; amrex_lim_slopes_extdir_eb(int i, int j, int k, int n, amrex::Array4&lt; amrex::Real const &gt; const &amp;state, amrex::Array4&lt; amrex::Real const &gt; const &amp;ccent, amrex::Array4&lt; amrex::Real const &gt; const &amp;vfrac, amrex::Array4&lt; amrex::Real const &gt; const &amp;fcx, amrex::Array4&lt; amrex::Real const &gt; const &amp;fcy, amrex::Array4&lt; amrex::EBCellFlag const &gt; const &amp;flag, bool edlo_x, bool edlo_y, bool edhi_x, bool edhi_y, int domlo_x, int domlo_y, int domhi_x, int domhi_y, int max_order) noexcept</div></div>
