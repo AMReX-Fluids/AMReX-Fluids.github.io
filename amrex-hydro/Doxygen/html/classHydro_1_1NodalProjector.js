@@ -14,6 +14,8 @@ var classHydro_1_1NodalProjector =
     [ "getMLMG", "classHydro_1_1NodalProjector.html#ab46e4a69174545859ad9b85e37ebfcf6", null ],
     [ "getPhi", "classHydro_1_1NodalProjector.html#abc4cc4691db9231078b29897c33dcbe9", null ],
     [ "getPhiConst", "classHydro_1_1NodalProjector.html#addd2602f5fe7bd0c7bd902a4350652dc", null ],
+    [ "getRHS", "classHydro_1_1NodalProjector.html#a753ce8960f319a0d059afdb3c39c2dbd", null ],
+    [ "getRHSConst", "classHydro_1_1NodalProjector.html#a9cdca6361560124faa5e14f3d85c9edc", null ],
     [ "printInfo", "classHydro_1_1NodalProjector.html#a098df2a533925ef6167e4df5bf3d46d5", null ],
     [ "project", "classHydro_1_1NodalProjector.html#ae59512302c66d32aea7f4f252c09fa27", null ],
     [ "project", "classHydro_1_1NodalProjector.html#ab54ce0105047feaf533fe3f5917e90f9", null ],
