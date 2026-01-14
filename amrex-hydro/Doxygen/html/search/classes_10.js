@@ -1,4 +1,32 @@
 var searchData=
 [
-  ['quadraturerule_0',['QuadratureRule',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1algoim_1_1QuadratureRule.html',1,'amrex::algoim']]]
+  ['r2c_0',['R2C',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1FFT_1_1R2C.html',1,'amrex::FFT']]],
+  ['r2x_1',['R2X',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1FFT_1_1R2X.html',1,'amrex::FFT']]],
+  ['randomengine_2',['RandomEngine',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RandomEngine.html',1,'amrex']]],
+  ['rb180_3',['RB180',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabArrayBase_1_1RB180.html',1,'amrex::FabArrayBase']]],
+  ['rb90_4',['RB90',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabArrayBase_1_1RB90.html',1,'amrex::FabArrayBase']]],
+  ['realbox_5',['RealBox',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RealBox.html',1,'amrex']]],
+  ['realdescriptor_6',['RealDescriptor',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RealDescriptor.html',1,'amrex']]],
+  ['realvectnd_7',['RealVectND',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RealVectND.html',1,'amrex']]],
+  ['realvectnd_3c_203_20_3e_8',['RealVectND&lt; 3 &gt;',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RealVectND.html',1,'amrex']]],
+  ['redistributeunpackpolicy_9',['RedistributeUnpackPolicy',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RedistributeUnpackPolicy.html',1,'amrex']]],
+  ['reducedata_10',['ReduceData',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1ReduceData.html',1,'amrex']]],
+  ['reduceoplogicaland_11',['ReduceOpLogicalAnd',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1ReduceOpLogicalAnd.html',1,'amrex']]],
+  ['reduceoplogicalor_12',['ReduceOpLogicalOr',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1ReduceOpLogicalOr.html',1,'amrex']]],
+  ['reduceopmax_13',['ReduceOpMax',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1ReduceOpMax.html',1,'amrex']]],
+  ['reduceopmin_14',['ReduceOpMin',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1ReduceOpMin.html',1,'amrex']]],
+  ['reduceops_15',['ReduceOps',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1ReduceOps.html',1,'amrex']]],
+  ['reduceopsum_16',['ReduceOpSum',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1ReduceOpSum.html',1,'amrex']]],
+  ['ref_17',['Ref',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DistributionMapping_1_1Ref.html',1,'amrex::DistributionMapping']]],
+  ['ref_5fwrapper_18',['ref_wrapper',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1ref__wrapper.html',1,'amrex']]],
+  ['refid_19',['refid',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1BoxArray_1_1RefID.html',1,'amrex::BoxArray::RefID'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DistributionMapping_1_1RefID.html',1,'amrex::DistributionMapping::RefID']]],
+  ['regiontag_20',['RegionTag',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabArrayBase_1_1RegionTag.html',1,'amrex::FabArrayBase']]],
+  ['retsum_21',['RetSum',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Scan_1_1RetSum.html',1,'amrex::Scan']]],
+  ['rkintegrator_22',['RKIntegrator',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RKIntegrator.html',1,'amrex']]],
+  ['rotationif_23',['RotationIF',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1EB2_1_1RotationIF.html',1,'amrex::EB2']]],
+  ['runongpu_24',['RunOnGpu',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RunOnGpu.html',1,'amrex']]],
+  ['runongpu_3c_20arenaallocator_3c_20t_20_3e_20_3e_25',['RunOnGpu&lt; ArenaAllocator&lt; T &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RunOnGpu_3_01ArenaAllocator_3_01T_01_4_01_4.html',1,'amrex']]],
+  ['runongpu_3c_20asyncarenaallocator_3c_20t_20_3e_20_3e_26',['RunOnGpu&lt; AsyncArenaAllocator&lt; T &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RunOnGpu_3_01AsyncArenaAllocator_3_01T_01_4_01_4.html',1,'amrex']]],
+  ['runongpu_3c_20devicearenaallocator_3c_20t_20_3e_20_3e_27',['RunOnGpu&lt; DeviceArenaAllocator&lt; T &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RunOnGpu_3_01DeviceArenaAllocator_3_01T_01_4_01_4.html',1,'amrex']]],
+  ['runongpu_3c_20managedarenaallocator_3c_20t_20_3e_20_3e_28',['RunOnGpu&lt; ManagedArenaAllocator&lt; T &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1RunOnGpu_3_01ManagedArenaAllocator_3_01T_01_4_01_4.html',1,'amrex']]]
 ];

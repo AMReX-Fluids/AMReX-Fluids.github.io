@@ -1,0 +1,15 @@
+<map id="Hydro::MacProjector::initProjector" name="Hydro::MacProjector::initProjector">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,134,160,174"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0b3cd8bfa7c301f5ebd96c126737a0ef" title=" " alt="" coords="268,5,389,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,132,143,85,174,60,207,40,254,24,255,29,209,44,177,65,147,89,102,136"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ParmParse.html#af14555ab6859c064cc3ca2860cdfa378" title=" " alt="" coords="236,55,421,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,131,160,110,207,90,239,81,241,86,209,95,162,115,120,136"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1LPInfo.html#ae829a3bb0485c833b206469099bbba49" title=" " alt="" coords="208,105,449,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,142,194,138,194,143,161,147"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1Vector.html#a58c24fe05cc91d42ebe7151c398f0c58" title=" " alt="" coords="255,169,402,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="161,160,242,169,241,175,160,165"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="239,219,419,259"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="129,172,209,203,237,213,236,218,207,209,127,177"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#ab2506f9097ba1cf1c59e8f8fe933ed83" title=" " alt="" coords="249,283,409,323"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="102,172,147,221,177,247,209,269,236,281,234,286,207,274,173,251,143,225,98,176"/>
+</map>

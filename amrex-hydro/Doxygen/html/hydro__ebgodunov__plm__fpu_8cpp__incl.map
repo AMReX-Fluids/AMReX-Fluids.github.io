@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title=" " alt="" coords="457,5,674,45"/>
 <area shape="rect" id="Node000002" href="$hydro__ebgodunov__plm_8H.html" title=" " alt="" coords="217,93,401,119"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="505,48,360,92,359,87,503,43"/>
-<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__EB__Slopes__K_8H.html" title=" " alt="" coords="479,93,652,119"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="479,93,652,119"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="568,46,568,79,563,79,563,46"/>
 <area shape="rect" id="Node000007" href="$hydro__bcs__K_8H.html" title=" " alt="" coords="703,93,822,119"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="614,43,722,86,720,91,612,48"/>

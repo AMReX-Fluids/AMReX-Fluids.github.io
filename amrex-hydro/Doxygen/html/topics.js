@@ -7,5 +7,19 @@ var topics =
     [ "Utilities", "group__Utilities.html", "group__Utilities" ],
     [ "Redistribution", "group__Redistribution.html", null ],
     [ "BDS", "group__BDS.html", "group__BDS" ],
-    [ "HYPRE", "https://amrex-codes.github.io/amrex/doxygen/group__HYPRE.html", null ]
+    [ "Arithmetic Types", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html", "group__amrex__arithmetic__types" ],
+    [ "Integer Index Space", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html", "group__amrex__index__space" ],
+    [ "Real Space", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__real__space.html", null ],
+    [ "Domain Decomposition", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__domain__decomposition.html", null ],
+    [ "Data Containers", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__data__containers.html", "group__amrex__data__containers" ],
+    [ "Execution and Kernel Launch", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__execution.html", "group__amrex__execution" ],
+    [ "Reductions and Scans", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__collectives.html", "group__amrex__collectives" ],
+    [ "MPI Communication", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__mpi.html", "group__amrex__mpi" ],
+    [ "Adaptive Mesh Refinement", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__amr.html", "group__amrex__amr" ],
+    [ "Linear System Solvers", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__solvers.html", "group__amrex__linear__solvers" ],
+    [ "Particles", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__particles.html", "group__amrex__particles" ],
+    [ "Embedded Boundary", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__eb.html", "group__amrex__eb" ],
+    [ "Fast Fourier Transform (FFT)", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__fft.html", null ],
+    [ "Input/Output", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html", "group__amrex__io" ],
+    [ "Utilities", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__utilities.html", "group__amrex__utilities" ]
 ];

@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['y_0',['y',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1openbc_1_1Moments.html#adb6657fa49f022a5f02ab1a51fafeac0',1,'amrex::openbc::Moments::y'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1algoim_1_1QuadratureRule_1_1Node.html#ac09c0b155c27d48d0efcf8d70277894a',1,'amrex::algoim::QuadratureRule::Node::y'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1XDim3.html#af3bfd0ccbd1587f808089bee50e4a203',1,'amrex::XDim3::y'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Dim3.html#a5b607ff8424cba649fe2c3c19f34714b',1,'amrex::Dim3::y']]],
-  ['yellow_1',['yellow',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1FGColor.html#a080b20c9b78c553919c4563ddd75ff1e',1,'amrex::FGColor::Yellow'],['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1BGColor.html#a946b44d2b8a57793025b006f14222e56',1,'amrex::BGColor::Yellow']]],
-  ['yhi_5fdir_2',['yhi_dir',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex__mllinop__nd__module.html#a9d85b659e0792c78125c562690a48f5b',1,'amrex_mllinop_nd_module']]],
-  ['ylo_5fdir_3',['ylo_dir',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex__mllinop__nd__module.html#ad6d583017d9434a425e0f88e6b72b662',1,'amrex_mllinop_nd_module']]],
-  ['yy_5fat_5fbol_4',['yy_at_bol',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a9d60c60af6e1a6f69de16871fd64f85f',1,'yy_buffer_state']]],
-  ['yy_5fbs_5fcolumn_5',['yy_bs_column',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a10c4fcd8be759e6bf11e6d3e8cdb0307',1,'yy_buffer_state']]],
-  ['yy_5fbs_5flineno_6',['yy_bs_lineno',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a818e94bc9c766e683c60df1e9fd01199',1,'yy_buffer_state']]],
-  ['yy_5fbuf_5fpos_7',['yy_buf_pos',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a8435c3f786bbb55d21d0174e4cfc22a0',1,'yy_buffer_state']]],
-  ['yy_5fbuf_5fsize_8',['yy_buf_size',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a451d39697f006f3922c1f43cf79286b4',1,'yy_buffer_state']]],
-  ['yy_5fbuffer_5fstatus_9',['yy_buffer_status',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a70fd925d37a2f0454fbd0def675d106c',1,'yy_buffer_state']]],
-  ['yy_5fch_5fbuf_10',['yy_ch_buf',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a0d25458e69eb22207fc633a1255d099d',1,'yy_buffer_state']]],
-  ['yy_5ffill_5fbuffer_11',['yy_fill_buffer',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a63d2afbb1d79a3fc63df9e12626f827d',1,'yy_buffer_state']]],
-  ['yy_5finput_5ffile_12',['yy_input_file',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a4360acfb226a1fc240ab2be17dd6beda',1,'yy_buffer_state']]],
-  ['yy_5fis_5finteractive_13',['yy_is_interactive',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#abf5c70eea75581b58c0ee7bd31b14490',1,'yy_buffer_state']]],
-  ['yy_5fis_5four_5fbuffer_14',['yy_is_our_buffer',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a80ce2431c70dc4f89ced487f18449465',1,'yy_buffer_state']]],
-  ['yy_5fn_5fchars_15',['yy_n_chars',['https://amrex-codes.github.io/amrex/doxygen/structyy__buffer__state.html#a06406208824817acfec2183b79080945',1,'yy_buffer_state']]]
+  ['z_0',['z',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Dim3.html#a301b8be615c36e302d8510be17c63e90',1,'amrex::Dim3::z'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1XDim3.html#ab7d76c217833bd5f7ac309ae9b32b2ed',1,'amrex::XDim3::z']]],
+  ['zero_1',['zero',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVectND.html#ac9be7906eed9686b378081b582db248e',1,'amrex::IntVectND::Zero'],['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1RealVectND.html#ac4286c6d8d6d8e0a948d8b8ef6d41d24',1,'amrex::RealVectND::Zero']]]
 ];
