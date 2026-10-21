@@ -31,6 +31,7 @@ var classHydro_1_1NodalProjector =
     [ "m_bc_hi", "classHydro_1_1NodalProjector.html#a4fd04f8b717b8162b23ad5b642a3487e", null ],
     [ "m_bc_lo", "classHydro_1_1NodalProjector.html#aba3564764203f615abadc34dd8d371ec", null ],
     [ "m_const_sigma", "classHydro_1_1NodalProjector.html#a45a606e57b9c22330d9d97bb231f17f7", null ],
+    [ "m_ebfactory", "classHydro_1_1NodalProjector.html#a769d46142650f5bea82c53761d491df4", null ],
     [ "m_fine_grids", "classHydro_1_1NodalProjector.html#a3213fc8fbc2d1dc54cd3d15d9e33fecb", null ],
     [ "m_fluxes", "classHydro_1_1NodalProjector.html#aa2b49029c2c91cb8a855d67d0a7d8606", null ],
     [ "m_geom", "classHydro_1_1NodalProjector.html#aa081412b94f4342fd653a7cb92d0a59b", null ],

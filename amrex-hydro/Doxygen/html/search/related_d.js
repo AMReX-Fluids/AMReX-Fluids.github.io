@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['yyparse_19184',['yyparse',['https://amrex-codes.github.io/amrex/doxygen/classBLProfStats.html#a2df08e98c81c9d8bc1fd71defa327d4d',1,'BLProfStats::yyparse()'],['https://amrex-codes.github.io/amrex/doxygen/classCommProfStats.html#a2df08e98c81c9d8bc1fd71defa327d4d',1,'CommProfStats::yyparse()'],['https://amrex-codes.github.io/amrex/doxygen/classRegionsProfStats.html#a2df08e98c81c9d8bc1fd71defa327d4d',1,'RegionsProfStats::yyparse()']]]
+  ['tabledata_0',['TableData',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1TableData.html#a629989dacadbcb7af5a95b3c5e4aa23a',1,'amrex::TableData']]],
+  ['transpose_1',['transpose',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1SpMatrix.html#aedac99e7736e2acaf6b630835f0ba2a7',1,'amrex::SpMatrix']]]
 ];

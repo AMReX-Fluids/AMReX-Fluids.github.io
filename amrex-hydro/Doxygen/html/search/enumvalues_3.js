@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vanleer_0',['VanLeer',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a',1,'PPM']]]
+  ['regular_0',['regular',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__fab__containers.html#gabd2e3d292645433cefc947725585f87aaaf37d08ae228a87dc6b265fd1019c97d',1,'amrex::regular'],['https://amrex-codes.github.io/amrex/doxygen/group__amrex__fab__containers.html#gabd2e3d292645433cefc947725585f87aaaf37d08ae228a87dc6b265fd1019c97d',1,'amrex::regular']]]
 ];

@@ -62,8 +62,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__EBGodunov.html",
-"group__amrex__mpi.html#gac7fb3467af4aabf15e61cb9c27e916d9",
-"namespaceHydroUtils.html#a1d3afb180dbd69d0f79f30f74b2a5112"
+"group__amrex__mpi.html#ga7bcd0e82fc22042e58ede5764d79117a",
+"hydro__godunov__ppm_8H.html#a8b4f00c186c4c39a40c7fa18eab1fbcb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

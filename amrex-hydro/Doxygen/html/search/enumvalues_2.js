@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['upwind_0',['UPWIND',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5aebdbe84585c5fefe1631a8ad885e2f44',1,'PPM']]]
+  ['nolimiter_0',['NoLimiter',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5aba5f65ef6793674226f652b7f0119e16',1,'PPM']]]
 ];

@@ -1,8 +1,8 @@
 var namespaces_dup =
 [
     [ "BDS", "namespaceBDS.html", [
-      [ "ComputeConc", "namespaceBDS.html#a36a3df1a1967d24daa61c2717a74de39", null ],
-      [ "ComputeEdgeState", "namespaceBDS.html#af379bf507045216a70bdc96a8d899047", null ],
+      [ "ComputeConc", "namespaceBDS.html#aeb53020ed4aebca11f5a9d4d9f86f851", null ],
+      [ "ComputeEdgeState", "namespaceBDS.html#a8a2672081cf941c1674ce250e4917067", null ],
       [ "ComputeSlopes", "namespaceBDS.html#adf462f5a6d17bb0f4fc80e6ee10041a4", null ]
     ] ],
     [ "EBGodunov", "namespaceEBGodunov.html", [
@@ -23,14 +23,22 @@ var namespaces_dup =
       [ "EBGodunov_corner_couple_zx", "namespaceEBGodunovCornerCouple.html#a252e58193c4307115fd9019c47bbaf6e", null ],
       [ "EBGodunov_corner_couple_zy", "namespaceEBGodunovCornerCouple.html#a20333045bcf5a9b6fa34e4673453be03", null ]
     ] ],
+    [ "EBGodunovTransverse", "namespaceEBGodunovTransverse.html", [
+      [ "create_transverse_terms_for_xface", "namespaceEBGodunovTransverse.html#a915173e45410398da20392f831eb4c82", null ],
+      [ "create_transverse_terms_for_xface", "namespaceEBGodunovTransverse.html#afd9bd51240e93cf402e450c79662bd85", null ],
+      [ "create_transverse_terms_for_yface", "namespaceEBGodunovTransverse.html#a39927bc83601b9af900197b0d5a5db43", null ],
+      [ "create_transverse_terms_for_yface", "namespaceEBGodunovTransverse.html#a9520ab6538719a1a1ba2d6934087b9d0", null ],
+      [ "create_transverse_terms_for_zface", "namespaceEBGodunovTransverse.html#a45d909c6db98dab06793e33a3923222a", null ],
+      [ "linear_interp", "namespaceEBGodunovTransverse.html#a92cbd972fb0c994734887849643676bb", null ]
+    ] ],
     [ "EBMOL", "namespaceEBMOL.html", [
-      [ "ComputeEdgeState", "namespaceEBMOL.html#ad0aff813ac19f73e06749e9a1723d50d", null ],
-      [ "ExtrapVelToFaces", "namespaceEBMOL.html#a7add53a153ade9c5cb83e79a61ad1929", null ],
-      [ "ExtrapVelToFacesBox", "namespaceEBMOL.html#a11b5b3fa29c007fd465a4bba443c433f", null ],
-      [ "hydro_ebmol_xedge_state", "namespaceEBMOL.html#ad5b27400945caeff89542f66eff439ac", null ],
-      [ "hydro_ebmol_xedge_state_extdir", "namespaceEBMOL.html#af1238db74667f2f811b387bf837af5f2", null ],
-      [ "hydro_ebmol_yedge_state", "namespaceEBMOL.html#a7c207869e112a99d0812585c67f7bcc0", null ],
-      [ "hydro_ebmol_yedge_state_extdir", "namespaceEBMOL.html#a5d0b60d61b6303c1d25f02fd5f775b93", null ]
+      [ "ComputeEdgeState", "namespaceEBMOL.html#a255b11a4e1532204c62ff3305c99d56f", null ],
+      [ "ExtrapVelToFaces", "namespaceEBMOL.html#a63c970144f41f1b383275a3f4f29ec89", null ],
+      [ "ExtrapVelToFacesBox", "namespaceEBMOL.html#a26f91082c6056122ba9fb2f4409c7abc", null ],
+      [ "hydro_ebmol_xedge_state", "namespaceEBMOL.html#a548f9c016b887b0a5af73e6f348ad738", null ],
+      [ "hydro_ebmol_xedge_state_extdir", "namespaceEBMOL.html#a530190ddfeda27b6ad1d2737fea310d3", null ],
+      [ "hydro_ebmol_yedge_state", "namespaceEBMOL.html#a41b70228b3cb177bc6c78bff60550602", null ],
+      [ "hydro_ebmol_yedge_state_extdir", "namespaceEBMOL.html#af37943ed855c246c21166afc08550a22", null ]
     ] ],
     [ "EBPLM", "namespaceEBPLM.html", [
       [ "PredictStateOnXFace", "namespaceEBPLM.html#a5e1fcc915e6448d1e02c59d5b18dbf69", null ],
@@ -61,24 +69,30 @@ var namespaces_dup =
       [ "SetExtrapVelBCsLo", "namespaceHydroBC.html#a3db84e94f70bb83cddce24c02b206c27", null ]
     ] ],
     [ "HydroUtils", "namespaceHydroUtils.html", [
-      [ "ComputeConvectiveTerm", "namespaceHydroUtils.html#a0742bbe8fac4178460020a4073724d51", null ],
+      [ "ComputeConvectiveTerm", "namespaceHydroUtils.html#a708232ab97aaa81d0158f2d04418d383", null ],
       [ "ComputeDivergence", "namespaceHydroUtils.html#a1d3afb180dbd69d0f79f30f74b2a5112", null ],
       [ "ComputeFluxes", "namespaceHydroUtils.html#ae79f47f053492a0e18838d69e8554189", null ],
-      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a9fb6baf822bec6e2aedbbdb2d5c797a0", null ],
-      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a380d8c3f5786c0910287729547d2d6e0", null ],
-      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#ad4bf731704049526ca1c4db1688fd5db", null ],
-      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#ad34f382cc6239fa7995f947090049224", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a8ef86cd8b8791abf67224641a17e7b4c", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#afa8edd16c107bdb2c3acd7dfab3c7ede", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a7b7dd9f497fb4b26389e75964741a5e7", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a72d429fa0e235e455e33c1bd34c1baf4", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#a1f291e0ec1f145abcde0c0a917461268", null ],
+      [ "ComputeFluxesOnBoxFromState", "namespaceHydroUtils.html#abcae4ee5074c0deedee48896e20e7c77", null ],
+      [ "EB_ComputeDivergence", "namespaceHydroUtils.html#afe8708094d62ca3e4c4b80c0674fdcf3", null ],
+      [ "EB_ComputeDivergence", "namespaceHydroUtils.html#aced713b623a6fa5fba2e722856af6644", null ],
+      [ "EB_ComputeFluxes", "namespaceHydroUtils.html#af81a2b5fb655a1fef34ca086a154a9cf", null ],
       [ "enforceInOutSolvability", "group__Utilities.html#gad02504886b8a9616a8cabcb0c2f2438f", null ],
-      [ "ExtrapVelToFaces", "namespaceHydroUtils.html#ab2dc90cd2e60a11e5fae0bfa3fc68e98", null ]
+      [ "ExtrapVelToFaces", "namespaceHydroUtils.html#adddfb38ec8bf0171c6c6f19812fc73ee", null ],
+      [ "ExtrapVelToFaces", "namespaceHydroUtils.html#ae3b19db91dcdb1ac57cd9e253f92fc11", null ]
     ] ],
     [ "MOL", "namespaceMOL.html", [
-      [ "ComputeEdgeState", "namespaceMOL.html#adee159fbd7c101d690868db1fd6c7992", null ],
+      [ "ComputeEdgeState", "namespaceMOL.html#ab148b21e444af730dcf4898a2bb4928f", null ],
       [ "ExtrapVelToFaces", "namespaceMOL.html#a0fe3320639aceebe9c4f821287f26913", null ],
       [ "ExtrapVelToFacesBox", "namespaceMOL.html#ac44045406d48f0a8144e60b576bb04b0", null ],
-      [ "hydro_mol_xedge_state", "namespaceMOL.html#a0af7e22f67c73814e7968b5bd6e02e8a", null ],
-      [ "hydro_mol_xedge_state_extdir", "namespaceMOL.html#a7eb1fa9334dbb23a3fe2f8b3f8f4087e", null ],
-      [ "hydro_mol_yedge_state", "namespaceMOL.html#a5df4bf00c86eb57634b4bff1d4d3d89b", null ],
-      [ "hydro_mol_yedge_state_extdir", "namespaceMOL.html#a4e5b6599e866b0386d608e59dabb37ce", null ]
+      [ "hydro_mol_xedge_state", "namespaceMOL.html#a9fe4658aef9e7941a9ec80b8f24b3c8d", null ],
+      [ "hydro_mol_xedge_state_extdir", "namespaceMOL.html#ad4550e64fa4d8392b61fe3b89b0f8580", null ],
+      [ "hydro_mol_yedge_state", "namespaceMOL.html#a61e91b6cc3dd2ffc0614b61352400a60", null ],
+      [ "hydro_mol_yedge_state_extdir", "namespaceMOL.html#a4cec20d8c465025d521a9fa38f1830a4", null ]
     ] ],
     [ "PLM", "namespacePLM.html", [
       [ "PredictStateOnXFace", "namespacePLM.html#a27d3106050ecc051c39cd1702f6615a7", null ],

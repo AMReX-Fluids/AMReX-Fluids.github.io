@@ -1,8 +1,8 @@
 <map id="Hydro::NodalProjector::setCoarseBoundaryVelocityForSync" name="Hydro::NodalProjector::setCoarseBoundaryVelocityForSync">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,237,215,292"/>
-<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a01fe448de58a61fa00feaef8162055c8" title=" " alt="" coords="296,5,427,31"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__index__space.html#ga01fe448de58a61fa00feaef8162055c8" title=" " alt="" coords="296,5,427,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,236,140,193,171,139,211,85,235,61,261,40,282,29,284,34,264,44,238,65,215,89,175,142,145,195,125,238"/>
-<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a27c2456b05ba70f78ec1a55df80e2a2c" title=" " alt="" coords="295,55,427,80"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__index__space.html#ga27c2456b05ba70f78ec1a55df80e2a2c" title=" " alt="" coords="295,55,427,80"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,236,148,202,179,162,217,122,261,89,281,80,283,84,264,94,221,126,183,165,153,205,130,239"/>
 <area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1BoxND.html#a15d27469302289c97b13558099bc67f3" title=" " alt="" coords="277,104,446,129"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="135,235,190,186,225,160,261,138,278,131,280,136,264,143,228,164,194,190,139,239"/>

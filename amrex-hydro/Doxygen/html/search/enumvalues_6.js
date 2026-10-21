@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['ghostnodes_19074',['ghostnodes',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MLMGT.html#a96d1fcb72314606739f67225750197b9abddf1f772a4b8a67379933a3664a17c2',1,'amrex::MLMGT']]],
-  ['gpu_19075',['Gpu',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a33bef6ea796972dbf046ba79277795d2a3432ca64f06615abf07ab44c10cada38',1,'amrex']]]
+  ['vanleer_0',['VanLeer',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5a226a317543d598f865ae76be2571750a',1,'PPM']]]
 ];

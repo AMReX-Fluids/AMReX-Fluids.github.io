@@ -1,6 +1,6 @@
 var hydro__ebgodunov__transverse__2D__K_8H =
 [
-    [ "create_transverse_terms_for_xface", "group__EBGodunov.html#gad7d46d081056fa40712f58cb0ebe1d84", null ],
-    [ "create_transverse_terms_for_yface", "group__EBGodunov.html#gabe9cd3f0f2f0198aaa5a812d630feef6", null ],
-    [ "linear_interp", "group__EBGodunov.html#gae7fb5657f6312ba192f0ad3a3652f4a8", null ]
+    [ "create_transverse_terms_for_xface", "hydro__ebgodunov__transverse__2D__K_8H.html#afd9bd51240e93cf402e450c79662bd85", null ],
+    [ "create_transverse_terms_for_yface", "hydro__ebgodunov__transverse__2D__K_8H.html#a9520ab6538719a1a1ba2d6934087b9d0", null ],
+    [ "linear_interp", "hydro__ebgodunov__transverse__2D__K_8H.html#a92cbd972fb0c994734887849643676bb", null ]
 ];

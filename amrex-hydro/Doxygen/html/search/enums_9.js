@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['limiters_0',['limiters',['../namespacePPM.html#afde008f2efff2705e2231ca88ed08ff5',1,'PPM']]],
-  ['linopbctype_1',['LinOpBCType',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a8365a84c73dc019f863f57bfcb9a6435',1,'amrex']]],
-  ['location_2',['Location',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1LinOpEnumType.html#acc2058c2f5b3c370c08f75fc71ff3bb4',1,'amrex::LinOpEnumType']]]
+  ['kind_0',['kind',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabArrayBase_1_1ParForInfo.html#a093405130285d5cf6ecb8686d96b2c89',1,'amrex::FabArrayBase::ParForInfo::Kind'],['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1FFT.html#aab68145bf2931040e7ebba7ac2b15f70',1,'amrex::FFT::Kind']]]
 ];

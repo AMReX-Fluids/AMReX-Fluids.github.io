@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['kind_0',['Kind',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1FFT.html#aab68145bf2931040e7ebba7ac2b15f70',1,'amrex::FFT']]]
+  ['integratortypes_0',['IntegratorTypes',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#aad80b9cf2bc799f2905cc9a77e3a599e',1,'amrex']]],
+  ['intent_1',['Intent',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1ForkJoin.html#a3acf0d91b32d1d08dbe32046028f1466',1,'amrex::ForkJoin']]],
+  ['interface_2',['Interface',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Hypre.html#af08fbb42b4509a32e7f20a6101dfd13f',1,'amrex::Hypre']]],
+  ['interpem_5ft_3',['InterpEM_t',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a2f30e076962c1c148d279b63851d80df',1,'amrex']]]
 ];
