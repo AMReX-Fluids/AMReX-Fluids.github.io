@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enforcing inflow-outflow solvability &mdash; amrex-hydro 26.02-dev documentation</title>
+  <title>Enforcing inflow-outflow solvability &mdash; amrex-hydro 26.11-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -14,10 +14,10 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=7e297ec4"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/documentation_options.js?v=3d8aadd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -133,6 +133,14 @@ which scales the outflow velocities to match the inflow:</p>
 with the math BC <code class="docutils literal notranslate"><span class="pre">BCType::direction_dependent</span></code>, which is to be used for
 an inflow-outflow boundary. It does not compute or correct the boundary velocities
 over other math BC types such as those representing pure inflow or pure outflow.</p>
+<p>The boundary integrals above use the true area of each face, so Cartesian and
+2D axisymmetric (RZ) coordinates are both supported; in RZ an r-face carries
+<span class="math notranslate nohighlight">\(2 \pi r \, dz\)</span> and a z-face <span class="math notranslate nohighlight">\(2 \pi r \, dr\)</span>. Spherical coordinates
+are not supported, and the routine asserts on them.</p>
+<p>The velocity passed in is read and written in its boundary ghost cells, so it must
+carry (filled) ghost cells: one in the normal direction if it is cell-centered, and
+one in each tangential direction if <code class="docutils literal notranslate"><span class="pre">include_bndry_corners</span></code> is true. This is
+asserted.</p>
 </section>
 
 

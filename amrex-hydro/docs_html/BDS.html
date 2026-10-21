@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BDS Algorithm &mdash; amrex-hydro 26.02-dev documentation</title>
+  <title>BDS Algorithm &mdash; amrex-hydro 26.11-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -14,10 +14,10 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=7e297ec4"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/documentation_options.js?v=3d8aadd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
@@ -118,11 +118,11 @@
 <section id="bds-algorithm">
 <h1>BDS Algorithm<a class="headerlink" href="#bds-algorithm" title="Link to this heading"></a></h1>
 <p>The Bell-Dawson-Shubin (BDS) algorithm is a higher order Godunov method for scalar
-conservation laws in multiple dimensions. Satisfying the maximum principal for
+conservation laws in multiple dimensions. Satisfying the maximum principle for
 constant coefficient linear advection, the BDS routine provides
 accurate resolution for smooth problems while avoiding undershoot and overshoot
 for non-smooth profiles. Additional details and comparisons to other
-schemes can be found in <span id="id1">[<a class="reference internal" href="references.html#id31" title="A. Nonaka, S. May, A. S. Almgren, and J. B. Bell. A three-dimensional, unsplit godunov method for scalar conservation laws. SIAM Journal on Scientific Computing, 33(4):2039-2062, 2011. URL: https://ccse.lbl.gov/Publications/nonaka/BDS_3d.pdf, arXiv:https://doi.org/10.1137/100809520, doi:10.1137/100809520.">Nonaka <em>et al.</em>, 2011</a>]</span> and references therein.</p>
+schemes can be found in <span class="bibtex-citation" id="id1">[<a class="reference internal" href="references.html#id31" title="A. Nonaka, S. May, A. S. Almgren, and J. B. Bell. A three-dimensional, unsplit godunov method for scalar conservation laws. SIAM Journal on Scientific Computing, 33(4):2039-2062, 2011. URL: https://ccse.lbl.gov/Publications/nonaka/BDS_3d.pdf, arXiv:https://doi.org/10.1137/100809520, doi:10.1137/100809520.">Nonaka <em>et al.</em>, 2011</a>]</span> and references therein.</p>
 <p>This implementation of BDS closely follows the Godunov approach and leverages some of the
 same code.
 The difference appears in the computation of edge states given face-centered velocities,
@@ -130,16 +130,26 @@ i.e. the Post-MAC computation.
 Currently, periodic, Dirichlet, and outflow (extrapolation)
 boundary conditions are supported. Embedded boundaries are not supported within BDS at
 this time.
+In 2D, both Cartesian and axisymmetric (RZ) coordinates are supported; in RZ the
+conservative predictor uses the radial divergence <span class="math notranslate nohighlight">\(\frac{1}{r}\partial_r(ru)\)</span>,
+and the transverse radial fluxes of the z-edge states carry the area of their own
+face, so that the conservative edge states are in RZ divergence form. 3D is Cartesian
+only, and spherical coordinates are not supported.
 If additional functionality is desired, or if questions remain after reading this guide,
 further help is available by submitting an issue through
 <a class="reference external" href="https://github.com/AMReX-Fluids/AMReX-Hydro/issues/new">Github</a></p>
+<p>These algorithms are applied in the BDS namespace. For API documentation, see
+<a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceBDS.html">Doxygen: BDS Namespace</a>.</p>
 <section id="pre-mac">
 <h2>Pre-MAC<a class="headerlink" href="#pre-mac" title="Link to this heading"></a></h2>
 <p>The BDS routine follows the Godunov PLM method to extrapolate velocities to cell faces,
-see <a class="reference internal" href="Schemes.html#godunov-pre-mac"><span class="std std-ref">Godunov Methods: Pre-MAC</span></a>.</p>
+see <a class="reference internal" href="Schemes.html#godunov-pre-mac"><span class="std std-ref">Godunov Methods: Pre-MAC</span></a>.
+<code class="docutils literal notranslate"><span class="pre">HydroUtils::ExtrapVelToFaces</span></code> therefore accepts <code class="docutils literal notranslate"><span class="pre">advection_type</span> <span class="pre">=</span> <span class="pre">&quot;BDS&quot;</span></code> and routes
+it to the Godunov PLM pre-MAC predictor, ignoring the <code class="docutils literal notranslate"><span class="pre">godunov_ppm</span></code> flag. BDS is not
+available with EB.</p>
 </section>
-<section id="post-mac">
-<h2>Post-MAC<a class="headerlink" href="#post-mac" title="Link to this heading"></a></h2>
+<section id="post-mac-api-ref-bds-computeedgestate">
+<h2>Post-MAC (API ref. <a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceBDS.html">BDS::ComputeEdgeState</a>)<a class="headerlink" href="#post-mac-api-ref-bds-computeedgestate" title="Link to this heading"></a></h2>
 <p>In the notation below,
 <span class="math notranslate nohighlight">\(s\)</span> is a scalar field of the form <span class="math notranslate nohighlight">\(s=s(x,y,z,t)\)</span>
 and <span class="math notranslate nohighlight">\({\U}=(u,v,w)\)</span> represents a known face-centered velocity field, typically the projected velocity field from the Pre-MAC step (<span class="math notranslate nohighlight">\(\U^{MAC}\)</span>).

@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helper functions &mdash; amrex-hydro 26.02-dev documentation</title>
+  <title>Helper functions &mdash; amrex-hydro 26.11-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -14,10 +14,10 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=7e297ec4"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/documentation_options.js?v=3d8aadd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -149,7 +149,7 @@
 of <span class="math notranslate nohighlight">\([0,1]\)</span> with zero representing covered cells and one for regular
 cells, so that for regular cells <span class="math notranslate nohighlight">\(\kappa_{i,j,k} \vol_{i,j,k} =  dx\ dy\ dz\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\alpha\)</span> : Area fractions. For example,
-<span class="math notranslate nohighlight">\(\alpha_{i-\half ,j,k}\)</span> corresponds to the the lower x-face of the <span class="math notranslate nohighlight">\((i,j,k)\)</span>-th cell.
+<span class="math notranslate nohighlight">\(\alpha_{i-\half ,j,k}\)</span> corresponds to the lower x-face of the <span class="math notranslate nohighlight">\((i,j,k)\)</span>-th cell.
 Data are in the range of <span class="math notranslate nohighlight">\([0,1]\)</span> with zero representing a covered face
 and one an un-cut face, so that for regular cells
 <span class="math notranslate nohighlight">\(\alpha_{i-\half ,j,k} \area_{i-\half ,j,k} = dy\ dz\)</span>.</p></li>
@@ -165,11 +165,11 @@ there are second-order and fourth-order stencils along with options to apply lim
 Note that the piecewise parabolic and BDS methods have their own routines for formulating slopes
 (and these are housed within AMReX-Hydro).</p>
 <p>For (EB)Godunov, the default is monotonicity-limited fourth-order slopes.
-Default limiting is as described in Colella (1985) <span id="id2">[<a class="reference internal" href="references.html#id16" title="P. Colella and H. M. Glaz. Efficient solution algorithms for the Riemann problem for real gases. Journal of Computational Physics, 59:264-289, June 1985. doi:10.1016/0021-9991(85)90146-9.">Colella and Glaz, 1985</a>]</span>,
+Default limiting is as described in Colella (1985) <span class="bibtex-citation" id="id2">[<a class="reference internal" href="references.html#id16" title="P. Colella and H. M. Glaz. Efficient solution algorithms for the Riemann problem for real gases. Journal of Computational Physics, 59:264-289, June 1985. doi:10.1016/0021-9991(85)90146-9.">Colella and Glaz, 1985</a>]</span>,
 where limiting is done on each component of the velocity individually.</p>
 <p>For (EB)MOL, the default is monotonicity-limited second-order slopes.
 Default is the second order Monotonized Central (MC)
-limiter (van Leer, 1977 <span id="id3">[<a class="reference internal" href="references.html#id15" title="Bram Van Leer. Towards the ultimate conservative difference scheme. iv. a new approach to numerical convection. Journal of Computational Physics, 23(3):276-299, 1977. URL: https://www.sciencedirect.com/science/article/pii/002199917790095X, doi:https://doi.org/10.1016/0021-9991(77)90095-X.">Van Leer, 1977</a>]</span>), where limiting is applied direction by direction.</p>
+limiter (van Leer, 1977 <span class="bibtex-citation" id="id3">[<a class="reference internal" href="references.html#id15" title="Bram Van Leer. Towards the ultimate conservative difference scheme. iv. a new approach to numerical convection. Journal of Computational Physics, 23(3):276-299, 1977. URL: https://www.sciencedirect.com/science/article/pii/002199917790095X, doi:https://doi.org/10.1016/0021-9991(77)90095-X.">Van Leer, 1977</a>]</span>), where limiting is applied direction by direction.</p>
 <p>NOTE ON BOUNDARY CONDITIONS:</p>
 <p>When periodic or Neumann BCs are imposed, schemes can be applied
 without any change since the ghost cells outside the domain are filled
@@ -236,10 +236,8 @@ that enforces no new maxima or minima when the state is predicted to the face ce
 <section id="computing-fluxes">
 <span id="fluxes"></span><h2>Computing Fluxes<a class="headerlink" href="#computing-fluxes" title="Link to this heading"></a></h2>
 <p>Doxygen links
-<a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroUtils.html#ab70f040557a658e70ba076c9d105bab7">ComputeFluxes</a>
-and
-<a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroUtils.html#ab70f040557a658e70ba076c9d105bab7">EB_ComputeFluxes</a> .</p>
-<p>AMReX-Hydro has the option to compute intesive or extensive, i.e. area-weighted, fluxes.
+<a class="reference external" href="https://amrex-fluids.github.io/amrex-hydro/Doxygen/html/namespaceHydroUtils.html">ComputeFluxes and EB_ComputeFluxes</a>.</p>
+<p>AMReX-Hydro has the option to compute intensive or extensive, i.e. area-weighted, fluxes.
 Extensive fluxes are always used for problems using R-Z geometry,
 and AMReX has functions for computing the position dependent cell volume and face areas
 (see <a class="reference external" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html#a8e4aa2c2e88a46cb31b1ce0f9590c350">Geometry::GetFaceArea</a> and
@@ -251,13 +249,13 @@ and then those used when embedded boundaries are present.</p>
 <p>Intensive fluxes are computed from the advective velocity, <span class="math notranslate nohighlight">\(\U^{MAC}\)</span>, and edge states, <span class="math notranslate nohighlight">\(s\)</span>,
 by defining</p>
 <div class="math notranslate nohighlight" id="equation-flux-eq1">
-<span class="eqno">(16)<a class="headerlink" href="#equation-flux-eq1" title="Link to this equation"></a></span>\[F_{i-\frac{1}{2},j,k}^{x,n+\frac{1}{2}} = u^{MAC}_{i-\frac{1}{2},j,k}\; s_{i-\frac{1}{2},j,k}^{n+\frac{1}{2}}\]</div>
+<span class="eqno">(18)<a class="headerlink" href="#equation-flux-eq1" title="Link to this equation"></a></span>\[F_{i-\frac{1}{2},j,k}^{x,n+\frac{1}{2}} = u^{MAC}_{i-\frac{1}{2},j,k}\; s_{i-\frac{1}{2},j,k}^{n+\frac{1}{2}}\]</div>
 <p>on all x-faces,</p>
 <div class="math notranslate nohighlight" id="equation-flux-eq2">
-<span class="eqno">(17)<a class="headerlink" href="#equation-flux-eq2" title="Link to this equation"></a></span>\[F_{i,j-\frac{1}{2},k}^{y,n+\frac{1}{2}} = v^{MAC}_{i,j-\frac{1}{2},k}\; s_{i,j-\frac{1}{2},k}^{n+\frac{1}{2}}\]</div>
+<span class="eqno">(19)<a class="headerlink" href="#equation-flux-eq2" title="Link to this equation"></a></span>\[F_{i,j-\frac{1}{2},k}^{y,n+\frac{1}{2}} = v^{MAC}_{i,j-\frac{1}{2},k}\; s_{i,j-\frac{1}{2},k}^{n+\frac{1}{2}}\]</div>
 <p>on all y-faces, and</p>
 <div class="math notranslate nohighlight" id="equation-flux-eq3">
-<span class="eqno">(18)<a class="headerlink" href="#equation-flux-eq3" title="Link to this equation"></a></span>\[F_{i,j,k-\frac{1}{2}}^{z,n+\frac{1}{2}} = w^{MAC}_{i,j,k-\frac{1}{2}}\; s_{i,j,k-\frac{1}{2}}^{n+\frac{1}{2}}\]</div>
+<span class="eqno">(20)<a class="headerlink" href="#equation-flux-eq3" title="Link to this equation"></a></span>\[F_{i,j,k-\frac{1}{2}}^{z,n+\frac{1}{2}} = w^{MAC}_{i,j,k-\frac{1}{2}}\; s_{i,j,k-\frac{1}{2}}^{n+\frac{1}{2}}\]</div>
 <p>on all z-faces.</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -290,7 +288,7 @@ Here <span class="math notranslate nohighlight">\(\alpha_{i-\frac{1}{2},j,k}\)</
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>For EB, we simply scale area the by the area fraction in the above equations. For example, we use
+<p>For EB, we simply scale the area by the area fraction in the above equations. For example, we use
 <span class="math notranslate nohighlight">\(\alpha_{i-\frac{1}{2},j,k} \area_{i-\frac{1}{2},j,k}\)</span> in place of <span class="math notranslate nohighlight">\(\area_{i-\frac{1}{2},j,k}\)</span>, etc.</p>
 <div class="math notranslate nohighlight">
 \[\newcommand{\half}{\frac{1}{2}}
@@ -353,14 +351,14 @@ intensive or extensive (required for R-Z coordinates).</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\left(DU\right)^{MAC} = \;
                 &amp; \frac{1}{dx} \left(u^{MAC}_{i+\frac{1}{2},j,k} - u^{MAC}_{i-\frac{1}{2},j,k}\right) + \\
-                &amp; \frac{1}{dy} \left(v^{MAC}_{i,j-\frac{1}{2},k} - v^{MAC}_{i,j-\frac{1}{2},k}\right) + \\
-                &amp; \frac{1}{dz} \left(w^{MAC}_{i,j,k-\frac{1}{2}} - w^{MAC}_{i,j,k-\frac{1}{2}}\right)\end{split}\]</div>
+                &amp; \frac{1}{dy} \left(v^{MAC}_{i,j+\frac{1}{2},k} - v^{MAC}_{i,j-\frac{1}{2},k}\right) + \\
+                &amp; \frac{1}{dz} \left(w^{MAC}_{i,j,k+\frac{1}{2}} - w^{MAC}_{i,j,k-\frac{1}{2}}\right)\end{split}\]</div>
 <p>and</p>
 <div class="math notranslate nohighlight">
 \[s_{i,j,k}^{{n+\frac{1}{2}}} = \frac{1}{6} \left(
                  s_{i-\frac{1}{2},j,k}^{{n+\frac{1}{2}}} + s_{i+\frac{1}{2},j,k}^{{n+\frac{1}{2}}}
-             +   s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}} + s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}}
-             +   s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} + s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} \right)\]</div>
+             +   s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}} + s_{i,j+\frac{1}{2},k}^{{n+\frac{1}{2}}}
+             +   s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} + s_{i,j,k+\frac{1}{2}}^{{n+\frac{1}{2}}} \right)\]</div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -383,15 +381,15 @@ If the variable, <span class="math notranslate nohighlight">\(s\)</span> is to b
 <div class="math notranslate nohighlight">
 \[\begin{split}(DU)^{MAC}  = \frac{1}{\kappa_{i,j,k} \vol_{i,j,k}} [ &amp; (\alpha_{i+\frac{1}{2},j,k} \area_{i+\frac{1}{2},j,k} u^{MAC}_{i+\frac{1}{2},j,k}-
 \alpha_{i-\frac{1}{2},j,k} \area_{i-\frac{1}{2},j,k} u^{MAC}_{i-\frac{1}{2},j,k}) + \\
-                &amp; (\alpha_{i,j+\frac{1}{2},k} \area_{i,j+\frac{1}{2},k} v^{MAC}_{i,j-\frac{1}{2},k}-
+                &amp; (\alpha_{i,j+\frac{1}{2},k} \area_{i,j+\frac{1}{2},k} v^{MAC}_{i,j+\frac{1}{2},k}-
         \alpha_{i,j-\frac{1}{2},k} \area_{i,j-\frac{1}{2},k} v^{MAC}_{i,j-\frac{1}{2},k}) + \\
-                &amp; (\alpha_{i,j,k+\frac{1}{2}} \area_{i,j,k+\frac{1}{2}} w^{MAC}_{i,j,k-\frac{1}{2}}-
+                &amp; (\alpha_{i,j,k+\frac{1}{2}} \area_{i,j,k+\frac{1}{2}} w^{MAC}_{i,j,k+\frac{1}{2}}-
         \alpha_{i,j,k-\frac{1}{2}} \area_{i,j,k-\frac{1}{2}} w^{MAC}_{i,j,k-\frac{1}{2}}) ]\end{split}\]</div>
 <div class="math notranslate nohighlight">
 \[s_{i,j,k}^{{n+\frac{1}{2}}} = (1/6) (
                  s_{i-\frac{1}{2},j,k}^{{n+\frac{1}{2}}} + s_{i+\frac{1}{2},j,k}^{{n+\frac{1}{2}}}
-             +   s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}} + s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}}
-             +   s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} + s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} )\]</div>
+             +   s_{i,j-\frac{1}{2},k}^{{n+\frac{1}{2}}} + s_{i,j+\frac{1}{2},k}^{{n+\frac{1}{2}}}
+             +   s_{i,j,k-\frac{1}{2}}^{{n+\frac{1}{2}}} + s_{i,j,k+\frac{1}{2}}^{{n+\frac{1}{2}}} )\]</div>
 <div class="math notranslate nohighlight">
 \[\newcommand{\half}{\frac{1}{2}}
 \newcommand{\nph}{{n + \half}}
@@ -447,6 +445,14 @@ which scales the outflow velocities to match the inflow:</p>
 with the math BC <code class="docutils literal notranslate"><span class="pre">BCType::direction_dependent</span></code>, which is to be used for
 an inflow-outflow boundary. It does not compute or correct the boundary velocities
 over other math BC types such as those representing pure inflow or pure outflow.</p>
+<p>The boundary integrals above use the true area of each face, so Cartesian and
+2D axisymmetric (RZ) coordinates are both supported; in RZ an r-face carries
+<span class="math notranslate nohighlight">\(2 \pi r \, dz\)</span> and a z-face <span class="math notranslate nohighlight">\(2 \pi r \, dr\)</span>. Spherical coordinates
+are not supported, and the routine asserts on them.</p>
+<p>The velocity passed in is read and written in its boundary ghost cells, so it must
+carry (filled) ghost cells: one in the normal direction if it is cell-centered, and
+one in each tangential direction if <code class="docutils literal notranslate"><span class="pre">include_bndry_corners</span></code> is true. This is
+asserted.</p>
 </section>
 </section>
 

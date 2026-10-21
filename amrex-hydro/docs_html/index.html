@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to AMReX-Hydro’s Documentation &mdash; amrex-hydro 26.02-dev documentation</title>
+  <title>Welcome to AMReX-Hydro’s Documentation &mdash; amrex-hydro 26.11-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -14,9 +14,9 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=7e297ec4"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/documentation_options.js?v=3d8aadd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -82,7 +82,7 @@
              
   <section id="welcome-to-amrex-hydro-s-documentation">
 <span id="amrex-hydro-indx"></span><h1>Welcome to AMReX-Hydro’s Documentation<a class="headerlink" href="#welcome-to-amrex-hydro-s-documentation" title="Link to this heading"></a></h1>
-<p>AMReX-Hydro is set of routines that support the construction of convective
+<p>AMReX-Hydro is a set of routines that support the construction of convective
 terms for incompressible and low Mach number flow modeling.
 It supports Cartesian coordinates with (or without) embedded boundaries and R-Z coordinate systems.
 It’s freely available
@@ -96,9 +96,8 @@ applications.</p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Install.html#clone-configure-and-install-amrex">Clone, Configure and Install AMReX</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Install.html#clone-and-configure-amrex-hydro">Clone and Configure AMReX-Hydro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Install.html#make-the-object-files">Make The Object Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install.html#building-with-cmake">Building with CMake</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install.html#building-with-gnu-make">Building with GNU Make</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a><ul>
@@ -112,6 +111,7 @@ applications.</p>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Projections.html#mac-projection">MAC Projection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Projections.html#fft-based-mac-projection">FFT-based MAC Projection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Projections.html#nodal-projection">Nodal Projection</a></li>
 </ul>
 </li>

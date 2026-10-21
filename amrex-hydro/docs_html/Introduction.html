@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; amrex-hydro 26.02-dev documentation</title>
+  <title>Introduction &mdash; amrex-hydro 26.11-dev documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
@@ -14,9 +14,9 @@
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=7e297ec4"></script>
-      <script src="_static/doctools.js?v=9bcbadda"></script>
-      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/documentation_options.js?v=3d8aadd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -83,15 +83,15 @@
              
   <section id="introduction">
 <span id="intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
-<p>AMReX-Hydro is set of routines that support the construction of convective
+<p>AMReX-Hydro is a set of routines that support the construction of convective
 terms for incompressible and low Mach number flow modeling
-in cartesian coordinates with (or without) embedded boundaries and R-Z coordinate systems.
+in Cartesian coordinates with (or without) embedded boundaries and R-Z coordinate systems.
 It is not a stand-alone code, but is used in several application codes, such as
 <a class="reference external" href="https://amrex-fluids.github.io/incflo/docs_html/">incflo</a>
 (a variable density incompressible Navier-Stokes solver with adaptive mesh refinement (AMR)),
 <a class="reference external" href="https://amrex-fluids.github.io/IAMR/docs_html/index.html">IAMR</a>
 (a variable density incompressible Navier-Stokes solver with time subcycling AMR),
-and <a class="reference external" href="https://amrex-codes.github.io/MFIX-Exa/docs_html/">MFIX-Exa</a>
+and <a class="reference external" href="https://mfix.netl.doe.gov/products/mfix-exa/">MFIX-Exa</a>
 (a multiphase computational fluid dynamics modeling tool).</p>
 <p>In application codes, the general procedure for constructing convective terms from cell-centered data
 is as follows:</p>
@@ -105,8 +105,8 @@ is as follows:</p>
 <p>AMReX-Hydro provides routines to support all of these steps.
 Here we group the routines into a few general categories and map them to the step(s) they address:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="Schemes.html#schemes"><span class="std std-ref">Advection schemes</span></a>: the fundamental algorithm is either a Method-of-Lines (MOL) or Godunov approach
-(used in steps 1 and 3).</p></li>
+<li><p><a class="reference internal" href="Schemes.html#schemes"><span class="std std-ref">Advection schemes</span></a>: the fundamental algorithm is a Method-of-Lines (MOL), Godunov, or Bell-Dawson-Shubin (BDS)
+approach (used in steps 1 and 3).</p></li>
 <li><p><a class="reference internal" href="Projections.html#projections"><span class="std std-ref">Projection Methods</span></a> frameworks:</p>
 <ul>
 <li><p>MAC Projection - enforces a divergence condition on an edge-based velocity field (used in step 2).</p></li>
@@ -116,7 +116,7 @@ velocity field, with pressure and velocity divergence defined on nodes
 cell-centered velocity update that approximately obeys a divergence constraint).</p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/EB.html#sec-eb-redistribution" title="(in amrex v26.02-dev)"><span class="xref std std-ref">Redistribution</span></a>: AMReX contains schemes to address the “small cell problem” associated with explicit cut
+<li><p><a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/EB.html#sec-eb-redistribution" title="(in amrex v26.11-dev)"><span class="xref std std-ref">Redistribution</span></a>: AMReX contains schemes to address the “small cell problem” associated with explicit cut
 cell algorithms (part of step 4 for problems with embedded boundaries).</p></li>
 <li><p><a class="reference internal" href="Utilities.html#utilities"><span class="std std-ref">Helper functions</span></a>: to do things like compute slopes, create fluxes from face-centered values, and
 create the convective term from fluxes (used in all but step 2).</p></li>
