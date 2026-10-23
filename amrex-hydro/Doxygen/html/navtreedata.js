@@ -61,9 +61,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"globals_vars.html",
-"group__amrex__mpi.html#ga6f2679e18d648d9cc9c9d887659274ea",
-"hydro__godunov__ppm_8H.html#a21180e225f46577ee2bfaebef9d961d2"
+"dir_cffaad549c21f3a63de5e8faf3ce5224.html",
+"group__amrex__mpi.html#ga52669e7fe9560a57fc8084c7137ebfd3",
+"hydro__godunov__plm_8H.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

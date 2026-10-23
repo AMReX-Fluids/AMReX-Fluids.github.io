@@ -1,5 +1,7 @@
 <map id="Hydro::NodalProjector::setOptions" name="Hydro::NodalProjector::setOptions">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,171,45"/>
-<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ParmParse.html#af14555ab6859c064cc3ca2860cdfa378" title=" " alt="" coords="219,13,404,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,23,205,23,205,28,171,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,171,67"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ParmParse.html#af14555ab6859c064cc3ca2860cdfa378" title=" " alt="" coords="219,5,404,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,34,205,29,205,35,171,39"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ParmParse.html#aa0c8cd466402125f5fcb47fb4de217fd" title=" " alt="" coords="219,55,404,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,55,205,59,205,65,171,60"/>
 </map>
