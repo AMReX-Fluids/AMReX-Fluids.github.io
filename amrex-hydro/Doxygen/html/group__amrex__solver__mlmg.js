@@ -1,8 +1,8 @@
 var group__amrex__solver__mlmg =
 [
-    [ "amrex::MLABecLaplacian", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#gaa9c032480d2659c266fb23d70800f6a5", null ],
-    [ "amrex::MLCellABecLap", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#ga2116fd8f117dd8ebb01e6a3b99c7947e", null ],
-    [ "amrex::MLLinOp", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#ga6cfa07a78393bb456aa7d33ced04fb46", null ],
-    [ "amrex::MLMG", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#ga77b48f471801c4f6a597804a89c3b543", null ],
-    [ "amrex::MLPoisson", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#ga339ac1b3381df4095a659ec2b7980cb3", null ]
+    [ "amrex::MLABecLaplacian", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#ga8fa5f5f75c7efc3ebccc3b680cdf8ce8", null ],
+    [ "amrex::MLCellABecLap", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#gae73544cf9cd51a1aca22cf0aa1005b8b", null ],
+    [ "amrex::MLLinOp", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#gaef391639465ab85ff571e40d2f4937a5", null ],
+    [ "amrex::MLMG", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#gada4ae08b8beef042861f862f7b17d5a1", null ],
+    [ "amrex::MLPoisson", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__solver__mlmg.html#ga399b88e08d312dc6dc61e2e99f93097f", null ]
 ];

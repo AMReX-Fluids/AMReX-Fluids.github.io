@@ -1,6 +1,6 @@
 var group__amrex__index__space =
 [
-    [ "amrex::BoxIterator", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html#gae0e92af73c506a4ab3bf4c4939d613f4", null ],
+    [ "amrex::BoxIterator", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html#ga793dd1ba0e025c05311aace972ede5cb", null ],
     [ "amrex::adjCell", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html#ga689a69681821630d9a11f838e8b2bea2", null ],
     [ "amrex::adjCellHi", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html#ga01fe448de58a61fa00feaef8162055c8", null ],
     [ "amrex::adjCellLo", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html#ga27c2456b05ba70f78ec1a55df80e2a2c", null ],
