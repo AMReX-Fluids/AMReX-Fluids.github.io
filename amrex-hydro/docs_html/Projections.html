@@ -225,11 +225,12 @@ if using bicg, cg, bicgcg, cgbicg or hypre</p></td>
 </tr>
 <tr class="row-even"><td><p>bottom_solver</p></td>
 <td><p>Which bottom solver to use.
-Options are bicg (BiCGStab), bicgcg, cg, cgbicg, smoother or hypre.
-Any other value is silently ignored, and MLMG’s default bottom
-solver for the operator is used. hypre requires AMReX built with
-HYPRE; without it the MacProjector aborts, while the NodalProjector
-ignores it like any other unrecognized value.</p></td>
+Options are bicg (BiCGStab), bicgcg, cg, cgbicg, smoother, hypre or
+algmg (AMReX’s algebraic multigrid). Any other value is silently
+ignored, and MLMG’s default bottom solver for the operator is used.
+hypre requires AMReX built with HYPRE; without it the MacProjector
+aborts, while the NodalProjector ignores it like any other
+unrecognized value.</p></td>
 <td><p>String</p></td>
 <td><div class="line-block">
 <div class="line">MAC: bicg</div>
@@ -237,35 +238,42 @@ ignores it like any other unrecognized value.</p></td>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><p>bottom_rtol</p></td>
+<tr class="row-odd"><td><p>multigrid_type</p></td>
+<td><p>How MLMG solves AMR level 0: geometric, algebraic (AMReX’s
+algebraic multigrid) or hybrid (geometric, switching to the
+algebraic solver if the residual stalls)</p></td>
+<td><p>String</p></td>
+<td><p>geometric</p></td>
+</tr>
+<tr class="row-even"><td><p>bottom_rtol</p></td>
 <td><p>Relative tolerance of the bottom solver</p></td>
 <td><p>Real</p></td>
 <td><p>1.0e-4</p></td>
 </tr>
-<tr class="row-even"><td><p>bottom_atol</p></td>
+<tr class="row-odd"><td><p>bottom_atol</p></td>
 <td><p>Absolute tolerance of the bottom solver, a negative number means
 it won’t be used</p></td>
 <td><p>Real</p></td>
 <td><p>-1.0</p></td>
 </tr>
-<tr class="row-odd"><td><p>num_pre_smooth</p></td>
+<tr class="row-even"><td><p>num_pre_smooth</p></td>
 <td><p>Number of smoother iterations when going down the V-cycle</p></td>
 <td><p>Int</p></td>
 <td><p>2</p></td>
 </tr>
-<tr class="row-even"><td><p>num_post_smooth</p></td>
+<tr class="row-odd"><td><p>num_post_smooth</p></td>
 <td><p>Number of smoother iterations when going up the V-cycle</p></td>
 <td><p>Int</p></td>
 <td><p>2</p></td>
 </tr>
-<tr class="row-odd"><td><p>num_final_smooth</p></td>
+<tr class="row-even"><td><p>num_final_smooth</p></td>
 <td><p>Number of smoother iterations at the bottom of the V-cycle if
 bottom_solver = smoother, or after a bicg, cg, bicgcg or cgbicg
 bottom solve that did not converge</p></td>
 <td><p>Int</p></td>
 <td><p>8</p></td>
 </tr>
-<tr class="row-even"><td><p>use_gauss_seidel</p></td>
+<tr class="row-odd"><td><p>use_gauss_seidel</p></td>
 <td><p>Use Gauss-Seidel (true) or Jacobi (false) smoothing. The
 MacProjector does not apply it to its EB operator (MLEBABecLap),
 which is used when beta has EB data.</p></td>
@@ -298,6 +306,19 @@ otherwise. Aborts if beta has EB data, if an overset mask is given,
 or if setLevelBC is called. Note that this is not the same as
 bottom_solver = hypre, which uses hypre for the MLMG bottom solve
 only.</p></td>
+<td><p>Bool</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td><p>mlhypre_prefix</p></td>
+<td><p>ParmParse prefix of the HypreMLABecLap options</p></td>
+<td><p>String</p></td>
+<td><p>hypre_mlabeclap</p></td>
+</tr>
+<tr class="row-odd"><td><p>mlhypre_reuse_setup</p></td>
+<td><p>Keep the HypreMLABecLap object and its solver setup when beta
+changes; the setup is then only an approximate preconditioner.
+Requires its IJ mode (&lt;prefix&gt;.hypre_solver or &lt;prefix&gt;.backend =
+algmg)</p></td>
 <td><p>Bool</p></td>
 <td><p>false</p></td>
 </tr>
