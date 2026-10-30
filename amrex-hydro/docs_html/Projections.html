@@ -316,9 +316,9 @@ only.</p></td>
 </tr>
 <tr class="row-odd"><td><p>mlhypre_reuse_setup</p></td>
 <td><p>Keep the HypreMLABecLap object and its solver setup when beta
-changes; the setup is then only an approximate preconditioner.
-Requires its IJ mode (&lt;prefix&gt;.hypre_solver or &lt;prefix&gt;.backend =
-algmg)</p></td>
+changes; the setup is then only an approximate preconditioner, and
+a solve that does not converge with it redoes it. Requires its IJ
+mode (&lt;prefix&gt;.hypre_solver or &lt;prefix&gt;.backend = algmg)</p></td>
 <td><p>Bool</p></td>
 <td><p>false</p></td>
 </tr>
@@ -341,8 +341,21 @@ only if it is positive; otherwise AMReX’s default is used.</p></td>
 <td><p>Real</p></td>
 <td><p>-1.0</p></td>
 </tr>
+<tr class="row-odd"><td><p>use_mlhypre</p></td>
+<td><p>Solve the nodal projection as one composite (all AMR levels)
+system with AMReX’s HypreMLNodeLap (hypre or AlgMG) instead of MLMG.
+Requires AMReX built with HYPRE.</p></td>
+<td><p>Bool</p></td>
+<td><p>false</p></td>
+</tr>
+<tr class="row-even"><td><p>mlhypre_prefix</p></td>
+<td><p>ParmParse prefix of the HypreMLNodeLap options</p></td>
+<td><p>String</p></td>
+<td><p>hypre_mlnodelap</p></td>
+</tr>
 </tbody>
 </table>
+<p>Both projectors provide <code class="docutils literal notranslate"><span class="pre">getNumIters()</span></code>, the iterations of the last projection.</p>
 <section id="mac-projection">
 <span id="mac-proj"></span><h2>MAC Projection<a class="headerlink" href="#mac-projection" title="Link to this heading"></a></h2>
 <p>For a velocity field <span class="math notranslate nohighlight">\(U = (u,v,w)\)</span> defined on faces, i.e.
