@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sbox_0',['sbox',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabArrayBase_1_1CopyComTag.html#a1c8df51daf5ac3a9d20522cfdb6ab004',1,'amrex::FabArrayBase::CopyComTag']]],
-  ['sc_1',['sc',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DeriveRec_1_1StateRange.html#ae011fd687383f2ecfa3e40ad6fdf7501',1,'amrex::DeriveRec::StateRange::sc'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1PCData.html#ad7ca6cbcd2440f36bb0b02a9ffcfe6f5',1,'amrex::PCData::SC']]],
+  ['sc_1',['sc',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1PCData.html#ad7ca6cbcd2440f36bb0b02a9ffcfe6f5',1,'amrex::PCData::SC'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DeriveRec_1_1StateRange.html#ae011fd687383f2ecfa3e40ad6fdf7501',1,'amrex::DeriveRec::StateRange::sc']]],
   ['scalar_5fa_2',['scalar_a',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Hypre.html#a5cc787cbd77e527e4c58e58904305531',1,'amrex::Hypre']]],
   ['scalar_5fb_3',['scalar_b',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Hypre.html#a8cb2fde2e6ce7be52d40bc7ee19f7ae3',1,'amrex::Hypre']]],
   ['scomp_4',['scomp',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FBData.html#a869352ea49403f3d983d945d75b914a8',1,'amrex::FBData']]],

@@ -5,7 +5,7 @@ var searchData=
   ['ghost_5fint_5fcomp_2',['ghost_int_comp',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1NeighborParticleContainer__impl.html#a12e61418b0a0fba37ab902384681d3d9',1,'amrex::NeighborParticleContainer_impl']]],
   ['ghost_5freal_5fcomp_3',['ghost_real_comp',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1NeighborParticleContainer__impl.html#ad53cfaa89cd1c458dd64f2017cb23b8f',1,'amrex::NeighborParticleContainer_impl']]],
   ['ghostparticleid_4',['GhostParticleID',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1LongParticleIds.html#a24df8a9162e3ff47d7bffbdbc04d660b',1,'amrex::LongParticleIds']]],
-  ['gpu_5',['gpu',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1HypreDefaults.html#a277903ed102b6b2fd6addac83bfae838',1,'amrex::HypreDefaults::gpu'],['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1BinPolicy.html#afa152e4ccd5f35d821d3fa5ec76d6c78',1,'amrex::BinPolicy::GPU']]],
+  ['gpu_5',['gpu',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1BinPolicy.html#afa152e4ccd5f35d821d3fa5ec76d6c78',1,'amrex::BinPolicy::GPU'],['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1HypreDefaults.html#a277903ed102b6b2fd6addac83bfae838',1,'amrex::HypreDefaults::gpu']]],
   ['gpu_5frand_5fstate_6',['gpu_rand_state',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ae5aa4a92b1c9940d028c38628ec7a866',1,'amrex']]],
   ['gpusuccess_7',['gpuSuccess',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad449c6a61a817b311238986b4ef19e38',1,'amrex']]],
   ['grad_8',['GRAD',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1AMRErrorTag.html#addadf02bf9152fc1767831cd86b163d5a7b0d9cc09c139a180df7015ea53e8690',1,'amrex::AMRErrorTag']]],
