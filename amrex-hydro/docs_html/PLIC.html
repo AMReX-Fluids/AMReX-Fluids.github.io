@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volume of fluid with PLIC &mdash; amrex-hydro 26.00-dev documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5fb80609"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Boundary conditions" href="bcs.html" />
+    <link rel="prev" title="Projection Methods" href="Projections.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            amrex-hydro
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Volume of fluid with PLIC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-the-solver-provides">What the solver provides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reconstructions">Reconstructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-normal">Adding a normal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verification">Verification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">amrex-hydro</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Volume of fluid with PLIC</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PLIC.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="math notranslate nohighlight">
+\[\newcommand{\half}{\frac{1}{2}}
+\newcommand{\nph}{{n + \half}}
+\newcommand{\nmh}{{n - \frac{1}{2}}}
+\newcommand{\iphj}{{i+\frac{1}{2},j,k}}
+\newcommand{\ijph}{{i,j+\frac{1}{2}},k}
+\newcommand{\imhj}{{i-\frac{1}{2},j,k}}
+\newcommand{\ijmh}{{i,j-\frac{1}{2}},k}
+\newcommand{\ijkmh}{{i,j,k-\frac{1}{2}}}
+\newcommand{\ijkph}{{i,j,k+\frac{1}{2}}}
+\newcommand{\grad}{\nabla}
+\newcommand{\del}{\nabla}
+\newcommand{\AN}{[(U \cdot \nabla)U]^{n+\frac{1}{2}}}
+\newcommand{\npk}{{n + \frac{p+\half}{R}}}
+\newcommand{\nak}{{n + \frac{p}{R}}}
+\newcommand{\nmk}{{n + \frac{p-\half}{R}}}
+\newcommand{\iph}{i+\half}
+\newcommand{\imh}{i-\half}
+\newcommand{\ipmh}{i\pm\half}
+\newcommand{\jph}{j+\half}
+\newcommand{\jmh}{j-\half}
+\newcommand{\jpmh}{j\pm\half}
+\newcommand{\kph}{k+\half}
+\newcommand{\kmh}{k-\half}
+\newcommand{\GMAC}{C \rightarrow E}
+\newcommand{\DMAC}{E \rightarrow C}
+\newcommand{\U}{\boldsymbol{U}}
+\newcommand{\F}{\boldsymbol{F}}
+\newcommand{\dt}{\Delta t}
+\newcommand{\shalf}{\sfrac{1}{2}}
+\newcommand\hathat[1]{\widehat{\widehat{#1}}}
+\newcommand\hairbow[1]{\overset{\bowtie}{#1}}
+\newcommand\widebreve[1]{\overset{\smile}{#1}}
+\newcommand{\vol}{\mathcal{V}}
+\newcommand{\area}{\mathcal{A}}\]</div>
+<section id="volume-of-fluid-with-plic">
+<span id="plic"></span><h1>Volume of fluid with PLIC<a class="headerlink" href="#volume-of-fluid-with-plic" title="Link to this heading"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">PLIC</span></code> directory provides geometric volume-of-fluid transport with a piecewise-linear
+interface calculation, for any AMReX-based solver. The interface in a cell is the plane
+<span class="math notranslate nohighlight">\(\mathbf{m} \cdot \mathbf{x} = \alpha\)</span> in unit-cube cell coordinates, with the liquid on the
+side <span class="math notranslate nohighlight">\(\mathbf{m} \cdot \mathbf{x} \le \alpha\)</span>, and the plane is fixed by the volume fraction
+<span class="math notranslate nohighlight">\(F\)</span> of the cell through the analytic relations of Scardovelli &amp; Zaleski (JCP 164, 2000).</p>
+<p>Like Godunov, MOL and BDS, the library provides spatial operators and leaves the update of
+<span class="math notranslate nohighlight">\(F\)</span>, its ghost cells and the synchronization of the levels to the solver. It requires
+Cartesian coordinates and does not support embedded boundaries; <code class="docutils literal notranslate"><span class="pre">PLIC::CheckMesh</span></code> aborts on
+either. The reconstruction is selected by name, as <code class="docutils literal notranslate"><span class="pre">advection_type</span></code> is in
+<code class="docutils literal notranslate"><span class="pre">HydroUtils::ComputeFluxesOnBoxFromState</span></code>.</p>
+<section id="what-the-solver-provides">
+<h2>What the solver provides<a class="headerlink" href="#what-the-solver-provides" title="Link to this heading"></a></h2>
+<p><span class="math notranslate nohighlight">\(F\)</span> needs <code class="docutils literal notranslate"><span class="pre">PLIC::nGrowF(reconstruction)</span></code> filled ghost cells. At coarse/fine boundaries, fill
+them with <code class="docutils literal notranslate"><span class="pre">amrex::cell_cons_interp</span></code>, which keeps <span class="math notranslate nohighlight">\(F\)</span> in <span class="math notranslate nohighlight">\([0,1]\)</span>.</p>
+</section>
+<section id="reconstructions">
+<h2>Reconstructions<a class="headerlink" href="#reconstructions" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">PLIC::FitPlanes</span></code> fits the plane of each mixed cell, from the normal of the selected
+reconstruction and the volume fraction of the cell:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">youngs</span></code></p></td>
+<td><p>Youngs’ finite-difference normal.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myc</span></code></p></td>
+<td><p>Mixed Youngs-Centered normal (Aulisa et al., JCP 225, 2007).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myc_height</span></code></p></td>
+<td><p>The height-function normal along the dominant direction of the Mixed
+Youngs-Centered normal, which is exact for a planar interface, and the latter where
+the heights are not defined. The default.</p></td>
+</tr>
+</tbody>
+</table>
+<p>The geometric kernels in <code class="docutils literal notranslate"><span class="pre">hydro_plic_K.H</span></code> and <code class="docutils literal notranslate"><span class="pre">hydro_plic_normals_K.H</span></code> derive from Kynema-SGF
+(formerly AMR-Wind), under its BSD 3-Clause License; the headers keep its copyright notice.</p>
+</section>
+<section id="adding-a-normal">
+<h2>Adding a normal<a class="headerlink" href="#adding-a-normal" title="Link to this heading"></a></h2>
+<p>A normal runs inside device kernels, so it is a template parameter rather than a virtual function.
+Write a struct in <code class="docutils literal notranslate"><span class="pre">hydro_plic_normals_K.H</span></code>, as described there, and give it a name in
+<code class="docutils literal notranslate"><span class="pre">PLIC::dispatch_normal</span></code>, which every operator of the library selects its normal with.</p>
+</section>
+<section id="verification">
+<h2>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Tests/PLIC</span></code> checks the plane geometry, the normals and the plane fit to round-off. A run fails
+when its checks do not hold. See its README for the expected results.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Projections.html" class="btn btn-neutral float-left" title="Projection Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="bcs.html" class="btn btn-neutral float-right" title="Boundary conditions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2018, AMReX-Hydro Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

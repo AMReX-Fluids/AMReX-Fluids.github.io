@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Installation Guide &mdash; amrex-hydro 26.00-dev documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
 
@@ -59,6 +59,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PLIC.html">Volume of fluid with PLIC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
 </ul>
@@ -208,7 +209,7 @@ with <code class="docutils literal notranslate"><span class="pre">AMReX_FFT=ON</
 <section id="building-with-gnu-make">
 <h2>Building with GNU Make<a class="headerlink" href="#building-with-gnu-make" title="Link to this heading"></a></h2>
 <p>Each AMReX-Hydro directory (<code class="docutils literal notranslate"><span class="pre">BDS</span></code>, <code class="docutils literal notranslate"><span class="pre">EBGodunov</span></code>, <code class="docutils literal notranslate"><span class="pre">EBMOL</span></code>, <code class="docutils literal notranslate"><span class="pre">Godunov</span></code>, <code class="docutils literal notranslate"><span class="pre">MOL</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Projections</span></code> and <code class="docutils literal notranslate"><span class="pre">Utils</span></code>) has a <code class="docutils literal notranslate"><span class="pre">Make.package</span></code> file. With AMReX’s GNU Make system, include
+<code class="docutils literal notranslate"><span class="pre">PLIC</span></code>, <code class="docutils literal notranslate"><span class="pre">Projections</span></code> and <code class="docutils literal notranslate"><span class="pre">Utils</span></code>) has a <code class="docutils literal notranslate"><span class="pre">Make.package</span></code> file. With AMReX’s GNU Make system, include
 the <code class="docutils literal notranslate"><span class="pre">Make.package</span></code> files of the directories you need and add those directories to the
 include and source paths, e.g.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>include $(AMREX_HYDRO_HOME)/Utils/Make.package

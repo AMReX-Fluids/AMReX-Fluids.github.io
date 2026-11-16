@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boundary conditions &mdash; amrex-hydro 26.00-dev documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
 
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Helper functions" href="Utilities.html" />
-    <link rel="prev" title="Projection Methods" href="Projections.html" /> 
+    <link rel="prev" title="Volume of fluid with PLIC" href="PLIC.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -50,6 +50,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Schemes.html">Advection Schemes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="PLIC.html">Volume of fluid with PLIC</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Boundary Conditions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#mixed-boundary-conditions">Mixed Boundary Conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#advective-bc-details">Advective BC details</a></li>
@@ -89,7 +90,7 @@
   <section id="boundary-conditions">
 <span id="bcs"></span><h1>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Link to this heading"></a></h1>
 <p>AMReX-Hydro uses underlying AMReX functionality in implementing boundary conditions
-(see AMReX’s documentation section <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/Basics.html#sec-basics-boundary" title="(in amrex v26.11-dev)"><span>Boundary Conditions</span></a>).
+(see AMReX’s documentation section <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/Basics.html#sec-basics-boundary" title="(in amrex v26.00-dev)"><span>Boundary Conditions</span></a>).
 Physical boundary conditions, such as
 inflow, outflow, slip/no-slip walls, etc. are ultimately linked to
 mathematical Dirichlet or Neumann conditions.
@@ -116,13 +117,13 @@ routines use the single BC per face <code class="code highlight cpp c++ docutils
 abort if a BC MF (or Array4) is passed with <code class="docutils literal notranslate"><span class="pre">advection_type</span></code> set to <code class="docutils literal notranslate"><span class="pre">&quot;MOL&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;BDS&quot;</span></code>,
 rather than silently dropping it.</p>
 <p>The MacProjector supports mixed boundary conditions by making use of the underlying linear solver’s
-Robin BC (<a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v26.11-dev)"><span>Boundary Conditions</span></a>) option. Robin boundary conditions are formulated as
+Robin BC (<a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v26.00-dev)"><span>Boundary Conditions</span></a>) option. Robin boundary conditions are formulated as
 <span class="math notranslate nohighlight">\(a\phi + b\frac{\partial\phi}{\partial n} = f\)</span>.
 <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, and <span class="math notranslate nohighlight">\(f\)</span> are each a cell-centered (real) <code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">MultiFab</span></code> that carries
 the relevant values in the first ghost cell. All three must be specified on each level with a call to
-<code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">setLevelBC</span></code> (see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v26.11-dev)"><span>Boundary Conditions</span></a> for usage).</p>
+<code class="code highlight cpp c++ docutils literal highlight-c++"><span class="n">setLevelBC</span></code> (see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v26.00-dev)"><span>Boundary Conditions</span></a> for usage).</p>
 <p>The NodalProjector can support mixed boundary conditions through the use of an overset mask
-(see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v26.11-dev)"><span>Boundary Conditions</span></a>).
+(see <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers.html#sec-linearsolver-bc" title="(in amrex v26.00-dev)"><span>Boundary Conditions</span></a>).
 The overset mask specifies a Dirichlet BC with 0 (meaning no solve is needed since the solution is known) or Neumann with 1 (meaning do the solve). Note this is an integer (not bool) MultiFab, so the values must be only either 0 or 1.</p>
 </section>
 <section id="advective-bc-details">
@@ -199,7 +200,7 @@ functions <a class="reference external" href="https://amrex-fluids.github.io/amr
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Projections.html" class="btn btn-neutral float-left" title="Projection Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PLIC.html" class="btn btn-neutral float-left" title="Volume of fluid with PLIC" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Utilities.html" class="btn btn-neutral float-right" title="Helper functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

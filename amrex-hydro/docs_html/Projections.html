@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projection Methods &mdash; amrex-hydro 26.00-dev documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=15813166" />
 
@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Boundary conditions" href="bcs.html" />
+    <link rel="next" title="Volume of fluid with PLIC" href="PLIC.html" />
     <link rel="prev" title="Advection schemes" href="Schemes.html" /> 
 </head>
 
@@ -55,6 +55,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#nodal-projection">Nodal Projection</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="PLIC.html">Volume of fluid with PLIC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bcs.html">Boundary Conditions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Helper functions</a></li>
 </ul>
@@ -180,7 +181,7 @@ velocity fields. The projection classes use AMReX’s linear solvers internally.
 Both classes provide member functions <code class="docutils literal notranslate"><span class="pre">getLinOp</span></code> and <code class="docutils literal notranslate"><span class="pre">getMLMG</span></code> to
 access the underlying objects and allow for modification of the linear operator
 and multigrid properties if needed.
-Details of the linear solver implementations are in the <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers_Chapter.html#chap-linearsolvers" title="(in amrex v26.11-dev)"><span>Linear Solvers</span></a>
+Details of the linear solver implementations are in the <a class="reference external" href="https://amrex-codes.github.io/amrex/docs_html/LinearSolvers_Chapter.html#chap-linearsolvers" title="(in amrex v26.00-dev)"><span>Linear Solvers</span></a>
 section of AMReX’s documentation.</p>
 <p id="projections-inputs">Both Projector classes provide the following parameters, which can be set in an
 inputs file or on the command line. For the MacProjector, these must be preceded by
@@ -629,7 +630,7 @@ and demonstrates how to set up the NodalProjector object and use it to perform a
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Schemes.html" class="btn btn-neutral float-left" title="Advection schemes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="bcs.html" class="btn btn-neutral float-right" title="Boundary conditions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="PLIC.html" class="btn btn-neutral float-right" title="Volume of fluid with PLIC" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
