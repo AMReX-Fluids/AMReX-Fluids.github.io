@@ -1,0 +1,13 @@
+<map id="PLIC::cut_volume" name="PLIC::cut_volume">
+<area shape="rect" id="Node000001" title="Liquid volume fraction of the sub&#45;box [r0, r0+dr0] x [0,1] x [0,1] of the unit cube cut by m1*x1 + m2..." alt="" coords="5,57,139,85"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="328,5,428,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,54,186,43,315,26,310,28,187,48,135,59"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="330,109,426,137"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,83,187,94,317,115,312,117,186,99,134,88"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#af3b8f5abc1832ab6fe3a0854d32ce184" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="187,57,277,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,69,173,70,168,72,140,74"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="272,54,320,39,326,38,274,59"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="274,83,326,104,320,104,273,88"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga1c182abe7695240cd35e1ba3d4477758" title=" " alt="" coords="325,57,431,85"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="277,69,312,71,307,72,278,74"/>
+</map>

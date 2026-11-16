@@ -1,7 +1,7 @@
 <map id="Godunov/hydro_godunov_corner_couple.H" name="Godunov/hydro_godunov_corner_couple.H">
-<area shape="rect" id="Node000001" title=" " alt="" coords="109,5,293,45"/>
-<area shape="rect" id="Node000002" href="$hydro__godunov__edge__state__3D_8cpp.html" title=" " alt="" coords="5,101,189,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,57,120,103,117,99,168,53"/>
-<area shape="rect" id="Node000003" href="$hydro__godunov__extrap__vel__to__faces__3D_8cpp.html" title=" " alt="" coords="213,93,397,148"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,52,278,91,274,95,231,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="109,5,293,50"/>
+<area shape="rect" id="Node000002" href="$hydro__godunov__edge__state__3D_8cpp.html" title=" " alt="" coords="5,106,189,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,60,121,108,118,104,165,62"/>
+<area shape="rect" id="Node000003" href="$hydro__godunov__extrap__vel__to__faces__3D_8cpp.html" title=" " alt="" coords="213,98,397,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,58,276,98,271,97,234,63"/>
 </map>

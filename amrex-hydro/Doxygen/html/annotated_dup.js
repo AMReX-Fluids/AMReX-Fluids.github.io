@@ -5,12 +5,17 @@ var annotated_dup =
       [ "MacProjector", "classHydro_1_1MacProjector.html", "classHydro_1_1MacProjector" ],
       [ "NodalProjector", "classHydro_1_1NodalProjector.html", "classHydro_1_1NodalProjector" ]
     ] ],
+    [ "PLIC", "namespacePLIC.html", [
+      [ "Youngs", "structPLIC_1_1Youngs.html", "structPLIC_1_1Youngs" ],
+      [ "MixedYoungsCentered", "structPLIC_1_1MixedYoungsCentered.html", "structPLIC_1_1MixedYoungsCentered" ],
+      [ "HeightFunctionMYC", "structPLIC_1_1HeightFunctionMYC.html", "structPLIC_1_1HeightFunctionMYC" ]
+    ] ],
     [ "PPM", "namespacePPM.html", [
-      [ "minmod", "structPPM_1_1minmod.html", "structPPM_1_1minmod" ],
       [ "nolimiter", "structPPM_1_1nolimiter.html", "structPPM_1_1nolimiter" ],
-      [ "upwind", "structPPM_1_1upwind.html", "structPPM_1_1upwind" ],
       [ "vanleer", "structPPM_1_1vanleer.html", "structPPM_1_1vanleer" ],
+      [ "wenoz", "structPPM_1_1wenoz.html", "structPPM_1_1wenoz" ],
       [ "weno_js", "structPPM_1_1weno__js.html", "structPPM_1_1weno__js" ],
-      [ "wenoz", "structPPM_1_1wenoz.html", "structPPM_1_1wenoz" ]
+      [ "upwind", "structPPM_1_1upwind.html", "structPPM_1_1upwind" ],
+      [ "minmod", "structPPM_1_1minmod.html", "structPPM_1_1minmod" ]
     ] ]
 ];

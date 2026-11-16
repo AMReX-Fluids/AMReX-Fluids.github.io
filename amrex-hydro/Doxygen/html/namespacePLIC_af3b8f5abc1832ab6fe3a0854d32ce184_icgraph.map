@@ -1,0 +1,15 @@
+<map id="PLIC::sort3" name="PLIC::sort3">
+<area shape="rect" id="Node000001" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="781,32,871,60"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#aea78f9a4fb03de943f6f5a3cddc28903" title="Liquid volume fraction of the sub&#45;box [r0, r0+dr0] x [0,1] x [0,1] of the unit cube cut by m1*x1 + m2..." alt="" coords="580,5,714,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="762,37,714,32,714,26,768,37"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="561,57,733,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="768,54,734,62,733,56,762,55"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a6a7887114881a4ca8b52e5e04da6bacc" title="Exact liquid volume fraction of cell (i,j,k) for the half space n.x &lt;= d (physical coordinates,..." alt="" coords="363,5,513,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="562,19,514,22,514,17,567,19"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="382,57,495,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="543,71,495,74,495,69,549,71"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="170,57,315,85"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="363,71,316,74,316,69,368,71"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="5,57,122,85"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="151,71,122,74,122,69,157,71"/>
+</map>

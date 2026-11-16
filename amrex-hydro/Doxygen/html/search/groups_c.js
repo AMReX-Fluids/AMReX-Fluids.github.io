@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['particles_0',['Particles',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__particles.html',1,'']]]
+  ['particles_0',['Particles',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__particles.html',1,'']]],
+  ['plic_1',['PLIC',['../group__PLIC.html',1,'']]]
 ];

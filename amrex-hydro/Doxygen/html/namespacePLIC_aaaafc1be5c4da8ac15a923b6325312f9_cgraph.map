@@ -1,0 +1,9 @@
+<map id="PLIC::cell_fraction" name="PLIC::cell_fraction">
+<area shape="rect" id="Node000001" title="Liquid volume fraction of cell (i,j,k) for an implicit surface phi(x) &gt; 0 inside the liquid,..." alt="" coords="5,74,143,102"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1GeometryData.html#a5b36dc205b48f04d66ec8ff3c75548a3" title=" " alt="" coords="191,5,358,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,71,185,53,181,56,124,76"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="191,74,358,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,85,178,87,173,89,143,90"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1GeometryData.html#a9f9884e61f2b35a6bc7f65361151ff1b" title=" " alt="" coords="191,125,358,170"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="123,99,186,119,181,121,122,105"/>
+</map>

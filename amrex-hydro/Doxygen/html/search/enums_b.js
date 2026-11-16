@@ -4,5 +4,6 @@ var searchData=
   ['maskval_1',['MaskVal',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BndryDataT.html#ac96be78c84438c0c74a235d969972846',1,'amrex::BndryDataT']]],
   ['mathematicalbndrytypes_2',['mathematicalBndryTypes',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1BCType.html#a2842d1189d57039c0e3551676c9910e6',1,'amrex::BCType']]],
   ['mlmgnormtype_3',['MLMGNormType',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad6568bc5df052e827cc522b2c19fd663',1,'amrex']]],
-  ['multigridtype_4',['MultigridType',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a07e9cea10c4551b5b55a808fb306a7f8',1,'amrex']]]
+  ['mlnodelinopcoarseningstrategy_4',['MLNodeLinOpCoarseningStrategy',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a3a1fca8cf04de50af360ed50a3c8b873',1,'amrex']]],
+  ['multigridtype_5',['MultigridType',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a07e9cea10c4551b5b55a808fb306a7f8',1,'amrex']]]
 ];

@@ -7,6 +7,7 @@ var topics =
     [ "Utilities", "group__Utilities.html", "group__Utilities" ],
     [ "Redistribution", "group__Redistribution.html", null ],
     [ "BDS", "group__BDS.html", "group__BDS" ],
+    [ "PLIC", "group__PLIC.html", "group__PLIC" ],
     [ "Arithmetic Types", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html", "group__amrex__arithmetic__types" ],
     [ "Integer Index Space", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__index__space.html", "group__amrex__index__space" ],
     [ "Real Space", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__real__space.html", "group__amrex__real__space" ],

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hydro_3a_20technical_20reference_0',['AMReX-Hydro: Technical Reference',['../index.html',1,'']]]
+  ['github_20repository_0',['GitHub Repository',['../index.html#github',1,'']]],
+  ['guide_1',['User Guide',['../index.html#user_guide',1,'']]]
 ];

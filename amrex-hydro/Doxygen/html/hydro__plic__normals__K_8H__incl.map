@@ -1,0 +1,25 @@
+<map id="PLIC/hydro_plic_normals_K.H" name="PLIC/hydro_plic_normals_K.H">
+<area shape="rect" id="Node000001" title=" " alt="" coords="622,5,832,33"/>
+<area shape="rect" id="Node000002" href="$hydro__plic__K_8H.html" title=" " alt="" coords="436,81,554,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="688,33,552,78,551,73,683,34"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX_8H.html" title=" " alt="" coords="578,81,660,109"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="711,33,652,75,650,70,706,34"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="685,81,770,109"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="729,32,729,67,725,64,726,36"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="794,81,852,109"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="745,31,797,72,792,71,744,36"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="876,81,936,109"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="760,31,865,76,860,76,759,36"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__Algorithm_8H.html" title=" " alt="" coords="5,157,159,184"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="436,109,172,156,171,151,435,104"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__Array4_8H.html" title=" " alt="" coords="182,157,315,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="454,109,308,154,306,149,449,110"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__Geometry_8H.html" title=" " alt="" coords="339,157,492,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="484,108,442,148,440,144,479,110"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$AMReX__REAL_8H.html" title=" " alt="" coords="516,157,638,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="511,107,554,147,549,146,509,112"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="662,157,724,184"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="531,107,649,152,644,152,530,112"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="748,157,806,184"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="551,107,735,156,730,156,550,112"/>
+</map>

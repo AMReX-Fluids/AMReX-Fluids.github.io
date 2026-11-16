@@ -1,0 +1,7 @@
+<map id="PLIC::trig_root" name="PLIC::trig_root">
+<area shape="rect" id="Node000001" title="The root of the cubic of volume_intercept in its two upper volume ranges, in the trigonometric form o..." alt="" coords="5,32,118,60"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="166,5,279,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,34,153,30,148,32,119,39"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="172,57,272,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,52,160,61,154,61,118,57"/>
+</map>

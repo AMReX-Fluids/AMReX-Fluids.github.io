@@ -1,0 +1,7 @@
+<map id="PLIC::is_mixed" name="PLIC::is_mixed">
+<area shape="rect" id="Node000001" title="Whether a cell with volume fraction f holds the interface." alt="" coords="363,5,478,33"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="170,5,315,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,19,316,22,315,17,350,19"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="5,5,122,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,19,122,22,122,17,157,19"/>
+</map>

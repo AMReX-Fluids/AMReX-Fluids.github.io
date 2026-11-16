@@ -1,0 +1,9 @@
+<map id="PLIC::MixedYoungsCentered::normal" name="PLIC::MixedYoungsCentered::normal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,24,206,68"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="254,32,392,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,43,241,46,236,46,206,48"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="468,5,569,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="392,34,450,28,456,28,393,39"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#a736d93bbfb46944ef3cfd02dd0c628e9" title="Youngs&#39; finite&#45;difference normal on the 9&#45;point stencil, scaled by &#45;8 (i.e. m = &#45;8 grad F)." alt="" coords="440,57,597,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="392,52,427,59,422,59,392,57"/>
+</map>

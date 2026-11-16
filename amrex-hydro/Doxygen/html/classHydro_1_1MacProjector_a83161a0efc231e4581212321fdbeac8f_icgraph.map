@@ -1,9 +1,13 @@
 <map id="Hydro::MacProjector::averageDownVelocity" name="Hydro::MacProjector::averageDownVelocity">
-<area shape="rect" id="Node000001" title=" " alt="" coords="411,37,583,77"/>
-<area shape="rect" id="Node000002" href="$classHydro_1_1MacProjector.html#a2081a240a8addc2c0ab2549d0aba0c85" title=" " alt="" coords="208,37,363,77"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,60,363,60,363,55,397,55"/>
-<area shape="rect" id="Node000003" href="$classHydro_1_1MacProjector.html#a8a7f09aa7edb1a831bceefd74a729619" title=" " alt="" coords="5,5,160,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,46,160,40,161,35,195,40"/>
-<area shape="rect" id="Node000004" href="$classHydro_1_1MacProjector.html#a11425406f3b1ebf78d61520733cfe6fc" title=" " alt="" coords="5,69,160,109"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="195,74,161,80,160,74,194,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="609,29,781,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="728,14,716,10,695,8,675,10,663,15,659,21,659,30,655,27,653,19,660,10,674,5,695,3,718,5,733,15"/>
+<area shape="rect" id="Node000002" href="$classHydro_1_1MacProjector.html#a2081a240a8addc2c0ab2549d0aba0c85" title=" " alt="" coords="408,29,561,74"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="591,52,562,54,562,49,597,52"/>
+<area shape="poly" id="edge7_Node000002_Node000002" title=" " alt="" coords="515,13,505,10,485,8,466,10,455,15,450,21,451,30,446,27,445,19,451,10,465,5,485,3,506,5,521,14"/>
+<area shape="rect" id="Node000003" href="$classHydro_1_1MacProjector.html#a8a7f09aa7edb1a831bceefd74a729619" title=" " alt="" coords="5,29,159,74"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="390,38,360,37,283,33,207,37,159,42,158,37,206,32,283,28,360,32,396,37"/>
+<area shape="rect" id="Node000004" href="$classHydro_1_1MacProjector.html#a11425406f3b1ebf78d61520733cfe6fc" title=" " alt="" coords="207,71,360,115"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="396,70,361,80,360,75,390,71"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="189,74,159,70,159,65,194,74"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="314,55,303,52,283,49,265,51,253,56,249,62,249,72,245,69,243,61,250,52,263,46,283,44,305,46,319,55"/>
 </map>

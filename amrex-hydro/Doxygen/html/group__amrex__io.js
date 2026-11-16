@@ -1,7 +1,7 @@
 var group__amrex__io =
 [
-    [ "checkPoint", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga8afe35c2818f661481ed2603ae036928", null ],
     [ "Checkpoint", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga53896bd985c853c947a38f910c63af2e", null ],
+    [ "checkPoint", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga8afe35c2818f661481ed2603ae036928", null ],
     [ "amrex::AsyncOut::Finalize", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga2040a56976bffbbfac29f5e01800ea3c", null ],
     [ "amrex::AsyncOut::Finish", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#gaee3a42cfdf4c23b913fe7b42f8a22185", null ],
     [ "amrex::AsyncOut::GetWriteInfo", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga2a9d5d76aba34e026f1d33404c6bfe00", null ],
@@ -12,7 +12,6 @@ var group__amrex__io =
     [ "amrex::AsyncOut::UseAsyncOut", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#gadbc79ec1aacd0106757683aea46b43ce", null ],
     [ "amrex::AsyncOut::Wait", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga98b17038c0286de4668a2bed1102d3b6", null ],
     [ "amrex::WriteMultiLevelPlotfile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#gab16f5968ad28ec7664abd985a11e9c20", null ],
-    [ "writePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga1913d5ba8be07f02e9ae1f1b2c667a18", null ],
     [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#gae2a882c357b72c84b934c0126976c65b", null ],
     [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga54674ebf0207f608d21f7862c256ad99", null ],
     [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga92576f2c69ef205393563dfc7efe5b4a", null ],
@@ -22,5 +21,6 @@ var group__amrex__io =
     [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga326446070fe5e2374da5bedf87cc25e2", null ],
     [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga43bd7636dd962e3abc6b4e8f1add7231", null ],
     [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#gabedd706f93a0eda230b7b00779214b7f", null ],
-    [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga5bde03041b707c7977032181c8f49013", null ]
+    [ "WritePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga5bde03041b707c7977032181c8f49013", null ],
+    [ "writePlotFile", "https://amrex-codes.github.io/amrex/doxygen/group__amrex__io.html#ga1913d5ba8be07f02e9ae1f1b2c667a18", null ]
 ];

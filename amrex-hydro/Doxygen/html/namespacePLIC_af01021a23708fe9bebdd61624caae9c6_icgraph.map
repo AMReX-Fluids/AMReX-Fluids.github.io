@@ -1,0 +1,11 @@
+<map id="PLIC::trig_root" name="PLIC::trig_root">
+<area shape="rect" id="Node000001" title="The root of the cubic of volume_intercept in its two upper volume ranges, in the trigonometric form o..." alt="" coords="744,5,856,33"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="524,5,696,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="725,19,696,22,696,17,731,19"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="363,5,476,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,19,477,22,477,17,512,19"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="170,5,315,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="345,19,316,22,315,17,350,19"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="5,5,122,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="151,19,122,22,122,17,157,19"/>
+</map>

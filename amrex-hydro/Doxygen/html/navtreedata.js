@@ -62,9 +62,18 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classHydro_1_1NodalProjector.html#addd2602f5fe7bd0c7bd902a4350652dc",
-"group__amrex__mpi.html#ga2d917de58e4c718c8cb917e29074af27",
-"hydro__godunov_8H.html#aeb69a54b78a68beefcf5f146b192c537"
+"group__amrex__index__space.html#gaabd22daa513510c618b42eb03d7d4abd",
+"group__amrex__mpi.html#gab734a5d614e753d28d03865ee6e4039a",
+"hydro__plic_8cpp.html",
+"namespaceamrex.html#a1b9cc26c472f4ce4595c7125bd880652",
+"namespaceamrex.html#a51f51928a744f58cb9a7c643938a69af",
+"namespaceamrex.html#a8d23f273421b89ddf32a809cba7bdaef",
+"namespaceamrex.html#acae3cbb27e672f08ad8a5f23a8a1b7a9",
+"namespaceamrex_1_1BGColor.html#a1675bd00cc85236d00ca403a9a577662",
+"namespaceamrex_1_1MC.html#a3f067afe05cfbc3b03fce98abba3b1a5",
+"namespaceamrex_1_1Scan_1_1Type.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

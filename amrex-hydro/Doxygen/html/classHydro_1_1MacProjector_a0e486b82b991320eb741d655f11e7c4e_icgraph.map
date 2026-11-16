@@ -1,7 +1,7 @@
 <map id="Hydro::MacProjector::setOptions" name="Hydro::MacProjector::setOptions">
-<area shape="rect" id="Node000001" title=" " alt="" coords="411,5,565,45"/>
-<area shape="rect" id="Node000002" href="$classHydro_1_1MacProjector.html#aacd4ed718a2c55d2df73739131585eab" title=" " alt="" coords="208,5,363,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,28,363,28,363,23,397,23"/>
-<area shape="rect" id="Node000003" href="$classHydro_1_1MacProjector.html#a3ca29786854f04e67ccf2595c7d48524" title=" " alt="" coords="5,5,160,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,28,161,28,161,23,194,23"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,29,360,74"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="314,13,303,10,283,8,265,10,253,15,249,21,249,30,245,27,243,19,250,10,263,5,283,3,305,5,319,14"/>
+<area shape="rect" id="Node000002" href="$classHydro_1_1MacProjector.html#aacd4ed718a2c55d2df73739131585eab" title=" " alt="" coords="5,29,159,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,52,159,54,159,49,194,51"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="113,14,102,10,82,8,63,10,52,15,47,21,48,29,43,28,42,19,49,10,62,5,82,3,103,5,118,13"/>
 </map>

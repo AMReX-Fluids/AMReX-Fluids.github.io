@@ -9,8 +9,9 @@ var searchData=
   ['detected_5ft_6',['Detected_t',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a105deb114c407c73c953fc230904f970',1,'amrex']]],
   ['detectedor_7',['DetectedOr',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ad8cf53dc9edb16cf93b6769de7f1a99d',1,'amrex']]],
   ['device_5fvector_5ftype_8',['device_vector_type',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Gpu_1_1TrackedVector.html#af62739f9f83b070a789b58fd158bbc56',1,'amrex::Gpu::TrackedVector']]],
-  ['devicevector_9',['devicevector',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__containers.html#gafbb66695120269df727d7e1bd4121cd1',1,'amrex::Gpu::DeviceVector'],['https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__containers.html#gafbb66695120269df727d7e1bd4121cd1',1,'amrex::Gpu::DeviceVector']]],
+  ['devicevector_9',['DeviceVector',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__containers.html#gafbb66695120269df727d7e1bd4121cd1',1,'amrex::Gpu']]],
   ['difference_5ftype_10',['difference_type',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1PODVector.html#aea40df219b90fb5d86fa4fb3b8f270c3',1,'amrex::PODVector']]],
-  ['dmref_11',['DMRef',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9bda1eebcc7546dadec5526630b09680',1,'amrex']]],
-  ['dynamicswapcomponents_12',['DynamicSwapComponents',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1NonLocalBC.html#a629cff55fabaec0891488757ce2a1a33',1,'amrex::NonLocalBC']]]
+  ['divmod_11',['Divmod',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1BoxIndexerND.html#a389d0d751f73d5c9ea5199fa4ad1a051',1,'amrex::BoxIndexerND&lt; 1, UIntT &gt;::Divmod'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1BoxIndexerND.html#a389d0d751f73d5c9ea5199fa4ad1a051',1,'amrex::BoxIndexerND::Divmod']]],
+  ['dmref_12',['DMRef',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a9bda1eebcc7546dadec5526630b09680',1,'amrex']]],
+  ['dynamicswapcomponents_13',['DynamicSwapComponents',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1NonLocalBC.html#a629cff55fabaec0891488757ce2a1a33',1,'amrex::NonLocalBC']]]
 ];

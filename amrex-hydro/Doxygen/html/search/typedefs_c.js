@@ -8,5 +8,5 @@ var searchData=
   ['neighborparticlecontainerpuresoa_5',['NeighborParticleContainerPureSoA',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ada667658d1d4c9c38857a71ac82db7c0',1,'amrex']]],
   ['nl_6',['NL',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1CArena.html#a7b2f9d1dc98c8e92648e3785f297e13f',1,'amrex::CArena']]],
   ['node_7',['Node',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1STLtools.html#a5e4b2f7bb8d632ea0128bcddfddb6dc0',1,'amrex::STLtools']]],
-  ['nonmanageddevicevector_8',['nonmanageddevicevector',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__containers.html#gaf0e2a7f36ed2cfd609a2ed08a3e029aa',1,'amrex::Gpu::NonManagedDeviceVector'],['https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__containers.html#gaf0e2a7f36ed2cfd609a2ed08a3e029aa',1,'amrex::Gpu::NonManagedDeviceVector']]]
+  ['nonmanageddevicevector_8',['NonManagedDeviceVector',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__linear__containers.html#gaf0e2a7f36ed2cfd609a2ed08a3e029aa',1,'amrex::Gpu']]]
 ];

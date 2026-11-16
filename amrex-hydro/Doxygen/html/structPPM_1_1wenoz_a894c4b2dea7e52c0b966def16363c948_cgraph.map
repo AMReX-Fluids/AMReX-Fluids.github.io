@@ -1,10 +1,10 @@
 <map id="PPM::wenoz::sm_sp" name="PPM::wenoz::sm_sp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,156,80"/>
-<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a1da6f37dc0e166f794600bfb19a19823" title=" " alt="" coords="210,5,353,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,52,215,31,216,37,134,57"/>
-<area shape="rect" id="Node000003" href="$structPPM_1_1wenoz.html#aac1efbfa4d880cc1c10ed75a7dbe030d" title=" " alt="" coords="204,55,359,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,65,191,65,191,70,156,70"/>
-<area shape="rect" id="Node000004" href="$structPPM_1_1wenoz.html#a872d1bc9b592662b12a9a62ca02082b0" title=" " alt="" coords="407,80,561,105"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="136,77,204,89,301,94,393,94,393,99,301,99,204,94,135,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="359,74,393,79,392,84,359,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,57,155,85"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a1da6f37dc0e166f794600bfb19a19823" title=" " alt="" coords="209,5,350,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,54,211,37,206,39,137,59"/>
+<area shape="rect" id="Node000003" href="$structPPM_1_1wenoz.html#aac1efbfa4d880cc1c10ed75a7dbe030d" title=" " alt="" coords="203,57,357,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,69,189,71,184,72,156,74"/>
+<area shape="rect" id="Node000004" href="$structPPM_1_1wenoz.html#a872d1bc9b592662b12a9a62ca02082b0" title=" " alt="" coords="405,83,559,110"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="139,83,203,94,299,99,392,101,387,101,299,105,202,99,138,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="357,78,393,85,387,85,357,83"/>
 </map>

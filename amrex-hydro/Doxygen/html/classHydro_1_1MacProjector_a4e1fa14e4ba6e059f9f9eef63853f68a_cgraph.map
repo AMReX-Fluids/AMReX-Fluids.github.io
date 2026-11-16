@@ -1,5 +1,4 @@
 <map id="Hydro::MacProjector::setDomainBC" name="Hydro::MacProjector::setDomainBC">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,160,45"/>
-<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MLLinOpT.html#afe29acf02a41e7ad46cd4a4d0193d1d1" title=" " alt="" coords="208,13,440,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,23,194,23,194,28,160,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,159,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="52,28,51,19,56,11,66,5,82,3,99,5,110,14,105,14,97,10,82,8,68,10,60,14,56,20,57,29"/>
 </map>

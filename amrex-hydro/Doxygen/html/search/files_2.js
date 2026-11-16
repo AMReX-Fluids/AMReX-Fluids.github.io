@@ -46,7 +46,12 @@ var searchData=
   ['hydro_5fmol_5fextrap_5fvel_5fto_5ffaces_5fbox_2ecpp_43',['hydro_mol_extrap_vel_to_faces_box.cpp',['../hydro__mol__extrap__vel__to__faces__box_8cpp.html',1,'']]],
   ['hydro_5fnodalprojector_2ecpp_44',['hydro_NodalProjector.cpp',['../hydro__NodalProjector_8cpp.html',1,'']]],
   ['hydro_5fnodalprojector_2eh_45',['hydro_NodalProjector.H',['../hydro__NodalProjector_8H.html',1,'']]],
-  ['hydro_5fredistribution_2ecpp_46',['hydro_redistribution.cpp',['../hydro__redistribution_8cpp.html',1,'']]],
-  ['hydro_5futils_2ecpp_47',['hydro_utils.cpp',['../hydro__utils_8cpp.html',1,'']]],
-  ['hydro_5futils_2eh_48',['hydro_utils.H',['../hydro__utils_8H.html',1,'']]]
+  ['hydro_5fplic_2ecpp_46',['hydro_plic.cpp',['../hydro__plic_8cpp.html',1,'']]],
+  ['hydro_5fplic_2eh_47',['hydro_plic.H',['../hydro__plic_8H.html',1,'']]],
+  ['hydro_5fplic_5fk_2eh_48',['hydro_plic_K.H',['../hydro__plic__K_8H.html',1,'']]],
+  ['hydro_5fplic_5fnormals_5fk_2eh_49',['hydro_plic_normals_K.H',['../hydro__plic__normals__K_8H.html',1,'']]],
+  ['hydro_5fplic_5freconstruction_2ecpp_50',['hydro_plic_reconstruction.cpp',['../hydro__plic__reconstruction_8cpp.html',1,'']]],
+  ['hydro_5fredistribution_2ecpp_51',['hydro_redistribution.cpp',['../hydro__redistribution_8cpp.html',1,'']]],
+  ['hydro_5futils_2ecpp_52',['hydro_utils.cpp',['../hydro__utils_8cpp.html',1,'']]],
+  ['hydro_5futils_2eh_53',['hydro_utils.H',['../hydro__utils_8H.html',1,'']]]
 ];

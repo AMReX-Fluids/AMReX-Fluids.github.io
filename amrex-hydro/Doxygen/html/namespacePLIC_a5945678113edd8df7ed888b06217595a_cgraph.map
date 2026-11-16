@@ -1,0 +1,20 @@
+<map id="PLIC::fit_plane" name="PLIC::fit_plane">
+<area shape="rect" id="Node000001" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="5,7,119,34"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="555,5,651,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,15,289,9,498,10,542,14,537,15,498,15,289,15,120,20"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="167,32,338,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,25,154,31,149,34,120,31"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="338,37,542,23,537,25,339,42"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#af3b8f5abc1832ab6fe3a0854d32ce184" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="397,57,487,85"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="338,55,384,63,379,64,339,60"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#af01021a23708fe9bebdd61624caae9c6" title="The root of the cubic of volume_intercept in its two upper volume ranges, in the trigonometric form o..." alt="" coords="386,109,498,137"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="289,58,395,103,390,104,288,63"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="487,54,541,39,546,38,488,59"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="553,109,653,137"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="488,83,546,104,541,104,487,88"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga1c182abe7695240cd35e1ba3d4477758" title=" " alt="" coords="550,57,656,85"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="488,69,537,71,532,72,488,74"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="499,121,540,123,535,123,499,126"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="546,161,660,189"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="488,135,546,156,541,156,487,140"/>
+</map>

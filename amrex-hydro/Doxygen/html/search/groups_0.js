@@ -2,7 +2,7 @@ var searchData=
 [
   ['adaptive_20mesh_20refinement_0',['Adaptive Mesh Refinement',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amr.html',1,'']]],
   ['allocators_1',['Memory Arenas and Allocators',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__memory.html',1,'']]],
-  ['amr_2',['amr',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amrcore.html',1,'AmrCore-based AMR'],['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amrlevel.html',1,'AmrLevel-based AMR']]],
+  ['amr_2',['AMR',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amrcore.html',1,'AmrCore-based AMR'],['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amrlevel.html',1,'AmrLevel-based AMR']]],
   ['amrcore_20based_20amr_3',['AmrCore-based AMR',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amrcore.html',1,'']]],
   ['amrlevel_20based_20amr_4',['AmrLevel-based AMR',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__amrlevel.html',1,'']]],
   ['and_20allocators_5',['Memory Arenas and Allocators',['https://amrex-codes.github.io/amrex/doxygen/group__amrex__memory.html',1,'']]],

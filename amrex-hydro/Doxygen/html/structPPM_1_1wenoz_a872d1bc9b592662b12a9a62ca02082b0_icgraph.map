@@ -1,8 +1,8 @@
 <map id="PPM::wenoz::sedge2" name="PPM::wenoz::sedge2">
-<area shape="rect" id="Node000001" title=" " alt="" coords="407,31,561,56"/>
-<area shape="rect" id="Node000002" href="$structPPM_1_1wenoz.html#aac1efbfa4d880cc1c10ed75a7dbe030d" title=" " alt="" coords="204,5,359,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,35,359,30,360,25,393,29"/>
-<area shape="rect" id="Node000003" href="$structPPM_1_1wenoz.html#a894c4b2dea7e52c0b966def16363c948" title=" " alt="" coords="5,31,156,56"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="393,46,156,46,156,41,393,41"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="190,32,157,36,156,31,190,27"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="405,31,559,58"/>
+<area shape="rect" id="Node000002" href="$structPPM_1_1wenoz.html#aac1efbfa4d880cc1c10ed75a7dbe030d" title=" " alt="" coords="203,5,357,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="387,33,357,31,357,26,393,33"/>
+<area shape="rect" id="Node000003" href="$structPPM_1_1wenoz.html#a894c4b2dea7e52c0b966def16363c948" title=" " alt="" coords="5,31,155,58"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="389,47,155,47,155,42,390,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="184,31,155,38,154,32,190,31"/>
 </map>

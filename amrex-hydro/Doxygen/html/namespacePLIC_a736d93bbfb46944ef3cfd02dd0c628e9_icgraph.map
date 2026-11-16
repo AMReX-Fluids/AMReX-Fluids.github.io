@@ -1,0 +1,11 @@
+<map id="PLIC::youngs_normal" name="PLIC::youngs_normal">
+<area shape="rect" id="Node000001" title="Youngs&#39; finite&#45;difference normal on the 9&#45;point stencil, scaled by &#45;8 (i.e. m = &#45;8 grad F)." alt="" coords="458,75,615,103"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="263,48,401,76"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="440,77,402,74,402,69,445,77"/>
+<area shape="rect" id="Node000005" href="$structPLIC_1_1Youngs.html#a2bc32a53ecda73f796e94f148ff7ec7d" title=" " alt="" coords="254,100,410,128"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="445,100,411,107,410,102,440,101"/>
+<area shape="rect" id="Node000003" href="$structPLIC_1_1HeightFunctionMYC.html#a7468c772b7a57a77b855afbd407a4263" title=" " alt="" coords="14,5,197,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="244,50,198,44,198,39,250,49"/>
+<area shape="rect" id="Node000004" href="$structPLIC_1_1MixedYoungsCentered.html#acb2df8d453a0e9617155119831ebc3d2" title=" " alt="" coords="5,75,206,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="245,76,207,84,206,79,250,75"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="PLIC::cut_volume" name="PLIC::cut_volume">
+<area shape="rect" id="Node000001" title="Liquid volume fraction of the sub&#45;box [r0, r0+dr0] x [0,1] x [0,1] of the unit cube cut by m1*x1 + m2..." alt="" coords="204,5,337,33"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a6a7887114881a4ca8b52e5e04da6bacc" title="Exact liquid volume fraction of cell (i,j,k) for the half space n.x &lt;= d (physical coordinates,..." alt="" coords="5,5,156,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,19,156,22,156,17,190,19"/>
+</map>
