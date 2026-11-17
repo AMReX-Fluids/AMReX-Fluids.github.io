@@ -1,0 +1,7 @@
+<map id="PLIC::myc_choose" name="PLIC::myc_choose">
+<area shape="rect" id="Node000001" title="The MYC normal from its centered candidates m[c] (height direction c, c &lt; n, height component +&#45;1) an..." alt="" coords="5,32,144,60"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="192,5,292,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,32,179,29,174,30,145,37"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="201,57,283,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,54,188,62,183,63,144,59"/>
+</map>

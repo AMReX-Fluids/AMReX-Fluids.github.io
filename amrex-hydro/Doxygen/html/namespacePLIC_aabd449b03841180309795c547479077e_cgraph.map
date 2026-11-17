@@ -1,0 +1,11 @@
+<map id="PLIC::degenerate_normal" name="PLIC::degenerate_normal">
+<area shape="rect" id="Node000001" title="The orientation of a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="5,88,190,116"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="244,5,410,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,85,237,43,264,37,259,39,239,48,133,90"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="277,57,378,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,87,264,79,259,81,191,92"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="238,109,417,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,111,225,117,219,118,190,116"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="286,177,368,205"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="127,113,179,138,239,163,273,177,268,177,237,168,177,143,126,119"/>
+</map>

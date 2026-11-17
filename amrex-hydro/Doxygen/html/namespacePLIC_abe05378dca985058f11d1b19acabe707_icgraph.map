@@ -1,0 +1,20 @@
+<map id="PLIC::tied" name="PLIC::tied">
+<area shape="rect" id="Node000001" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="837,71,919,98"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#aabd449b03841180309795c547479077e" title="The orientation of a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="604,19,789,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="819,68,747,50,748,44,824,69"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#a2c8761a86f7311100f217eff3920dcb5" title="The MYC normal from its centered candidates m[c] (height direction c, c &lt; n, height component +&#45;1) an..." alt="" coords="627,71,766,98"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="818,85,766,87,766,82,824,84"/>
+<area shape="rect" id="Node000008" href="$structPLIC_1_1HeightFunctionMYC.html#a7468c772b7a57a77b855afbd407a4263" title=" " alt="" coords="178,126,362,171"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="824,102,789,112,675,129,559,140,362,150,362,145,559,135,674,124,788,107,819,103"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="430,12,544,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="586,29,544,30,544,25,591,29"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="197,5,342,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="413,24,343,24,343,19,418,23"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="5,5,122,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="179,21,123,22,121,17,184,18"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="418,71,556,98"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="609,85,557,87,556,82,614,84"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="426,103,349,128,348,123,421,104"/>
+<area shape="rect" id="Node000009" href="$structPLIC_1_1MixedYoungsCentered.html#acb2df8d453a0e9617155119831ebc3d2" title=" " alt="" coords="170,57,370,102"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="400,83,371,84,370,79,405,82"/>
+</map>

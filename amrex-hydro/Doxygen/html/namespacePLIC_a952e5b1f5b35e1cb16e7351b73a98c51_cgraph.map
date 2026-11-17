@@ -1,7 +1,11 @@
 <map id="PLIC::height_normal" name="PLIC::height_normal">
-<area shape="rect" id="Node000001" title="Height&#45;function normal with height direction d: the liquid heights of the 7&#45;cell columns through (i,..." alt="" coords="5,36,157,64"/>
+<area shape="rect" id="Node000001" title="Height&#45;function normal with height direction d: the liquid heights of the 7&#45;cell columns through the ..." alt="" coords="5,84,157,112"/>
 <area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="211,5,378,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,36,198,33,193,34,158,42"/>
-<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="205,57,384,102"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,58,192,64,186,65,157,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,81,204,43,230,37,225,39,206,48,115,86"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="244,57,344,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,86,231,78,227,81,158,91"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="246,109,342,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,104,234,115,229,117,157,109"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="205,161,384,206"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="117,110,206,146,223,155,217,155,204,151,116,115"/>
 </map>

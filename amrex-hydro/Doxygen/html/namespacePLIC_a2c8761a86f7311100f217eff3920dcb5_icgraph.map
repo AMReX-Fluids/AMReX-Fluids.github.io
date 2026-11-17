@@ -1,0 +1,9 @@
+<map id="PLIC::myc_choose" name="PLIC::myc_choose">
+<area shape="rect" id="Node000001" title="The MYC normal from its centered candidates m[c] (height direction c, c &lt; n, height component +&#45;1) an..." alt="" coords="440,48,578,76"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="254,48,392,76"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="421,63,393,65,392,60,427,62"/>
+<area shape="rect" id="Node000003" href="$structPLIC_1_1HeightFunctionMYC.html#a7468c772b7a57a77b855afbd407a4263" title=" " alt="" coords="14,5,197,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,49,198,45,197,40,241,48"/>
+<area shape="rect" id="Node000004" href="$structPLIC_1_1MixedYoungsCentered.html#acb2df8d453a0e9617155119831ebc3d2" title=" " alt="" coords="5,75,206,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="236,76,207,84,206,78,241,75"/>
+</map>

@@ -99,7 +99,7 @@ $(function(){initNavTree('structPLIC_1_1HeightFunctionMYC.html','','structPLIC_1
 </div><!--header-->
 <div class="contents">
 
-<p>The height-function normal along the dominant direction of the Mixed Youngs-Centered normal, or the latter where the heights are not defined (thin or strongly curved structures). Exact for a planar interface wherever the heights are defined.  
+<p>The height-function normal along the dominant direction of the Mixed Youngs-Centered normal, or the latter where the heights are not defined (thin or strongly curved structures). Exact for a planar interface. Where components tie, the mean over the tied directions, so that no direction is preferred (the slopes are then 1 relative to each, where the heights are exact), and the MYC normal unless the heights hold along each.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="hydro__plic__normals__K_8H_source.html">hydro_plic_normals_K.H</a>&gt;</code></p>
@@ -110,10 +110,10 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a9272bf5678a6090ba39736b87e2b128e" id="r_a9272bf5678a6090ba39736b87e2b128e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9272bf5678a6090ba39736b87e2b128e">stencil</a> = <a class="el" href="namespacePLIC.html#aacb9ecba1bb9959a0d418a30ced83190">hf_half</a></td></tr>
+<tr class="memitem:a9272bf5678a6090ba39736b87e2b128e" id="r_a9272bf5678a6090ba39736b87e2b128e"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9272bf5678a6090ba39736b87e2b128e">stencil</a> = <a class="el" href="namespacePLIC.html#aacb9ecba1bb9959a0d418a30ced83190">hf_half</a> + 1</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The height-function normal along the dominant direction of the Mixed Youngs-Centered normal, or the latter where the heights are not defined (thin or strongly curved structures). Exact for a planar interface wherever the heights are defined. </p>
+<div class="textblock"><p>The height-function normal along the dominant direction of the Mixed Youngs-Centered normal, or the latter where the heights are not defined (thin or strongly curved structures). Exact for a planar interface. Where components tie, the mean over the tied directions, so that no direction is preferred (the slopes are then 1 relative to each, where the heights are exact), and the MYC normal unless the heights hold along each. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a7468c772b7a57a77b855afbd407a4263" name="a7468c772b7a57a77b855afbd407a4263"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7468c772b7a57a77b855afbd407a4263">&#9670;&#160;</a></span>normal()</h2>
@@ -171,19 +171,28 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structPLIC_1_1HeightFunctionMYC_a7468c772b7a57a77b855afbd407a4263_cgraph.png" border="0" usemap="#astructPLIC_1_1HeightFunctionMYC_a7468c772b7a57a77b855afbd407a4263_cgraph" loading="lazy" alt=""/></div>
 <map name="astructPLIC_1_1HeightFunctionMYC_a7468c772b7a57a77b855afbd407a4263_cgraph" id="astructPLIC_1_1HeightFunctionMYC_a7468c772b7a57a77b855afbd407a4263_cgraph">
-<area shape="rect" title=" " alt="" coords="5,88,189,132"/>
-<area shape="rect" href="namespacePLIC.html#a952e5b1f5b35e1cb16e7351b73a98c51" title="Height&#45;function normal with height direction d: the liquid heights of the 7&#45;cell columns through (i,..." alt="" coords="237,65,388,93"/>
-<area shape="poly" title=" " alt="" coords="188,94,224,91,219,93,190,99"/>
-<area shape="rect" href="namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="243,125,382,153"/>
-<area shape="poly" title=" " alt="" coords="189,120,230,127,225,128,189,125"/>
+<area shape="rect" title=" " alt="" coords="5,244,189,288"/>
+<area shape="rect" href="namespacePLIC.html#a952e5b1f5b35e1cb16e7351b73a98c51" title="Height&#45;function normal with height direction d: the liquid heights of the 7&#45;cell columns through the ..." alt="" coords="237,107,388,134"/>
+<area shape="poly" title=" " alt="" coords="130,241,278,141,277,146,133,245"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="663,227,764,254"/>
+<area shape="poly" title=" " alt="" coords="189,259,648,241,648,246,189,265"/>
+<area shape="rect" href="namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="243,277,382,305"/>
+<area shape="poly" title=" " alt="" coords="189,274,230,281,225,282,189,279"/>
+<area shape="rect" href="namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="672,329,755,357"/>
+<area shape="poly" title=" " alt="" coords="157,286,238,314,341,346,424,367,508,374,615,366,655,360,660,360,616,371,508,379,423,372,340,352,236,319,157,291"/>
 <area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="442,5,609,33"/>
-<area shape="poly" title=" " alt="" coords="363,62,462,37,457,39,365,67"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="436,57,615,102"/>
-<area shape="poly" title=" " alt="" coords="388,77,423,79,418,80,389,82"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="476,125,576,153"/>
-<area shape="poly" title=" " alt="" coords="382,137,462,139,457,139,382,142"/>
-<area shape="rect" href="namespacePLIC.html#a736d93bbfb46944ef3cfd02dd0c628e9" title="Youngs&#39; finite&#45;difference normal on the 9&#45;point stencil, scaled by &#45;8 (i.e. m = &#45;8 grad F)." alt="" coords="447,177,604,205"/>
-<area shape="poly" title=" " alt="" coords="373,151,454,173,448,173,372,156"/>
+<area shape="poly" title=" " alt="" coords="335,104,381,77,435,49,468,37,464,40,437,54,383,82,338,108"/>
+<area shape="poly" title=" " alt="" coords="347,104,402,86,471,72,508,70,546,71,582,79,617,93,648,117,674,148,692,181,705,213,700,211,688,184,669,151,645,121,614,97,581,84,545,77,508,75,472,77,403,91,349,108"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="478,107,574,134"/>
+<area shape="poly" title=" " alt="" coords="388,118,464,120,459,121,389,123"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="436,158,615,203"/>
+<area shape="poly" title=" " alt="" coords="364,132,432,153,427,154,364,138"/>
+<area shape="rect" href="namespacePLIC.html#a2c8761a86f7311100f217eff3920dcb5" title="The MYC normal from its centered candidates m[c] (height direction c, c &lt; n, height component +&#45;1) an..." alt="" coords="456,277,595,305"/>
+<area shape="poly" title=" " alt="" coords="382,289,443,291,438,292,382,294"/>
+<area shape="rect" href="namespacePLIC.html#a736d93bbfb46944ef3cfd02dd0c628e9" title="Youngs&#39; finite&#45;difference normal on the 9&#45;point stencil, scaled by &#45;8 (i.e. m = &#45;8 grad F)." alt="" coords="447,329,604,357"/>
+<area shape="poly" title=" " alt="" coords="373,303,454,325,448,325,372,308"/>
+<area shape="poly" title=" " alt="" coords="579,274,646,258,651,257,580,279"/>
+<area shape="poly" title=" " alt="" coords="579,303,660,328,655,328,578,308"/>
 </map>
 </div>
 
@@ -200,7 +209,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int PLIC::HeightFunctionMYC::stencil = <a class="el" href="namespacePLIC.html#aacb9ecba1bb9959a0d418a30ced83190">hf_half</a></td>
+          <td class="memname">int PLIC::HeightFunctionMYC::stencil = <a class="el" href="namespacePLIC.html#aacb9ecba1bb9959a0d418a30ced83190">hf_half</a> + 1</td>
         </tr>
       </table>
   </td>

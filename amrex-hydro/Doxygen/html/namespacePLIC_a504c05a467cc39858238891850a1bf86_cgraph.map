@@ -1,0 +1,9 @@
+<map id="PLIC::thin_structure" name="PLIC::thin_structure">
+<area shape="rect" id="Node000001" title="Whether cell (i,j,k) lies on a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="5,57,153,85"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="201,5,367,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,54,214,36,209,39,138,59"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="234,57,334,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,69,220,70,215,72,154,74"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="236,109,332,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,83,223,106,218,108,136,88"/>
+</map>
