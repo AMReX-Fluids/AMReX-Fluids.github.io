@@ -156,10 +156,14 @@ reconstruction and the volume fraction of the cell:</p>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myc_height</span></code></p></td>
 <td><p>The height-function normal along the dominant direction of the Mixed
 Youngs-Centered normal, which is exact for a planar interface, and the latter where
-the heights are not defined. The default.</p></td>
+the heights are not defined. The most accurate of the three.</p></td>
 </tr>
 </tbody>
 </table>
+<p>On a structure one cell thick (a film, a gap, a filament or a drop), where the neighbors of a mixed
+cell on both sides along some line are pure in the same phase, the gradient of <span class="math notranslate nohighlight">\(F\)</span> is null or
+noise. There every reconstruction takes the principal direction of the Hessian of <span class="math notranslate nohighlight">\(F\)</span>
+instead, which lies across the structure.</p>
 <p>The geometric kernels in <code class="docutils literal notranslate"><span class="pre">hydro_plic_K.H</span></code> and <code class="docutils literal notranslate"><span class="pre">hydro_plic_normals_K.H</span></code> derive from Kynema-SGF
 (formerly AMR-Wind), under its BSD 3-Clause License; the headers keep its copyright notice.</p>
 </section>
