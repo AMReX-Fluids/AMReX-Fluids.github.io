@@ -1,0 +1,5 @@
+<map id="PLIC::mixture" name="PLIC::mixture">
+<area shape="rect" id="Node000001" title="Mixture property (density, viscosity) of a cell with liquid fraction F: the volume average of the pha..." alt="" coords="5,5,114,33"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="162,5,275,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,17,149,19,144,19,114,22"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="PLIC::mixture" name="PLIC::mixture">
+<area shape="rect" id="Node000001" title="Mixture property (density, viscosity) of a cell with liquid fraction F: the volume average of the pha..." alt="" coords="227,5,335,33"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="5,5,179,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,19,179,22,179,17,214,19"/>
+</map>

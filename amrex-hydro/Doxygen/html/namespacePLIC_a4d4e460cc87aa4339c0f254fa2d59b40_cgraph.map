@@ -1,0 +1,19 @@
+<map id="PLIC::wall_ghost_fraction" name="PLIC::wall_ghost_fraction">
+<area shape="rect" id="Node000001" title="Volume fraction of the ghost cell g beyond the wall, from the plane (m, alpha) of cell ref (see wall_..." alt="" coords="5,32,190,60"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="265,5,378,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,32,252,27,248,29,191,37"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#ad4847b9c837c8a2e25e4c7d8b76d3dc2" title="Liquid volume fraction of cell c under the plane (m, alpha) given in the unit&#45;cube coordinates of cel..." alt="" coords="238,57,406,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,54,224,59,219,60,191,59"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#aea78f9a4fb03de943f6f5a3cddc28903" title="Liquid volume fraction of the sub&#45;box [r0, r0+dr0] x [0,1] x [0,1] of the unit cube cut by m1*x1 + m2..." alt="" coords="454,57,587,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,69,441,71,436,71,407,74"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="777,5,877,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="582,54,635,43,758,27,764,27,636,48,583,59"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="779,109,875,137"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="583,83,636,94,765,116,760,116,635,99,582,88"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#af3b8f5abc1832ab6fe3a0854d32ce184" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="635,57,726,85"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="588,69,622,71,617,71,588,74"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="721,54,769,39,774,38,722,59"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="722,83,774,104,769,103,721,88"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga1c182abe7695240cd35e1ba3d4477758" title=" " alt="" coords="774,57,880,85"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="726,69,761,71,755,71,726,74"/>
+</map>

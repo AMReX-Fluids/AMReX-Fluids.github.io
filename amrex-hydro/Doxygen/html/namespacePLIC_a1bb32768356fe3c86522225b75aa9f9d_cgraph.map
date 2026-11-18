@@ -1,0 +1,9 @@
+<map id="PLIC::wall_contact_planes" name="PLIC::wall_contact_planes">
+<area shape="rect" id="Node000001" title="The PLIC planes that the ghost cells beyond the wall cell iv_w extend, when the interface meets the w..." alt="" coords="5,36,145,81"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#af0d57df0478560e1153c8c8f0417ca6f" title=" " alt="" coords="193,5,340,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,45,180,41,175,43,146,50"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__fabarray__communication.html#ga62669a27ec4a577f0bef72dc2a1243aa" title=" " alt="" coords="242,74,291,102"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,66,229,81,224,82,145,72"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="388,14,488,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,25,375,27,370,28,341,30"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="PLIC::face_segment_fraction" name="PLIC::face_segment_fraction">
+<area shape="rect" id="Node000001" title="Liquid fraction of the segment joining the centers of the cells on either side of the low face of (i,..." alt="" coords="5,40,155,85"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a34061e0e1c4130eb09de426b2c9c5495" title="Liquid fraction of the half segment from the center of cell (i,j,k) to the center of its face in dire..." alt="" coords="219,5,366,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,48,207,41,202,43,156,53"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="203,75,382,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,72,190,80,185,80,155,77"/>
+</map>

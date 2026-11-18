@@ -1,24 +1,37 @@
 <map id="PLIC::HeightFunctionMYC::normal" name="PLIC::HeightFunctionMYC::normal">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,244,189,288"/>
-<area shape="rect" id="Node000002" href="$namespacePLIC.html#a952e5b1f5b35e1cb16e7351b73a98c51" title="Height&#45;function normal with height direction d: the liquid heights of the 7&#45;cell columns through the ..." alt="" coords="237,107,388,134"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,241,278,141,277,146,133,245"/>
-<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="663,227,764,254"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="189,259,648,241,648,246,189,265"/>
-<area shape="rect" id="Node000007" href="$namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="243,277,382,305"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="189,274,230,281,225,282,189,279"/>
-<area shape="rect" id="Node000009" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="672,329,755,357"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="157,286,238,314,341,346,424,367,508,374,615,366,655,360,660,360,616,371,508,379,423,372,340,352,236,319,157,291"/>
-<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="442,5,609,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,104,381,77,435,49,468,37,464,40,437,54,383,82,338,108"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,104,402,86,471,72,508,70,546,71,582,79,617,93,648,117,674,148,692,181,705,213,700,211,688,184,669,151,645,121,614,97,581,84,545,77,508,75,472,77,403,91,349,108"/>
-<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="478,107,574,134"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="388,118,464,120,459,121,389,123"/>
-<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="436,158,615,203"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="364,132,432,153,427,154,364,138"/>
-<area shape="rect" id="Node000008" href="$namespacePLIC.html#a2c8761a86f7311100f217eff3920dcb5" title="The MYC normal from its centered candidates m[c] (height direction c, c &lt; n, height component +&#45;1) an..." alt="" coords="456,277,595,305"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="382,289,443,291,438,292,382,294"/>
-<area shape="rect" id="Node000010" href="$namespacePLIC.html#a736d93bbfb46944ef3cfd02dd0c628e9" title="Youngs&#39; finite&#45;difference normal on the 9&#45;point stencil, scaled by &#45;8 (i.e. m = &#45;8 grad F)." alt="" coords="447,329,604,357"/>
-<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="373,303,454,325,448,325,372,308"/>
-<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="579,274,646,258,651,257,580,279"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="579,303,660,328,655,328,578,308"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,109,189,154"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea" title="Mixed Youngs&#45;Centered normal (2D). Returns an L1&#45;normalized normal pointing out of the liquid." alt="" coords="259,57,398,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,106,259,88,255,91,187,111"/>
+<area shape="rect" id="Node000007" href="$structPLIC_1_1HeightFunctionMYC.html#a6ae9ad55d8e01757610f8b7f2abe0145" title="normal(), given the MYC normal mm of the cell" alt="" coords="237,138,420,183"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="188,140,223,146,219,148,190,145"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a2c8761a86f7311100f217eff3920dcb5" title="The MYC normal from its centered candidates m[c] (height direction c, c &lt; n, height component +&#45;1) an..." alt="" coords="490,57,629,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,69,478,70,473,72,398,74"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#a736d93bbfb46944ef3cfd02dd0c628e9" title="Youngs&#39; finite&#45;difference normal on the 9&#45;point stencil, scaled by &#45;8 (i.e. m = &#45;8 grad F)." alt="" coords="481,5,638,33"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="392,54,482,36,477,38,394,59"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="953,149,1054,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="629,55,682,48,742,45,805,49,866,62,900,76,931,96,981,139,975,138,927,100,897,81,865,67,804,54,742,50,682,53,630,60"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="741,76,824,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="629,74,729,84,723,86,630,80"/>
+<area shape="poly" id="edge20_Node000007_Node000004" title=" " alt="" coords="420,162,468,163,729,164,940,164,935,165,729,170,468,168,421,167"/>
+<area shape="rect" id="Node000008" href="$structPLIC_1_1HeightFunctionMYC.html#acb73b47a757097d7f2b39d2370621b75" title=" " alt="" coords="468,109,651,154"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="419,146,455,144,450,146,421,151"/>
+<area shape="rect" id="Node000009" href="$namespacePLIC.html#a952e5b1f5b35e1cb16e7351b73a98c51" title="Height&#45;function normal with height direction d: the liquid heights of the 7&#45;cell columns through the ..." alt="" coords="484,280,635,308"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="370,181,523,271,518,272,368,186"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="652,135,940,158,935,159,652,140"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="651,112,729,99,724,101,653,117"/>
+<area shape="rect" id="Node000010" href="$namespacePLIC.html#aabbc90005674fc1f952f190b7c3091a9" title=" " alt="" coords="927,328,1080,356"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="632,306,700,317,810,328,914,337,909,338,809,333,699,322,632,311"/>
+<area shape="rect" id="Node000011" href="$namespacePLIC.html#af1501f2b2dba9ba4cbb93d55f750521a" title="The row r, along d from (i,j,k), on which height_normal centers the neighboring columns: where the co..." alt="" coords="718,280,847,308"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="635,291,705,294,700,294,636,296"/>
+<area shape="rect" id="Node000014" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="914,380,1093,424"/>
+<area shape="poly" id="edge19_Node000009_Node000014" title=" " alt="" coords="600,306,700,338,802,362,901,384,896,384,801,367,699,343,599,311"/>
+<area shape="rect" id="Node000015" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="699,228,866,256"/>
+<area shape="poly" id="edge18_Node000009_Node000015" title=" " alt="" coords="622,277,703,260,708,259,623,282"/>
+<area shape="poly" id="edge15_Node000011_Node000004" title=" " alt="" coords="841,277,864,265,879,252,888,239,897,225,912,210,954,186,959,184,915,215,901,229,893,242,883,256,867,269,842,282"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="848,305,924,324,919,324,847,311"/>
+<area shape="rect" id="Node000012" href="$namespacePLIC.html#a34cb5d885caead31e31ab9f5fb581977" title="+1 if the liquid is on the low side of the column through iv along ed, else &#45;1" alt="" coords="931,276,1076,304"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="847,290,918,291,912,292,848,295"/>
+<area shape="rect" id="Node000013" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="955,224,1052,252"/>
+<area shape="poly" id="edge16_Node000011_Node000013" title=" " alt="" coords="839,277,937,254,943,253,841,282"/>
+<area shape="poly" id="edge17_Node000011_Node000014" title=" " alt="" coords="807,306,915,365,929,373,924,372,912,370,806,311"/>
 </map>

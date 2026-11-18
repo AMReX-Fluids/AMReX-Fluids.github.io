@@ -1,54 +1,60 @@
 <map id="PLIC::FitPlanesImpl" name="PLIC::FitPlanesImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,291,151,318"/>
-<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArray.html#a30e81934caf7268d817120c0a81678a3" title=" " alt="" coords="199,5,375,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,290,89,242,111,176,146,104,169,71,197,43,204,39,201,44,200,46,173,75,150,107,116,178,95,244,84,291"/>
-<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#aec97b10f2d8c7a62da3f13831a9720f5" title=" " alt="" coords="207,57,367,102"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,290,97,254,121,207,155,156,197,112,205,108,202,112,200,116,159,160,126,210,102,256,87,291"/>
-<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArray.html#a906429757961bc7318c684ac3583a968" title=" " alt="" coords="202,126,372,171"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="88,289,132,237,163,207,197,181,208,176,204,180,200,185,167,211,136,241,92,292"/>
-<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#aaa08b103ed3b2d6c1fc1e6e4480b3748" title=" " alt="" coords="207,196,367,240"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="110,288,198,250,215,245,211,248,200,255,113,292"/>
-<area shape="rect" id="Node000006" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="230,264,344,292"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="150,293,217,285,213,289,152,298"/>
-<area shape="rect" id="Node000019" href="$namespacePLIC.html#ae17184f3e53fca1120a14b94a16044cc" title="Whether a cell with volume fraction f holds the interface." alt="" coords="229,316,344,344"/>
-<area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="150,311,216,320,212,322,152,316"/>
-<area shape="rect" id="Node000020" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#aec6647af0d0a9f2d760d502a8975d6f1" title=" " alt="" coords="207,368,367,412"/>
-<area shape="poly" id="edge26_Node000001_Node000020" title=" " alt="" coords="112,316,200,353,216,360,211,362,198,358,113,322"/>
-<area shape="rect" id="Node000021" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#a92cef599b0ae34401a5463ec6fddc606" title=" " alt="" coords="207,437,367,482"/>
-<area shape="poly" id="edge27_Node000001_Node000021" title=" " alt="" coords="90,316,136,368,167,397,200,422,209,429,204,429,197,427,163,401,133,371,90,322"/>
-<area shape="rect" id="Node000022" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a574742f7a965fc7a10888ee0e6d379c3" title=" " alt="" coords="217,505,356,533"/>
-<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="84,316,101,353,125,400,158,450,178,472,200,492,207,498,202,498,197,496,174,476,154,453,120,403,96,356,84,322"/>
-<area shape="rect" id="Node000023" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArray.html#a9eb129805816e197af8c0a899428b248" title=" " alt="" coords="199,557,374,585"/>
-<area shape="poly" id="edge29_Node000001_Node000023" title=" " alt="" coords="83,316,96,362,118,422,153,487,175,517,200,542,208,550,203,549,197,547,171,520,148,490,114,425,91,363,82,321"/>
-<area shape="rect" id="Node000007" href="$namespacePLIC.html#aabd449b03841180309795c547479077e" title="The orientation of a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="642,153,827,181"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="341,261,374,250,398,238,422,227,526,199,629,181,624,183,528,204,424,232,400,243,376,255,344,266"/>
-<area shape="rect" id="Node000012" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="916,361,1012,389"/>
-<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="344,289,376,302,391,312,401,322,410,331,424,339,486,361,551,377,618,386,683,391,805,390,903,384,898,385,805,395,683,396,617,391,551,382,485,366,422,344,407,335,397,326,387,316,374,307,344,294"/>
-<area shape="rect" id="Node000013" href="$namespacePLIC.html#a504c05a467cc39858238891850a1bf86" title="Whether cell (i,j,k) lies on a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="661,205,808,233"/>
-<area shape="poly" id="edge12_Node000006_Node000013" title=" " alt="" coords="343,268,647,229,644,233,345,273"/>
-<area shape="rect" id="Node000014" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="423,303,594,330"/>
-<area shape="poly" id="edge16_Node000006_Node000014" title=" " alt="" coords="344,285,413,299,408,300,345,290"/>
-<area shape="rect" id="Node000008" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="881,153,1048,181"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="826,165,868,167,863,168,827,170"/>
-<area shape="rect" id="Node000009" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="914,205,1014,233"/>
-<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="799,179,902,204,896,205,799,184"/>
-<area shape="rect" id="Node000010" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="875,85,1054,130"/>
-<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="789,150,864,133,859,135,791,155"/>
-<area shape="rect" id="Node000011" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="923,33,1006,61"/>
-<area shape="poly" id="edge10_Node000007_Node000011" title=" " alt="" coords="751,151,804,111,874,70,911,59,906,61,876,75,807,116,754,155"/>
-<area shape="poly" id="edge13_Node000013_Node000008" title=" " alt="" coords="798,202,887,184,882,186,800,207"/>
-<area shape="poly" id="edge14_Node000013_Node000009" title=" " alt="" coords="808,217,901,219,896,220,809,222"/>
-<area shape="poly" id="edge15_Node000013_Node000012" title=" " alt="" coords="808,231,828,244,840,257,847,270,853,297,859,322,865,334,876,346,904,364,899,364,873,351,861,338,854,324,848,298,842,272,836,260,825,248,807,236"/>
-<area shape="poly" id="edge17_Node000014_Node000012" title=" " alt="" coords="562,328,643,346,781,362,903,372,898,373,780,368,642,351,562,334"/>
-<area shape="rect" id="Node000015" href="$namespacePLIC.html#af3b8f5abc1832ab6fe3a0854d32ce184" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="689,309,780,337"/>
-<area shape="poly" id="edge18_Node000014_Node000015" title=" " alt="" coords="594,316,676,321,671,322,595,322"/>
-<area shape="rect" id="Node000017" href="$namespacePLIC.html#af01021a23708fe9bebdd61624caae9c6" title="The root of the cubic of volume_intercept in its two upper volume ranges, in the trigonometric form o..." alt="" coords="678,257,791,285"/>
-<area shape="poly" id="edge22_Node000014_Node000017" title=" " alt="" coords="580,299,665,285,660,286,582,305"/>
-<area shape="poly" id="edge19_Node000015_Node000009" title=" " alt="" coords="779,313,803,305,825,294,840,282,849,270,858,257,873,244,897,235,902,233,876,248,862,260,853,273,844,286,828,299,805,310,781,318"/>
-<area shape="poly" id="edge20_Node000015_Node000012" title=" " alt="" coords="780,331,904,361,898,361,780,336"/>
-<area shape="rect" id="Node000016" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga1c182abe7695240cd35e1ba3d4477758" title=" " alt="" coords="911,309,1018,337"/>
-<area shape="poly" id="edge21_Node000015_Node000016" title=" " alt="" coords="780,321,899,323,893,324,781,326"/>
-<area shape="poly" id="edge24_Node000017_Node000009" title=" " alt="" coords="790,256,901,233,896,235,792,261"/>
-<area shape="rect" id="Node000018" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="908,257,1021,285"/>
-<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="790,269,895,271,890,272,791,274"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,316,151,344"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#a8f469777bfb397e1c66db494b67613e0" title=" " alt="" coords="199,5,377,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,315,88,264,108,191,123,152,143,112,167,76,197,44,206,39,203,44,200,48,172,79,148,115,128,154,113,193,93,265,84,316"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArray.html#a30e81934caf7268d817120c0a81678a3" title=" " alt="" coords="200,57,376,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="80,315,92,272,114,213,148,149,171,120,197,94,205,91,202,95,200,99,175,123,153,152,119,215,97,274,85,317"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#aec97b10f2d8c7a62da3f13831a9720f5" title=" " alt="" coords="208,109,368,154"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,314,125,243,158,201,197,164,206,160,203,164,200,168,162,205,130,246,89,317"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArray.html#a906429757961bc7318c684ac3583a968" title=" " alt="" coords="203,178,373,223"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="92,314,138,274,197,233,210,228,206,232,200,237,141,279,97,317"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#aaa08b103ed3b2d6c1fc1e6e4480b3748" title=" " alt="" coords="208,248,368,292"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="127,313,195,295,191,299,131,318"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="231,316,344,344"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="150,327,218,328,214,331,152,332"/>
+<area shape="rect" id="Node000022" href="$namespacePLIC.html#ae17184f3e53fca1120a14b94a16044cc" title="Whether a cell with volume fraction f holds the interface." alt="" coords="230,368,346,396"/>
+<area shape="poly" id="edge28_Node000001_Node000022" title=" " alt="" coords="136,342,217,362,213,365,138,347"/>
+<area shape="rect" id="Node000023" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#aec6647af0d0a9f2d760d502a8975d6f1" title=" " alt="" coords="208,420,368,464"/>
+<area shape="poly" id="edge29_Node000001_Node000023" title=" " alt="" coords="98,342,145,373,200,405,213,412,208,413,197,410,142,377,99,347"/>
+<area shape="rect" id="Node000024" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArrayBase.html#a0598988ee34f3885bd6d2a4787a8f427" title=" " alt="" coords="208,489,368,534"/>
+<area shape="poly" id="edge30_Node000001_Node000024" title=" " alt="" coords="88,341,132,405,164,442,200,474,208,481,202,481,197,479,160,446,128,408,87,347"/>
+<area shape="rect" id="Node000025" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a574742f7a965fc7a10888ee0e6d379c3" title=" " alt="" coords="218,557,358,585"/>
+<area shape="poly" id="edge31_Node000001_Node000025" title=" " alt="" coords="83,341,98,383,121,437,155,495,176,521,200,544,207,550,202,550,197,548,172,525,151,498,116,440,93,385,83,347"/>
+<area shape="rect" id="Node000026" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1FabArray.html#a9eb129805816e197af8c0a899428b248" title=" " alt="" coords="200,609,376,637"/>
+<area shape="poly" id="edge32_Node000001_Node000026" title=" " alt="" coords="82,341,94,391,115,459,130,496,149,532,173,565,200,595,207,602,202,601,197,598,169,569,145,534,125,498,110,461,89,393,81,346"/>
+<area shape="rect" id="Node000008" href="$namespacePLIC.html#a9b7d03da8cde24608092472c3b513b78" title="fit_plane, with the normal from normal(mx, my, mz) in place of Normal::normal, for a caller that alre..." alt="" coords="425,316,573,344"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="344,327,412,329,407,331,346,332"/>
+<area shape="rect" id="Node000009" href="$namespacePLIC.html#aabd449b03841180309795c547479077e" title="The orientation of a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="1045,264,1229,292"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="573,315,621,309,839,290,1032,281,1027,283,839,295,622,314,575,320"/>
+<area shape="rect" id="Node000014" href="$namespacePLIC.html#a57b67e5a10bf23e45386246cea715ec1" title="Normalize the normal (mx, my, mz) to sum|m| = 1 and give the constant alpha of the plane m...." alt="" coords="621,420,778,448"/>
+<area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="528,342,660,412,655,413,528,347"/>
+<area shape="rect" id="Node000021" href="$namespacePLIC.html#a504c05a467cc39858238891850a1bf86" title="Whether cell (i,j,k) lies on a structure one cell thick (a film, a gap, a filament or a drop),..." alt="" coords="1064,316,1211,344"/>
+<area shape="poly" id="edge24_Node000008_Node000021" title=" " alt="" coords="573,327,1050,328,1046,331,574,332"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="1284,264,1450,292"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1229,275,1271,277,1266,278,1230,280"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="1317,316,1417,344"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="1202,290,1304,315,1299,315,1202,295"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="1277,196,1457,240"/>
+<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="1192,261,1267,244,1262,245,1194,266"/>
+<area shape="rect" id="Node000013" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="1326,144,1408,172"/>
+<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="1154,261,1206,222,1276,181,1308,171,1313,170,1278,186,1209,226,1157,266"/>
+<area shape="rect" id="Node000015" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="1319,472,1415,500"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="766,446,826,457,935,472,1045,481,1183,485,1306,487,1301,487,1183,490,1045,486,935,477,825,462,766,451"/>
+<area shape="rect" id="Node000016" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="826,420,997,448"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="778,431,813,433,808,434,778,436"/>
+<area shape="poly" id="edge16_Node000016_Node000015" title=" " alt="" coords="981,446,1045,457,1183,471,1306,482,1300,483,1183,477,1045,462,981,451"/>
+<area shape="rect" id="Node000017" href="$namespacePLIC.html#af3b8f5abc1832ab6fe3a0854d32ce184" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="1092,420,1182,448"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="997,431,1079,434,1073,434,997,436"/>
+<area shape="rect" id="Node000019" href="$namespacePLIC.html#af01021a23708fe9bebdd61624caae9c6" title="The root of the cubic of volume_intercept in its two upper volume ranges, in the trigonometric form o..." alt="" coords="1081,368,1193,396"/>
+<area shape="poly" id="edge21_Node000016_Node000019" title=" " alt="" coords="974,417,1063,399,1068,398,975,422"/>
+<area shape="poly" id="edge18_Node000017_Node000011" title=" " alt="" coords="1182,423,1206,416,1228,405,1242,393,1251,380,1260,367,1276,354,1299,346,1305,344,1279,359,1264,371,1256,383,1246,397,1231,409,1208,421,1184,428"/>
+<area shape="poly" id="edge19_Node000017_Node000015" title=" " alt="" coords="1183,441,1306,472,1301,472,1183,447"/>
+<area shape="rect" id="Node000018" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga1c182abe7695240cd35e1ba3d4477758" title=" " alt="" coords="1314,420,1420,448"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="1183,431,1301,434,1296,434,1183,436"/>
+<area shape="poly" id="edge23_Node000019_Node000011" title=" " alt="" coords="1193,367,1299,345,1304,344,1194,372"/>
+<area shape="rect" id="Node000020" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="1310,368,1424,396"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="1193,379,1298,382,1292,382,1194,384"/>
+<area shape="poly" id="edge25_Node000021_Node000010" title=" " alt="" coords="1201,313,1290,295,1285,296,1202,318"/>
+<area shape="poly" id="edge26_Node000021_Node000011" title=" " alt="" coords="1211,327,1304,329,1299,330,1211,332"/>
+<area shape="poly" id="edge27_Node000021_Node000015" title=" " alt="" coords="1210,342,1231,354,1243,367,1250,381,1256,407,1262,433,1268,445,1279,457,1307,475,1302,474,1276,461,1264,448,1257,435,1251,408,1245,383,1239,371,1228,359,1210,347"/>
 </map>

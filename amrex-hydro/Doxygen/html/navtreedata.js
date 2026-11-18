@@ -33,6 +33,7 @@ var NAVTREE =
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -65,14 +66,14 @@ var NAVTREEINDEX =
 "group__amrex__index__space.html#gaabd22daa513510c618b42eb03d7d4abd",
 "group__amrex__mpi.html#gab734a5d614e753d28d03865ee6e4039a",
 "hydro__plic_8cpp.html",
-"namespaceamrex.html#a19ae5e9e3d7d36fde4fc338734092dcd",
-"namespaceamrex.html#a51100fabe18e8030b106160d35ee8480",
-"namespaceamrex.html#a8b6d66ccce62bb186deaeeb42ccef824",
-"namespaceamrex.html#aca824ed9a83373a83533e948d2175dee",
-"namespaceamrex_1_1BCType.html#a2842d1189d57039c0e3551676c9910e6acc4996b629bf76870086d2318f1d4050",
-"namespaceamrex_1_1LongParticleIds.html#a4338aa4cab572b2f577754ade0252083",
-"namespaceamrex_1_1RungeKutta.html#ae717fc5f1594b2062a5178d495ae0edd",
-"structPPM_1_1wenoz.html#aac1efbfa4d880cc1c10ed75a7dbe030d"
+"namespaceamrex.html#a13d7f7fe139d2705b1d10b8657f94ab7",
+"namespaceamrex.html#a4c085d3b27d107f62bdb36f5ecc0f326",
+"namespaceamrex.html#a85187c36418a08cc244643e6fc869f4c",
+"namespaceamrex.html#ac264469b0f79dbe9e54d068825d6b10c",
+"namespaceamrex.html#afd3603d5627ea48a5c25919fa90482f5",
+"namespaceamrex_1_1Gpu_1_1Atomic.html#ac0dd894a84e639438ae6a385ca6b0090",
+"namespaceamrex_1_1ParallelDescriptor.html#ae6927a6804e22fedb86c1fe19d6567fc",
+"structPLIC_1_1detail_1_1CandTag.html#ad06c616b219a9b3c5e7620c428a487c4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

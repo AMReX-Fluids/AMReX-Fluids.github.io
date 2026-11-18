@@ -100,60 +100,121 @@ $(function(){initNavTree('hydro__plic__reconstruction_8cpp.html','',''); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="hydro__plic_8H_source.html">hydro_plic.H</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="hydro__plic__normals__K_8H_source.html">hydro_plic_normals_K.H</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__BC__TYPES_8H.html">AMReX_BC_TYPES.H</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__IArrayBox_8H.html">AMReX_IArrayBox.H</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__iMultiFab_8H.html">AMReX_iMultiFab.H</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuBuffer_8H.html">AMReX_GpuBuffer.H</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__TagParallelFor_8H.html">AMReX_TagParallelFor.H</a>&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for hydro_plic_reconstruction.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="hydro__plic__reconstruction_8cpp__incl.png" border="0" usemap="#aPLIC_2hydro__plic__reconstruction_8cpp" loading="lazy" alt=""/></div>
 <map name="aPLIC_2hydro__plic__reconstruction_8cpp" id="aPLIC_2hydro__plic__reconstruction_8cpp">
-<area shape="rect" title=" " alt="" coords="247,5,494,33"/>
-<area shape="rect" href="hydro__plic_8H.html" title=" " alt="" coords="202,81,305,109"/>
-<area shape="poly" title=" " alt="" coords="348,35,288,75,285,71,352,32"/>
-<area shape="rect" href="hydro__plic__normals__K_8H.html" title=" " alt="" coords="454,81,632,109"/>
-<area shape="poly" title=" " alt="" coords="402,31,501,74,496,75,401,36"/>
-<area shape="rect" href="hydro__plic__K_8H.html" title=" " alt="" coords="306,157,425,184"/>
-<area shape="poly" title=" " alt="" coords="274,107,336,148,331,148,273,112"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Geometry_8H.html" title=" " alt="" coords="39,232,191,260"/>
-<area shape="poly" title=" " alt="" coords="244,109,139,223,135,219,239,108"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__MultiFab_8H.html" title=" " alt="" coords="5,157,150,184"/>
-<area shape="poly" title=" " alt="" coords="220,111,124,153,121,148,224,107"/>
-<area shape="rect" title=" " alt="" coords="224,157,283,184"/>
-<area shape="poly" title=" " alt="" coords="255,107,256,142,251,140,252,111"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Algorithm_8H.html" title=" " alt="" coords="216,232,369,260"/>
-<area shape="poly" title=" " alt="" coords="355,184,317,224,315,219,350,186"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Array4_8H.html" title=" " alt="" coords="393,232,525,260"/>
-<area shape="poly" title=" " alt="" coords="383,182,433,223,428,222,381,187"/>
-<area shape="poly" title=" " alt="" coords="323,185,175,230,174,225,318,185"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__REAL_8H.html" title=" " alt="" coords="550,232,672,260"/>
-<area shape="poly" title=" " alt="" coords="410,182,555,227,550,228,409,188"/>
-<area shape="rect" title=" " alt="" coords="696,232,758,260"/>
-<area shape="poly" title=" " alt="" coords="426,180,683,231,678,232,425,185"/>
-<area shape="rect" title=" " alt="" coords="782,232,840,260"/>
-<area shape="poly" title=" " alt="" coords="425,180,437,182,601,202,674,212,769,232,764,232,673,217,600,208,436,187,425,185"/>
-<area shape="poly" title=" " alt="" coords="514,108,412,153,410,148,509,110"/>
-<area shape="poly" title=" " alt="" coords="632,99,662,106,690,117,716,133,737,155,744,170,746,187,740,220,736,216,741,187,739,172,733,158,712,138,688,122,660,111,632,104"/>
-<area shape="poly" title=" " alt="" coords="633,103,698,122,730,136,759,155,786,184,803,219,798,217,781,187,756,159,727,141,696,127,632,109"/>
-<area shape="poly" title=" " alt="" coords="483,110,299,159,297,153,488,108"/>
-<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX_8H.html" title=" " alt="" coords="448,157,531,184"/>
-<area shape="poly" title=" " alt="" coords="536,108,509,146,506,142,531,111"/>
-<area shape="rect" title=" " alt="" coords="555,157,640,184"/>
-<area shape="poly" title=" " alt="" coords="554,107,581,145,576,143,552,112"/>
-<area shape="rect" title=" " alt="" coords="664,157,723,184"/>
-<area shape="poly" title=" " alt="" coords="570,107,656,150,650,149,569,112"/>
+<area shape="rect" title=" " alt="" coords="710,5,957,33"/>
+<area shape="rect" href="hydro__plic_8H.html" title=" " alt="" coords="630,81,732,109"/>
+<area shape="poly" title=" " alt="" coords="809,33,723,77,721,72,803,34"/>
+<area shape="rect" title=" " alt="" coords="5,232,64,260"/>
+<area shape="poly" title=" " alt="" coords="707,21,601,28,474,38,339,56,207,84,110,104,91,111,73,121,56,136,39,158,33,172,30,187,31,218,26,217,25,187,28,170,35,155,52,133,70,117,89,106,108,98,206,78,338,50,473,32,600,22,712,20"/>
+<area shape="rect" title=" " alt="" coords="564,157,622,184"/>
+<area shape="poly" title=" " alt="" coords="711,32,662,54,640,67,620,83,611,96,604,111,596,143,592,139,599,109,606,93,617,79,637,62,659,49,706,34"/>
+<area shape="rect" href="hydro__plic__normals__K_8H.html" title=" " alt="" coords="219,81,397,109"/>
+<area shape="poly" title=" " alt="" coords="736,35,413,82,412,76,741,32"/>
+<area shape="rect" title=" " alt="" coords="338,157,398,184"/>
+<area shape="poly" title=" " alt="" coords="772,34,691,57,598,84,498,119,413,153,411,148,496,114,596,78,689,52,777,33"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__BC__TYPES_8H.html" title=" " alt="" coords="756,81,910,109"/>
+<area shape="poly" title=" " alt="" coords="835,31,835,67,831,64,831,36"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__IArrayBox_8H.html" title=" " alt="" coords="934,81,1087,109"/>
+<area shape="poly" title=" " alt="" coords="865,31,968,75,962,75,865,36"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__iMultiFab_8H.html" title=" " alt="" coords="1111,81,1259,109"/>
+<area shape="poly" title=" " alt="" coords="897,31,1110,77,1104,78,896,36"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuBuffer_8H.html" title=" " alt="" coords="1283,81,1436,109"/>
+<area shape="poly" title=" " alt="" coords="930,31,1270,80,1265,81,929,36"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__TagParallelFor_8H.html" title=" " alt="" coords="1460,81,1638,109"/>
+<area shape="poly" title=" " alt="" coords="957,29,1447,80,1442,81,957,34"/>
+<area shape="rect" title=" " alt="" coords="1662,81,1724,109"/>
+<area shape="poly" title=" " alt="" coords="957,19,1097,23,1268,33,1456,51,1649,81,1644,81,1455,56,1267,38,1096,29,958,24"/>
+<area shape="rect" href="hydro__plic__K_8H.html" title=" " alt="" coords="422,157,540,184"/>
+<area shape="poly" title=" " alt="" coords="648,109,532,154,530,148,643,110"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Geometry_8H.html" title=" " alt="" coords="732,232,884,260"/>
+<area shape="poly" title=" " alt="" coords="721,106,758,126,775,139,790,155,804,185,809,218,805,215,799,187,786,158,772,143,755,130,720,112"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Array_8H.html" title=" " alt="" coords="851,157,973,184"/>
+<area shape="poly" title=" " alt="" coords="723,107,859,152,853,152,722,112"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__BCRec_8H.html" title=" " alt="" coords="997,157,1128,184"/>
+<area shape="poly" title=" " alt="" coords="733,104,744,106,984,154,979,154,743,111,733,109"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__MultiFab_8H.html" title=" " alt="" coords="1152,157,1296,184"/>
+<area shape="poly" title=" " alt="" coords="733,104,744,106,939,131,1139,156,1133,156,938,137,743,111,733,109"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Vector_8H.html" title=" " alt="" coords="646,157,775,184"/>
+<area shape="poly" title=" " alt="" coords="688,107,702,143,697,141,685,112"/>
+<area shape="poly" title=" " alt="" coords="668,108,622,149,619,144,663,110"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Algorithm_8H.html" title=" " alt="" coords="247,232,400,260"/>
+<area shape="poly" title=" " alt="" coords="456,184,366,228,365,223,450,185"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Array4_8H.html" title=" " alt="" coords="424,232,557,260"/>
+<area shape="poly" title=" " alt="" coords="485,183,489,219,485,216,481,187"/>
+<area shape="poly" title=" " alt="" coords="540,182,737,228,732,229,540,188"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__REAL_8H.html" title=" " alt="" coords="581,232,704,260"/>
+<area shape="poly" title=" " alt="" coords="511,182,603,226,598,226,509,187"/>
+<area shape="rect" title=" " alt="" coords="161,232,223,260"/>
+<area shape="poly" title=" " alt="" coords="428,185,239,234,237,229,423,185"/>
+<area shape="poly" title=" " alt="" coords="419,183,410,187,80,240,79,235,409,182,424,182"/>
+<area shape="poly" title=" " alt="" coords="339,107,439,150,434,151,338,112"/>
+<area shape="poly" title=" " alt="" coords="280,108,248,131,219,158,205,188,197,219,193,215,200,186,215,155,244,127,276,111"/>
+<area shape="poly" title=" " alt="" coords="216,110,125,131,87,144,62,159,52,171,45,186,38,218,33,216,40,184,47,168,58,155,84,139,124,126,220,107"/>
+<area shape="poly" title=" " alt="" coords="364,107,551,155,546,157,364,112"/>
+<area shape="rect" target="_parent" href="https://amrex-codes.github.io/amrex/doxygen/AMReX_8H.html" title=" " alt="" coords="72,157,154,184"/>
+<area shape="poly" title=" " alt="" coords="271,111,163,153,161,149,275,108"/>
+<area shape="rect" title=" " alt="" coords="229,157,314,184"/>
+<area shape="poly" title=" " alt="" coords="303,107,287,144,283,141,299,111"/>
+<area shape="poly" title=" " alt="" coords="319,107,350,145,345,144,318,112"/>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:PLIC_3A_3Adetail_3A_3AFilterTag" id="r_PLIC_3A_3Adetail_3A_3AFilterTag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPLIC_1_1detail_1_1FilterTag.html">PLIC::detail::FilterTag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a mask a filtered over its box bx, with p as scratch on the same box  <a href="structPLIC_1_1detail_1_1FilterTag.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PLIC_3A_3Adetail_3A_3ANearTag" id="r_PLIC_3A_3Adetail_3A_3ANearTag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPLIC_1_1detail_1_1NearTag.html">PLIC::detail::NearTag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wall cells with a mixed cell near: near.  <a href="structPLIC_1_1detail_1_1NearTag.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PLIC_3A_3Adetail_3A_3ACandTag" id="r_PLIC_3A_3Adetail_3A_3ACandTag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPLIC_1_1detail_1_1CandTag.html">PLIC::detail::CandTag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">What each cell offers the search, cand, with its plane pl.  <a href="structPLIC_1_1detail_1_1CandTag.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PLIC_3A_3Adetail_3A_3APlaneTag" id="r_PLIC_3A_3Adetail_3A_3APlaneTag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPLIC_1_1detail_1_1PlaneTag.html">PLIC::detail::PlaneTag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ghost values gbx beyond the wall cells bx, added to the sums acc.  <a href="structPLIC_1_1detail_1_1PlaneTag.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PLIC_3A_3Adetail_3A_3AMeanTag" id="r_PLIC_3A_3Adetail_3A_3AMeanTag"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPLIC_1_1detail_1_1MeanTag.html">PLIC::detail::MeanTag</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One box of the copy w and of the sums of the ghost values acc, over its valid cells bx.  <a href="structPLIC_1_1detail_1_1MeanTag.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:PLIC" id="r_PLIC"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html">PLIC</a></td></tr>
+<tr class="memitem:PLIC_3A_3Adetail" id="r_PLIC_3A_3Adetail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC_1_1detail.html">PLIC::detail</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a746fb707e4d2197b59fafa1b8e3fbe60" id="r_a746fb707e4d2197b59fafa1b8e3fbe60"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ac0b5a9180f2f28b35ac013759ee93198">amrex::IntVect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC_1_1detail.html#a746fb707e4d2197b59fafa1b8e3fbe60">PLIC::detail::nearest_in</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#a5e3fbb2849f9d03c2d57073bcf7d7577">amrex::Box</a> const &amp;b, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ac0b5a9180f2f28b35ac013759ee93198">amrex::IntVect</a> const &amp;c) noexcept</td></tr>
+<tr class="memdesc:a746fb707e4d2197b59fafa1b8e3fbe60"><td class="mdescLeft">&#160;</td><td class="mdescRight">The nearest cell of b to c.  <br /></td></tr>
+<tr class="memitem:a9eda3fdd44bcf51559889b2e9e6694ae" id="r_a9eda3fdd44bcf51559889b2e9e6694ae"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a9eda3fdd44bcf51559889b2e9e6694ae template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC_1_1detail.html#a9eda3fdd44bcf51559889b2e9e6694ae">PLIC::detail::SetBoxes</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1TagVector.html">amrex::TagVector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4BoxValTag.html">amrex::Array4BoxValTag</a>&lt; T &gt; &gt; const &amp;tv)</td></tr>
+<tr class="memdesc:a9eda3fdd44bcf51559889b2e9e6694ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the boxes of the tags to their values.  <br /></td></tr>
+<tr class="memitem:a8b76fc4550038eec69f96e5cff7c1c7f" id="r_a8b76fc4550038eec69f96e5cff7c1c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC_1_1detail.html#a8b76fc4550038eec69f96e5cff7c1c7f">PLIC::detail::CopyBoxes</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1TagVector.html">amrex::TagVector</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Array4PairTag.html">amrex::Array4PairTag</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a> &gt; &gt; const &amp;tv)</td></tr>
+<tr class="memdesc:a8b76fc4550038eec69f96e5cff7c1c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the boxes of the tags from their sources.  <br /></td></tr>
+<tr class="memitem:a9d6b490acb8282652fbf0c1c41fb5d4d" id="r_a9d6b490acb8282652fbf0c1c41fb5d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC_1_1detail.html#a9d6b490acb8282652fbf0c1c41fb5d4d">PLIC::detail::SeparableFilter</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1TagVector.html">amrex::TagVector</a>&lt; <a class="el" href="structPLIC_1_1detail_1_1FilterTag.html">FilterTag</a> &gt; const &amp;tv, int radius, int skip_dir)</td></tr>
 <tr class="memitem:ac44e4f37c0fb3204d1be89ac47ebd246" id="r_ac44e4f37c0fb3204d1be89ac47ebd246"><td class="memTemplParams" colspan="2">template&lt;typename Normal&gt; </td></tr>
 <tr class="memitem:ac44e4f37c0fb3204d1be89ac47ebd246 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246">PLIC::FitPlanesImpl</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;plane, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;F, int ngrow)</td></tr>
+<tr class="memitem:ae836d9de83827766be0ab85d93b77856" id="r_ae836d9de83827766be0ab85d93b77856"><td class="memTemplParams" colspan="2">template&lt;typename Normal&gt; </td></tr>
+<tr class="memitem:ae836d9de83827766be0ab85d93b77856 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#ae836d9de83827766be0ab85d93b77856">PLIC::FillWallGhostsImpl</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;a_F, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> const &amp;geom, Walls const &amp;walls)</td></tr>
 <tr class="memitem:a95ca0e6685e548fa5884d1647f8226b6" id="r_a95ca0e6685e548fa5884d1647f8226b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#a95ca0e6685e548fa5884d1647f8226b6">PLIC::nGrowF</a> (std::string const &amp;reconstruction)</td></tr>
 <tr class="memdesc:a95ca0e6685e548fa5884d1647f8226b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ghost cells of F that the operators of this library read, with the given reconstruction. Allocate and fill at least this many.  <br /></td></tr>
 <tr class="memitem:a35f55dabdbf19e6cfcfb82197b76ddc6" id="r_a35f55dabdbf19e6cfcfb82197b76ddc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6">PLIC::FitPlanes</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;plane, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> const &amp;F, int ngrow, std::string const &amp;reconstruction)</td></tr>
 <tr class="memdesc:a35f55dabdbf19e6cfcfb82197b76ddc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fit the plane of each mixed cell, and zero the others.  <br /></td></tr>
+<tr class="memitem:afed8e7a8fde1e2f1639c2ef35a7725f0" id="r_afed8e7a8fde1e2f1639c2ef35a7725f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0">PLIC::FillWallGhosts</a> (<a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MultiFab.html">amrex::MultiFab</a> &amp;F, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Geometry.html">amrex::Geometry</a> const &amp;geom, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1BCRec.html">amrex::BCRec</a> const &amp;bcrec, std::string const &amp;reconstruction)</td></tr>
+<tr class="memdesc:afed8e7a8fde1e2f1639c2ef35a7725f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the planes of the interior interface. At a wall the interface then meets the wall at whatever angle it has: a free contact line. Extrapolated values impose 90 degrees instead, and the inconsistent normals near the wall unbalance gravity at a tilted interface. At an outflow the interface continues smoothly. The result does not depend on the box layout, or on the order of the faces: a ghost cell beyond several (an edge or a corner) takes the mean of their values, over those that extend a plane to it, which for a planar interface is the plane.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8da04ab804c626509887a9a1fb091c2e" id="r_a8da04ab804c626509887a9a1fb091c2e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC_1_1detail.html#a8da04ab804c626509887a9a1fb091c2e">PLIC::detail::filtered_in_scratch</a> = (AMREX_SPACEDIM - 1) % 2 == 1</td></tr>
+<tr class="memdesc:a8da04ab804c626509887a9a1fb091c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where SeparableFilter leaves its result: in the scratch p after an odd number of directions.  <br /></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

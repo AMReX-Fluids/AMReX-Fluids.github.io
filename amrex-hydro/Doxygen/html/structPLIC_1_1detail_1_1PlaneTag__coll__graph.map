@@ -1,0 +1,9 @@
+<map id="PLIC::detail::PlaneTag" name="PLIC::detail::PlaneTag">
+<area shape="rect" id="Node000001" title="The ghost values gbx beyond the wall cells bx, added to the sums acc." alt="" coords="284,101,444,129"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1ArrayND.html" title=" " alt="" coords="13,5,189,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,48,261,63,302,80,340,100,335,101,300,85,259,68,204,54"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1ArrayND.html" title=" " alt="" coords="17,92,185,137"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,112,286,114,281,116,201,117"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1ArrayND.html" title=" " alt="" coords="5,162,197,206"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="211,155,259,143,312,130,318,129,260,148,212,160"/>
+</map>

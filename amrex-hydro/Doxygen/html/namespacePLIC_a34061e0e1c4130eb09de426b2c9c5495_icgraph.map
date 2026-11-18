@@ -1,0 +1,7 @@
+<map id="PLIC::half_segment_fraction" name="PLIC::half_segment_fraction">
+<area shape="rect" id="Node000001" title="Liquid fraction of the half segment from the center of cell (i,j,k) to the center of its face in dire..." alt="" coords="424,5,570,50"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a73791ade977b7b8a375f54af0ac9c4d2" title="Liquid fraction of the segment joining the centers of the cells on either side of the low face of (i,..." alt="" coords="227,5,376,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="406,28,376,30,376,25,411,28"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="5,14,179,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,28,179,30,179,25,214,27"/>
+</map>

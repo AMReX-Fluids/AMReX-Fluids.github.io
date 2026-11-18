@@ -1,5 +1,7 @@
 <map id="PLIC::FitPlanesImpl" name="PLIC::FitPlanesImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="170,5,315,33"/>
-<area shape="rect" id="Node000002" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="5,5,122,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,19,122,22,122,17,157,19"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="391,5,536,33"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="227,5,343,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="373,19,343,22,343,17,378,19"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="5,5,179,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="209,19,179,22,179,17,214,19"/>
 </map>

@@ -6,6 +6,14 @@ var annotated_dup =
       [ "NodalProjector", "classHydro_1_1NodalProjector.html", "classHydro_1_1NodalProjector" ]
     ] ],
     [ "PLIC", "namespacePLIC.html", [
+      [ "detail", "namespacePLIC_1_1detail.html", [
+        [ "FilterTag", "structPLIC_1_1detail_1_1FilterTag.html", "structPLIC_1_1detail_1_1FilterTag" ],
+        [ "NearTag", "structPLIC_1_1detail_1_1NearTag.html", "structPLIC_1_1detail_1_1NearTag" ],
+        [ "CandTag", "structPLIC_1_1detail_1_1CandTag.html", "structPLIC_1_1detail_1_1CandTag" ],
+        [ "PlaneTag", "structPLIC_1_1detail_1_1PlaneTag.html", "structPLIC_1_1detail_1_1PlaneTag" ],
+        [ "MeanTag", "structPLIC_1_1detail_1_1MeanTag.html", "structPLIC_1_1detail_1_1MeanTag" ]
+      ] ],
+      [ "PhaseDensity", "structPLIC_1_1PhaseDensity.html", "structPLIC_1_1PhaseDensity" ],
       [ "Youngs", "structPLIC_1_1Youngs.html", "structPLIC_1_1Youngs" ],
       [ "MixedYoungsCentered", "structPLIC_1_1MixedYoungsCentered.html", "structPLIC_1_1MixedYoungsCentered" ],
       [ "HeightFunctionMYC", "structPLIC_1_1HeightFunctionMYC.html", "structPLIC_1_1HeightFunctionMYC" ]

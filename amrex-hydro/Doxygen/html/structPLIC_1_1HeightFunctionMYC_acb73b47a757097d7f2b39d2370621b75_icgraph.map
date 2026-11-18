@@ -1,0 +1,9 @@
+<map id="PLIC::HeightFunctionMYC::height_direction" name="PLIC::HeightFunctionMYC::height_direction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="468,40,651,85"/>
+<area shape="rect" id="Node000002" href="$structPLIC_1_1HeightFunctionMYC.html#a6ae9ad55d8e01757610f8b7f2abe0145" title="normal(), given the MYC normal mm of the cell" alt="" coords="237,5,420,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="450,46,420,44,421,39,455,46"/>
+<area shape="rect" id="Node000004" href="$structPLIC_1_1HeightFunctionMYC.html#aae3f7fcee0f3b438283bd43910fcd839" title=" " alt="" coords="237,75,420,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="455,78,421,86,420,81,450,79"/>
+<area shape="rect" id="Node000003" href="$structPLIC_1_1HeightFunctionMYC.html#a7468c772b7a57a77b855afbd407a4263" title=" " alt="" coords="5,5,189,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,28,190,30,189,25,224,27"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="PLIC::detail::NearTag" name="PLIC::detail::NearTag">
+<area shape="rect" id="Node000001" title="The wall cells with a mixed cell near: near." alt="" coords="267,61,422,89"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1ArrayND.html" title=" " alt="" coords="5,5,182,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,49,269,62,264,64,197,55"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$structamrex_1_1ArrayND.html" title=" " alt="" coords="17,91,170,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,97,269,86,264,87,186,102"/>
+</map>

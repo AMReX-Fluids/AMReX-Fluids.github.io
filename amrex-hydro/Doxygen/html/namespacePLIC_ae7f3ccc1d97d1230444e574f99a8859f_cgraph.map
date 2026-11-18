@@ -1,0 +1,7 @@
+<map id="PLIC::wall_layer_normal" name="PLIC::wall_layer_normal">
+<area shape="rect" id="Node000001" title="Normal of an interface that runs inside the wall layer, from a one&#45;sided height function: with the ce..." alt="" coords="5,36,183,64"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#ae17184f3e53fca1120a14b94a16044cc" title="Whether a cell with volume fraction f holds the interface." alt="" coords="263,5,378,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,35,250,28,245,30,184,40"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="231,57,410,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,59,218,65,212,66,183,64"/>
+</map>

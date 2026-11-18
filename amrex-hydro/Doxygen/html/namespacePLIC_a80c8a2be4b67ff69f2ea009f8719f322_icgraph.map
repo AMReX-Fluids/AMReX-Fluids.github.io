@@ -1,7 +1,11 @@
 <map id="PLIC::dispatch_normal" name="PLIC::dispatch_normal">
-<area shape="rect" id="Node000001" title="Call fn with the normal scheme of a reconstruction name, as fn(Normal{}), and return what it returns...." alt="" coords="170,32,335,60"/>
-<area shape="rect" id="Node000002" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="5,5,122,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,33,122,30,122,25,157,31"/>
-<area shape="rect" id="Node000003" href="$namespacePLIC.html#a95ca0e6685e548fa5884d1647f8226b6" title="The ghost cells of F that the operators of this library read, with the given reconstruction...." alt="" coords="10,57,117,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,59,118,67,117,61,157,59"/>
+<area shape="rect" id="Node000001" title="Call fn with the normal scheme of a reconstruction name, as fn(Normal{}), and return what it returns...." alt="" coords="424,57,589,85"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="227,5,376,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,53,359,36,359,31,437,53"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="243,57,360,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="406,71,360,74,360,69,411,71"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a95ca0e6685e548fa5884d1647f8226b6" title="The ghost cells of F that the operators of this library read, with the given reconstruction...." alt="" coords="248,109,355,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="437,89,356,112,355,107,431,90"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="5,57,179,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,72,180,74,179,69,230,71"/>
 </map>

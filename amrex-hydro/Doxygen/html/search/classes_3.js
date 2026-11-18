@@ -37,9 +37,10 @@ var searchData=
   ['disjunction_34',['Disjunction',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Disjunction.html',1,'amrex']]],
   ['disjunction_3c_20b1_20_3e_35',['Disjunction&lt; B1 &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Disjunction_3_01B1_01_4.html',1,'amrex']]],
   ['disjunction_3c_20b1_2c_20bn_2e_2e_2e_20_3e_36',['Disjunction&lt; B1, Bn... &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Disjunction_3_01B1_00_01Bn_8_8_8_01_4.html',1,'amrex']]],
-  ['distfcnelement2d_37',['distFcnElement2d',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1distFcnElement2d.html',1,'amrex']]],
-  ['distributionmapping_38',['DistributionMapping',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1DistributionMapping.html',1,'amrex']]],
-  ['divides_39',['Divides',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Divides.html',1,'amrex']]],
-  ['dolocalcopy_40',['DoLocalCopy',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NonLocalBC_1_1DoLocalCopy.html',1,'amrex::NonLocalBC']]],
-  ['dynamictiling_41',['DynamicTiling',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DynamicTiling.html',1,'amrex']]]
+  ['disjunction_3c_20iscallabler_3c_20fab_3a_3avalue_5ftype_2c_20p_2c_20array4_3c_20const_20fab_3a_3avalue_5ftype_20_3e_2c_20dim3_2c_20int_20_3e_2c_20iscallabler_3c_20fab_3a_3avalue_5ftype_2c_20p_2c_20array4_3c_20const_20fab_3a_3avalue_5ftype_20_3e_2c_20dim3_2c_20int_2c_20dim3_20_3e_20_3e_37',['Disjunction&lt; IsCallableR&lt; FAB::value_type, P, Array4&lt; const FAB::value_type &gt;, Dim3, int &gt;, IsCallableR&lt; FAB::value_type, P, Array4&lt; const FAB::value_type &gt;, Dim3, int, Dim3 &gt; &gt;',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Disjunction.html',1,'amrex']]],
+  ['distfcnelement2d_38',['distFcnElement2d',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1distFcnElement2d.html',1,'amrex']]],
+  ['distributionmapping_39',['DistributionMapping',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1DistributionMapping.html',1,'amrex']]],
+  ['divides_40',['Divides',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Divides.html',1,'amrex']]],
+  ['dolocalcopy_41',['DoLocalCopy',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NonLocalBC_1_1DoLocalCopy.html',1,'amrex::NonLocalBC']]],
+  ['dynamictiling_42',['DynamicTiling',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1DynamicTiling.html',1,'amrex']]]
 ];

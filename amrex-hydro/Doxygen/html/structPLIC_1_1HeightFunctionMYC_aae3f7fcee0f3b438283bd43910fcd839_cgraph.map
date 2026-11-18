@@ -1,0 +1,23 @@
+<map id="PLIC::HeightFunctionMYC::reach" name="PLIC::HeightFunctionMYC::reach">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,109,189,154"/>
+<area shape="rect" id="Node000002" href="$structPLIC_1_1HeightFunctionMYC.html#acb73b47a757097d7f2b39d2370621b75" title=" " alt="" coords="237,24,420,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,106,253,72,249,76,161,111"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="508,57,608,85"/>
+<area shape="poly" id="edge11_Node000001_Node000003" title=" " alt="" coords="188,117,493,77,491,82,189,122"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#af1501f2b2dba9ba4cbb93d55f750521a" title="The row r, along d from (i,j,k), on which height_normal centers the neighboring columns: where the co..." alt="" coords="264,143,393,170"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="188,139,251,147,246,149,189,144"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#a0a525af3444a2814c6dbda9e71a965a5" title=" " alt="" coords="245,195,412,222"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="158,151,238,179,265,189,259,190,236,184,158,157"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,53,495,63,490,65,421,59"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#abe05378dca985058f11d1b19acabe707" title="Whether a ties with the largest of its kind amax (to round&#45;off)." alt="" coords="516,5,599,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="420,33,504,25,499,27,421,38"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="374,140,419,122,467,95,495,87,490,90,469,100,421,127,376,144"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#aabbc90005674fc1f952f190b7c3091a9" title=" " alt="" coords="481,229,634,257"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="389,168,421,181,446,198,469,216,484,224,478,223,467,220,442,203,419,186,389,174"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#a34cb5d885caead31e31ab9f5fb581977" title="+1 if the liquid is on the low side of the column through iv along ed, else &#45;1" alt="" coords="485,281,630,309"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="394,166,422,181,439,203,447,225,453,246,470,267,478,274,473,273,466,270,449,249,441,227,435,205,418,185,393,171"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="510,109,606,137"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="393,145,497,132,492,133,394,150"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="468,161,647,206"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="393,161,456,171,450,171,394,167"/>
+</map>
