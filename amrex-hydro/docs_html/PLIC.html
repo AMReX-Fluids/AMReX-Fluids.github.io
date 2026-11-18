@@ -52,6 +52,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Projections.html">Projection Methods</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Volume of fluid with PLIC</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-the-solver-provides">What the solver provides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projection">Projection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reconstructions">Reconstructions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-a-normal">Adding a normal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#verification">Verification</a></li>
@@ -138,8 +139,73 @@ either. The reconstruction is selected by name, as <code class="docutils literal
 <code class="docutils literal notranslate"><span class="pre">HydroUtils::ComputeFluxesOnBoxFromState</span></code>.</p>
 <section id="what-the-solver-provides">
 <h2>What the solver provides<a class="headerlink" href="#what-the-solver-provides" title="Link to this heading"></a></h2>
-<p><span class="math notranslate nohighlight">\(F\)</span> needs <code class="docutils literal notranslate"><span class="pre">PLIC::nGrowF(reconstruction)</span></code> filled ghost cells. At coarse/fine boundaries, fill
-them with <code class="docutils literal notranslate"><span class="pre">amrex::cell_cons_interp</span></code>, which keeps <span class="math notranslate nohighlight">\(F\)</span> in <span class="math notranslate nohighlight">\([0,1]\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(F\)</span> needs <code class="docutils literal notranslate"><span class="pre">PLIC::nGrowF(reconstruction)</span></code> filled ghost cells. They should</p>
+<ul class="simple">
+<li><p>use <code class="docutils literal notranslate"><span class="pre">amrex::cell_cons_interp</span></code> at coarse/fine boundaries, which keeps <span class="math notranslate nohighlight">\(F\)</span> in <span class="math notranslate nohighlight">\([0,1]\)</span>;</p></li>
+<li><p>be filled with the <code class="docutils literal notranslate"><span class="pre">BCRec</span></code> of <span class="math notranslate nohighlight">\(F\)</span>, as for any other scalar, and then passed with that
+<code class="docutils literal notranslate"><span class="pre">BCRec</span></code> to <code class="docutils literal notranslate"><span class="pre">PLIC::FillWallGhosts</span></code>.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">PLIC::FillWallGhosts</span></code> reads the boundary condition of each domain face:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">BCType</span></code></p></th>
+<th class="head"><p>Boundary</p></th>
+<th class="head"><p>Ghost cells</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">int_dir</span></code></p></td>
+<td><p>periodic</p></td>
+<td><p>left alone</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">foextrap</span></code>, <code class="docutils literal notranslate"><span class="pre">hoextrap</span></code>, <code class="docutils literal notranslate"><span class="pre">hoextrapcc</span></code></p></td>
+<td><p>wall or outflow</p></td>
+<td><p>overwritten: the planes of the interior interface are extended through the face</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ext_dir</span></code>, <code class="docutils literal notranslate"><span class="pre">ext_dir_cc</span></code></p></td>
+<td><p>inflow</p></td>
+<td><p>kept, as the volume fraction that flows in</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">reflect_even</span></code></p></td>
+<td><p>symmetry</p></td>
+<td><p>kept, as the mirror image: the interface meets the plane at 90 degrees</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">direction_dependent</span></code></p></td>
+<td><p>inflow or outflow, face by face</p></td>
+<td><p>kept</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">reflect_odd</span></code> or any other</p></td>
+<td><p>–</p></td>
+<td><p>aborts</p></td>
+</tr>
+</tbody>
+</table>
+<p>At a wall the extension gives a free contact line: the interface meets the wall at whatever angle it
+has, while extrapolated values would impose 90 degrees. At an outflow it continues the interface
+smoothly. The planes are extended beyond the wall cells within <code class="docutils literal notranslate"><span class="pre">PLIC::wall_nsearch</span></code> cells, along
+the face, of the interface, and beyond the others a ghost cell takes the value of its wall cell: at
+a shallow angle the extended plane would cross the ghost layers further from the contact line, where
+no reconstruction stencil of an interface cell reaches. A ghost value depends on cells further along
+the wall than one box holds, so <code class="docutils literal notranslate"><span class="pre">FillWallGhosts</span></code> works on a whole level, and its result does not
+depend on the box layout. Nor does it depend on the order of the faces: each reads no ghost cells of
+another, and a ghost cell beyond several (at an edge or a corner) takes the mean of their values,
+over those that extend a plane to it, which for a planar interface is the plane.</p>
+</section>
+<section id="projection">
+<h2>Projection<a class="headerlink" href="#projection" title="Link to this heading"></a></h2>
+<p>The solver owns the projection, for which <code class="docutils literal notranslate"><span class="pre">PLIC::SharpFaceDensity</span></code> gives a face density that
+balances gravity for a planar interface (Francois et al., JCP 213, 2006): with
+<span class="math notranslate nohighlight">\(\rho_f = \rho_g + (\rho_l - \rho_g)\, \phi_f\)</span>, where <span class="math notranslate nohighlight">\(\phi_f\)</span> is the liquid fraction
+of the segment joining the cell centers on either side of the face, <span class="math notranslate nohighlight">\(\rho_f \mathbf{g}\)</span> is a
+discrete gradient. Its inverse is the face coefficient of <code class="docutils literal notranslate"><span class="pre">Hydro::MacProjector</span></code>.</p>
+<p>Each phase density is a value or a cell-centered field (<code class="docutils literal notranslate"><span class="pre">PLIC::PhaseDensity</span></code>), for a low Mach solver
+whose gas density follows its temperature and composition. A field is the density of that phase, not
+the mixture density: the solver defines it in every cell, extended across the interface, with one
+filled ghost layer, and a face takes the arithmetic mean of the two cells beside it. A phase density
+that varies along gravity is then balanced exactly away from the interface, and to
+<span class="math notranslate nohighlight">\(|\nabla\rho|\, h / 8\)</span> on the faces the interface cuts. On several AMR
+levels it is called on each level; the projection averages the coefficients of a fine level down
+onto the coarse faces it covers.</p>
 </section>
 <section id="reconstructions">
 <h2>Reconstructions<a class="headerlink" href="#reconstructions" title="Link to this heading"></a></h2>
@@ -175,8 +241,8 @@ Write a struct in <code class="docutils literal notranslate"><span class="pre">h
 </section>
 <section id="verification">
 <h2>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">Tests/PLIC</span></code> checks the plane geometry, the normals and the plane fit to round-off. A run fails
-when its checks do not hold. See its README for the expected results.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Tests/PLIC</span></code> checks the plane geometry, the normals, the plane fit, the wall ghost cells and the
+face density to round-off. A run fails when its checks do not hold. See its README for the expected results.</p>
 </section>
 </section>
 
