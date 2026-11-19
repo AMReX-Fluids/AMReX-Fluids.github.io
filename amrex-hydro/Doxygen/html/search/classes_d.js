@@ -19,10 +19,11 @@ var searchData=
   ['nodalprojector_16',['NodalProjector',['../classHydro_1_1NodalProjector.html',1,'Hydro']]],
   ['node_17',['Node',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1CArena_1_1Node.html',1,'amrex::CArena']]],
   ['nodebilinear_18',['NodeBilinear',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1NodeBilinear.html',1,'amrex']]],
-  ['nolimiter_19',['nolimiter',['../structPPM_1_1nolimiter.html',1,'PPM']]],
-  ['nolocalcopy_20',['NoLocalCopy',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NonLocalBC_1_1NoLocalCopy.html',1,'amrex::NonLocalBC']]],
-  ['nosyncregion_21',['NoSyncRegion',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Gpu_1_1NoSyncRegion.html',1,'amrex::Gpu']]],
-  ['nullinterphook_22',['NullInterpHook',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NullInterpHook.html',1,'amrex']]],
-  ['numcells_23',['NumCells',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1EBCellFlagFab_1_1NumCells.html',1,'amrex::EBCellFlagFab']]],
-  ['numcomps_24',['NumComps',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NumComps.html',1,'amrex']]]
+  ['nodetreewithsize_19',['NodeTreeWithSize',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1CArena_1_1NodeTreeWithSize.html',1,'amrex::CArena']]],
+  ['nolimiter_20',['nolimiter',['../structPPM_1_1nolimiter.html',1,'PPM']]],
+  ['nolocalcopy_21',['NoLocalCopy',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NonLocalBC_1_1NoLocalCopy.html',1,'amrex::NonLocalBC']]],
+  ['nosyncregion_22',['NoSyncRegion',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1Gpu_1_1NoSyncRegion.html',1,'amrex::Gpu']]],
+  ['nullinterphook_23',['NullInterpHook',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NullInterpHook.html',1,'amrex']]],
+  ['numcells_24',['NumCells',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1EBCellFlagFab_1_1NumCells.html',1,'amrex::EBCellFlagFab']]],
+  ['numcomps_25',['NumComps',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1NumComps.html',1,'amrex']]]
 ];
