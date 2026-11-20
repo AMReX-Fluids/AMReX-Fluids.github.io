@@ -73,7 +73,7 @@ var NAVTREEINDEX =
 "namespaceamrex.html#afd3603d5627ea48a5c25919fa90482f5",
 "namespaceamrex_1_1Gpu_1_1Atomic.html#ac0dd894a84e639438ae6a385ca6b0090",
 "namespaceamrex_1_1ParallelDescriptor.html#ae6927a6804e22fedb86c1fe19d6567fc",
-"structPLIC_1_1detail_1_1CandTag.html#ad06c616b219a9b3c5e7620c428a487c4"
+"structPLIC_1_1detail_1_1CandTag.html#a1ce645f4bbd0d2e01d2cb183a2c70102"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
