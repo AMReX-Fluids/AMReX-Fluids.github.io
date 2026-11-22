@@ -34,6 +34,7 @@ var classHydro_1_1MacProjector =
     [ "m_divu_loc", "classHydro_1_1MacProjector.html#a08e97fb6ec143c846c7ac02969377823", null ],
     [ "m_eb_abeclap", "classHydro_1_1MacProjector.html#a5b5e8ed7f21caee31751c7d697b6f823", null ],
     [ "m_eb_factory", "classHydro_1_1MacProjector.html#a7253aceb53ac536e698441d80b3e0f00", null ],
+    [ "m_eb_factory_clones", "classHydro_1_1MacProjector.html#aea869a1b5f1db9a7b0b0f835f013d66d", null ],
     [ "m_eb_vel", "classHydro_1_1MacProjector.html#a27a0e48ea9445c99097f5013b91ff75a", null ],
     [ "m_fluxes", "classHydro_1_1MacProjector.html#a4ec68b2f930745533de00196aee51de7", null ],
     [ "m_geom", "classHydro_1_1MacProjector.html#a5e38ecf0019b49e1953cae988b87b0f1", null ],
