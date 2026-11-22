@@ -1,19 +1,30 @@
 <map id="PLIC::is_mixed" name="PLIC::is_mixed">
-<area shape="rect" id="Node000001" title="Whether a cell with volume fraction f holds the interface." alt="" coords="858,52,973,79"/>
-<area shape="rect" id="Node000002" href="$namespacePLIC.html#ae836d9de83827766be0ab85d93b77856" title=" " alt="" coords="203,52,381,79"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="841,68,382,68,382,63,843,63"/>
-<area shape="rect" id="Node000004" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="648,128,794,155"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="870,85,811,112,763,130,762,124,809,107,865,86"/>
-<area shape="rect" id="Node000007" href="$namespacePLIC.html#ad3a3f3ade9a7dec3532e936bdf49a862" title="What cell c, up to Normal::stencil layers inside the wall, offers the search of wall_contact_planes,..." alt="" coords="429,26,584,54"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="876,43,845,30,809,17,744,9,677,10,615,18,563,28,562,23,614,13,677,5,744,4,810,12,847,25,881,44"/>
-<area shape="rect" id="Node000008" href="$namespacePLIC.html#ae7f3ccc1d97d1230444e574f99a8859f" title="Normal of an interface that runs inside the wall layer, from a one&#45;sided height function: with the ce..." alt="" coords="632,26,810,54"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="839,56,810,54,810,49,845,56"/>
-<area shape="rect" id="Node000003" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="5,52,155,79"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="185,66,155,68,154,63,190,65"/>
-<area shape="rect" id="Node000005" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="448,128,565,155"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="631,142,565,144,565,139,636,141"/>
-<area shape="rect" id="Node000006" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="205,128,378,155"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="430,142,379,144,379,139,436,141"/>
-<area shape="poly" id="edge7_Node000007_Node000002" title=" " alt="" coords="411,52,382,58,381,52,416,51"/>
-<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="614,40,585,43,584,38,619,40"/>
+<area shape="rect" id="Node000001" title="Whether a cell with volume fraction f holds the interface." alt="" coords="986,85,1101,112"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#ae836d9de83827766be0ab85d93b77856" title=" " alt="" coords="268,9,446,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1004,76,973,62,937,48,873,32,806,21,673,10,549,10,448,16,447,10,549,4,673,4,807,15,874,27,938,43,975,57,1009,77"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#a60b697cb9e76f9ee8722864bbe5c50d2" title="True if cell (i,j,k) is within nband cells of the interface." alt="" coords="772,137,926,164"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="977,117,904,139,903,134,971,118"/>
+<area shape="rect" id="Node000008" href="$namespacePLIC.html#a46eb065e014932ff70fda8c0dcc01edb" title="Store the plane of cell (i,j,k) as (mx, my, mz, alpha) in plane: that of fit_plane in a mixed cell,..." alt="" coords="782,189,916,216"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1017,122,981,153,939,178,908,191,907,186,936,174,978,148,1012,124"/>
+<area shape="rect" id="Node000012" href="$namespacePLIC.html#ad3a3f3ade9a7dec3532e936bdf49a862" title="What cell c, up to Normal::stencil layers inside the wall, offers the search of wall_contact_planes,..." alt="" coords="530,34,685,62"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="972,81,937,76,804,60,686,53,685,48,805,55,938,71,978,81"/>
+<area shape="rect" id="Node000013" href="$namespacePLIC.html#ae7f3ccc1d97d1230444e574f99a8859f" title="Normal of an interface that runs inside the wall layer, from a one&#45;sided height function: with the ce..." alt="" coords="760,85,938,112"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="967,99,938,101,938,96,972,98"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="34,9,184,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="250,24,185,25,183,20,255,21"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC_1_1detail.html#a1307cfdd0c627f3d038e507e2d0b3405" title=" " alt="" coords="502,137,712,164"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="754,151,713,153,713,148,759,150"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC_1_1detail.html#a290a823a29ec949b262adce371444279" title=" " alt="" coords="261,126,454,170"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="484,150,455,152,454,146,489,149"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#ad1f0d9b52d8d9f0e8209fee9f73d4b8f" title="Fluxes and edge states of the volume fraction on the faces of bx, from the unsplit geometric fluxes o..." alt="" coords="5,126,213,170"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="243,148,213,151,213,145,248,147"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="764,185,675,168,675,162,770,185"/>
+<area shape="rect" id="Node000009" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="534,190,680,218"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="764,203,680,206,680,201,769,203"/>
+<area shape="rect" id="Node000010" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="299,194,416,222"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="517,205,416,210,416,204,522,205"/>
+<area shape="rect" id="Node000011" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="22,194,196,222"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="281,208,196,211,196,205,286,208"/>
+<area shape="poly" id="edge13_Node000012_Node000002" title=" " alt="" coords="511,39,447,34,447,29,517,38"/>
+<area shape="poly" id="edge15_Node000013_Node000012" title=" " alt="" coords="762,81,676,65,677,60,768,81"/>
 </map>

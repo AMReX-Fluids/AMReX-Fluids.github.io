@@ -1,0 +1,19 @@
+<map id="PLIC::CheckCourantNumber" name="PLIC::CheckCourantNumber">
+<area shape="rect" id="Node000001" title="Abort unless the face Courant number, |u| dt/dx, is below 1 on every face that ComputeEdgeStateAndFlu..." alt="" coords="5,188,206,216"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__index__space.html#ga8875ec5ccdb05826b3187182d55f118f" title=" " alt="" coords="279,5,440,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,186,167,118,206,77,252,44,269,37,265,41,255,48,210,82,171,121,118,189"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#afbad2005fb348eb3e7a873b731210d68" title=" " alt="" coords="314,57,406,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,186,177,141,213,117,253,95,301,81,297,84,255,100,216,121,180,145,125,189"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1CoordSys.html#a81387c1c47114559d52a5300f946e46d" title=" " alt="" coords="254,109,466,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,185,253,147,285,140,281,143,254,152,146,190"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1MFIter.html#a61b9a1d5eda39765d1db9b9b936558c7" title=" " alt="" coords="278,161,442,189"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="205,189,264,184,260,187,207,194"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex.html#ab0b44e2fdc3fc0775be09fb566f78f1c" title=" " alt="" coords="289,213,430,241"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="206,209,276,217,272,220,207,214"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$namespaceamrex_1_1ParallelDescriptor.html#aff6bc74ed06d830d1db5d24040838e14" title=" " alt="" coords="267,265,453,310"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="148,214,255,250,277,259,272,260,253,255,148,219"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1IntVectND.html#afeec701c802f8a64be5c1b92ccb9de17" title=" " alt="" coords="270,334,450,379"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="121,213,178,265,215,294,255,320,267,327,262,328,252,324,212,298,174,269,120,219"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$classamrex_1_1ReduceData.html#a2d7733b7adfa9401fdc90202486d2b54" title=" " alt="" coords="281,404,439,448"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="114,213,136,250,167,297,207,346,255,389,270,400,264,399,252,393,203,350,163,300,131,253,114,219"/>
+</map>

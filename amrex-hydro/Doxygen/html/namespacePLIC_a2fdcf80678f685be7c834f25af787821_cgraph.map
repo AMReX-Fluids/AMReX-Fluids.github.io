@@ -1,0 +1,9 @@
+<map id="PLIC::pure_cells" name="PLIC::pure_cells">
+<area shape="rect" id="Node000001" title="Whether the cells [lo, hi], limited to bx, are all gas or all liquid." alt="" coords="5,57,129,85"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="180,5,293,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,54,176,37,172,40,116,59"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__fab__containers.html#gafad6a65d8f99b00c14e8de32e2806fd7" title=" " alt="" coords="179,57,294,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="129,69,165,70,160,72,129,74"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__fab__containers.html#ga00ddc55986bb8cc48ba98491e5d5ba52" title=" " alt="" coords="177,109,296,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="115,83,177,103,172,105,114,88"/>
+</map>

@@ -60,5 +60,7 @@ var searchData=
   ['currentindex_57',['currentIndex',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1MFIter.html#abfba09b9f27138141e9758d1a8ea2e4b',1,'amrex::MFIter']]],
   ['currentmem_58',['currentmem',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1MemStat.html#a2bd452ad7a114fcc1750efffe7e63ba2',1,'amrex::MemStat']]],
   ['currentposition_59',['currentPosition',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1VisMF_1_1PersistentIFStream.html#a85eca5ae503569f1b40b8d4bac373997',1,'amrex::VisMF::PersistentIFStream']]],
-  ['cyan_60',['Cyan',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1BGColor.html#afd89341cfa10f0751ebf6312ea565a03',1,'amrex::BGColor::Cyan'],['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1FGColor.html#a124ac344d6f1b292c285b82cfbeab201',1,'amrex::FGColor::Cyan']]]
+  ['cut_5feps_60',['cut_eps',['../namespacePLIC.html#a9d86a75b16ccb16490bb544b9b43752b',1,'PLIC']]],
+  ['cut_5fstack_5fsize_61',['cut_stack_size',['../namespacePLIC.html#a1ab63789c8c9f9d6c6fa5e59383574cd',1,'PLIC']]],
+  ['cyan_62',['Cyan',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1BGColor.html#afd89341cfa10f0751ebf6312ea565a03',1,'amrex::BGColor::Cyan'],['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex_1_1FGColor.html#a124ac344d6f1b292c285b82cfbeab201',1,'amrex::FGColor::Cyan']]]
 ];

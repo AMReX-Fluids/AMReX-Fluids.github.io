@@ -1,0 +1,9 @@
+<map id="PLIC::interface_band" name="PLIC::interface_band">
+<area shape="rect" id="Node000001" title="True if cell (i,j,k) is within nband cells of the interface." alt="" coords="5,57,160,85"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#ae17184f3e53fca1120a14b94a16044cc" title="Whether a cell with volume fraction f holds the interface." alt="" coords="208,5,323,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,54,202,36,197,39,135,59"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="215,57,316,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,69,202,70,197,72,161,74"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="217,109,314,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,83,205,105,200,106,134,88"/>
+</map>

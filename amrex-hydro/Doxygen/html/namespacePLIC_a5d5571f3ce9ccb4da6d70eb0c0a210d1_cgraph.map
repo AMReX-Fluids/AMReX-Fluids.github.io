@@ -1,0 +1,9 @@
+<map id="PLIC::flux_volume" name="PLIC::flux_volume">
+<area shape="rect" id="Node000001" title="The flux volume of the low face of cell (i,j,k) in direction dir." alt="" coords="5,57,143,85"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="215,5,328,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,54,203,36,199,39,130,59"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a712c3554610e98630aa5794bc0cb35be" title="Apex o of the two tetrahedra (o,a,c,e) and (o,a,b,c) added on a traced face (a,b,c,..." alt="" coords="191,57,352,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,69,178,70,172,72,143,74"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#a8a051e2a61d73d5497c6a27292b6e4db" title="Signed volume of the tetrahedron with apex o over the triangle (a,b,c): positive when the triangle&#39;s ..." alt="" coords="193,109,350,137"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,83,204,104,199,106,129,88"/>
+</map>

@@ -4,6 +4,7 @@ var hydro__plic__K_8H =
     [ "PLIC::cut_volume", "namespacePLIC.html#aea78f9a4fb03de943f6f5a3cddc28903", null ],
     [ "PLIC::face_segment_fraction", "namespacePLIC.html#a73791ade977b7b8a375f54af0ac9c4d2", null ],
     [ "PLIC::half_segment_fraction", "namespacePLIC.html#a34061e0e1c4130eb09de426b2c9c5495", null ],
+    [ "PLIC::interface_band", "namespacePLIC.html#a60b697cb9e76f9ee8722864bbe5c50d2", null ],
     [ "PLIC::is_mixed", "namespacePLIC.html#ae17184f3e53fca1120a14b94a16044cc", null ],
     [ "PLIC::mixture", "namespacePLIC.html#a61a5a0c6be46406a478292750d24168e", null ],
     [ "PLIC::plane_fraction", "namespacePLIC.html#a6a7887114881a4ca8b52e5e04da6bacc", null ],

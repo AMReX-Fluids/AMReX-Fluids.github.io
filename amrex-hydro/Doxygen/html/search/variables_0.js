@@ -26,8 +26,9 @@ var searchData=
   ['amrnewtime_23',['AmrNewTime',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1AmrLevel.html#a83fa691ff414eb69f75eb6ae1f61b33aa9e86be887aaeac42a556e1f493337472',1,'amrex::AmrLevel']]],
   ['amroldtime_24',['AmrOldTime',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1AmrLevel.html#a83fa691ff414eb69f75eb6ae1f61b33aa42553bff8bf17dc01b76ff8e44f3d902',1,'amrex::AmrLevel']]],
   ['amrothertime_25',['AmrOtherTime',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1AmrLevel.html#a83fa691ff414eb69f75eb6ae1f61b33aaae1e38c840ac8908874d6775a2d8506d',1,'amrex::AmrLevel']]],
-  ['arena_26',['arena',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1MFInfo.html#a343c7c4fcab4a05e69b24156ea271ed2',1,'amrex::MFInfo::arena'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabInfo.html#afca3d5127ba5c2bb5cba6981a60a81ec',1,'amrex::FabInfo::arena']]],
-  ['arena_5finfo_27',['arena_info',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Arena.html#aeb2158ba443c9b23ba0d12bcf38a66e1',1,'amrex::Arena']]],
-  ['arrayofstructs_3c_20particletype_2c_20allocator_20_3e_3a_3asizeinreal_28',['SizeInReal',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ae27a198b2373b3aa47a2487294416c87',1,'amrex']]],
-  ['avgmem_29',['avgmem',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1MemStat.html#af46944491d4efca70face3a494959165',1,'amrex::MemStat']]]
+  ['apex_5ftol_26',['apex_tol',['../namespacePLIC.html#ab5f26a531a1b36a61d0bd2f4a152aaa2',1,'PLIC']]],
+  ['arena_27',['arena',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1MFInfo.html#a343c7c4fcab4a05e69b24156ea271ed2',1,'amrex::MFInfo::arena'],['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1FabInfo.html#afca3d5127ba5c2bb5cba6981a60a81ec',1,'amrex::FabInfo::arena']]],
+  ['arena_5finfo_28',['arena_info',['https://amrex-codes.github.io/amrex/doxygen/classamrex_1_1Arena.html#aeb2158ba443c9b23ba0d12bcf38a66e1',1,'amrex::Arena']]],
+  ['arrayofstructs_3c_20particletype_2c_20allocator_20_3e_3a_3asizeinreal_29',['SizeInReal',['https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ae27a198b2373b3aa47a2487294416c87',1,'amrex']]],
+  ['avgmem_30',['avgmem',['https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1MemStat.html#af46944491d4efca70face3a494959165',1,'amrex::MemStat']]]
 ];

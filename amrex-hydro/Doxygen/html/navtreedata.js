@@ -42,7 +42,7 @@ var NAVTREE =
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -63,17 +63,17 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classHydro_1_1NodalProjector.html#abc4cc4691db9231078b29897c33dcbe9",
-"group__amrex__index__space.html#ga76fbe1062cee2e63648f5a448ea82ea4",
-"group__amrex__mpi.html#gaa4fbfd98d7e966a80d9f7cb8d893b094",
-"hydro__godunov__ppm_8H.html#a21180e225f46577ee2bfaebef9d961d2",
-"namespaceamrex.html#a10bd6ff61966130ea99ab9faa410da13",
-"namespaceamrex.html#a49108631fbe797e0b4f4532332081e86",
-"namespaceamrex.html#a81e8d2ba5c7abaf7b2ca9bd2f43d5fb1",
-"namespaceamrex.html#ac021870dfc166c43a6b6308b693f3887",
-"namespaceamrex.html#af9790d1f61a6d21ce4e9f92c58ac0600",
-"namespaceamrex_1_1Gpu_1_1Atomic.html#a38348c8bda2f16dccc6de7fc8b659b2b",
-"namespaceamrex_1_1ParallelDescriptor.html#ab86dba69cfd44465e773abcc8a4bcecf",
-"structPLIC_1_1PhaseDensity.html#ad417164475e526ea6816d194c490ade9"
+"group__amrex__index__space.html#ga308a7efd7f5accc611f61283a11fa158",
+"group__amrex__mpi.html#ga936c783bdaf304f8b6761ad1f58c63a3",
+"hydro__ebmol__edge__state__K_8H.html",
+"namespaceamrex.html#a03b7cb04da3553dfa3585685c9ceea1b",
+"namespaceamrex.html#a3cd9e9a2e9482c7595c1550a253a3a0e",
+"namespaceamrex.html#a765c5cc6e670eb707740d51c99e7b35e",
+"namespaceamrex.html#ab2b67ba3d823b322901d6531da303b29",
+"namespaceamrex.html#aeda7f41b14dd61e8cf4572dc94ec85b1",
+"namespaceamrex_1_1Gpu.html#a67a618504ee5fb94bd65a5d393e344b4",
+"namespaceamrex_1_1ParallelDescriptor.html#a1f1780bd83ee339ade2a2dd702473e20",
+"namespaceamrex_1_1system.html#a7949dbff1ca16ed0ec3af7e50e69e496"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

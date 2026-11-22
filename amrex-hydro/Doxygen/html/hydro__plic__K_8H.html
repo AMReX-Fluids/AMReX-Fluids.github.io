@@ -129,16 +129,22 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="hydro__plic__K_8H__dep__incl.png" border="0" usemap="#aPLIC_2hydro__plic__K_8Hdep" loading="lazy" alt=""/></div>
 <map name="aPLIC_2hydro__plic__K_8Hdep" id="aPLIC_2hydro__plic__K_8Hdep">
-<area shape="rect" title=" " alt="" coords="126,5,277,33"/>
-<area shape="rect" href="hydro__plic_8H.html" title=" " alt="" coords="37,81,172,109"/>
-<area shape="poly" title=" " alt="" coords="170,44,123,83,120,78,174,41"/>
-<area shape="rect" href="hydro__plic__normals__K_8H.html" title=" " alt="" coords="195,81,406,109"/>
-<area shape="poly" title=" " alt="" coords="232,40,286,80,280,81,231,45"/>
-<area shape="rect" href="hydro__plic_8cpp.html" title=" " alt="" coords="5,157,153,184"/>
-<area shape="poly" title=" " alt="" coords="97,122,86,158,81,155,93,125"/>
-<area shape="rect" href="hydro__plic__reconstruction_8cpp.html" title=" " alt="" coords="177,157,424,184"/>
-<area shape="poly" title=" " alt="" coords="154,112,268,155,263,157,153,117"/>
-<area shape="poly" title=" " alt="" coords="302,123,302,158,298,155,298,126"/>
+<area shape="rect" title=" " alt="" coords="332,5,482,33"/>
+<area shape="rect" href="hydro__plic_8H.html" title=" " alt="" coords="144,90,278,117"/>
+<area shape="poly" title=" " alt="" coords="359,41,244,91,241,87,364,38"/>
+<area shape="rect" href="hydro__plic__normals__K_8H.html" title=" " alt="" coords="302,90,512,117"/>
+<area shape="poly" title=" " alt="" coords="409,47,409,91,405,88,405,51"/>
+<area shape="rect" href="hydro__plic__owkes__desjardins__K_8H.html" title=" " alt="" coords="536,81,704,126"/>
+<area shape="poly" title=" " alt="" coords="456,36,566,80,561,81,455,42"/>
+<area shape="rect" href="hydro__plic_8cpp.html" title=" " alt="" coords="5,182,153,210"/>
+<area shape="poly" title=" " alt="" coords="182,127,100,184,97,179,177,126"/>
+<area shape="rect" href="hydro__plic__owkes__desjardins_8cpp.html" title=" " alt="" coords="448,174,616,218"/>
+<area shape="poly" title=" " alt="" coords="273,119,458,172,453,174,272,125"/>
+<area shape="rect" href="hydro__plic__reconstruction_8cpp.html" title=" " alt="" coords="177,182,424,210"/>
+<area shape="poly" title=" " alt="" coords="236,126,290,182,285,182,233,131"/>
+<area shape="poly" title=" " alt="" coords="438,124,505,173,500,173,436,129"/>
+<area shape="poly" title=" " alt="" coords="383,127,317,184,315,179,378,128"/>
+<area shape="poly" title=" " alt="" coords="591,136,554,176,552,171,587,138"/>
 </map>
 </div>
 </div>
@@ -163,6 +169,8 @@ Functions</h2></td></tr>
 <tr class="memitem:aaaafc1be5c4da8ac15a923b6325312f9" id="r_aaaafc1be5c4da8ac15a923b6325312f9"><td class="memTemplParams" colspan="2">template&lt;typename Phi&gt; </td></tr>
 <tr class="memitem:aaaafc1be5c4da8ac15a923b6325312f9 template"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#aaaafc1be5c4da8ac15a923b6325312f9">PLIC::cell_fraction</a> (const int i, const int j, const int k, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1GeometryData.html">amrex::GeometryData</a> const &amp;geomdata, Phi const &amp;phi, const int nsub=8)</td></tr>
 <tr class="memdesc:aaaafc1be5c4da8ac15a923b6325312f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liquid volume fraction of cell (i,j,k) for an implicit surface phi(x) &gt; 0 inside the liquid, by midpoint sampling on nsub^dim sub-cells. Intended for problem initialization.  <br /></td></tr>
+<tr class="memitem:a60b697cb9e76f9ee8722864bbe5c50d2" id="r_a60b697cb9e76f9ee8722864bbe5c50d2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#a60b697cb9e76f9ee8722864bbe5c50d2">PLIC::interface_band</a> (const int i, const int j, const int k, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__fab__containers.html#gad92491d1925501cac1baab359e4ba023">amrex::Array4</a>&lt; <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a> const &gt; const &amp;F, const int nband=1)</td></tr>
+<tr class="memdesc:a60b697cb9e76f9ee8722864bbe5c50d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if cell (i,j,k) is within nband cells of the interface.  <br /></td></tr>
 <tr class="memitem:a6a7887114881a4ca8b52e5e04da6bacc" id="r_a6a7887114881a4ca8b52e5e04da6bacc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#a6a7887114881a4ca8b52e5e04da6bacc">PLIC::plane_fraction</a> (const int i, const int j, const int k, <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/structamrex_1_1GeometryData.html">amrex::GeometryData</a> const &amp;geomdata, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a> n[AMREX_SPACEDIM], const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a> d)</td></tr>
 <tr class="memdesc:a6a7887114881a4ca8b52e5e04da6bacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exact liquid volume fraction of cell (i,j,k) for the half space n.x &lt;= d (physical coordinates, n need not be normalized). Intended for problem initialization.  <br /></td></tr>
 <tr class="memitem:ad4847b9c837c8a2e25e4c7d8b76d3dc2" id="r_ad4847b9c837c8a2e25e4c7d8b76d3dc2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__GpuQualifiers_8H.html#aac52ee54727d35b2d0033b119a991618">AMREX_GPU_HOST_DEVICE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/AMReX__Extension_8H.html#a90cf7b81cd61799c87306cad156cc317">AMREX_FORCE_INLINE</a> <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacePLIC.html#ad4847b9c837c8a2e25e4c7d8b76d3dc2">PLIC::plane_volume_in</a> (const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ac0b5a9180f2f28b35ac013759ee93198">amrex::IntVect</a> &amp;c, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/namespaceamrex.html#ac0b5a9180f2f28b35ac013759ee93198">amrex::IntVect</a> &amp;ref, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a> *m, const <a class="elRef" href="https://amrex-codes.github.io/amrex/doxygen/group__amrex__arithmetic__types.html#ga13aca66f1dfdd1c3e59b542429577082">amrex::Real</a> alpha)</td></tr>

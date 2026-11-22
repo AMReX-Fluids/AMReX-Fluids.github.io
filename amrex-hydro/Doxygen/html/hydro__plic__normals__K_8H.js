@@ -15,6 +15,7 @@ var hydro__plic__normals__K_8H =
     [ "PLIC::myc_choose", "namespacePLIC.html#a2c8761a86f7311100f217eff3920dcb5", null ],
     [ "PLIC::myc_normal", "namespacePLIC.html#a0338eed472ec7dbfced7076f4b38deea", null ],
     [ "PLIC::plane_constant", "namespacePLIC.html#a57b67e5a10bf23e45386246cea715ec1", null ],
+    [ "PLIC::store_plane", "namespacePLIC.html#a46eb065e014932ff70fda8c0dcc01edb", null ],
     [ "PLIC::thin_structure", "namespacePLIC.html#a504c05a467cc39858238891850a1bf86", null ],
     [ "PLIC::tied", "namespacePLIC.html#abe05378dca985058f11d1b19acabe707", null ],
     [ "PLIC::unknown_reconstruction", "namespacePLIC.html#a502bd6e6d4475ee030d8749d23c6b3eb", null ],

@@ -1,35 +1,43 @@
 <map id="PLIC::sort3" name="PLIC::sort3">
-<area shape="rect" id="Node000001" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="1522,83,1612,110"/>
-<area shape="rect" id="Node000002" href="$namespacePLIC.html#aea78f9a4fb03de943f6f5a3cddc28903" title="Liquid volume fraction of the sub&#45;box [r0, r0+dr0] x [0,1] x [0,1] of the unit cube cut by m1*x1 + m2..." alt="" coords="909,57,1042,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1504,94,1043,77,1043,71,1509,94"/>
-<area shape="rect" id="Node000008" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="1302,108,1474,136"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1509,105,1475,112,1474,107,1503,105"/>
-<area shape="rect" id="Node000003" href="$namespacePLIC.html#a6a7887114881a4ca8b52e5e04da6bacc" title="Exact liquid volume fraction of cell (i,j,k) for the half space n.x &lt;= d (physical coordinates,..." alt="" coords="694,57,845,85"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="891,71,845,74,845,69,896,71"/>
-<area shape="rect" id="Node000004" href="$namespacePLIC.html#ad4847b9c837c8a2e25e4c7d8b76d3dc2" title="Liquid volume fraction of cell c under the plane (m, alpha) given in the unit&#45;cube coordinates of cel..." alt="" coords="685,5,854,33"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="900,53,828,36,828,31,906,53"/>
-<area shape="rect" id="Node000005" href="$namespacePLIC.html#ae836d9de83827766be0ab85d93b77856" title=" " alt="" coords="227,56,405,84"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="667,25,566,35,453,47,388,58,386,53,453,42,565,30,673,24"/>
-<area shape="rect" id="Node000007" href="$namespacePLIC.html#a4d4e460cc87aa4339c0f254fa2d59b40" title="Volume fraction of the ghost cell g beyond the wall, from the plane (m, alpha) of cell ref (see wall_..." alt="" coords="453,56,637,84"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="688,38,610,58,609,53,693,36"/>
-<area shape="rect" id="Node000006" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="17,56,167,84"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="209,71,168,72,166,67,213,69"/>
-<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="435,70,406,72,405,67,440,69"/>
-<area shape="rect" id="Node000009" href="$namespacePLIC.html#a57b67e5a10bf23e45386246cea715ec1" title="Normalize the normal (mx, my, mz) to sum|m| = 1 and give the constant alpha of the plane m...." alt="" coords="1098,108,1254,136"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1284,122,1255,124,1255,119,1290,122"/>
-<area shape="rect" id="Node000010" href="$namespacePLIC.html#a9b7d03da8cde24608092472c3b513b78" title="fit_plane, with the normal from normal(mx, my, mz) in place of Normal::normal, for a caller that alre..." alt="" coords="902,159,1050,186"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1107,140,1034,161,1033,155,1101,140"/>
-<area shape="rect" id="Node000015" href="$namespacePLIC.html#ad3a3f3ade9a7dec3532e936bdf49a862" title="What cell c, up to Normal::stencil layers inside the wall, offers the search of wall_contact_planes,..." alt="" coords="468,132,623,160"/>
-<area shape="poly" id="edge18_Node000009_Node000015" title=" " alt="" coords="1080,126,623,146,623,140,1085,125"/>
-<area shape="rect" id="Node000011" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="713,209,826,237"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="905,190,827,212,826,207,899,191"/>
-<area shape="poly" id="edge17_Node000010_Node000015" title=" " alt="" coords="884,167,623,153,623,148,889,167"/>
-<area shape="rect" id="Node000012" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="472,209,618,237"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="694,223,618,226,618,221,700,223"/>
-<area shape="poly" id="edge15_Node000011_Node000015" title=" " alt="" coords="710,204,587,163,588,158,715,204"/>
-<area shape="rect" id="Node000013" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="258,209,374,237"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="454,223,374,226,374,221,460,223"/>
-<area shape="rect" id="Node000014" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="5,209,179,237"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="240,223,179,226,179,221,245,223"/>
-<area shape="poly" id="edge16_Node000015_Node000005" title=" " alt="" coords="484,127,360,87,360,82,489,126"/>
+<area shape="rect" id="Node000001" title="a, b and c in ascending order, as lo &lt;= mid &lt;= hi." alt="" coords="1829,83,1919,110"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#aea78f9a4fb03de943f6f5a3cddc28903" title="Liquid volume fraction of the sub&#45;box [r0, r0+dr0] x [0,1] x [0,1] of the unit cube cut by m1*x1 + m2..." alt="" coords="1216,57,1350,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1811,94,1350,77,1350,71,1816,94"/>
+<area shape="rect" id="Node000008" href="$namespacePLIC.html#aa7e04f84990d2cd89d39f945de376e4e" title="Analytic plane constant alpha such that the region m1*x1 + m2*x2 + m3*x3 &lt;= alpha of the unit cube ha..." alt="" coords="1610,108,1781,136"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1816,105,1782,112,1781,107,1811,105"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a6a7887114881a4ca8b52e5e04da6bacc" title="Exact liquid volume fraction of cell (i,j,k) for the half space n.x &lt;= d (physical coordinates,..." alt="" coords="1002,57,1152,85"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1198,71,1153,74,1152,69,1204,71"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#ad4847b9c837c8a2e25e4c7d8b76d3dc2" title="Liquid volume fraction of cell c under the plane (m, alpha) given in the unit&#45;cube coordinates of cel..." alt="" coords="993,5,1161,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1208,53,1135,36,1135,31,1213,53"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#ae836d9de83827766be0ab85d93b77856" title=" " alt="" coords="518,56,696,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="975,25,761,47,688,58,687,53,760,42,980,24"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#a4d4e460cc87aa4339c0f254fa2d59b40" title="Volume fraction of the ghost cell g beyond the wall, from the plane (m, alpha) of cell ref (see wall_..." alt="" coords="760,56,945,84"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="995,38,918,58,916,53,1000,36"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="283,56,432,84"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="500,71,433,72,432,67,505,69"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="742,70,697,72,696,67,747,69"/>
+<area shape="rect" id="Node000009" href="$namespacePLIC.html#a57b67e5a10bf23e45386246cea715ec1" title="Normalize the normal (mx, my, mz) to sum|m| = 1 and give the constant alpha of the plane m...." alt="" coords="1405,108,1562,136"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="1592,122,1562,124,1562,119,1597,122"/>
+<area shape="rect" id="Node000010" href="$namespacePLIC.html#a9b7d03da8cde24608092472c3b513b78" title="fit_plane, with the normal from normal(mx, my, mz) in place of Normal::normal, for a caller that alre..." alt="" coords="1209,159,1357,186"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="1414,140,1341,161,1340,155,1409,140"/>
+<area shape="rect" id="Node000019" href="$namespacePLIC.html#ad3a3f3ade9a7dec3532e936bdf49a862" title="What cell c, up to Normal::stencil layers inside the wall, offers the search of wall_contact_planes,..." alt="" coords="775,132,930,160"/>
+<area shape="poly" id="edge22_Node000009_Node000019" title=" " alt="" coords="1387,126,931,146,930,140,1393,125"/>
+<area shape="rect" id="Node000011" href="$namespacePLIC.html#a5945678113edd8df7ed888b06217595a" title="Reconstruct the PLIC plane m.x = alpha in cell (i,j,k), in unit&#45;cube cell coordinates with sum|m| = 1..." alt="" coords="1020,209,1134,237"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1212,190,1134,212,1134,207,1207,191"/>
+<area shape="poly" id="edge21_Node000010_Node000019" title=" " alt="" coords="1191,167,931,153,931,148,1196,167"/>
+<area shape="rect" id="Node000012" href="$namespacePLIC.html#a46eb065e014932ff70fda8c0dcc01edb" title="Store the plane of cell (i,j,k) as (mx, my, mz, alpha) in plane: that of fit_plane in a mixed cell,..." alt="" coords="786,209,919,237"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1002,223,920,226,920,221,1007,223"/>
+<area shape="poly" id="edge19_Node000011_Node000019" title=" " alt="" coords="1017,204,895,163,896,158,1023,204"/>
+<area shape="rect" id="Node000013" href="$namespacePLIC.html#ac44e4f37c0fb3204d1be89ac47ebd246" title=" " alt="" coords="534,239,680,266"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="773,233,680,246,680,241,768,233"/>
+<area shape="rect" id="Node000016" href="$namespacePLIC_1_1detail.html#a1307cfdd0c627f3d038e507e2d0b3405" title=" " alt="" coords="502,184,712,212"/>
+<area shape="poly" id="edge16_Node000012_Node000016" title=" " alt="" coords="768,215,713,211,713,206,773,215"/>
+<area shape="rect" id="Node000014" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="299,243,416,270"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="517,254,416,258,416,253,522,254"/>
+<area shape="rect" id="Node000015" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="22,243,196,270"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="281,257,196,259,196,254,286,256"/>
+<area shape="rect" id="Node000017" href="$namespacePLIC_1_1detail.html#a290a823a29ec949b262adce371444279" title=" " alt="" coords="261,174,454,219"/>
+<area shape="poly" id="edge17_Node000016_Node000017" title=" " alt="" coords="484,197,455,200,454,194,489,197"/>
+<area shape="rect" id="Node000018" href="$namespacePLIC.html#ad1f0d9b52d8d9f0e8209fee9f73d4b8f" title="Fluxes and edge states of the volume fraction on the faces of bx, from the unsplit geometric fluxes o..." alt="" coords="5,174,213,219"/>
+<area shape="poly" id="edge18_Node000017_Node000018" title=" " alt="" coords="243,197,213,199,213,194,248,196"/>
+<area shape="poly" id="edge20_Node000019_Node000005" title=" " alt="" coords="788,127,654,87,655,82,793,127"/>
 </map>

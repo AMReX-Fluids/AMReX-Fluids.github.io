@@ -1,0 +1,7 @@
+<map id="PLIC::detail::FluxVolumeData" name="PLIC::detail::FluxVolumeData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="502,14,712,42"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC_1_1detail.html#a290a823a29ec949b262adce371444279" title=" " alt="" coords="261,5,454,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,28,455,30,454,25,489,28"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#ad1f0d9b52d8d9f0e8209fee9f73d4b8f" title="Fluxes and edge states of the volume fraction on the faces of bx, from the unsplit geometric fluxes o..." alt="" coords="5,5,213,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,28,213,30,213,25,248,27"/>
+</map>

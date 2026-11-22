@@ -1,13 +1,16 @@
 <map id="PLIC::unknown_reconstruction" name="PLIC::unknown_reconstruction">
-<area shape="rect" id="Node000001" title=" " alt="" coords="637,57,854,85"/>
-<area shape="rect" id="Node000002" href="$namespacePLIC.html#a80c8a2be4b67ff69f2ea009f8719f322" title="Call fn with the normal scheme of a reconstruction name, as fn(Normal{}), and return what it returns...." alt="" coords="424,57,589,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="619,71,590,74,590,69,624,71"/>
-<area shape="rect" id="Node000003" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="227,5,376,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="432,53,359,36,359,31,437,53"/>
-<area shape="rect" id="Node000004" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="243,57,360,85"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,71,360,74,360,69,411,71"/>
-<area shape="rect" id="Node000006" href="$namespacePLIC.html#a95ca0e6685e548fa5884d1647f8226b6" title="The ghost cells of F that the operators of this library read, with the given reconstruction...." alt="" coords="248,109,355,137"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="437,89,356,112,355,107,431,90"/>
-<area shape="rect" id="Node000005" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="5,57,179,85"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="225,72,180,74,179,69,230,71"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="671,51,888,79"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a80c8a2be4b67ff69f2ea009f8719f322" title="Call fn with the normal scheme of a reconstruction name, as fn(Normal{}), and return what it returns...." alt="" coords="458,51,623,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="653,65,624,68,624,62,658,65"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#ad1f0d9b52d8d9f0e8209fee9f73d4b8f" title="Fluxes and edge states of the volume fraction on the faces of bx, from the unsplit geometric fluxes o..." alt="" coords="5,13,213,58"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="496,44,456,29,409,16,360,9,309,8,214,17,212,12,309,3,360,4,411,10,458,24,502,44"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#afed8e7a8fde1e2f1639c2ef35a7725f0" title="Overwrite the ghost cells of F beyond the domain faces where F is extrapolated, by extending the plan..." alt="" coords="261,24,410,52"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="440,52,410,51,410,45,445,52"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a35f55dabdbf19e6cfcfb82197b76ddc6" title="Fit the plane of each mixed cell, and zero the others." alt="" coords="277,128,394,156"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="492,84,411,118,378,130,376,125,409,113,486,86"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#a95ca0e6685e548fa5884d1647f8226b6" title="The ghost cells of F that the operators of this library read, with the given reconstruction...." alt="" coords="282,76,389,104"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="440,77,389,86,389,81,445,77"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#ad56466712c306048b0596f095c2a9654" title="Face density rho_g + (rho_l &#45; rho_g) * &lt;face_segment_fraction&gt;, with the average over the given volum..." alt="" coords="22,128,196,156"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="259,142,196,145,196,140,265,142"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="264,75,204,61,204,56,270,73"/>
 </map>

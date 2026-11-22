@@ -1,0 +1,11 @@
+<map id="PLIC::tet_liquid_volume" name="PLIC::tet_liquid_volume">
+<area shape="rect" id="Node000001" title="Volume of the part of a tetrahedron of volume vol on the liquid side of the plane m...." alt="" coords="5,57,180,85"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a636fca9dfc9b462457c19dd1dea1126b" title=" " alt="" coords="233,5,369,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,54,230,36,225,39,152,59"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#a2a2e317f1755e235b6aac62bf9588dda" title=" " alt="" coords="260,57,342,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,69,247,70,242,72,180,74"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a3f9be94080ab7e06fd93cb3f790304c7" title="Tetrahedra filling the prism with triangles p, q and edges p&#45;q." alt="" coords="228,109,374,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="151,83,230,104,225,106,151,88"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a8a051e2a61d73d5497c6a27292b6e4db" title="Signed volume of the tetrahedron with apex o over the triangle (a,b,c): positive when the triangle&#39;s ..." alt="" coords="422,5,578,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,17,409,19,404,20,370,22"/>
+</map>

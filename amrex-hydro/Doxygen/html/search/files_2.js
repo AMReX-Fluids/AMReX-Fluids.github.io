@@ -50,8 +50,10 @@ var searchData=
   ['hydro_5fplic_2eh_47',['hydro_plic.H',['../hydro__plic_8H.html',1,'']]],
   ['hydro_5fplic_5fk_2eh_48',['hydro_plic_K.H',['../hydro__plic__K_8H.html',1,'']]],
   ['hydro_5fplic_5fnormals_5fk_2eh_49',['hydro_plic_normals_K.H',['../hydro__plic__normals__K_8H.html',1,'']]],
-  ['hydro_5fplic_5freconstruction_2ecpp_50',['hydro_plic_reconstruction.cpp',['../hydro__plic__reconstruction_8cpp.html',1,'']]],
-  ['hydro_5fredistribution_2ecpp_51',['hydro_redistribution.cpp',['../hydro__redistribution_8cpp.html',1,'']]],
-  ['hydro_5futils_2ecpp_52',['hydro_utils.cpp',['../hydro__utils_8cpp.html',1,'']]],
-  ['hydro_5futils_2eh_53',['hydro_utils.H',['../hydro__utils_8H.html',1,'']]]
+  ['hydro_5fplic_5fowkes_5fdesjardins_2ecpp_50',['hydro_plic_owkes_desjardins.cpp',['../hydro__plic__owkes__desjardins_8cpp.html',1,'']]],
+  ['hydro_5fplic_5fowkes_5fdesjardins_5fk_2eh_51',['hydro_plic_owkes_desjardins_K.H',['../hydro__plic__owkes__desjardins__K_8H.html',1,'']]],
+  ['hydro_5fplic_5freconstruction_2ecpp_52',['hydro_plic_reconstruction.cpp',['../hydro__plic__reconstruction_8cpp.html',1,'']]],
+  ['hydro_5fredistribution_2ecpp_53',['hydro_redistribution.cpp',['../hydro__redistribution_8cpp.html',1,'']]],
+  ['hydro_5futils_2ecpp_54',['hydro_utils.cpp',['../hydro__utils_8cpp.html',1,'']]],
+  ['hydro_5futils_2eh_55',['hydro_utils.H',['../hydro__utils_8H.html',1,'']]]
 ];

@@ -16,7 +16,10 @@ var annotated_dup =
       [ "PhaseDensity", "structPLIC_1_1PhaseDensity.html", "structPLIC_1_1PhaseDensity" ],
       [ "Youngs", "structPLIC_1_1Youngs.html", "structPLIC_1_1Youngs" ],
       [ "MixedYoungsCentered", "structPLIC_1_1MixedYoungsCentered.html", "structPLIC_1_1MixedYoungsCentered" ],
-      [ "HeightFunctionMYC", "structPLIC_1_1HeightFunctionMYC.html", "structPLIC_1_1HeightFunctionMYC" ]
+      [ "HeightFunctionMYC", "structPLIC_1_1HeightFunctionMYC.html", "structPLIC_1_1HeightFunctionMYC" ],
+      [ "Vec3", "structPLIC_1_1Vec3.html", "structPLIC_1_1Vec3" ],
+      [ "Tet", "structPLIC_1_1Tet.html", "structPLIC_1_1Tet" ],
+      [ "FluxVolume", "structPLIC_1_1FluxVolume.html", "structPLIC_1_1FluxVolume" ]
     ] ],
     [ "PPM", "namespacePPM.html", [
       [ "nolimiter", "structPPM_1_1nolimiter.html", "structPPM_1_1nolimiter" ],

@@ -1,0 +1,61 @@
+<map id="PLIC::face_liquid_flux" name="PLIC::face_liquid_flux">
+<area shape="rect" id="Node000001" title="Signed liquid volume crossing the low face of cell (i,j,k) in direction dir, per cell volume,..." alt="" coords="5,640,165,668"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#ac98276d6517060738f453807793539c6" title="Liquid volume in the flux volume of the low face of cell (i,j,k) in direction dir,..." alt="" coords="213,157,393,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,638,286,198,291,200,95,641"/>
+<area shape="rect" id="Node000022" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__index__space.html#ga76fbe1062cee2e63648f5a448ea82ea4" title=" " alt="" coords="253,691,352,718"/>
+<area shape="poly" id="edge33_Node000001_Node000022" title=" " alt="" coords="148,666,240,689,235,690,147,671"/>
+<area shape="rect" id="Node000023" href="$namespacePLIC.html#ac325cd683e583ebb3733881ace5e7183" title="The accessor a with its origin moved to cell (di,dj,dk): the result at (0,0,0) is a at (di,..." alt="" coords="666,668,796,696"/>
+<area shape="poly" id="edge34_Node000001_Node000023" title=" " alt="" coords="165,655,651,676,650,681,165,660"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#gadb8466789f019161c7722f92d6587f75" title=" " alt="" coords="878,159,992,186"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="368,154,441,143,542,136,620,136,800,150,865,160,860,161,799,155,620,141,542,141,441,148,370,159"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#a5362cb1aaf1f8d75ff78e20f34f002a2" title="Liquid volume of a tetrahedron: cut along the mesh planes into one piece per cell,..." alt="" coords="455,360,600,388"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="320,183,502,349,497,350,319,188"/>
+<area shape="rect" id="Node000016" href="$namespacePLIC.html#a5d5571f3ce9ccb4da6d70eb0c0a210d1" title="The flux volume of the low face of cell (i,j,k) in direction dir." alt="" coords="662,56,800,84"/>
+<area shape="poly" id="edge19_Node000002_Node000016" title=" " alt="" coords="325,155,376,126,440,99,493,86,547,77,649,70,644,73,547,83,494,92,442,104,379,130,328,159"/>
+<area shape="rect" id="Node000018" href="$namespacePLIC.html#acb496f440cb92c0920e6fee24b2e1db2" title="Whether a flux volume lies in pure cells only, from its bounding box: it then needs no cutting." alt="" coords="441,537,614,565"/>
+<area shape="poly" id="edge23_Node000002_Node000018" title=" " alt="" coords="314,183,513,523,508,524,311,188"/>
+<area shape="rect" id="Node000020" href="$structPLIC_1_1FluxVolume.html#a3a0782435bd744f9d7ba187feb67cf65" title="Tetrahedron n: the fan of the boundary from a, with outward triangles, then the correction from o ove..." alt="" coords="448,5,608,33"/>
+<area shape="poly" id="edge30_Node000002_Node000020" title=" " alt="" coords="315,155,367,104,402,75,440,49,467,37,463,41,442,53,405,79,370,108,319,158"/>
+<area shape="rect" id="Node000021" href="$namespacePLIC.html#adb312bef033f6fd2326e235f7f79abd3" title="F of the upwind cell of the low face of cell iv in direction dir, for a flow u along dir: the cell be..." alt="" coords="447,157,608,185"/>
+<area shape="poly" id="edge31_Node000002_Node000021" title=" " alt="" coords="392,169,434,170,429,172,394,174"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="539,357,589,306,623,277,661,252,711,227,764,208,865,184,860,186,766,213,713,232,664,256,626,281,592,310,543,361"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#a636fca9dfc9b462457c19dd1dea1126b" title=" " alt="" coords="1075,257,1211,285"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="546,357,596,324,628,308,662,295,767,272,875,262,976,259,1062,264,1057,265,976,264,875,267,768,278,663,300,630,313,599,329,549,362"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__fab__containers.html#gafad6a65d8f99b00c14e8de32e2806fd7" title=" " alt="" coords="877,641,992,669"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="549,385,600,419,663,454,702,466,736,469,768,476,784,485,802,499,815,515,822,532,826,564,830,596,837,611,849,627,866,640,861,639,846,630,832,614,825,598,821,565,817,533,810,518,798,502,781,489,766,481,735,475,701,471,661,459,597,424,548,391"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga9d99cb1523b9f336dad742f6a15bdf59" title=" " alt="" coords="681,512,781,540"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="543,386,594,436,664,492,683,505,678,504,661,496,591,440,542,391"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__utilities.html#ga66e2eab6a08dc06e8892a05efdc832c7" title=" " alt="" coords="683,564,779,592"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="537,385,585,463,621,509,664,549,672,557,667,556,661,553,617,512,580,466,535,390"/>
+<area shape="rect" id="Node000010" href="$namespacePLIC.html#ab2cda03638716625f6f563c59ebac1b0" title="Liquid volume of a piece of tetrahedron lying within cell (i,j,k)." alt="" coords="663,309,799,337"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="585,357,660,340,655,342,587,362"/>
+<area shape="rect" id="Node000014" href="$namespacePLIC.html#a147a46d36ddbee116ec67193d9b658bd" title="Split a tetrahedron by the plane where the vertex values d vanish." alt="" coords="880,361,990,389"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="600,371,867,374,862,376,601,377"/>
+<area shape="rect" id="Node000015" href="/home/runner/work/AMReX-Hydro/AMReX-Hydro/amrex-doxygen-web.tag.xml$group__amrex__fab__containers.html#ga00ddc55986bb8cc48ba98491e5d5ba52" title=" " alt="" coords="875,589,994,617"/>
+<area shape="poly" id="edge18_Node000004_Node000015" title=" " alt="" coords="601,382,699,408,752,428,801,454,837,482,870,514,918,577,913,575,866,518,834,486,798,459,750,433,698,413,601,388"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#a8a051e2a61d73d5497c6a27292b6e4db" title="Signed volume of the tetrahedron with apex o over the triangle (a,b,c): positive when the triangle&#39;s ..." alt="" coords="1264,157,1421,185"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1172,254,1297,193,1302,191,1174,259"/>
+<area shape="rect" id="Node000011" href="$namespacePLIC.html#a3e58e380e84e3f533c7c5475bc171dac" title="Volume of the part of a tetrahedron of volume vol on the liquid side of the plane m...." alt="" coords="848,309,1022,337"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="799,321,835,323,829,324,800,326"/>
+<area shape="poly" id="edge12_Node000011_Node000005" title=" " alt="" coords="993,306,1072,289,1067,290,994,311"/>
+<area shape="rect" id="Node000012" href="$namespacePLIC.html#a2a2e317f1755e235b6aac62bf9588dda" title=" " alt="" coords="1102,361,1184,389"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="993,335,1090,361,1084,362,993,340"/>
+<area shape="rect" id="Node000013" href="$namespacePLIC.html#a3f9be94080ab7e06fd93cb3f790304c7" title="Tetrahedra filling the prism with triangles p, q and edges p&#45;q." alt="" coords="1070,309,1216,337"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="1022,321,1057,323,1052,324,1023,326"/>
+<area shape="poly" id="edge16_Node000014_Node000012" title=" " alt="" coords="990,373,1089,375,1084,376,991,378"/>
+<area shape="poly" id="edge17_Node000014_Node000013" title=" " alt="" coords="989,359,1072,341,1067,342,991,364"/>
+<area shape="poly" id="edge20_Node000016_Node000003" title=" " alt="" coords="768,82,801,100,825,123,835,133,849,144,866,153,861,154,846,148,831,137,821,126,798,104,768,87"/>
+<area shape="poly" id="edge22_Node000016_Node000006" title=" " alt="" coords="799,70,905,78,1022,93,1159,120,1279,152,1273,153,1158,125,1022,98,905,83,801,76"/>
+<area shape="rect" id="Node000017" href="$namespacePLIC.html#a712c3554610e98630aa5794bc0cb35be" title="Apex o of the two tetrahedra (o,a,c,e) and (o,a,b,c) added on a traced face (a,b,c,..." alt="" coords="854,107,1016,134"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="789,82,864,102,859,103,790,87"/>
+<area shape="poly" id="edge24_Node000018_Node000008" title=" " alt="" coords="614,538,668,533,663,535,615,543"/>
+<area shape="poly" id="edge25_Node000018_Node000009" title=" " alt="" coords="615,560,670,569,665,570,615,565"/>
+<area shape="rect" id="Node000019" href="$namespacePLIC.html#a2fdcf80678f685be7c834f25af787821" title="Whether the cells [lo, hi], limited to bx, are all gas or all liquid." alt="" coords="669,616,793,644"/>
+<area shape="poly" id="edge26_Node000018_Node000019" title=" " alt="" coords="566,563,682,610,676,610,565,568"/>
+<area shape="poly" id="edge27_Node000019_Node000003" title=" " alt="" coords="784,613,798,601,822,563,834,528,837,493,834,458,828,384,832,343,845,297,875,241,909,200,913,196,880,244,850,299,837,344,834,384,839,458,842,493,839,529,827,566,802,605,786,618"/>
+<area shape="poly" id="edge28_Node000019_Node000007" title=" " alt="" coords="793,635,864,646,859,646,793,640"/>
+<area shape="poly" id="edge29_Node000019_Node000015" title=" " alt="" coords="793,619,857,613,862,613,794,624"/>
+<area shape="poly" id="edge32_Node000021_Node000003" title=" " alt="" coords="608,169,865,171,860,174,610,174"/>
+<area shape="poly" id="edge35_Node000023_Node000007" title=" " alt="" coords="796,671,859,665,864,664,796,676"/>
+<area shape="poly" id="edge36_Node000023_Node000015" title=" " alt="" coords="770,665,799,653,847,627,865,623,870,622,849,632,801,658,771,670"/>
+</map>

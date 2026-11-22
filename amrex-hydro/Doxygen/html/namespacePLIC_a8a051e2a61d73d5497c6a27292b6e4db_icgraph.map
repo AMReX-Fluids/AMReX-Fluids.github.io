@@ -1,0 +1,19 @@
+<map id="PLIC::signed_volume" name="PLIC::signed_volume">
+<area shape="rect" id="Node000001" title="Signed volume of the tetrahedron with apex o over the triangle (a,b,c): positive when the triangle&#39;s ..." alt="" coords="1224,55,1381,83"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a636fca9dfc9b462457c19dd1dea1126b" title=" " alt="" coords="1040,30,1176,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1206,56,1177,55,1177,50,1211,57"/>
+<area shape="rect" id="Node000008" href="$namespacePLIC.html#a5d5571f3ce9ccb4da6d70eb0c0a210d1" title="The flux volume of the low face of cell (i,j,k) in direction dir." alt="" coords="836,82,974,109"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1212,75,974,93,974,88,1206,75"/>
+<area shape="rect" id="Node000003" href="$namespacePLIC.html#a5362cb1aaf1f8d75ff78e20f34f002a2" title="Liquid volume of a tetrahedron: cut along the mesh planes into one piece per cell,..." alt="" coords="441,30,586,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1035,26,992,21,891,11,813,8,735,11,635,21,571,32,571,26,634,15,735,6,813,3,892,6,992,15,1041,26"/>
+<area shape="rect" id="Node000006" href="$namespacePLIC.html#a3e58e380e84e3f533c7c5475bc171dac" title="Volume of the part of a tetrahedron of volume vol on the liquid side of the plane m...." alt="" coords="818,30,992,57"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="1022,43,993,46,993,41,1027,43"/>
+<area shape="rect" id="Node000004" href="$namespacePLIC.html#ac98276d6517060738f453807793539c6" title="Liquid volume in the flux volume of the low face of cell (i,j,k) in direction dir,..." alt="" coords="213,55,393,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="423,54,394,60,393,55,428,54"/>
+<area shape="rect" id="Node000005" href="$namespacePLIC.html#ab71fc263b9adcde3a8c07329fd58bfa3" title="Signed liquid volume crossing the low face of cell (i,j,k) in direction dir, per cell volume,..." alt="" coords="5,55,165,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="194,69,165,71,165,66,200,68"/>
+<area shape="rect" id="Node000007" href="$namespacePLIC.html#ab2cda03638716625f6f563c59ebac1b0" title="Liquid volume of a piece of tetrahedron lying within cell (i,j,k)." alt="" coords="634,30,770,57"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="800,44,770,46,770,41,805,43"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="616,44,587,46,587,41,622,43"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="819,94,393,75,393,70,822,89"/>
+</map>

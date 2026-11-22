@@ -1,0 +1,5 @@
+<map id="PLIC::abs_volume" name="PLIC::abs_volume">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,142,33"/>
+<area shape="rect" id="Node000002" href="$namespacePLIC.html#a8a051e2a61d73d5497c6a27292b6e4db" title="Signed volume of the tetrahedron with apex o over the triangle (a,b,c): positive when the triangle&#39;s ..." alt="" coords="190,5,346,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,17,177,19,171,19,142,22"/>
+</map>
