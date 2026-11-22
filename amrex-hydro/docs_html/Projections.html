@@ -301,10 +301,18 @@ documentation). Set to 3 if use_mlhypre is true.</p></td>
 <td><p>3</p></td>
 </tr>
 <tr class="row-odd"><td><p>use_mlhypre</p></td>
-<td><p>Solve the MAC projection with hypre (AMReX’s HypreMLABecLap) instead
-of MLMG. Only read if AMReX is built with HYPRE, and ignored
-otherwise. Aborts if beta has EB data, if an overset mask is given,
-or if setLevelBC is called. Note that this is not the same as
+<td><p>Solve the MAC projection as one composite (all AMR levels) system
+with AMReX’s HypreMLABecLap (hypre or AlgMG) instead of MLMG. Only
+read if AMReX is built with HYPRE, and ignored otherwise. With EB
+the operator is HypreMLABecLap’s EB one, with the b coefficients at
+the face centers or centroids as given to the constructor (the EB
+is a no-flow boundary, with the EB inflow velocity in the right-hand
+side), which needs its IJ mode (&lt;prefix&gt;.hypre_solver or
+&lt;prefix&gt;.backend = algmg) and phi at the cell centers. Aborts if an
+overset mask is given or if setLevelBC is called. At cut cells on a
+coarse/fine boundary the composite operator’s coarse/fine coupling
+differs from MLEBABecLap’s, so the projection differs there by more
+than the solver tolerance. Note that this is not the same as
 bottom_solver = hypre, which uses hypre for the MLMG bottom solve
 only.</p></td>
 <td><p>Bool</p></td>
@@ -345,7 +353,10 @@ only if it is positive; otherwise AMReX’s default is used.</p></td>
 <tr class="row-odd"><td><p>use_mlhypre</p></td>
 <td><p>Solve the nodal projection as one composite (all AMR levels)
 system with AMReX’s HypreMLNodeLap (hypre or AlgMG) instead of MLMG.
-Requires AMReX built with HYPRE.</p></td>
+Requires AMReX built with HYPRE. The composite solver is kept by the
+projector: with a variable sigma its matrix is updated in place from
+the current sigma before each projection, with a constant sigma it
+is assembled once; setDomainBC discards it.</p></td>
 <td><p>Bool</p></td>
 <td><p>false</p></td>
 </tr>
@@ -354,9 +365,22 @@ Requires AMReX built with HYPRE.</p></td>
 <td><p>String</p></td>
 <td><p>hypre_mlnodelap</p></td>
 </tr>
+<tr class="row-odd"><td><p>mlhypre_reuse_setup</p></td>
+<td><p>Keep the HypreMLNodeLap solver setup (hypre) or AlgMG hierarchy when
+sigma changes; the setup is then only an approximate preconditioner,
+and a solve that does not converge with it redoes it (see also
+&lt;prefix&gt;.reuse_setup_max_iter in AMReX’s documentation)</p></td>
+<td><p>Bool</p></td>
+<td><p>false</p></td>
+</tr>
 </tbody>
 </table>
 <p>Both projectors provide <code class="docutils literal notranslate"><span class="pre">getNumIters()</span></code>, the iterations of the last projection.</p>
+<p>A NodalProjector can be kept across time steps: <code class="docutils literal notranslate"><span class="pre">setVelocity</span></code>, <code class="docutils literal notranslate"><span class="pre">setSigma</span></code> (variable sigma only)
+and <code class="docutils literal notranslate"><span class="pre">setSourceTerms</span></code> point it at new data on the grids of the constructor, keeping its linear
+operator and, with <code class="docutils literal notranslate"><span class="pre">use_mlhypre</span></code>, the composite solver (and its setup with
+<code class="docutils literal notranslate"><span class="pre">mlhypre_reuse_setup</span></code>); <code class="docutils literal notranslate"><span class="pre">setAlpha</span></code> and <code class="docutils literal notranslate"><span class="pre">setCustomRHS</span></code> do the same for the custom mode.  The
+MacProjector is kept the same way with <code class="docutils literal notranslate"><span class="pre">updateBeta</span></code>, <code class="docutils literal notranslate"><span class="pre">setUMAC</span></code> and <code class="docutils literal notranslate"><span class="pre">setDivU</span></code>.</p>
 <section id="mac-projection">
 <span id="mac-proj"></span><h2>MAC Projection<a class="headerlink" href="#mac-projection" title="Link to this heading"></a></h2>
 <p>For a velocity field <span class="math notranslate nohighlight">\(U = (u,v,w)\)</span> defined on faces, i.e.
