@@ -53,6 +53,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Volume of fluid with PLIC</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-the-solver-provides">What the solver provides</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#projection">Projection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advection">Advection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reconstructions">Reconstructions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-a-normal">Adding a normal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#verification">Verification</a></li>
@@ -207,6 +208,48 @@ that varies along gravity is then balanced exactly away from the interface, and 
 levels it is called on each level; the projection averages the coefficients of a fine level down
 onto the coarse faces it covers.</p>
 </section>
+<section id="advection">
+<h2>Advection<a class="headerlink" href="#advection" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">PLIC::ComputeEdgeStateAndFluxes</span></code> gives the fluxes and edge states of <span class="math notranslate nohighlight">\(F\)</span> on the faces of a
+box, with the unsplit geometric fluxes of Owkes &amp; Desjardins (JCP 270, 2014). It is called in the
+solver’s own <code class="docutils literal notranslate"><span class="pre">MFIter</span></code> loop, as <code class="docutils literal notranslate"><span class="pre">Godunov::ComputeEdgeState</span></code> is, and its fluxes follow the same
+convention as those of <code class="docutils literal notranslate"><span class="pre">HydroUtils::ComputeFluxesOnBoxFromState</span></code>: a flux is the edge state times
+the face velocity, times the face area if <code class="docutils literal notranslate"><span class="pre">fluxes_are_area_weighted</span></code>, and the solver updates</p>
+<div class="math notranslate nohighlight">
+\[F^{n+1} = F^n - \Delta t \, \nabla \cdot \mathbf{flux}.\]</div>
+<p>The flux through a face is the liquid inside its flux volume, the region bounded by the face and its
+corners traced back along the flow over <span class="math notranslate nohighlight">\(\Delta t\)</span>, divided by <span class="math notranslate nohighlight">\(\Delta t\)</span>. The update
+then conserves the liquid volume to round-off and, as the flux volumes tile, keeps <span class="math notranslate nohighlight">\(F\)</span> in
+<span class="math notranslate nohighlight">\([0,1]\)</span> up to round-off, without clipping. The exception is a face whose traced face has almost
+no extent normal to it: its flux volume is held near the face and falls short of the Courant number,
+and its liquid is the Courant number times the liquid fraction of what remains. A cell full of one
+phase stays full there, but next to the interface <span class="math notranslate nohighlight">\(F\)</span> can leave <span class="math notranslate nohighlight">\([0,1]\)</span> by more than
+round-off. The edge state is the liquid fraction of the flux volume, held to <span class="math notranslate nohighlight">\([0,1]\)</span>:
+where shear folds the flux volume onto itself, so that its net volume nearly cancels, the flux can
+differ from the edge state times the face velocity, and it is the flux that conserves <span class="math notranslate nohighlight">\(F\)</span>.</p>
+<p>Each flux depends only on data around its face, so the boxes sharing a face, and periodic images,
+get the same flux to the bit. With one time step on all levels, a solver</p>
+<ol class="arabic simple">
+<li><p>computes the fluxes of each box of each level;</p></li>
+<li><p>averages the fine fluxes onto the coarse faces under them (<code class="docutils literal notranslate"><span class="pre">amrex::average_down_faces</span></code>);</p></li>
+<li><p>updates <span class="math notranslate nohighlight">\(F\)</span> on each level, averages it down, and fills its ghost cells.</p></li>
+</ol>
+<p>A subcycling solver advances each level on its own, and refluxes with the same fluxes: with rates,
+the time factor of the <code class="docutils literal notranslate"><span class="pre">FluxRegister</span></code> is <span class="math notranslate nohighlight">\(\Delta t\)</span>, as for any other scalar.</p>
+<p>The face velocities must be at <span class="math notranslate nohighlight">\(t^{n+1/2}\)</span>, discretely divergence-free and the same on faces
+shared by boxes (as after a MAC projection), with one filled ghost layer, and the face Courant number
+below 1. That is checked in every build, box by box. The check waits for the GPU, so that the boxes
+of the loop do not overlap: on GPUs, check the level once with <code class="docutils literal notranslate"><span class="pre">PLIC::CheckCourantNumber</span></code> before
+the loop and pass <code class="docutils literal notranslate"><span class="pre">check_courant</span> <span class="pre">=</span> <span class="pre">false</span></code>. No ghost face beyond a domain face that is not periodic is read, whatever its boundary
+condition (an inflow profile in those ghost faces is not seen): the faces on the domain boundary stand
+in for them.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Keep the interface on the finest level, by tagging the cells for which <code class="docutils literal notranslate"><span class="pre">PLIC::interface_band</span></code>
+holds: flux volumes do not tile across coarse/fine boundaries, which must stay in pure cells. With
+subcycling, the reflux corrections then fall in pure cells too.</p>
+</div>
+</section>
 <section id="reconstructions">
 <h2>Reconstructions<a class="headerlink" href="#reconstructions" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">PLIC::FitPlanes</span></code> fits the plane of each mixed cell, from the normal of the selected
@@ -242,7 +285,10 @@ Write a struct in <code class="docutils literal notranslate"><span class="pre">h
 <section id="verification">
 <h2>Verification<a class="headerlink" href="#verification" title="Link to this heading"></a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Tests/PLIC</span></code> checks the plane geometry, the normals, the plane fit, the wall ghost cells and the
-face density to round-off. A run fails when its checks do not hold. See its README for the expected results.</p>
+face density to round-off. It is also a small AMR solver over the library, with a prescribed,
+discretely divergence-free velocity from a vector potential, and inputs for Zalesak’s disk, the
+single vortex, the 3D deformation field and a contact line. A run fails when its checks do not hold.
+See its README for the expected results.</p>
 </section>
 </section>
 
